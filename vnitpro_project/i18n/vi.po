@@ -1,0 +1,274 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_project
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-31 03:54+0000\n"
+"PO-Revision-Date: 2018-05-31 03:54+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_project
+#: selection:vnitpro.project,vat:0
+#: selection:vnitpro.project,vat_2:0
+msgid "10 %"
+msgstr "10 %"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_approval_cost_after_vat
+msgid "Approval Cost After VAT"
+msgstr "Giá trị duyệt sau thuế"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_approval_cost_before_vat
+msgid "Approval Cost Before VAT"
+msgstr "Giá trị duyệt trước thuế"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_approval_date
+msgid "Approval Date"
+msgstr "Ngày phê duyệt"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_approver
+msgid "Approver"
+msgstr "Người phê duyệt"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_confirm_contract_file_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_file_attachment_ids
+msgid "Attach File"
+msgstr "File đính kèm"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_attachment_confirm_project_id
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_attachment_project_id
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_base_attachment_confirm_project_id
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_base_attachment_project_id
+msgid "Attachment"
+msgstr "Đính kèm"
+
+#. module: vnitpro_project
+#: model:ir.ui.view,arch_db:vnitpro_project.view_vnitpro_project_form
+msgid "Attachment Files"
+msgstr "File đính kèm"
+
+#. module: vnitpro_project
+#: selection:vnitpro.project,status:0
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+#. module: vnitpro_project
+#: model:ir.ui.view,arch_db:vnitpro_project.view_vnitpro_project_form
+msgid "Cancel Confirm"
+msgstr "Hủy duyệt"
+
+#. module: vnitpro_project
+#: model:ir.ui.view,arch_db:vnitpro_project.view_vnitpro_project_form
+msgid "Confirm Project"
+msgstr "Duyệt dự án"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_confirm_status
+msgid "Confirm Status"
+msgstr "Trạng thái duyệt"
+
+#. module: vnitpro_project
+#: selection:vnitpro.project,confirm_status:0
+msgid "Confirmed"
+msgstr "Đã duyệt"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_cost_after_vat
+msgid "Cost After VAT"
+msgstr "Giá trị sau thuế ban đầu"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_cost_before_vat
+msgid "Cost Before VAT"
+msgstr "Giá trị trước thuế ban đầu"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_create_uid
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_permission_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_create_date
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_permission_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_currency
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_currency_2
+msgid "Currency"
+msgstr "Loại tiền tệ"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_decision
+msgid "Decision"
+msgstr "Quyết định số phê duyệt"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_display_name
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_permission_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_project
+#: selection:vnitpro.project,confirm_status:0
+msgid "Draft"
+msgstr "Chưa duyệt"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_employer
+msgid "Employer"
+msgstr "Chủ đầu tư"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_end_date
+msgid "End Date"
+msgstr "Ngày kết thúc"
+
+#. module: vnitpro_project
+#: selection:vnitpro.project,status:0
+msgid "Finish"
+msgstr "Hoàn thành"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_funds
+msgid "Funds"
+msgstr "Nguồn vốn"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_id
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_permission_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_project
+#: selection:vnitpro.project,status:0
+msgid "In Process"
+msgstr "Đang thực hiện"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project___last_update
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_permission___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_permission_write_uid
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_permission_write_date
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_project
+#: selection:vnitpro.project,status:0
+msgid "On Hold"
+msgstr "Tạm dừng"
+
+#. module: vnitpro_project
+#: selection:vnitpro.project,status:0
+msgid "Pending"
+msgstr "Chưa thực hiện"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_permission_detail_ids
+msgid "Permission Detail"
+msgstr "Chi tiết phân quyền"
+
+#. module: vnitpro_project
+#: model:ir.actions.act_window,name:vnitpro_project.act_open_vnitpro_project_view
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_permission_project_id
+#: model:ir.ui.menu,name:vnitpro_project.menu_vnitpro_project_root
+#: model:ir.ui.menu,name:vnitpro_project.menu_vnitpro_project_sub
+#: model:ir.ui.view,arch_db:vnitpro_project.view_vnitpro_project_form
+#: model:ir.ui.view,arch_db:vnitpro_project.view_vnitpro_project_tree
+#: model:res.groups,name:vnitpro_project.group_project
+msgid "Project"
+msgstr "Dự án"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_code
+msgid "Project Code"
+msgstr "Mã dự án"
+
+#. module: vnitpro_project
+#: model:ir.ui.view,arch_db:vnitpro_project.view_vnitpro_project_form
+msgid "Project Information"
+msgstr "Thông tin dự án"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_name
+msgid "Project Name"
+msgstr "Tên dự án"
+
+#. module: vnitpro_project
+#: model:ir.ui.view,arch_db:vnitpro_project.view_vnitpro_project_form
+msgid "Project Permissions"
+msgstr "Phân quyền dự án"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_start_date
+msgid "Start Date"
+msgstr "Ngày bắt đầu"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_status
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_vat
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_vat_2
+msgid "VAT %"
+msgstr "VAT %"
+
+#. module: vnitpro_project
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_vat_cost
+#: model:ir.model.fields,field_description:vnitpro_project.field_vnitpro_project_vat_cost_2
+msgid "VAT Cost"
+msgstr "Giá trị thuế"
+
+#. module: vnitpro_project
+#: code:addons/vnitpro_project/models/confirm_project.py:43
+#, python-format
+msgid "You have to fill all the form before confirm project!"
+msgstr "Bạn phải điền đầy đủ tất cả các thông tin trước khi duyệt dự án!"
+
+#. module: vnitpro_project
+#: model:ir.ui.view,arch_db:vnitpro_project.view_vnitpro_project_search
+msgid "project"
+msgstr "Dự án"
+
+#. module: vnitpro_project
+#: model:ir.model,name:vnitpro_project.model_vnitpro_base_attachment
+msgid "vnitpro.base.attachment"
+msgstr "vnitpro.base.attachment"
+
+#. module: vnitpro_project
+#: model:ir.model,name:vnitpro_project.model_vnitpro_project
+msgid "vnitpro.project"
+msgstr "vnitpro.project"
+
+#. module: vnitpro_project
+#: model:ir.model,name:vnitpro_project.model_vnitpro_project_permission
+msgid "vnitpro.project.permission"
+msgstr "vnitpro.project.permission"
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_procurement_report" name="Reports" 
+            parent="menu_vnitpro_procurement_root" sequence="60" groups="group_procurement"/>
+        <menuitem id="menu_gen_proecurement_list_report" name="Generate Procurement List Report" 
+            parent="menu_vnitpro_procurement_report" sequence="60" 
+            action="act_open_vnitpro_gen_procurement_list_report_view"/>
+          <menuitem id="menu_gen_proecurement_details_report" name="Generate Procurement Details Report"
+            parent="menu_vnitpro_procurement_report" sequence="60"
+            action="act_open_vnitpro_gen_procurement_details_report_view"/>
+    </data>
+</odoo>

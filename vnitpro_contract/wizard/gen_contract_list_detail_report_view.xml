@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_gen_contract_list_detail_report_form" model="ir.ui.view">
+            <field name="name">vnitpro.gen.contract.list.detail.report.form</field>
+            <field name="model">vnitpro.gen.contract.list.detail.report</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <h3 class="h3_title_report">
+                            Contract Detail Report
+                        </h3>
+                        <group col="4">
+                            <field name="contract_code" />
+                            <field name="contract_name" />
+                            <field name="contract_status" />
+                            <field name="bidder_a" />
+                            <field name="bidder_b" />
+                            <field name="contract_type_id" />
+                            <field name="create_user" />
+                        </group>
+                        <div class="btn-report">
+                            <button type="object" name="view_report" string="View Report" class="oe_highlight" />
+                        </div>
+                        <group col="4" string="Contract List" attrs="{'invisible':[('contract_ids', '=', False)]}">
+                            <field name="contract_ids" nolabel="1">
+                                <tree string="Contracts" create="false" edit="false" delete="false" limit="15">
+                                    <field name="code" />
+                                    <field name="name" />
+                                    <field name="bidder_a" />
+                                    <field name="bidder_b" />
+                                    <field name="cost_after_vat" />
+                                    <field name="contract_creator" />
+                                    <field name="create_date" />
+                                    <field name="status" />
+                                    <!--<field name="state" class="red_color" string=" "-->
+                                    <!--attrs="{'invisible':[('status', '!=', 'in_process')]}"/>-->
+                                    <button type="object" name="view_pdf" string="View PDF" class="oe_highlight" />
+                                    <button type="object" name="print_excel" string="Print Excel" class="oe_highlight" />
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_gen_contract_list_detail_report_view">
+            <field name="name">Generate Contract List Detail Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.gen.contract.list.detail.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_gen_procurement_details_report_form" model="ir.ui.view">
+            <field name="name">vnitpro.gen.procurement.details.report.form</field>
+            <field name="model">vnitpro.gen.procurement.details.report</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <h3 class="h3_title_report">
+                            Procurement Details Report
+                        </h3>
+                        <group col="4">
+                            <field name="from_date" />
+                            <field name="to_date" />
+                            <field name="procurement_code" />
+                            <field name="procurement_name" />
+                            <field name="create_user" />
+                        </group>
+                        <div class="btn-report">
+                            <button type="object" name="view_report" string="View Report" class="oe_highlight" />
+                        </div>
+                        <group col="4" attrs="{'invisible':[('procurement_ids', '=', False)]}">
+                            <div colspan="4" class="div_center">Procurement List</div>
+                            <field name="procurement_ids" nolabel="1">
+                                <tree string="Procurement" create="false" edit="false" delete="false" limit="15">
+                                    <field name="code" string="Procurement Code" />
+                                    <field name="name" />
+                                    <field name="vat_information" />
+                                    <field name="create_uid" />
+                                    <field name="create_date" />
+                                    <button type="object" name="view_pdf" string="View PDF" class="oe_highlight" />
+                                    <button type="object" name="print_excel" string="Print Excel" class="oe_highlight" />
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_gen_procurement_details_report_view">
+            <field name="name">Generate Procurement Details Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.gen.procurement.details.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+        </record>
+    </data>
+</odoo>

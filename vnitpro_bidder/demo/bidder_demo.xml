@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="bidder_vnitpro" model="vnitpro.bidder">
+            <field name="code">VNITPRO</field>
+            <field name="name">Công ty THHH giải pháp VNITPro</field>
+            <field name="phone_number">+(84) 024 35623456</field>
+            <field name="address">Tầng 3 nhà C số 125 đường Hoàng Văn Thái, quận Thanh Xuân, Hà Nội</field>
+            <field name="representative">Nguyễn Việt Dũng</field>
+            <field name="phone_number_representative">0915808169</field>
+            <field name="representative_position">Giám đốc</field>
+        </record>
+        <record id="bank_of_bidder_vnitpro_1" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_vnitpro"/>
+            <field name="account_number">2546548674780</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_1"/>
+            <field name="branch">Chi Nhánh Thanh Xuân</field>
+        </record>
+        <record id="bidder_1" model="vnitpro.bidder">
+            <field name="code">VOZ</field>
+            <field name="name">Tập Đoàn VozVina</field>
+            <field name="phone_number">04732515254</field>
+            <field name="address">VozBuilding 76 Cầu Giấy,Cầu Giấy, Hà Nội</field>
+            <field name="tax_code">4671248924654</field>
+            <field name="fax">04732515255</field>
+            <field name="representative">Nguyễn Đắc Bình</field>
+            <field name="phone_number_representative">0966174725</field>
+            <field name="representative_position">Kế Toán Trưởng</field>
+            <field name="representative_email">doan.chibinh@gmai.com</field>
+        </record>
+        <record id="bank_of_bidder_1_1" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_1"/>
+            <field name="account_number">2454654867478</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_1"/>
+            <field name="branch">Chi Nhánh Cầu Giấy</field>
+        </record>
+        <record id="bank_of_bidder_1_2" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_1"/>
+            <field name="account_number">245468258674780</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_4"/>
+            <field name="branch">Chi Nhánh Thanh Xuân</field>
+        </record>
+        <record id="bank_of_bidder_1_3" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_1"/>
+            <field name="account_number">24546548689657</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_2"/>
+            <field name="branch">Chi Nhánh Long Biên</field>
+        </record>
+        <record id="bidder_2" model="vnitpro.bidder">
+            <field name="code">PCHD</field>
+            <field name="name">Công ty Tư vấn Xây Dựng Điện 1</field>
+            <field name="phone_number">0302220389</field>
+            <field name="address">Số 33 Đại lộ Hồ Chí Minh - TP Hải Dương</field>
+            <field name="tax_code">0800356171</field>
+            <field name="fax">03202220611</field>
+            <field name="representative">Trần Văn Cường</field>
+            <field name="representative_position">Phó Giám đốc</field>
+        </record>
+        <record id="bank_of_bidder_2_1" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_2"/>
+            <field name="account_number">15478548674780</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_7"/>
+            <field name="branch">Chi Nhánh Tây Hồ</field>
+        </record>
+        <record id="bank_of_bidder_2_2" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_2"/>
+            <field name="account_number">45468258674780</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_2"/>
+            <field name="branch">Chi Nhánh Thanh Xuân</field>
+        </record>
+        <record id="bank_of_bidder_2_3" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_2"/>
+            <field name="account_number">95246548689657</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_5"/>
+            <field name="branch">Chi Nhánh Hoàn Kiếm</field>
+        </record>
+        <record id="bidder_3" model="vnitpro.bidder">
+            <field name="code">DAIAN</field>
+            <field name="name">Công Ty CP Thiết Bị Điện Đại An</field>
+            <field name="address">Số 349 Đường Điện Biên Phủ</field>
+            <field name="tax_code">0800282917</field>
+            <field name="representative">Phạm Đình Hùng</field>
+            <field name="representative_position">Giám đốc</field>
+        </record>
+        <record id="bank_of_bidder_3_1" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_2"/>
+            <field name="account_number">5482164784597</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_6"/>
+            <field name="branch">Chi Nhánh Hoàn Kiếm</field>
+        </record>
+        <record id="bank_of_bidder_3_3" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_2"/>
+            <field name="account_number">3229686265966</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_3"/>
+            <field name="branch">Chi Nhánh Hoàn Kiếm</field>
+        </record>
+        <record id="bidder_4" model="vnitpro.bidder">
+            <field name="code">BQLDHTD1</field>
+            <field name="name">Ban Quản lý Dự án Trường Đại học Thủ Dầu Một</field>
+            <field name="phone_number">+84 (0605) 822.058</field>
+            <field name="address">số 06 Trần Văn Ơn, phường Phú Hòa, Tp.Thủ Dầu Một</field>
+            <field name="tax_code">3702487157</field>
+            <field name="representative">Trần Hoàng Nam</field>
+            <field name="phone_number_representative">0934522555</field>
+            <field name="representative_position">Trưởng Ban Quản Lý Dự Án</field>
+            <field name="representative_email">duantruongdaihocthudaumot@gmail.com</field>
+        </record>
+        <record id="bank_of_bidder_4_1" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_4"/>
+            <field name="account_number">245867943215</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_6"/>
+            <field name="branch">Chi Nhánh Cầu Giấy</field>
+        </record>
+        <record id="bank_of_bidder_4_2" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_4"/>
+            <field name="account_number">946215465248</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_4"/>
+            <field name="branch">Chi Nhánh Thanh Xuân</field>
+        </record>
+        <record id="bank_of_bidder_4_3" model="vnitpro.bank.of.bidder">
+            <field name="bidder_id" ref="bidder_4"/>
+            <field name="account_number">987651324566</field>
+            <field name="bank_id" ref="vnitpro_bank.bank_1"/>
+            <field name="branch">Chi Nhánh Long Biên</field>
+        </record>
+    </data>
+</odoo>

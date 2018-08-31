@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>    	
+        <menuitem id="menu_vnitpro_land_purpose_of_use" name="Purpose Of Use" sequence="30" 
+                parent="menu_vnitpro_land_configure" action="vnitpro_purpose_of_use.act_open_purpose_of_use_view"/>
+    </data>
+</odoo>

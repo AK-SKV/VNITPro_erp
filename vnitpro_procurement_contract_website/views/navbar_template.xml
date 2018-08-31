@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <template id="website.layout_logo_show" inherit_id="website.layout"
+              customize_show="True" name="Show Logo">
+        <xpath expr="//header//a[hasclass('navbar-brand')]" position="replace">
+
+        </xpath>
+        <xpath expr="//header//button[hasclass('navbar-toggle')]" position="replace">
+
+        </xpath>
+        <xpath expr="//header//ul[@id='top_menu']" position="replace">
+
+        </xpath>
+    </template>
+    <template id="navbar_mega" inherit_id="website.layout">
+        <xpath expr="//div[hasclass('navbar')]" position="replace">
+            <div class="navbar navbar-default navbar-static-top">
+                <div class="bg_header">
+                    <div class="container">
+                        <a href="/web">
+                            <img src="/vnitpro_procurement_contract_website/static/src/img/logo.png" class="img-responsive img_bg_header"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>

@@ -1,0 +1,953 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_land
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-30 03:18+0000\n"
+"PO-Revision-Date: 2018-07-30 03:18+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/land_use_rights.py:90
+#: code:addons/vnitpro_land/models/owner_information.py:51
+#: code:addons/vnitpro_land/report/villa_list_report_pdf.py:63
+#, python-format
+msgid "%m-%d-%Y"
+msgstr "%d-%m-%Y"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:218
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:219
+#, python-format
+msgid "( Sign And Write Fullname )"
+msgstr "( Ký và ghi rõ họ tên )"
+
+#. module: vnitpro_land
+#: selection:vnitpro.gen.villa.list.report,land_type:0
+#: selection:vnitpro.land.group,land_type:0
+#: selection:vnitpro.land.use.rights,land_type:0
+msgid "1st Grade House"
+msgstr "Nhà cấp 1"
+
+#. module: vnitpro_land
+#: selection:vnitpro.gen.villa.list.report,land_type:0
+#: selection:vnitpro.land.group,land_type:0
+#: selection:vnitpro.land.use.rights,land_type:0
+msgid "2nd Grade House"
+msgstr "Nhà cấp 2"
+
+#. module: vnitpro_land
+#: selection:vnitpro.gen.villa.list.report,land_type:0
+#: selection:vnitpro.land.group,land_type:0
+#: selection:vnitpro.land.use.rights,land_type:0
+msgid "3th Grade House"
+msgstr "Nhà cấp 3"
+
+#. module: vnitpro_land
+#: selection:vnitpro.gen.villa.list.report,land_type:0
+#: selection:vnitpro.land.group,land_type:0
+#: selection:vnitpro.land.use.rights,land_type:0
+msgid "4th Grade House"
+msgstr "Nhà cấp 4"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+msgid "<i>Create User\n"
+"                                                <br/>(Sign And Write Fullname)\n"
+"                                            </i>"
+msgstr "<i>Người lập phiếu\n"
+"                                                <br/>(Ký và ghi rõ họ tên)\n"
+"                                            </i>"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_gen_villa_list_report_form
+msgid "<i>Leave blank on a field if you want to get all the options !</i>"
+msgstr "<i>Bỏ trống các trường nếu bạn muốn lấy tất cả các lựa chọn !</i>"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+msgid "<i>Numbered:</i>"
+msgstr "<i>Báo cáo số:</i>"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+msgid "<i>Unit Manager\n"
+"                                                <br/>(Sign And Write Fullname)\n"
+"                                            </i>"
+msgstr "<i>Thủ trưởng đơn vị\n"
+"                                                <br/>(Ký và ghi rõ họ tên)\n"
+"                                            </i>"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+msgid "<i>Villa Quantity:</i>"
+msgstr "<i>Số lượng biệt thự:</i>"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_owner_information_form
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "<span>m²</span>"
+msgstr "<span>m²</span>"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:75
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Address Detail"
+msgstr "Địa chỉ"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_address_number
+msgid "Address Number"
+msgstr "Số nhà"
+
+#. module: vnitpro_land
+#: model:res.groups,name:vnitpro_land.group_land_administrator
+msgid "Administrator"
+msgstr "Quản trị viên"
+
+#. module: vnitpro_land
+#: selection:vnitpro.gen.villa.list.report,land_type:0
+#: selection:vnitpro.land.group,land_type:0
+#: selection:vnitpro.land.use.rights,land_type:0
+msgid "Apartment"
+msgstr "Chung cư"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_area
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_area
+msgid "Area"
+msgstr "Khu vực"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_owner_information_form
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Area Information"
+msgstr "Thông tin diện tích"
+
+#. module: vnitpro_land
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_assess_category_view
+#: model:ir.model,name:vnitpro_land.model_vnitpro_assess_category
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_assess_category_id
+msgid "Assess Category"
+msgstr "Hạng mục đánh giá"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/assess_status.py:45
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_assess_status_view
+#: model:ir.model,name:vnitpro_land.model_vnitpro_assess_status
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_assess_status_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_base_attachment_assess_status_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_assess_status_ids
+#, python-format
+msgid "Assess Status"
+msgstr "Đánh giá tình trạng"
+
+#. module: vnitpro_land
+#: model:ir.model,name:vnitpro_land.model_vnitpro_assess_status_detail
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_assess_status_detail_ids
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_base_attachment_assess_status_detail_id
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_assess_status_form
+msgid "Assess Status Detail"
+msgstr "Chi tiết đánh giá tình trạng"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_attachment_ids
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_assess_status_form
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_owner_information_form
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Attachment Files"
+msgstr "Tệp tin đính kèm"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_avatar
+msgid "Avatar"
+msgstr "Ảnh đại diện"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_certificate_book_number
+msgid "Certificate Book Number"
+msgstr "Số vào sổ GCN"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:83
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_certification_date
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Certification Date"
+msgstr "Ngày cấp sổ đỏ"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Choose a city.."
+msgstr "Chọn thành phố.."
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Choose a district.."
+msgstr "Chọn quận/thành phố trực thuộc.."
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Choose a ward.."
+msgstr "Chọn phường/xã.."
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_city_id
+msgid "City"
+msgstr "Thành phố"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_gen_villa_list_report_form
+msgid "Close"
+msgstr "Đóng"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Code"
+msgstr "Mã"
+
+#. module: vnitpro_land
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_configure
+msgid "Configure"
+msgstr "Danh mục"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:78
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_construction_area
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_construction_area
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Construction Area"
+msgstr "Diện tích xây dựng"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_construction_year
+msgid "Construction Year"
+msgstr "Năm xây dựng"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/land_use_rights.py:101
+#: code:addons/vnitpro_land/models/owner_information.py:69
+#, python-format
+msgid "Construction area cannot be set lower than 0 \n"
+""
+msgstr "Diện tích xây dựng không được nhỏ hơn 0 \n"
+""
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_content_detail
+msgid "Content Detail"
+msgstr "Nội dung chi tiết"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_create_record_date
+msgid "Create Date"
+msgstr "Ngày tạo"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_create_profile_date
+msgid "Create Profile Date"
+msgstr "Ngày tạo hồ sơ"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/wizard/gen_villa_list_report.py:80
+#, python-format
+msgid "Create Report"
+msgstr "Tạo báo cáo"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:212
+#, python-format
+msgid "Create User"
+msgstr "Người lập phiếu"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_category_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_group_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_duration_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_origin_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_create_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_process_unit_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_category_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_group_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_duration_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_origin_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_create_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_process_unit_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:69
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Current Condition Of Villa Using Report"
+msgstr "Tổng hợp báo cáo hiện trạng sử dụng biệt thự"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:66
+#, python-format
+msgid "Current Condition Of Villa Using Report - %s"
+msgstr "Tổng hợp báo cáo hiện trạng sử dụng biệt thự - %s"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_date_of_certification
+msgid "Date Of Certification"
+msgstr "Ngày nhập sổ GCN"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_description_image
+msgid "Description Image"
+msgstr "Ảnh mô tả"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_detail_information
+msgid "Detail Information"
+msgstr "Thông tin chi tiết"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_report_vnitpro_land_report_gen_villa_list_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_report_vnitpro_land_report_villa_list_xlsx_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_category_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_group_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_duration_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_origin_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_display_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_process_unit_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_district_id
+msgid "District"
+msgstr "Quận/Thành phố trực thuộc"
+
+#. module: vnitpro_land
+#: model:res.groups,name:vnitpro_land.group_land_employee
+msgid "Employee"
+msgstr "Người lao động"
+
+#. module: vnitpro_land
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_land_extra_owner_view
+#: model:ir.model,name:vnitpro_land.model_vnitpro_land_extra_owner
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_extra_owner_id
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_extra_owner
+msgid "Extra Owner"
+msgstr "Người đồng sở hữu"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_owner_information_id
+msgid "Extra Owner With"
+msgstr "Đồng sở hữu với"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_floor_area
+msgid "Floor Area"
+msgstr "Diện tích sàn"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_floor_number
+msgid "Floor Number"
+msgstr "Số tầng"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/owner_information.py:71
+#, python-format
+msgid "Floor area cannot be set lower than 0 \n"
+""
+msgstr "Diện tích sàn không được nhỏ hơn 0 \n"
+""
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/land_use_rights.py:103
+#, python-format
+msgid "Floor number cannot be set lower than 0 \n"
+""
+msgstr "Số tầng không thể nhỏ hơn 0 \n"
+""
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_garden_area
+msgid "Garden Area"
+msgstr "Diện tích sân vườn"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/land_use_rights.py:105
+#: code:addons/vnitpro_land/models/owner_information.py:73
+#, python-format
+msgid "Garden area cannot be set lower than 0 \n"
+""
+msgstr "Diện tích sân vườn không thể nhỏ hơn 0 \n"
+""
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "General Information"
+msgstr "Thông tin chung"
+
+#. module: vnitpro_land
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_gen_villa_list_report_view
+msgid "Generate Villa List Report"
+msgstr "Tạo báo cáo danh sách biệt thự"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Group"
+msgstr "Nhóm"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:64
+#, python-format
+msgid "Hai Ba Trung District"
+msgstr "Quận Hai Bà Trưng"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_have_certification
+msgid "Have Certification ?"
+msgstr "Có sổ đỏ ?"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+msgid "Have No Certification"
+msgstr "Chủ sở hữu không có sổ đỏ"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:221
+#, python-format
+msgid "Have No Information Of Villa."
+msgstr "Không có thông tin biệt thự."
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+msgid "Have No Owner"
+msgstr "Không có chủ sở hữu"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:206
+#, python-format
+msgid "Have no owner"
+msgstr "Không có chủ sở hữu"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_house_type
+msgid "House Type"
+msgstr "Loại nhà ở"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_report_vnitpro_land_report_gen_villa_list_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_report_vnitpro_land_report_villa_list_xlsx_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_category_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_group_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_duration_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_origin_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_process_unit_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_increase_reason
+msgid "Increase Reason"
+msgstr "Lý do tăng"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Information Of Owner"
+msgstr "Thông tin chủ sở hữu"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_land_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_land_id
+msgid "Land"
+msgstr "Khu đất"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:77
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_land_area
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Land Area"
+msgstr "Diện tích khu đất"
+
+#. module: vnitpro_land
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_land_group_view
+#: model:ir.model,name:vnitpro_land.model_vnitpro_land_group
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_land_group_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_land_group_id
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_group
+msgid "Land Group"
+msgstr "Nhóm biệt thự"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_land_limit
+msgid "Land Limit"
+msgstr "Giới hạn khu đất"
+
+#. module: vnitpro_land
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_core
+msgid "Land Management"
+msgstr "Quản lý biệt thự"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_land_plots_number
+msgid "Land Plots Number"
+msgstr "Số thửa đất"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_land_type
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_group_land_type
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_land_type
+msgid "Land Type"
+msgstr "Loại"
+
+#. module: vnitpro_land
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_land_use_rights_view
+#: model:ir.model,name:vnitpro_land.model_vnitpro_land_use_rights
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_base_attachment_land_owner_information_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_base_attachment_land_use_rights_id
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_use_rights
+msgid "Land Use Rights"
+msgstr "Danh sách biệt thự"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/land_use_rights.py:99
+#, python-format
+msgid "Land area cannot be set equal or lower than 0 \n"
+""
+msgstr "Diện tích khu đất phải lớn hơn 0 \n"
+""
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_report_vnitpro_land_report_gen_villa_list___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_report_vnitpro_land_report_villa_list_xlsx___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_category___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_group___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_duration___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_origin___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights___last_update
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_process_unit___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_category_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_group_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_duration_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_origin_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_write_uid
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_process_unit_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_category_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_detail_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_group_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_duration_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_usage_origin_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_write_date
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_process_unit_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_land
+#: model:ir.module.category,name:vnitpro_land.module_category_land
+msgid "Manage Land"
+msgstr "Quản lý biệt thự"
+
+#. module: vnitpro_land
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_owner_information
+msgid "Manage Owner Information"
+msgstr "Quản lý chủ sở hữu"
+
+#. module: vnitpro_land
+#: model:res.groups,name:vnitpro_land.group_land_manager
+msgid "Manager"
+msgstr "Quản lý"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_map_number
+msgid "Map Number"
+msgstr "Số tờ bản đồ"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_name
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_name
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Name"
+msgstr "Tên"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:111
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:177
+#, python-format
+msgid "No"
+msgstr "Không có"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_pdf.py:45
+#, python-format
+msgid "No Phone"
+msgstr "Không có"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_extra_owner_note
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:70
+#, python-format
+msgid "Numbered:"
+msgstr "Báo cáo số:"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:81
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Own Area/ Area in Certificate"
+msgstr "Diện tích sở hữu/ trong sổ đỏ"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:87
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_own_time
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Own Time"
+msgstr "Thời gian sở hữu"
+
+#. module: vnitpro_land
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_land_owner_information_view
+#: model:ir.model,name:vnitpro_land.model_vnitpro_land_owner_information
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_owner
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Owner"
+msgstr "Chủ sở hữu"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:79
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_owner_information_ids
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Owner Information"
+msgstr "Thông tin chủ sở hữu"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_owner_name
+msgid "Owner Name"
+msgstr "Tên chủ sở hữu"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_land_id
+msgid "Owner Of Land"
+msgstr "Chủ sở hữu biệt thự"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:80
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_owner_phone
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Owner Phone"
+msgstr "Số điện thoại liên hệ"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:63
+#, python-format
+msgid "People's Committee of Ha Noi city"
+msgstr "UBND thành phố Hà Nội"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_gen_villa_list_report_form
+msgid "Print Excel"
+msgstr "In Excel"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:85
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_private_own
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Private Own"
+msgstr "Sở hữu riêng"
+
+#. module: vnitpro_land
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_process_unit_view
+#: model:ir.model,name:vnitpro_land.model_vnitpro_process_unit
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_process_unit
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_process_unit
+msgid "Process Unit"
+msgstr "Đơn vị thực hiện"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_assess_status_profile_name
+msgid "Profile Name"
+msgstr "Tên hồ sơ"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:86
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_public_own
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Public Own"
+msgstr "Sở hữu chung"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_purpose_of_use_id
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_purpose_of_use
+msgid "Purpose Of Use"
+msgstr "Mục đích sử dụng"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.report_header
+msgid "Quận Hai Bà Trưng"
+msgstr "Quận Hai Bà Trưng"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_rank
+msgid "Rank"
+msgstr "Cấp (hạng)"
+
+#. module: vnitpro_land
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_report
+msgid "Reports"
+msgstr "Báo cáo"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_street
+msgid "Street Number"
+msgstr "Tên đường/phố"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_survey_date
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Survey Date"
+msgstr "Ngày khảo sát"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:137
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:203
+#, python-format
+msgid "The owner have no certification"
+msgstr "Chủ sở hữu không có sổ đỏ"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_total_area_in_certification
+msgid "Total Area In Certification"
+msgstr "Tổng diện tích trong sổ đỏ"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_total_floor_area_to_use
+msgid "Total Floor Area To Use"
+msgstr "Tổng diện tích sàn sử dụng"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/owner_information.py:67
+#, python-format
+msgid "Total area in certification cannot be set equal or lower than 0 \n"
+""
+msgstr "Tổng diện tích trong sổ đỏ phải lớn hơn 0 \n"
+""
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/land_use_rights.py:107
+#: code:addons/vnitpro_land/models/owner_information.py:75
+#, python-format
+msgid "Total floor area to use cannot be set lower than 0"
+msgstr "Tổng diện tích sàn sử dụng không thể nhỏ hơn 0"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_land_use_rights_form
+msgid "Type"
+msgstr "Loại"
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.report_header
+msgid "UBND thành phố Hà Nội"
+msgstr "UBND thành phố Hà Nội"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:213
+#, python-format
+msgid "Unit Manager"
+msgstr "Thủ trưởng đơn vị"
+
+#. module: vnitpro_land
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_land_usage_duration_view
+#: model:ir.model,name:vnitpro_land.model_vnitpro_land_usage_duration
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_usage_duration_id
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_usage_duration_menu
+msgid "Usage Duration"
+msgstr "Thời gian sử dụng"
+
+#. module: vnitpro_land
+#: model:ir.actions.act_window,name:vnitpro_land.act_open_vnitpro_land_usage_origin_view
+#: model:ir.model,name:vnitpro_land.model_vnitpro_land_usage_origin
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_usage_origin_id
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_land_usage_origin_menu
+msgid "Usage Origin"
+msgstr "Nguồn gốc sử dụng"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_owner_information_using_area
+msgid "Using Area"
+msgstr "Diện tích sử dụng"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:82
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Using Status"
+msgstr "Tình trạng sử dụng"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/models/owner_information.py:78
+#, python-format
+msgid "Using area cannot be set equal or lower than 0 \n"
+""
+msgstr "Diện tích sử dụng không thể nhỏ hơn 0 \n"
+""
+
+#. module: vnitpro_land
+#: model:ir.ui.view,arch_db:vnitpro_land.view_vnitpro_gen_villa_list_report_form
+msgid "View Report"
+msgstr "Xem báo cáo"
+
+#. module: vnitpro_land
+#: selection:vnitpro.gen.villa.list.report,land_type:0
+#: selection:vnitpro.land.group,land_type:0
+#: selection:vnitpro.land.use.rights,land_type:0
+msgid "Villa"
+msgstr "Biệt thự"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:74
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Villa Code"
+msgstr "Mã biệt thự"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:76
+#: model:ir.ui.view,arch_db:vnitpro_land.report_gen_villa_list
+#, python-format
+msgid "Villa Group"
+msgstr "Nhóm biệt thự"
+
+#. module: vnitpro_land
+#: model:ir.actions.report,name:vnitpro_land.act_gen_villa_list_report
+#: model:ir.ui.menu,name:vnitpro_land.menu_vnitpro_villa_list_report
+msgid "Villa List Report"
+msgstr "Báo cáo danh sách biệt thự"
+
+#. module: vnitpro_land
+#: model:ir.actions.report,name:vnitpro_land.act_gen_villa_list_report_pdf
+msgid "Villa List Report PDF"
+msgstr "Xem báo cáo"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:71
+#, python-format
+msgid "Villa Quantity: %d"
+msgstr "Số lượng biệt thự: %d"
+
+#. module: vnitpro_land
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_gen_villa_list_report_ward_id
+#: model:ir.model.fields,field_description:vnitpro_land.field_vnitpro_land_use_rights_ward_id
+msgid "Ward"
+msgstr "Phường/Xã"
+
+#. module: vnitpro_land
+#: code:addons/vnitpro_land/report/villa_list_report_xlsx.py:40
+#, python-format
+msgid "d mmmm yyyy"
+msgstr "dd/mm/yyyy"
+
+#. module: vnitpro_land
+#: model:ir.model,name:vnitpro_land.model_report_vnitpro_land_report_gen_villa_list
+msgid "report.vnitpro_land.report_gen_villa_list"
+msgstr "report.vnitpro_land.report_gen_villa_list"
+
+#. module: vnitpro_land
+#: model:ir.model,name:vnitpro_land.model_report_vnitpro_land_report_villa_list_pdf
+msgid "report.vnitpro_land.report_villa_list_pdf"
+msgstr "report.vnitpro_land.report_villa_list_pdf"
+
+#. module: vnitpro_land
+#: model:ir.model,name:vnitpro_land.model_report_vnitpro_land_report_villa_list_xlsx
+msgid "report.vnitpro_land.report_villa_list_xlsx"
+msgstr "report.vnitpro_land.report_villa_list_xlsx"
+
+#. module: vnitpro_land
+#: model:ir.model,name:vnitpro_land.model_report_vnitpro_villa_report_gen_villa_list
+msgid "report.vnitpro_villa.report_gen_villa_list"
+msgstr "report.vnitpro_villa.report_gen_villa_list"
+
+#. module: vnitpro_land
+#: model:ir.model,name:vnitpro_land.model_vnitpro_base_attachment
+msgid "vnitpro.base.attachment"
+msgstr "vnitpro.base.attachment"
+
+#. module: vnitpro_land
+#: model:ir.model,name:vnitpro_land.model_vnitpro_gen_villa_list_report
+msgid "vnitpro.gen.villa.list.report"
+msgstr "vnitpro.gen.villa.list.report"
+
+#. module: vnitpro_land
+#: model:ir.model,name:vnitpro_land.model_vnitpro_purpose_of_use
+msgid "vnitpro.purpose.of.use"
+msgstr "vnitpro.purpose.of.use"
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="procurement_formality_1" model="vnitpro.procurement.formality">
+            <field name="code">CT</field>
+            <field name="name">Cạnh tranh</field>
+        </record>
+        <record id="procurement_formality_2" model="vnitpro.procurement.formality">
+            <field name="code">DB</field>
+            <field name="name">Đặc biệt</field>
+        </record>
+        <record id="procurement_formality_3" model="vnitpro.procurement.formality">
+            <field name="code">QT</field>
+            <field name="name">Quốc tế</field>
+        </record>
+        <record id="procurement_formality_4" model="vnitpro.procurement.formality">
+            <field name="code">TN</field>
+            <field name="name">Trong nước</field>
+        </record>
+        <record id="procurement_formality_5" model="vnitpro.procurement.formality">
+            <field name="code">DTRR</field>
+            <field name="name">Đầu thầu rộng rãi</field>
+        </record>
+        <record id="procurement_formality_6" model="vnitpro.procurement.formality">
+            <field name="code">DTHC</field>
+            <field name="name">Đấu thầu hạn chế</field>
+        </record>
+        <record id="procurement_formality_7" model="vnitpro.procurement.formality">
+            <field name="code">CDT</field>
+            <field name="name">Chỉ định thầu</field>
+        </record>
+        <record id="procurement_formality_8" model="vnitpro.procurement.formality">
+            <field name="code">MSTT</field>
+            <field name="name">Mua sắm trực tiếp</field>
+        </record>
+        <record id="procurement_formality_9" model="vnitpro.procurement.formality">
+            <field name="code">CHCT</field>
+            <field name="name">Chào hàng cạnh tranh</field>
+        </record>
+        <record id="procurement_formality_10" model="vnitpro.procurement.formality">
+            <field name="code">TTH</field>
+            <field name="name">Tự thực hiện</field>
+        </record>
+    </data>
+</odoo>

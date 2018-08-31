@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="asset_type_1" model="vnitpro.asset.type">
+            <field name="code">XAY_DUNG</field>
+            <field name="name">Xây dựng</field>
+            <field name="description">Xây dựng</field>
+        </record>
+        <record id="asset_type_2" model="vnitpro.asset.type">
+            <field name="code">THIET_BI</field>
+            <field name="name">Thiết bị</field>
+            <field name="description">Thiết bị</field>
+        </record>
+        <record id="asset_type_3" model="vnitpro.asset.type">
+            <field name="code">TSCD</field>
+            <field name="name">Tài sản cố định</field>
+            <field name="description">Đây là các tư liệu sản xuất</field>
+        </record>
+        <record id="asset_type_4" model="vnitpro.asset.type">
+            <field name="code">TSLD</field>
+            <field name="name">Tài sản lưu động</field>
+            <field name="description">Là đối tượng lao động chỉ dùng cho một chu kỳ sản xuất</field>
+        </record>
+        <record id="asset_type_5" model="vnitpro.asset.type">
+            <field name="code">TSHH</field>
+            <field name="name">Tài sản hữu hình</field>
+            <field name="description">Bao gồm những vật (có những điều kiện nhất định) tiền và giấy tờ có giá (ngôn ngữ luật học)</field>
+        </record>
+        <record id="asset_type_6" model="vnitpro.asset.type">
+            <field name="code">TCVH</field>
+            <field name="name">Tài sản vô hình</field>
+            <field name="description">là những thứ không thể dùng giác quan để thấy được và không thể dùng đại lương để tính. Nhưng trong quá trình chuyển giao có thẻ quy ra tiền, như những quyền tài sản</field>
+        </record>
+    </data>
+</odoo>

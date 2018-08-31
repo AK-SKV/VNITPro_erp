@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_all_contract_tree" model="ir.ui.view">
+            <field name="name">vnitpro.all.contract.tree</field>
+            <field name="model">vnitpro.contract</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Contract" name="contract">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="contract_kind"/>
+                    <field name="bidder_a"/>
+                    <field name="bidder_b"/>
+                    <field name="contract_creator"/>
+                    <field name="create_date"/>
+                    <field name="status"/>
+                    <field name="state" class="red_color" string=" "
+                           attrs="{'invisible':[('status', '=', 'pending')]}"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_all_contract_form" model="ir.ui.view">
+            <field name="name">vnitpro.contract.form</field>
+            <field name="model">vnitpro.contract</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Contract" duplicate="0">
+                    <header>
+                        <button string="On Hold" type="object" name="on_hold"
+                                confirm="Are you sure to on hold this contract?" class="oe_highlight"
+                                attrs="{'invisible': [('status','!=','in_process')]}"/>
+                        <button string="Cancel" type="object" name="cancel"
+                                confirm="Are you sure to cancel this contract?" class="oe_highlight"
+                                attrs="{'invisible': [('status','!=','in_process'),('status','!=','on_hold')]}"/>
+                        <button string="Process" type="object" name="process" class="oe_highlight"
+                                attrs="{'invisible': [('status','!=','pending'),('status','!=','cancel'),('status','!=','on_hold')]}"/>
+                        <field name="status" widget="statusbar" readonly="1" attrs="{'invisible':[('id', '&lt;', 1)]}"
+                               statusbar_visible="pending,in_process,asset_increase,acceptance_payment,liquidated_finalized"/>
+                    </header>
+                    <sheet>
+                        <notebook>
+                            <page colspan="4" string="Contract Information">
+                                <group colspan="4" col="16" name="contract_information">
+                                    <div colspan="16" class="div_center">Contract Information</div>
+                                    <field name="contract_kind" colspan="8" widget="radio"
+                                           options="{'horizontal': true}"/>
+                                    <field name="bidder_a" colspan="16"
+                                           attrs="{'readonly': [('contract_kind', '=', 'output')]}" force_save="1"/>
+                                    <field name="bidder_b" colspan="16"
+                                           attrs="{'readonly': [('contract_kind', '=', 'input')]}" force_save="1"/>
+                                    <field name="code" colspan="8"/>
+                                    <field name="contract_type_id" colspan="8"/>
+                                    <field name="name" colspan="16"/>
+                                    <field name="contract_date" colspan="8"/>
+                                    <field name="contract_creator" colspan="8"/>
+                                    <field name="contract_formality_id" colspan="8"/>
+                                    <field name="guarantee" colspan="8"/>
+                                    <field name="start_date" colspan="8"/>
+                                    <field name="duration" colspan="4"/>
+                                    <field name="unit" colspan="4" nolabel="1"
+                                           style="width:42%%;padding:2.5px 4px;margin:3px 36px 2px 8px;"/>
+                                    <field name="package_price" colspan="8"/>
+                                    <field name="adjusted_price" colspan="8"/>
+                                    <field name="permanent_price" colspan="8"/>
+                                    <field name="vat" colspan="8"/>
+                                    <field name="cost_before_vat" colspan="8"/>
+                                    <field name="vat_cost" colspan="8"/>
+                                    <field name="cost_after_vat" colspan="8"/>
+                                    <field name="currency" colspan="8"/>
+                                    <field name="funds" colspan="8"/>
+                                    <field name="purpose_of_use" colspan="8" widget="many2many_tags"/>
+                                    <field name="real_cost_before_vat" colspan="16" style="width:50%%"/>
+                                    <field name="real_cost_after_vat" colspan="16" style="width:50%%"/>
+                                    <field name="guarantee_unit" colspan="16" style="width:80%%"/>
+                                    <field name="guarantee_start_date" colspan="8"/>
+                                    <field name="guarantee_end_date" colspan="8"/>
+                                    <field name="guarantee_price" colspan="16" style="width:50%%"/>
+                                    <field name="note" colspan="16" style="width:80%%"/>
+                                </group>
+                                <group colspan="4" name="des">
+                                    <div colspan="16" class="div_attachfile">Attachment Files</div>
+                                    <field name="file_attachment_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="user_id" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Guarantee Contract" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group colspan="4">
+                                    <div colspan="4" class="div_center">Guarantee Contract List</div>
+                                    <field name="guarantee_ids" nolabel="1">
+                                        <tree>
+                                            <field name="guarantee_type"/>
+                                            <field name="guarantee_unit"/>
+                                            <field name="status" force_save="1"/>
+                                            <field name="create_date" force_save="1"/>
+                                            <field name="start_date"/>
+                                            <field name="end_date"/>
+                                            <field name="price"/>
+                                            <field name="file_attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Contract Category" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group colspan="4">
+                                    <div colspan="4" class="div_center">Contract Category List</div>
+                                    <field name="contract_category_ids" nolabel="1">
+                                        <tree>
+                                            <field name="category"/>
+                                            <field name="quantity"/>
+                                            <field name="unit_price"/>
+                                            <field name="vat"/>
+                                            <field name="cost_after_vat"/>
+                                            <field name="warranty_period"/>
+                                            <field name="file_attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Payment Term" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Payment Term List</div>
+                                    <field name="payment_term_ids" nolabel="1">
+                                        <tree>
+                                            <field name="payment_name"/>
+                                            <field name="payment_price"/>
+                                            <field name="start_date"/>
+                                            <field name="end_date"/>
+                                            <field name="file_attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Contract Sub" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Contract Sub List</div>
+                                    <field name="contract_sub_ids" nolabel="1">
+                                        <tree>
+                                            <field name="sub_code"/>
+                                            <field name="sub_type"/>
+                                            <field name="price_before_vat"/>
+                                            <field name="vat"/>
+                                            <field name="price_after_vat"/>
+                                            <field name="created_date"/>
+                                            <field name="file_attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Asset Increase" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Asset Increase List</div>
+                                    <field name="asset_increase_ids" nolabel="1"
+                                           attrs="{'readonly': ['|',('status','=','liquidated_finalized'),('status','=','acceptance_payment')]}">
+                                        <tree>
+                                            <field name="asset_type"/>
+                                            <field name="price"/>
+                                            <field name="bidder_a" context="{'default_contract_id':active_id}"/>
+                                            <field name="bidder_b" context="{'default_contract_id':active_id}"/>
+                                            <field name="increase_date"/>
+                                        </tree>
+                                    </field>
+                                    <div colspan="4" class="center">
+                                        <button string="Asset Increase Confirm" type="object" name="asset_increase"
+                                                confirm="Are you sure to asset increase this contract?"
+                                                class="oe_highlight oe_right"
+                                                attrs="{'invisible': [('status','!=','in_process')]}"/>
+                                    </div>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Acceptance - Payment" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Acceptance - Payment List</div>
+                                    <field name="acceptance_payment_ids" nolabel="1"
+                                           attrs="{'readonly': [('status','=','liquidated_finalized')]}">
+                                        <tree>
+                                            <field name="acceptance_document_number"/>
+                                            <field name="acceptance_document_name"/>
+                                            <field name="acceptance_information"/>
+                                            <field name="payment_number"/>
+                                            <field name="payment_employee"/>
+                                            <field name="payment_information"/>
+                                            <field name="create_uid"/>
+                                            <!-- <field name="file_attachment_ids"/> -->
+                                        </tree>
+                                    </field>
+                                    <div colspan="4" class="center">
+                                        <button string="Acceptance - Payment Confirm" type="object"
+                                                name="acceptance_payment"
+                                                confirm="Are you sure to acceptance payment this contract?"
+                                                class="oe_highlight oe_right"
+                                                attrs="{'invisible': [('status','!=','asset_increase')]}"/>
+                                    </div>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Liquidation" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group col="4">
+                                    <div colspan="4" class="div_center">Liquidation</div>
+                                    <field name="information" colspan="4" readonly="1"/>
+                                    <field name="liquidation_number" colspan="2" readonly="1"/>
+                                    <field name="liquidation_date" colspan="2" readonly="1"/>
+                                    <field name="total_contract_price"/>
+                                    <field name="currency_liquidation" style="width:50%%"/>
+                                    <field name="total_paid_contract_price" colspan="4" style="width:50%%"/>
+                                    <field name="remain_contract_price" colspan="4" style="width:50%%"/>
+                                    <div colspan="4" class="center">
+                                        <button string="Liquidation Confirm" type="object"
+                                                name="liquidated_finalized" class="oe_highlight"
+                                                confirm="Are you sure to liquidation this contract?"
+                                                attrs="{'invisible': [('status','!=','acceptance_payment')]}"/>&#x2063;&#x2063;&#x2063;
+                                        <button string="Edit" type="object" name="edit_liquidation"
+                                                class="oe_highlight"
+                                                attrs="{'invisible': [('status','!=','acceptance_payment')]}"/>&#x2063;&#x2063;&#x2063;
+                                        <button string="Delete" type="object" name="delete_liquidation"
+                                                attrs="{'invisible': [('status','!=','acceptance_payment')]}"
+                                                class="oe_highlight" confirm="Are you sure to delete?"/>
+                                    </div>
+                                </group>
+                                <group colspan="4" name="des" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                    <div colspan="4" class="div_attachfile">Attachment Files</div>
+                                    <field name="file_attachment_liquidation_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="user_id" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Contract Permissions" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Contract Permissions</div>
+                                    <field name="permission_detail_ids" nolabel="1">
+                                        <tree editable="top" limit="30">
+                                            <field name="employee_id" options="{'no_open':True}"/>
+                                            <field name="user_id" invisible="1"/>
+                                            <field name="perm_read"/>
+                                            <field name="perm_write"/>
+                                            <field name="perm_unlink"/>
+                                        </tree>
+                                        <form>
+                                            <sheet>
+                                                <group col="4">
+                                                    <field name="employee_id" widget="selection"/>
+                                                    <field name="perm_read"/>
+                                                    <field name="perm_write"/>
+                                                    <field name="perm_unlink"/>
+                                                    <field name="user_id" invisible="1"/>
+                                                </group>
+                                            </sheet>
+                                        </form>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_contract_search" model="ir.ui.view">
+            <field name="name">vnitpro.contract.search</field>
+            <field name="model">vnitpro.contract</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Contract">
+                    <field name="contract_dashboard"/>
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="cost_after_vat"/>
+                    <field name="contract_creator"/>
+                    <field name="status"/>
+                    <filter string='Input Contract' name="input_contract" domain="[('contract_kind', '=', 'input')]"/>
+                    <filter string='Output Contract' name="output_contract"
+                            domain="[('contract_kind', '=', 'output')]"/>
+                    <filter string='Pending Contract' name="contract_pending" domain="[('status', '=', 'pending')]"/>
+                    <filter string="In Process Contract" name="contract_in_process"
+                            domain="[('status', '=', 'in_process')]"/>
+                    <filter string="Asset Increase" name="contract_asset_increase"
+                            domain="[('status', '=', 'asset_increase')]"/>
+                    <filter string="Acceptance - Payment" name="contract_acceptance_payment"
+                            domain="[('status', '=', 'acceptance_payment')]"/>
+                    <filter string="Liquidated - Finalized" name="contract_liquidated_finalized"
+                            domain="[('status', '=', 'liquidated_finalized')]"/>
+                    <filter string="On Hold Contract" name="contract_on_hold" domain="[('status', '=', 'on_hold')]"/>
+                    <filter string="Cancel Contract" name="contract_cancel" domain="[('status', '=', 'cancel')]"/>
+                    <filter string="Late Contract" name="late_contract"
+                            domain="[('expire_date','&lt;',context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter string="Today Contract" name="today_contract"
+                            domain="[('expire_date','=',context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter string="Soon Expire Contract" name="soon_expire_contract"
+                            domain="[('expire_date','&gt;',context_today().strftime('%Y-%m-%d')),('day_left','=',1)]"/>
+                    <filter string="During Contract" name="during_contract"
+                            domain="[('expire_date','&gt;',context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter string="Guarantee Contract" name="guarantee_contract"
+                            domain="[('warning', '=', 'guarantee_expire'), ('status', '=', 'in_process')]"/>
+                    <filter string="Warranty Contract" name="warranty_contract"
+                            domain="[('warning', '=', 'warranty_expire'), ('status', '=', 'in_process')]"/>
+                    <filter string="Guaratee Warranty Contract" name="guarantee_warranty_contract"
+                            domain="[('warning', '=', 'guarantee_warranty_expire'), ('status', '=', 'in_process')]"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_contract_view">
+            <field name="name">Contract</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_contract_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_contract_tree_view">
+            <field name="act_window_id" ref="act_open_vnitpro_contract_view"/>
+            <field name="sequence" eval="8"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_vnitpro_all_contract_tree"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_contract_form_view">
+            <field name="act_window_id" ref="act_open_vnitpro_contract_view"/>
+            <field name="sequence" eval="8"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_all_contract_form"/>
+        </record>
+
+        <record id="view_vnitpro_contract_form" model="ir.ui.view">
+            <field name="name">vnitpro.contract.form</field>
+            <field name="model">vnitpro.contract</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Contract" duplicate="0">
+                    <header>
+                        <button string="On Hold" type="object" name="on_hold"
+                                confirm="Are you sure to on hold this contract?" class="oe_highlight"
+                                attrs="{'invisible': [('status','!=','in_process')]}"/>
+                        <button string="Cancel" type="object" name="cancel"
+                                confirm="Are you sure to cancel this contract?" class="oe_highlight"
+                                attrs="{'invisible': [('status','!=','in_process'),('status','!=','on_hold')]}"/>
+                        <button string="Process" type="object" name="process" class="oe_highlight"
+                                attrs="{'invisible': [('status','!=','pending'),('status','!=','cancel'),('status','!=','on_hold')]}"/>
+                        <field name="status" widget="statusbar" readonly="1" attrs="{'invisible':[('id', '&lt;', 1)]}"
+                               statusbar_visible="pending,in_process,asset_increase,acceptance_payment,liquidated_finalized"/>
+                    </header>
+                    <sheet>
+                        <notebook>
+                            <page colspan="4" string="Contract Information">
+                                <group colspan="4" col="16" name="contract_information">
+                                    <div colspan="16" class="div_center">Contract Information</div>
+                                    <field name="bidder_a" colspan="16"
+                                           attrs="{'readonly': [('contract_kind', '=', 'output')]}" force_save="1"/>
+                                    <field name="bidder_b" colspan="16"
+                                           attrs="{'readonly': [('contract_kind', '=', 'input')]}" force_save="1"/>
+                                    <field name="code" colspan="8"/>
+                                    <field name="contract_type_id" colspan="8"/>
+                                    <field name="name" colspan="16"/>
+                                    <field name="contract_date" colspan="8"/>
+                                    <field name="contract_creator" colspan="8"/>
+                                    <field name="contract_formality_id" colspan="8"/>
+                                    <field name="guarantee" colspan="8"/>
+                                    <field name="start_date" colspan="8"/>
+                                    <field name="duration" colspan="4"/>
+                                    <field name="unit" colspan="4" nolabel="1"
+                                           style="width:42%%;padding:2.5px 4px;margin:3px 36px 2px 8px;"/>
+                                    <field name="package_price" colspan="8"/>
+                                    <field name="adjusted_price" colspan="8"/>
+                                    <field name="permanent_price" colspan="8"/>
+                                    <field name="vat" colspan="8"/>
+                                    <field name="cost_before_vat" colspan="8"/>
+                                    <field name="vat_cost" colspan="8"/>
+                                    <field name="cost_after_vat" colspan="8"/>
+                                    <field name="currency" colspan="8"/>
+                                    <field name="funds" colspan="8"/>
+                                    <field name="purpose_of_use" colspan="8" widget="many2many_tags"/>
+                                    <field name="real_cost_before_vat" colspan="16" style="width:50%%"/>
+                                    <field name="real_cost_after_vat" colspan="16" style="width:50%%"/>
+                                    <field name="guarantee_unit" colspan="16" style="width:80%%"/>
+                                    <field name="guarantee_start_date" colspan="8"/>
+                                    <field name="guarantee_end_date" colspan="8"/>
+                                    <field name="guarantee_price" colspan="16" style="width:50%%"/>
+                                    <field name="note" colspan="16" style="width:80%%"/>
+                                </group>
+                                <group colspan="4" name="des">
+                                    <div colspan="16" class="div_attachfile">Attachment Files</div>
+                                    <field name="file_attachment_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="user_id" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Guarantee Contract" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group colspan="4">
+                                    <div colspan="4" class="div_center">Guarantee Contract List</div>
+                                    <field name="guarantee_ids" nolabel="1">
+                                        <tree>
+                                            <field name="guarantee_type"/>
+                                            <field name="guarantee_unit"/>
+                                            <field name="status" force_save="1"/>
+                                            <field name="create_date" force_save="1"/>
+                                            <field name="start_date"/>
+                                            <field name="end_date"/>
+                                            <field name="price"/>
+                                            <field name="file_attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Contract Category" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group colspan="4">
+                                    <div colspan="4" class="div_center">Contract Category List</div>
+                                    <field name="contract_category_ids" nolabel="1">
+                                        <tree>
+                                            <field name="category"/>
+                                            <field name="quantity"/>
+                                            <field name="unit_price"/>
+                                            <field name="vat"/>
+                                            <field name="cost_after_vat"/>
+                                            <field name="warranty_period"/>
+                                            <field name="file_attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Payment Term" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Payment Term List</div>
+                                    <field name="payment_term_ids" nolabel="1">
+                                        <tree>
+                                            <field name="payment_name"/>
+                                            <field name="payment_price"/>
+                                            <field name="start_date"/>
+                                            <field name="end_date"/>
+                                            <field name="file_attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Contract Sub" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Contract Sub List</div>
+                                    <field name="contract_sub_ids" nolabel="1">
+                                        <tree>
+                                            <field name="sub_code"/>
+                                            <field name="sub_type"/>
+                                            <field name="price_before_vat"/>
+                                            <field name="vat"/>
+                                            <field name="price_after_vat"/>
+                                            <field name="created_date"/>
+                                            <field name="file_attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Asset Increase" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Asset Increase List</div>
+                                    <field name="asset_increase_ids" nolabel="1"
+                                           attrs="{'readonly': ['|',('status','=','liquidated_finalized'),('status','=','acceptance_payment')]}">
+                                        <tree>
+                                            <field name="asset_type"/>
+                                            <field name="price"/>
+                                            <field name="bidder_a" context="{'default_contract_id':active_id}"/>
+                                            <field name="bidder_b" context="{'default_contract_id':active_id}"/>
+                                            <field name="increase_date"/>
+                                        </tree>
+                                    </field>
+                                    <div colspan="4" class="center">
+                                        <button string="Asset Increase Confirm" type="object" name="asset_increase"
+                                                confirm="Are you sure to asset increase this contract?"
+                                                class="oe_highlight oe_right"
+                                                attrs="{'invisible': [('status','!=','in_process')]}"/>
+                                    </div>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Acceptance - Payment" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Acceptance - Payment List</div>
+                                    <field name="acceptance_payment_ids" nolabel="1"
+                                           attrs="{'readonly': [('status','=','liquidated_finalized')]}">
+                                        <tree>
+                                            <field name="acceptance_document_number"/>
+                                            <field name="acceptance_document_name"/>
+                                            <field name="acceptance_information"/>
+                                            <field name="payment_number"/>
+                                            <field name="payment_employee"/>
+                                            <field name="payment_information"/>
+                                            <field name="create_uid"/>
+                                            <!-- <field name="file_attachment_ids"/> -->
+                                        </tree>
+                                    </field>
+                                    <div colspan="4" class="center">
+                                        <button string="Acceptance - Payment Confirm" type="object"
+                                                name="acceptance_payment"
+                                                confirm="Are you sure to acceptance payment this contract?"
+                                                class="oe_highlight oe_right"
+                                                attrs="{'invisible': [('status','!=','asset_increase')]}"/>
+                                    </div>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Liquidation" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group col="4">
+                                    <div colspan="4" class="div_center">Liquidation</div>
+                                    <field name="information" colspan="4" readonly="1"/>
+                                    <field name="liquidation_number" colspan="2" readonly="1"/>
+                                    <field name="liquidation_date" colspan="2" readonly="1"/>
+                                    <field name="total_contract_price"/>
+                                    <field name="currency_liquidation" style="width:50%%"/>
+                                    <field name="total_paid_contract_price" colspan="4" style="width:50%%"/>
+                                    <field name="remain_contract_price" colspan="4" style="width:50%%"/>
+                                    <div colspan="4" class="center">
+                                        <button string="Liquidation Confirm" type="object"
+                                                name="liquidated_finalized" class="oe_highlight"
+                                                confirm="Are you sure to liquidation this contract?"
+                                                attrs="{'invisible': [('status','!=','acceptance_payment')]}"/>&#x2063;&#x2063;&#x2063;
+                                        <button string="Edit" type="object" name="edit_liquidation"
+                                                class="oe_highlight"
+                                                attrs="{'invisible': [('status','!=','acceptance_payment')]}"/>&#x2063;&#x2063;&#x2063;
+                                        <button string="Delete" type="object" name="delete_liquidation"
+                                                attrs="{'invisible': [('status','!=','acceptance_payment')]}"
+                                                class="oe_highlight" confirm="Are you sure to delete?"/>
+                                    </div>
+                                </group>
+                                <group colspan="4" name="des" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                    <div colspan="4" class="div_attachfile">Attachment Files</div>
+                                    <field name="file_attachment_liquidation_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="user_id" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Contract Permissions" attrs="{'invisible':[('id', '&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Contract Permissions</div>
+                                    <field name="permission_detail_ids" nolabel="1">
+                                        <tree editable="top" limit="30">
+                                            <field name="employee_id" options="{'no_open':True}"/>
+                                            <field name="user_id" invisible="1"/>
+                                            <field name="perm_read"/>
+                                            <field name="perm_write"/>
+                                            <field name="perm_unlink"/>
+                                        </tree>
+                                        <form>
+                                            <sheet>
+                                                <group col="4">
+                                                    <field name="employee_id" widget="selection"/>
+                                                    <field name="perm_read"/>
+                                                    <field name="perm_write"/>
+                                                    <field name="perm_unlink"/>
+                                                    <field name="user_id" invisible="1"/>
+                                                </group>
+                                            </sheet>
+                                        </form>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                        <field name="contract_kind" invisible="1"/>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_contract_tree" model="ir.ui.view">
+            <field name="name">vnitpro.contract.tree</field>
+            <field name="model">vnitpro.contract</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Contract" name="contract">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="bidder_a"/>
+                    <field name="bidder_b"/>
+                    <field name="contract_creator"/>
+                    <field name="create_date"/>
+                    <field name="status"/>
+                    <field name="state" class="red_color" string=" "
+                           attrs="{'invisible':[('status', '=', 'pending')]}"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_input_contract_view">
+            <field name="name">Input Contract</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_contract_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{
+                'default_contract_kind':'input',
+                'search_default_input_contract':1,
+                }
+            </field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_input_contract_tree_view">
+            <field name="act_window_id" ref="act_open_vnitpro_input_contract_view"/>
+            <field name="sequence" eval="8"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_vnitpro_contract_tree"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_input_contract_form_view">
+            <field name="act_window_id" ref="act_open_vnitpro_input_contract_view"/>
+            <field name="sequence" eval="8"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_contract_form"/>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_output_contract_view">
+            <field name="name">Output Contract</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_contract_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{
+                'default_contract_kind':'output',
+                'search_default_output_contract':1,
+                }
+            </field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_output_contract_tree_view">
+            <field name="act_window_id" ref="act_open_vnitpro_output_contract_view"/>
+            <field name="sequence" eval="8"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_vnitpro_contract_tree"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_output_contract_form_view">
+            <field name="act_window_id" ref="act_open_vnitpro_output_contract_view"/>
+            <field name="sequence" eval="8"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_contract_form"/>
+        </record>
+    </data>
+</odoo>

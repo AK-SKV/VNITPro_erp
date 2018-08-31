@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="bank_1" model="vnitpro.bank">
+            <field name="code">ACB</field>
+            <field name="name">Ngân hàng TMCP Á Châu</field>
+        </record>
+        <record id="bank_2" model="vnitpro.bank">
+            <field name="code">AGB</field>
+            <field name="name">Ngân hàng Nông nghiệp và Phát triển nông thôn</field>
+        </record>
+        <record id="bank_3" model="vnitpro.bank">
+            <field name="code">BIDV</field>
+            <field name="name">Ngân Hàng Đầu Tư và Phát Triển Việt Nam</field>
+        </record>
+        <record id="bank_4" model="vnitpro.bank">
+            <field name="code">CTG</field>
+            <field name="name">Ngân Hàng Thương Mạ Cổ Phần Công Thương Việt Nam</field>
+        </record>
+        <record id="bank_5" model="vnitpro.bank">
+            <field name="code">MB</field>
+            <field name="name">Ngân Hàng TMCP Quân Đội</field>
+        </record>
+        <record id="bank_6" model="vnitpro.bank">
+            <field name="code">SCB</field>
+            <field name="name">Ngân Hàng TMCP Sacombank</field>
+        </record>
+        <record id="bank_7" model="vnitpro.bank">
+            <field name="code">TCB</field>
+            <field name="name">Ngân Hàng TMCP Kỹ Thương Việt Nam (Techcombank)</field>
+        </record>
+        <record id="bank_8" model="vnitpro.bank">
+            <field name="code">VCB</field>
+            <field name="name">Ngân Hàng Ngoại Thương Việt Nam</field>
+        </record>
+        <record id="bank_9" model="vnitpro.bank">
+            <field name="code">VPB</field>
+            <field name="name">Ngân hàng Việt Nam Thịnh Vượng</field>
+        </record>
+    </data>
+</odoo>

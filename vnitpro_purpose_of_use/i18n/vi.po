@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_purpose_of_use
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-29 03:32+0000\n"
+"PO-Revision-Date: 2018-05-29 03:32+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_purpose_of_use
+#: model:ir.model.fields,field_description:vnitpro_purpose_of_use.field_vnitpro_purpose_of_use_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_purpose_of_use
+#: model:ir.model.fields,field_description:vnitpro_purpose_of_use.field_vnitpro_purpose_of_use_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_purpose_of_use
+#: model:ir.model.fields,field_description:vnitpro_purpose_of_use.field_vnitpro_purpose_of_use_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_purpose_of_use
+#: model:ir.model.fields,field_description:vnitpro_purpose_of_use.field_vnitpro_purpose_of_use_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_purpose_of_use
+#: model:ir.model.fields,field_description:vnitpro_purpose_of_use.field_vnitpro_purpose_of_use___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_purpose_of_use
+#: model:ir.model.fields,field_description:vnitpro_purpose_of_use.field_vnitpro_purpose_of_use_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_purpose_of_use
+#: model:ir.model.fields,field_description:vnitpro_purpose_of_use.field_vnitpro_purpose_of_use_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_purpose_of_use
+#: model:ir.actions.act_window,name:vnitpro_purpose_of_use.act_open_purpose_of_use_view
+#: model:ir.ui.menu,name:vnitpro_purpose_of_use.purpose_of_use_menu
+#: model:ir.ui.view,arch_db:vnitpro_purpose_of_use.view_purpose_of_use_form
+#: model:ir.ui.view,arch_db:vnitpro_purpose_of_use.view_purpose_of_use_search
+#: model:ir.ui.view,arch_db:vnitpro_purpose_of_use.view_purpose_of_use_tree
+msgid "Purpose of use"
+msgstr "Mục đích sử dụng"
+
+#. module: vnitpro_purpose_of_use
+#: model:ir.model,name:vnitpro_purpose_of_use.model_vnitpro_purpose_of_use
+msgid "vnitpro.purpose.of.use"
+msgstr "vnitpro.purpose.of.use"
+

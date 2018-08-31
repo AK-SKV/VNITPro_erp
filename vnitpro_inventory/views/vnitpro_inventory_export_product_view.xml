@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_inventory_export_product_tree" model="ir.ui.view">
+            <field name="name">vnitpro.inventory.export.product.tree</field>
+            <field name="model">vnitpro.inventory.export.product</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="export_card_number"/>
+                    <field name="sender_id"/>
+                    <field name="employee_sender_id"/>
+                    <field name="partners_id"/>
+
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_inventory_export_product_form" model="ir.ui.view">
+            <field name="name">vnitpro.inventory.export.product.form</field>
+            <field name="model">vnitpro.inventory.export.product</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4" name="main">
+                            <field name="export_formality"/>
+                            <field name="export_card_number"/>
+                            <field name="export_date"/>
+                            <field name="shift" widget="radio" options="{'horizontal': true}"/>
+                            <field name="sender_id" colspan="4"/>
+                            <field name="employee_sender_id" colspan="2"/>
+                            <field name="sender_position" colspan="2"/>
+                            <field name="partners_id" colspan="4"/>
+                            <field name="tranposter_id" colspan="4"/>
+                            <field name="car_number_id" colspan="2" options="{'no_create_edit':True,'no_create':True,'no_quick_create':True}"/>
+                            <field name="romooc_number_id" colspan="2" options="{'no_create_edit':True,'no_create':True,'no_quick_create':True}"/>
+                            <label string="Move Order"/>
+                            <div class="o_row">
+                                <field name="move_order"/>
+                                <field name="move_order_date"/>
+                            </div>
+                            <label string="Weighted Votes"/>
+                            <div class="o_row">
+                                <field name="weighted_votes"/>
+                                <field name="weighted_votes_date"/>
+                            </div>
+                            <field name="warehouse_export_id"/>
+                            <field name="stocker"/>
+                            <field name="warehouse_come_id"/>
+                        </group>
+                        <group col="4">
+                            <div class="div_content">Product Detail List</div>
+                            <field name="export_detail_ids" colspan="4" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="product_group_id"/>
+                                    <field name="product_id"/>
+                                    <field name="style"/>
+                                    <field name="present_quantity"/>
+                                    <field name="unit"/>
+                                    <field name="number_of_packaging"/>
+                                    <field name="lot_number"/>
+                                    <field name="note"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_inventory_export_product_search" model="ir.ui.view">
+            <field name="name">vnitpro.inventory.export.product.search</field>
+            <field name="model">vnitpro.inventory.export.product</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="export_card_number"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_inventory_export_product_view">
+            <field name="name">Export Product</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.inventory.export.product</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_inventory_export_product_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+    </data>
+</odoo>

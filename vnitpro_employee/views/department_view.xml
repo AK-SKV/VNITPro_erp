@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_department_kanban" model="ir.ui.view">
+            <field name="name">vnitpro.department.kanban</field>
+            <field name="model">vnitpro.department</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <kanban class="oe_background_grey o_kanban_dashboard o_emphasize_colors o_stock_kanban">
+                    <field name="color"/>                    
+                    <field name="count_employee"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="#{kanban_color(record.color.raw_value)}">
+                                <div>
+                                    <div t-attf-class="o_kanban_card_header">
+                                        <div class="o_kanban_card_header_title">
+                                            <div class="o_primary title_kanban">
+                                                <field name="name"/>
+                                            </div>
+                                            <div class="o_secondary">
+                                                <b>Code: </b><field class="o_secondary" name="code"/>
+                                            </div>
+                                        </div>
+                                        <div class="o_kanban_manage_button_section">
+                                            <a class="o_kanban_manage_toggle_button" href="#">
+                                                <i class="fa fa-ellipsis-v" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="container o_kanban_card_content">
+                                        <div class="row">
+                                            <div class="col-xs-6 o_kanban_primary_left">
+                                                <button class="btn btn-primary" name="get_action_employee_in_department" type="object">
+                                                    <t t-esc="record.count_employee.value"/> 
+                                                    Employee(s)
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container o_kanban_card_manage_pane">
+                                        <div t-if="widget.editable" class="o_kanban_card_manage_settings row">
+                                            <div class="col-xs-8">
+                                                <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                            </div>
+                                            <div class="col-xs-4 text-right">
+                                                <a type="edit">Settings</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+        <record id="view_vnitpro_department_tree" model="ir.ui.view">
+            <field name="name">vnitpro.department.tree</field>
+            <field name="model">vnitpro.department</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_department_form" model="ir.ui.view">
+            <field name="name">vnitpro.department.form</field>
+            <field name="model">vnitpro.department</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="activate" widget="statusbar" clickable="True"
+                               options="{'fold_field': 'fold'}"/>
+                    </header>
+                    <sheet>                        
+                        <group col="4" name="main">
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="description" colspan="4"/>
+                        </group>
+                        <!-- <group>
+                            <field name="count_employee" />
+                            <field name="employee_ids">
+                                <tree>
+                                    <field name="code"/>
+                                    <field name="name"/>
+                                    <field name="position"/>
+                                    <field name="department_id" />
+                                    <field name="res_user_id" />
+                                </tree>
+                            </field>
+                        </group> -->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_department_search" model="ir.ui.view">
+            <field name="name">vnitpro.department.search</field>
+            <field name="model">vnitpro.department</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="code"/>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_department_view">
+            <field name="name">Department</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.department</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="search_view_id" ref="view_vnitpro_department_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_department_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_department_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_department_form"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_department_view_tree">
+            <field name="act_window_id" ref="act_open_vnitpro_department_view"/>
+            <field name="sequence" eval="15"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_vnitpro_department_tree"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_department_view_kanban">
+            <field name="act_window_id" ref="act_open_vnitpro_department_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">kanban</field>
+            <field name="view_id" ref="view_vnitpro_department_kanban"/>
+        </record>
+    </data>
+</odoo>

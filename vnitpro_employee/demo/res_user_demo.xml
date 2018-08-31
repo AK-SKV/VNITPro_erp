@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="res_user_employee_1" model="res.users">
+            <field name="partner_id" ref="res_partner_employee_1" />
+            <field name="login">vietdung_vnitpro@gmail.com</field>
+            <field name="password">dung123@</field>
+            <field name="company_id" ref="base.main_company" />
+        </record>
+        <record id="res_user_employee_2" model="res.users">
+            <field name="partner_id" ref="res_partner_employee_2" />
+            <field name="login">ngocvinh_vnitpro@gmail.com</field>
+            <field name="password">vinh123@</field>
+            <field name="company_id" ref="base.main_company" />
+        </record>
+        <record id="res_user_employee_3" model="res.users">
+            <field name="partner_id" ref="res_partner_employee_3" />
+            <field name="login">duylong_vnitpro@gmail.com</field>
+            <field name="password">long123@</field>
+            <field name="company_id" ref="base.main_company" />
+        </record>
+        <record id="res_user_employee_4" model="res.users">
+            <field name="partner_id" ref="res_partner_employee_4" />
+            <field name="login">thanhtam_vnitpro@gmail.com</field>
+            <field name="password">tam123@</field>
+            <field name="company_id" ref="base.main_company" />
+        </record>
+        <record id="res_user_employee_5" model="res.users">
+            <field name="partner_id" ref="res_partner_employee_5" />
+            <field name="login">baongoc_vnitpro@gmail.com</field>
+            <field name="password">ngoc123@</field>
+            <field name="company_id" ref="base.main_company" />
+        </record>
+        <record id="res_user_employee_6" model="res.users">
+            <field name="partner_id" ref="res_partner_employee_6" />
+            <field name="login">ngocxuyen_vnitpro@gmail.com</field>
+            <field name="password">xuyen123@</field>
+            <field name="company_id" ref="base.main_company" />
+        </record>
+        <record id="res_user_employee_7" model="res.users">
+            <field name="partner_id" ref="res_partner_employee_7" />
+            <field name="login">lananh_vnitpro@gmail.com</field>
+            <field name="password">anh123@</field>
+            <field name="company_id" ref="base.main_company" />
+        </record>
+        <record id="res_user_employee_8" model="res.users">
+            <field name="partner_id" ref="res_partner_employee_8" />
+            <field name="login">tuantu_vnitpro@gmail.com</field>
+            <field name="password">tu123@</field>
+            <field name="company_id" ref="base.main_company" />
+        </record>
+    </data>
+</odoo>

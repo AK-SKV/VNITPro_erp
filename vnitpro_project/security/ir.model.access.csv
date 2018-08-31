@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vnitpro_project,vnitpro_project,model_vnitpro_project,group_project,1,1,1,1
+access_vnitpro_project_permission,vnitpro_project_permission,model_vnitpro_project_permission,group_project,1,1,1,1
+
+access_vnitpro_project_access_group_project,vnitpro_project_access_group_project,vnitpro_project.model_vnitpro_project_access,group_project,1,1,1,0
+access_vnitpro_project_access_recent_group_project,vnitpro_project_access_recent_group_project,vnitpro_project.model_vnitpro_project_access_recent,group_project,1,1,1,0

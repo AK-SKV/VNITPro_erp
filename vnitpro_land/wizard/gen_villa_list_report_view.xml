@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_gen_villa_list_report_form" model="ir.ui.view">
+            <field name="name">Generate Villa List Report</field>
+            <field name="model">vnitpro.gen.villa.list.report</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <group col="4">
+                        <field name="land_type" options='{"no_open": True,"no_create":True}'/>
+                        <field name="land_group_id" domain="[('land_type','=',land_type)]"
+                               options='{"no_open": True,"no_create":True}'/>
+                        <field name="ward_id" options='{"no_open": True,"no_create":True}'/>
+                    </group>
+                    <group>
+                        <div style="text-align:center">
+                            <i>Leave blank on a field if you want to get all the options !</i>
+                        </div>
+                    </group>
+                    <footer>
+                        <button type="object" class="oe_highlight" name="gen_villa_list_report_xlsx"
+                                string="Print Excel"/>&#x2063;&#x2063;&#x2063;
+                        <button type="object" class="oe_highlight" name="gen_villa_list_report_pdf"
+                                string="View Report"/>
+                        <button special="cancel" string="Close" type="object"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_gen_villa_list_report_view">
+            <field name="name">Generate Villa List Report</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.gen.villa.list.report</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,1980 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vnitpro_contract
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-30 09:35+0000\n"
+"PO-Revision-Date: 2018-08-30 16:36+0700\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: vi\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:28
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:28
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:43
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:90
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:122
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:128
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:170
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:171
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:237
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:238
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:262
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:313
+#, python-format
+msgid "%m-%d-%Y"
+msgstr "%d-%m-%Y"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:58
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:164
+#, python-format
+msgid "%m-%d-%Y %H:%M:%S"
+msgstr "%d-%m-%Y %H:%M:%S"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:215
+#, python-format
+msgid "- Contract %d day(s) left \n"
+msgstr "- Thời hạn hợp đồng còn %d ngày \n"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:212
+#, python-format
+msgid "- Contract expired today \n"
+msgstr "- Hợp đồng hết hạn hôm nay \n"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:210
+#, python-format
+msgid "- Contract out of date: %d day(s) \n"
+msgstr "- Hợp đồng quá hạn %d ngày \n"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:232
+#, python-format
+msgid "- Guarantee contract expire in %d day(s) \n"
+msgstr "- Thời hạn bảo lãnh hợp đồng còn %d ngày \n"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:244
+#, python-format
+msgid "- Guarantee warranty expire in %d day(s) \n"
+msgstr "- Thời hạn bảo lãnh bảo hành còn %d ngày \n"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:226
+#, python-format
+msgid "- Warranty expire in %d day(s) \n"
+msgstr "- Thời hạn bảo hành còn %d ngày \n"
+
+#. module: vnitpro_contract
+#: selection:vnitpro.acceptance.payment,vat:0
+#: selection:vnitpro.acceptance.payment,vat_2:0
+#: selection:vnitpro.acceptance.payment,vat_3:0
+#: selection:vnitpro.contract,vat:0 selection:vnitpro.contract.category,vat:0
+#: selection:vnitpro.contract.sub,vat:0
+msgid "10 %"
+msgstr "10 %"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_acceptance_payment_view
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+#: selection:vnitpro.contract,status:0
+#: selection:vnitpro.contract.dashboard,status:0
+msgid "Acceptance - Payment"
+msgstr "Nghiệm thu - Thanh toán"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Acceptance - Payment Confirm"
+msgstr "Xác nhận nghiệm thu - thanh toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:322
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#, python-format
+msgid "Acceptance - Payment List"
+msgstr "Danh sách nghiệm thu - thanh toán"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_date
+msgid "Acceptance Date"
+msgstr "Ngày nghiệm thu"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:325
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_document_name
+#, python-format
+msgid "Acceptance Document Name"
+msgstr "Văn bản nghiệm thu"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:325
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_document_number
+#, python-format
+msgid "Acceptance Document Number"
+msgstr "Số văn bản nghiệm thu"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:326
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_information
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_acceptance_payment_form
+#, python-format
+msgid "Acceptance Information"
+msgstr "Nội dung nghiệm thu"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_member_a
+msgid "Acceptance Members A"
+msgstr "Thành viên nghiệm thu bên A"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_member_b
+msgid "Acceptance Members B"
+msgstr "Thành viên nghiệm thu bên B"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_dashboard.py:118
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_acceptance_payment_ids
+#, python-format
+msgid "Acceptance Payment"
+msgstr "Nghiệm thu - Thanh toán"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_prefect_a
+msgid "Acceptance Prefect A"
+msgstr "Trưởng ban nghiệm thu bên A"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_prefect_b
+msgid "Acceptance Prefect B"
+msgstr "Trưởng ban nghiệm thu bên B"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_price_after_vat
+msgid "Acceptance Price After VAT"
+msgstr "Giá trị nghiệm thu sau thuế"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_price_before_vat
+msgid "Acceptance Price Before VAT"
+msgstr "Giá trị nghiệm thu trước thuế"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_acceptance_vat
+msgid "Acceptance VAT"
+msgstr "Giá trị thuế nghiệm thu"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/acceptance_payment.py:81
+#, python-format
+msgid "Acceptance date have to start after contract start date!"
+msgstr "Ngày nghiệm thu phải bắt đầu sau ngày ký hợp đồng!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/acceptance_payment.py:86
+#, python-format
+msgid "Acceptance price have to higher than 0!"
+msgstr "Giá trị nghiệm thu phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_access_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_recent_access_date
+msgid "Access date"
+msgstr "Ngày truy cập"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:94
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_adjusted_price
+#, python-format
+msgid "Adjusted Price"
+msgstr "Giá trị hạng mục đơn giá điều chỉnh"
+
+#. module: vnitpro_contract
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_all_contract
+msgid "All Contract"
+msgstr "Tất cả hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Are you sure to acceptance payment this contract?"
+msgstr "Bạn có chắc chắn nghiệm thu thanh toán hợp đồng này?"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Are you sure to asset increase this contract?"
+msgstr "Bạn có chắc chắn nghiệm thu bàn giao hợp đồng này?"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Are you sure to cancel this contract?"
+msgstr "Bạn có chắc chắn hủy bỏ hợp đồng này"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Are you sure to delete?"
+msgstr "Bạn có chắc muốn xóa không?"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Are you sure to liquidation this contract?"
+msgstr "Bạn có chắc chắn muốn thanh lý - quyết toán hợp đồng này?"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Are you sure to on hold this contract?"
+msgstr "Bạn có chắc chắn muốn tạm dừng hợp đồng này?"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_dashboard.py:116
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_asset_increase_view
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_asset_increase_ids
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_asset_increase_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+#: selection:vnitpro.contract,status:0
+#: selection:vnitpro.contract.dashboard,status:0
+#, python-format
+msgid "Asset Increase"
+msgstr "Nghiệm thu bàn giao"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Asset Increase Confirm"
+msgstr "Xác nhận nghiệm thu bàn giao"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:289
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#, python-format
+msgid "Asset Increase List"
+msgstr "Danh sách nghiệm thu bàn giao"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_price
+msgid "Asset Price"
+msgstr "Tổng giá trị bàn giao"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:292
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_asset_type
+#, python-format
+msgid "Asset Type"
+msgstr "Loại tài sản"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/asset_increase.py:41
+#, python-format
+msgid "Asset price have to higher than 0!"
+msgstr "Giá trị tài sản phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_file_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_file_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_file_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_file_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_file_attachment_liquidation_ids
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_file_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_file_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_file_attachment_ids
+msgid "Attach File"
+msgstr "Đính kèm tệp tin"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_base_attachment_acceptance_payment_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_base_attachment_asset_increase_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_base_attachment_contract_category_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_base_attachment_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_base_attachment_contract_sub_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_base_attachment_guarantee_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_base_attachment_liquidation_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_base_attachment_payment_term_id
+msgid "Attachment"
+msgstr "Đính kèm"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_acceptance_payment_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_asset_increase_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_category_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_sub_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_guarantee_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_payment_term_form
+msgid "Attachment Files"
+msgstr "Đính kèm tệp tin"
+
+#. module: vnitpro_contract
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_bidder
+msgid "Bidder"
+msgstr "Nhà thầu"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:35
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:38
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_bidder_a
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_bidder_a
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_bidder_a
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_bidder_a
+#, python-format
+msgid "Bidder A"
+msgstr "Nhà thầu bên A"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:35
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:40
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_bidder_b
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_bidder_b
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_bidder_b
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_bidder_b
+#, python-format
+msgid "Bidder B"
+msgstr "Nhà thầu bên B"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_acceptance_payment_form
+msgid "Bill Information"
+msgstr "Thông tin hóa đơn"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_bill_price_after_vat
+msgid "Bill Price After VAT"
+msgstr "Giá trị hóa đơn sau thuế"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_bill_price_before_vat
+msgid "Bill Price Before VAT"
+msgstr "Giá trị hóa đơn trước thuế"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_bill_vat
+msgid "Bill VAT"
+msgstr "Giá trị thuế hóa đơn"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/acceptance_payment.py:168
+#, python-format
+msgid "Bill price have to higher than 0!"
+msgstr "Giá trị hóa đơn phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_dashboard.py:124
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:53
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#: selection:vnitpro.contract,status:0
+#: selection:vnitpro.contract.dashboard,status:0
+#: selection:vnitpro.gen.contract.list.detail.report,contract_status:0
+#: selection:vnitpro.gen.contract.list.report,contract_status:0
+#, python-format
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "Cancel Contract"
+msgstr "Hợp đồng đã hủy bỏ"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_category
+msgid "Category"
+msgstr "Chuyên mục"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:181
+#, python-format
+msgid "Category Contract List"
+msgstr "Danh sách hạng mục hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:184
+#, python-format
+msgid "Category Name"
+msgstr "Tên hạng mục"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_liquidation_form
+msgid "Close"
+msgstr "Đóng"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_recent_code
+msgid "Code"
+msgstr "Mã"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:184
+#, python-format
+msgid "Code Number"
+msgstr "Mã hiệu"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_color
+msgid "Color"
+msgstr "Màu"
+
+#. module: vnitpro_contract
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_configure
+msgid "Configure"
+msgstr "Danh mục"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_contract_view
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_contract_dashboard
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_contract_id
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_configure_contract
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_root
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_sub
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_tree
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_tree
+#: model:res.groups,name:vnitpro_contract.group_contract
+msgid "Contract"
+msgstr "Hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_contract_access_recent_view
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_access_recent
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_access_recent_search
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_access_recent_tree
+msgid "Contract Access Recent"
+msgstr "Hợp đồng truy cập gần đây"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_contract_category_view
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_contract_category_ids
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_category_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Contract Category"
+msgstr "Hạng mục hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Contract Category List"
+msgstr "Danh sách hạng mục hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:35
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:77
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_code
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_contract_code
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_contract_code
+#, python-format
+msgid "Contract Code"
+msgstr "Mã hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:35
+#, python-format
+msgid "Contract Cost"
+msgstr "Giá trị hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:36
+#, python-format
+msgid "Contract Create Date"
+msgstr "Ngày tạo"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:36
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:87
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_contract_creator
+#, python-format
+msgid "Contract Creator"
+msgstr "Người tạo hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:43
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_contract_date
+#, python-format
+msgid "Contract Date"
+msgstr "Ngày ký hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:30
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_gen_contract_list_detail_report_form
+#, python-format
+msgid "Contract Detail Report"
+msgstr "Báo cáo chi tiết hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:56
+#, python-format
+msgid "Contract Duration"
+msgstr "Thời hạn hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:45
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_contract_formality_id
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_formality
+#, python-format
+msgid "Contract Formality"
+msgstr "Hình thức hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Contract Information"
+msgstr "Thông tin hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_contract_dashboard_view
+msgid "Contract Information Dashboard"
+msgstr "Bảng thông tin hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_contract_kind
+msgid "Contract Kind"
+msgstr "Kiểu hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_gen_contract_list_detail_report_form
+msgid "Contract List"
+msgstr "Danh sách hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:30
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_gen_contract_list_report_form
+#, python-format
+msgid "Contract List Report"
+msgstr "Danh sách báo cáo hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:35
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:81
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_contract_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_contract_name
+#, python-format
+msgid "Contract Name"
+msgstr "Tên hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_res_users_contract_permission_ids
+msgid "Contract Permission"
+msgstr "Quyền truy cập hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Contract Permissions"
+msgstr "Phân quyền trong hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:89
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_start_date
+#, python-format
+msgid "Contract Start Date"
+msgstr "Ngày bắt đầu thực hiện hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_contract_sub_view
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_contract_sub_ids
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_sub_form
+msgid "Contract Sub"
+msgstr "Phụ lục hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Contract Sub List"
+msgstr "Danh sách phụ lục hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:36
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:79
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_contract_type_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_contract_type_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_contract_type_id
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_type
+#, python-format
+msgid "Contract Type"
+msgstr "Loại hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:263
+#, python-format
+msgid "Contract start date can start before contract date!"
+msgstr "Ngày thực hiện hợp đồng không thể bắt đầu trước thời gian ký hợp đồng!"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.contract_dashboard_kanban
+msgid "Contract(s)"
+msgstr "Hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_contract_ids
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_gen_contract_list_detail_report_form
+msgid "Contracts"
+msgstr "Hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:63
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_cost_after_vat
+#, python-format
+msgid "Cost After VAT"
+msgstr "Giá trị sau thuế ban đầu"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:59
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_cost_before_vat
+#, python-format
+msgid "Cost Before VAT"
+msgstr "Giá trị trước thuế ban đầu"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_acceptance_payment_contract
+msgid "Count Acceptance Payment Contract"
+msgstr "Count Acceptance Payment Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_asset_increase_contract
+msgid "Count Asset Increase Contract"
+msgstr "Count Asset Increase Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_cancel_contract
+msgid "Count Cancel Contract"
+msgstr "Count Cancel Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_during_contract
+msgid "Count During Contract"
+msgstr "Count During Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_guarantee_contract
+msgid "Count Guarantee Contract"
+msgstr "Count Guarantee Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_guarantee_warranty_contract
+msgid "Count Guarantee Warranty Contract"
+msgstr "Count Guarantee Warranty Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_in_process_contract
+msgid "Count In Process Contract"
+msgstr "Count In Process Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_late_contract
+msgid "Count Late Contract"
+msgstr "Count Late Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_liquidated_finalized_contract
+msgid "Count Liquidated Finalized Contract"
+msgstr "Count Liquidated Finalized Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_on_hold_contract
+msgid "Count On Hold Contract"
+msgstr "Count On Hold Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_pending_contract
+msgid "Count Pending Contract"
+msgstr "Count Pending Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_soon_expired_contract
+msgid "Count Soon Expired Contract"
+msgstr "Count Soon Expired Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_today_contract
+msgid "Count Today Contract"
+msgstr "Count Today Contract"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_count_warranty_contract
+msgid "Count Warranty Contract"
+msgstr "Count Warranty Contract"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:144
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:252
+#, python-format
+msgid "Create Date"
+msgstr "Ngày tạo"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_create_user
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_create_user
+msgid "Create User"
+msgstr "Người tạo"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_created_date
+msgid "Created Date"
+msgstr "Ngày lập hợp đồng phụ lục"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_create_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_create_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:35
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:65
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_currency_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_currency
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_currency_liquidation
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_currency
+#, python-format
+msgid "Currency"
+msgstr "Loại tiền tệ"
+
+#. module: vnitpro_contract
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_dashboard
+msgid "Dashboard"
+msgstr "Màn hình điều khiển"
+
+#. module: vnitpro_contract
+#: selection:vnitpro.contract,unit:0
+msgid "Day"
+msgstr "Ngày"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_day_left
+msgid "Day Left"
+msgstr "Ngày còn lại"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Delete"
+msgstr "Xóa"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:112
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:225
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:293
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_note
+#, python-format
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_access_recent_tree
+msgid "Detail"
+msgstr "Chi tiết"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_detail_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_detail_xlsx_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_xlsx_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_recent_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_display_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_duration
+msgid "Duration"
+msgstr "Thời gian thực hiện"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:267
+#, python-format
+msgid "Duration have to higher than 0!"
+msgstr "Thời gian thực hiện phải lớn hơn 0 !"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_during_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.contract_dashboard_kanban
+msgid "During"
+msgstr "Chưa hết hạn"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "During Contract"
+msgstr "Hợp đồng chưa hết hạn"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Edit"
+msgstr "Sửa"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:157
+#: selection:vnitpro.guarantee.contract,status:0
+#, python-format
+msgid "Effect"
+msgstr "Hiệu lực"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_employee_id
+msgid "Employee"
+msgstr "Người lao động"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:185
+#, python-format
+msgid "Employee import"
+msgstr "Người nhập"
+
+#. module: vnitpro_contract
+#: sql_constraint:vnitpro.contract.permission:0
+msgid "Employee must be unique in permission of contract table"
+msgstr "Nhân viên đã được phân quyền trong hợp đồng!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:145
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:225
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_end_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_end_date
+#, python-format
+msgid "End Date"
+msgstr "Ngày kết thúc"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_expire_date
+msgid "Expire Date"
+msgstr "Ngày hết hạn"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:159
+#: model:ir.actions.act_window,name:vnitpro_contract.act_late_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.contract_dashboard_kanban
+#: selection:vnitpro.guarantee.contract,status:0
+#, python-format
+msgid "Expired"
+msgstr "Quá hạn"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_today_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.contract_dashboard_kanban
+msgid "Expired Today"
+msgstr "Hết hạn hôm nay"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_facility_id
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_facility
+msgid "Facility"
+msgstr "Vật tư thiết bị"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:49
+#: selection:vnitpro.gen.contract.list.detail.report,contract_status:0
+#: selection:vnitpro.gen.contract.list.report,contract_status:0
+#, python-format
+msgid "Finalized"
+msgstr "Đã quyết toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:108
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_funds
+#, python-format
+msgid "Funds"
+msgstr "Nguồn vốn"
+
+#. module: vnitpro_contract
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_configure_general
+msgid "General"
+msgstr "Danh mục chung"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_gen_contract_list_detail_report_view
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_gen_contract_list_detail_report
+#: model:ir.ui.menu,name:vnitpro_contract.menu_gen_contract_list_detail_report
+msgid "Generate Contract List Detail Report"
+msgstr "Danh sách báo cáo chi tiết hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_gen_contract_list_report_view
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_gen_contract_list_report
+#: model:ir.ui.menu,name:vnitpro_contract.menu_gen_contract_list_report
+msgid "Generate Contract List Report"
+msgstr "Danh sách báo cáo hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/wizard/gen_contract_list_detail_report.py:42
+#, python-format
+msgid "Generate Detail Report"
+msgstr "Tạo báo cáo chi tiết"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/wizard/gen_contract_list_report.py:72
+#, python-format
+msgid "Generate Report"
+msgstr "Tạo báo cáo"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_guarantee_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_guarantee
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_guarantee
+#: model:ir.ui.view,arch_db:vnitpro_contract.contract_dashboard_kanban
+msgid "Guarantee"
+msgstr "Bảo lãnh"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_guarantee_contract_view
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_guarantee_ids
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_guarantee_contract_form
+msgid "Guarantee Contract"
+msgstr "Hợp đồng bảo lãnh"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:140
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#, python-format
+msgid "Guarantee Contract List"
+msgstr "Danh sách hợp đồng bảo lãnh"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:129
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_guarantee_end_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_guarantee_end_date
+#, python-format
+msgid "Guarantee End Date"
+msgstr "Ngày kết thúc bảo lãnh"
+
+#. module: vnitpro_contract
+#: selection:vnitpro.contract,warning:0
+msgid "Guarantee Expire"
+msgstr "Hết hạn bảo lãnh"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:131
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_guarantee_price
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_guarantee_price
+#, python-format
+msgid "Guarantee Price"
+msgstr "Giá trị bảo lãnh"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:123
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_guarantee_start_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_guarantee_start_date
+#, python-format
+msgid "Guarantee Start Date"
+msgstr "Ngày bắt đầu bảo lãnh"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:143
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_guarantee_type
+#, python-format
+msgid "Guarantee Type"
+msgstr "Loại bảo lãnh"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:117
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:143
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_guarantee_unit
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_guarantee_unit
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_guarantee_unit
+#, python-format
+msgid "Guarantee Unit"
+msgstr "Đơn vị bảo lãnh"
+
+#. module: vnitpro_contract
+#: selection:vnitpro.contract,warning:0
+msgid "Guarantee Warranty Expire"
+msgstr "Hết hạn bảo lãnh bảo hành"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/guarantee_contract.py:53
+#, python-format
+msgid "Guarantee contract end date can start before guarantee contract start date!"
+msgstr "Ngày kết thúc hợp đồng bảo lãnh không được trước ngày bắt đầu hợp đồng bảo lãnh!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:265
+#, python-format
+msgid "Guarantee end date can start before guarantee start date!"
+msgstr "Ngày kết thúc bảo lãnh không được trước ngày bắt đầu bảo lãnh!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/acceptance_payment.py:180
+#, python-format
+msgid "Guarantee start date can't start after guarantee end date!"
+msgstr "Ngày bắt đầu bảo lãnh không được sau ngày kết thúc bảo lãnh!"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "Guaratee Warranty Contract"
+msgstr "Hợp đồng bảo lãnh bảo hành"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_detail_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_detail_xlsx_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_xlsx_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_recent_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_dashboard.py:114
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:45
+#: selection:vnitpro.contract,status:0
+#: selection:vnitpro.contract.dashboard,status:0
+#: selection:vnitpro.gen.contract.list.detail.report,contract_status:0
+#: selection:vnitpro.gen.contract.list.report,contract_status:0
+#, python-format
+msgid "In Process"
+msgstr "Đang thực hiện"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "In Process Contract"
+msgstr "Hợp đồng đang thực hiện"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:293
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_increase_date
+#, python-format
+msgid "Increase Date"
+msgstr "Ngày nhập"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:292
+#, python-format
+msgid "Increase Type"
+msgstr "Loại tăng"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_input_contract_view
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_input
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+#: selection:vnitpro.contract,contract_kind:0
+msgid "Input Contract"
+msgstr "Hợp đồng đầu vào"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/acceptance_payment.py:83
+#, python-format
+msgid "Invalid Code, please try again ( Acceptance document number only contains letters, numbers and character: / , \\ , _ )."
+msgstr "Số văn bản nghiệm thu không hợp lệ, xin vui lòng thử lại (Số văn bản nghiệm thu chỉ chứa chữ cái, số và các ký tự đặc biệt: /  _ .)"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/acceptance_payment.py:133
+#, python-format
+msgid "Invalid Code, please try again ( Payment number only contains letters, numbers and character: / , \\ , _ )."
+msgstr "Số hóa đơn thanh toán không hợp lệ, xin vui lòng thử lại (Số hóa đơn thanh toán chỉ chứa chữ cái, số và các ký tự đặc biệt: /  _ .)."
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/liquidation.py:69
+#, python-format
+msgid "Invalid Code, please try again (Liquidation number only contains numbers and character: / , \\ , _ )."
+msgstr "Số thanh lý không hợp lệ, xin vui lòng thử lại (Mã hiệu chỉ chứa chữ cái, số và các ký tự đặc biệt: /  _ .)."
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_detail___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_detail_xlsx___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_report_vnitpro_contract_report_gen_contract_list_xlsx___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_recent___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract___last_update
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_write_uid
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_write_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "Late Contract"
+msgstr "Hợp đồng quá hạn"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:47
+#: selection:vnitpro.gen.contract.list.detail.report,contract_status:0
+#: selection:vnitpro.gen.contract.list.report,contract_status:0
+#, python-format
+msgid "Liquidated"
+msgstr "Đã thanh lý"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+#: selection:vnitpro.contract,status:0
+#: selection:vnitpro.contract.dashboard,status:0
+msgid "Liquidated - Finalized"
+msgstr "Thanh lý - Quyết toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_dashboard.py:120
+#, python-format
+msgid "Liquidated Finalized"
+msgstr "Thanh lý - Quyết toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/liquidation.py:78
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#, python-format
+msgid "Liquidation"
+msgstr "Thanh lý"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Liquidation Confirm"
+msgstr "Xác nhận thanh lý quyết toán"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_liquidation_date
+msgid "Liquidation Date"
+msgstr "Ngày thanh lý"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_information
+msgid "Liquidation Information"
+msgstr "Nội dung xử lý"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_liquidation_number
+msgid "Liquidation Number"
+msgstr "Số thanh lý"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/liquidation.py:67
+#, python-format
+msgid "Liquidation date have to start after contract start date!"
+msgstr "Ngày thanh lý phải bắt đầu sau ngày ký hợp đồng!"
+
+#. module: vnitpro_contract
+#: selection:vnitpro.contract,unit:0
+msgid "Month"
+msgstr "Tháng"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_recent_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_name
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_name
+msgid "Name"
+msgstr "Tên"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:134
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:145
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_note
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_note
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_note
+#, python-format
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:302
+#, python-format
+msgid "Official"
+msgstr "Chính thức"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_dashboard.py:122
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:51
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#: selection:vnitpro.contract,status:0
+#: selection:vnitpro.contract.dashboard,status:0
+#: selection:vnitpro.gen.contract.list.detail.report,contract_status:0
+#: selection:vnitpro.gen.contract.list.report,contract_status:0
+#, python-format
+msgid "On Hold"
+msgstr "Tạm dừng"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "On Hold Contract"
+msgstr "Hợp đồng đã tạm dừng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:261
+#, python-format
+msgid "One of three category price have to be more than 0!"
+msgstr "Một trong ba giá trị hạng mục phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_origin
+msgid "Origin"
+msgstr "Xuất xứ"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_output_contract_view
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_output
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+#: selection:vnitpro.contract,contract_kind:0
+msgid "Output Contract"
+msgstr "Hợp đồng đầu ra"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:92
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_package_price
+#, python-format
+msgid "Package Price"
+msgstr "Giá trị hạng mục trọn gói"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_payment_capital
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_payment_capital
+msgid "Payment Capital"
+msgstr "Loại vốn thanh toán"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_payment_date
+msgid "Payment Date"
+msgstr "Ngày thanh toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:326
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_payment_information
+#, python-format
+msgid "Payment Detail"
+msgstr "Nội dung thanh toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:326
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_payment_employee
+#, python-format
+msgid "Payment Employee"
+msgstr "Nhân viên thanh toán"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_acceptance_payment_form
+msgid "Payment Information"
+msgstr "Thông tin thanh toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:224
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_payment_name
+#, python-format
+msgid "Payment Name"
+msgstr "Tên điều khoản"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:326
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_payment_number
+#, python-format
+msgid "Payment Number"
+msgstr "Số hóa đơn thanh toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:225
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_payment_price
+#, python-format
+msgid "Payment Price"
+msgstr "Giá trị"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_payment_price_after_vat
+msgid "Payment Price After VAT"
+msgstr "Giá trị thanh toán"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_payment_price_before_vat
+msgid "Payment Price Before VAT"
+msgstr "Giá trị thanh toán trước thuế"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_open_vnitpro_payment_term_view
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_payment_term_ids
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_payment_term_form
+msgid "Payment Term"
+msgstr "Điều khoản thanh toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:221
+#, python-format
+msgid "Payment Term Contract List"
+msgstr "Danh sách điều khoản thanh toán"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Payment Term List"
+msgstr "Danh sách điều khoản thanh toán"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_payment_vat
+msgid "Payment VAT"
+msgstr "Giá trị thuế thanh toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/acceptance_payment.py:131
+#, python-format
+msgid "Payment date have to start after contract start date!"
+msgstr "Ngày thanh toán phải bắt đầu sau ngày ký hợp đồng!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/payment_term.py:38
+#, python-format
+msgid "Payment price have to be higher than 0!"
+msgstr "Giá trị thanh toán phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/acceptance_payment.py:138
+#, python-format
+msgid "Payment price have to higher than 0!"
+msgstr "Giá trị thanh toán phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/acceptance_payment.py:136
+#, python-format
+msgid "Payment price have to smaller than contract real cost!"
+msgstr "Giá trị thanh toán phải nhỏ hơn giá trị thực của hợp đồng!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_dashboard.py:112
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:43
+#: selection:vnitpro.contract,status:0
+#: selection:vnitpro.contract.dashboard,status:0
+#: selection:vnitpro.gen.contract.list.detail.report,contract_status:0
+#: selection:vnitpro.gen.contract.list.report,contract_status:0
+#, python-format
+msgid "Pending"
+msgstr "Chưa thực hiện"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "Pending Contract"
+msgstr "Hợp đồng chưa thực hiện"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:96
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permanent_price
+#, python-format
+msgid "Permanent Price"
+msgstr "Giá trị hạng mục đơn giá cố định"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_detail_ids
+msgid "Permission Detail"
+msgstr "Chi tiết phân quyền"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:145
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:293
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_price
+#, python-format
+msgid "Price"
+msgstr "Giá"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:184
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_cost_after_vat
+#, python-format
+msgid "Price After VAT"
+msgstr "Giá trị sau thuế"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:252
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_cost_before_vat
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_price_before_vat
+#, python-format
+msgid "Price Before VAT"
+msgstr "Giá trị trước thuế"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:253
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_price_after_vat
+#, python-format
+msgid "Price Sub"
+msgstr "Giá trị phụ lục"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/guarantee_contract.py:55
+#, python-format
+msgid "Price have to higher than 0!"
+msgstr "Giá hợp đồng bảo lãnh phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_gen_contract_list_detail_report_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_gen_contract_list_report_form
+msgid "Print Excel"
+msgstr "In Excel"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_all_contract_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_form
+msgid "Process"
+msgstr "Thực hiện"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:73
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_purpose_of_use
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_purpose_of_use
+#, python-format
+msgid "Purpose of Use"
+msgstr "Mục đích sử dụng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:184
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_quantity
+#, python-format
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_category.py:117
+#, python-format
+msgid "Quantity have to be higher than 0!"
+msgstr "Số lượng phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:75
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_real_cost_after_vat
+#, python-format
+msgid "Real Cost After VAT"
+msgstr "Giá trị thực"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:110
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_real_cost_before_vat
+#, python-format
+msgid "Real Cost Before VAT"
+msgstr "Giá trị trước thuế thực"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_receiver
+msgid "Receiver"
+msgstr "Người nhận"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_remain_contract_price
+msgid "Remain Contract Price"
+msgstr "Giá trị còn lại phải thanh toán"
+
+#. module: vnitpro_contract
+#: model:ir.actions.report,name:vnitpro_contract.action_report_generate_contract_list
+msgid "Report Contract List"
+msgstr "Danh sách báo cáo hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.actions.report,name:vnitpro_contract.action_report_generate_contract_list_detail
+msgid "Report Contract List Detail"
+msgstr "Danh sách báo cáo hợp đồng chi tiết"
+
+#. module: vnitpro_contract
+#: model:ir.actions.report,name:vnitpro_contract.action_report_generate_contract_list_detail_xlsx
+msgid "Report Contract List Detail Excel"
+msgstr "Danh sách báo cáo hợp đồng chi tiết excel"
+
+#. module: vnitpro_contract
+#: model:ir.actions.report,name:vnitpro_contract.action_report_generate_contract_list_xlsx
+msgid "Report Contract List Excel"
+msgstr "Danh sách báo cáo hợp đồng excel"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:29
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:29
+#, python-format
+msgid "Report Date: "
+msgstr "Ngày lập báo cáo: "
+
+#. module: vnitpro_contract
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_contract_report
+msgid "Reports"
+msgstr "Báo cáo"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_liquidation_form
+msgid "Save"
+msgstr "Lưu"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_asset_increase_sender
+msgid "Sender"
+msgstr "Người giao"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "Soon Expire Contract"
+msgstr "Hợp đồng sắp hết hạn"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_soon_expired_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.contract_dashboard_kanban
+msgid "Soon Expired"
+msgstr "Sắp hết hạn"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:144
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:224
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_start_date
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_payment_term_start_date
+#, python-format
+msgid "Start Date"
+msgstr "Ngày bắt đầu"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/payment_term.py:36
+#, python-format
+msgid "Start date have to start before end date!"
+msgstr "Ngày bắt đầu phải trước ngày kết thúc!"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_state
+msgid "State"
+msgstr "Giai đoạn"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list.py:36
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:144
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_dashboard_status
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_status
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_detail_report_contract_status
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_gen_contract_list_report_contract_status
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_guarantee_contract_status
+#, python-format
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: vnitpro_contract
+#: model:ir.ui.menu,name:vnitpro_contract.menu_vnitpro_sub
+msgid "Sub"
+msgstr "Phụ lục"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:251
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_sub_code
+#, python-format
+msgid "Sub Code"
+msgstr "Số văn bản"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:248
+#, python-format
+msgid "Sub Contract List"
+msgstr "Danh sách phụ lục hợp đồng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:251
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_sub_type
+#, python-format
+msgid "Sub Type"
+msgstr "Loại phụ lục"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:304
+#, python-format
+msgid "Temporary"
+msgstr "Tạm tăng"
+
+#. module: vnitpro_contract
+#: sql_constraint:vnitpro.acceptance.payment:0
+msgid "The acceptance document number already exists, please try another."
+msgstr "Số văn bản nghiệm thu đã tồn tại, xin vui lòng thử lại."
+
+#. module: vnitpro_contract
+#: sql_constraint:vnitpro.contract.sub:0
+msgid "The sub code already exists, please try another."
+msgstr "Số văn bản đã tồn tại, xin vui lòng thử lại."
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "Today Contract"
+msgstr "Hợp đồng hết hạn trong hôm nay"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_total_contract_price
+msgid "Total Contract Price"
+msgstr "Tổng giá trị hợp đồng"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_total_paid_contract_price
+msgid "Total Paid Contract Price"
+msgstr "Tổng giá trị hợp đồng đã thanh toán"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/liquidation.py:72
+#, python-format
+msgid "Total pay contract price have to smaller than contract cost!"
+msgstr "Tổng giá trị thanh toán phải nhỏ hơn giá trị hợp đồng!"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_unit
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_unit
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_category_form
+msgid "Unit"
+msgstr "Đơn vị"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:184
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_unit_price
+#, python-format
+msgid "Unit Price"
+msgstr "Đơn giá"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_category.py:119
+#, python-format
+msgid "Unit price have to be higher than 0!"
+msgstr "Đơn giá phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_recent_user_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_access_user_id
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_permission_user_id
+msgid "User"
+msgstr "Người dùng"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_res_users
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:106
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:184
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:253
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_vat
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_vat_2
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_acceptance_payment_vat_3
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_vat
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_sub_vat
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_vat
+#, python-format
+msgid "VAT %"
+msgstr "Thuế VAT"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:61
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_vat_cost
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_vat_cost
+#, python-format
+msgid "VAT Cost"
+msgstr "Giá trị thuế"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_gen_contract_list_detail_report_form
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_gen_contract_list_report_form
+msgid "View PDF"
+msgstr "Xem dưới dạng PDF"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_gen_contract_list_detail_report_form
+msgid "View Report"
+msgstr "Xem báo cáo"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_warning
+msgid "Warning"
+msgstr "Cảnh báo"
+
+#. module: vnitpro_contract
+#: model:ir.actions.act_window,name:vnitpro_contract.act_warranty_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.contract_dashboard_kanban
+msgid "Warranty"
+msgstr "Bảo hành"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_contract_search
+msgid "Warranty Contract"
+msgstr "Hợp đồng bảo hành"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_warranty_end_date
+msgid "Warranty End Date"
+msgstr "Ngày kết thúc bảo hành"
+
+#. module: vnitpro_contract
+#: selection:vnitpro.contract,warning:0
+msgid "Warranty Expire"
+msgstr "Hết hạn bảo hành"
+
+#. module: vnitpro_contract
+#: model:ir.ui.view,arch_db:vnitpro_contract.view_vnitpro_acceptance_payment_form
+msgid "Warranty Guarantee Information"
+msgstr "Thông tin bảo lãnh bảo hành"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_warranty_period
+msgid "Warranty Period(month)"
+msgstr "Thời hạn bảo hành(tháng)"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:185
+#, python-format
+msgid "Warranty Period(months)"
+msgstr "Thời hạn bảo hành(tháng)"
+
+#. module: vnitpro_contract
+#: model:ir.model.fields,field_description:vnitpro_contract.field_vnitpro_contract_category_warranty_start_date
+msgid "Warranty Start Date"
+msgstr "Ngày bắt đầu bảo hành"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_category.py:121
+#, python-format
+msgid "Warranty period have to be higher than 0!"
+msgstr "Thời hạn bảo hành phải lớn hơn 0!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract_category.py:123
+#, python-format
+msgid "Warranty start date have to start after contract start date!"
+msgstr "Ngày bắt đầu bảo hành phải bắt đầu sau ngày ký hợp đồng!"
+
+#. module: vnitpro_contract
+#: selection:vnitpro.contract,unit:0
+msgid "Week"
+msgstr "Tuần"
+
+#. module: vnitpro_contract
+#: selection:vnitpro.contract,unit:0
+msgid "Year"
+msgstr "Năm"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:293
+#, python-format
+msgid "You have to add an acceptance payment before acceptance payment confirm!"
+msgstr "Bạn phải thêm thông tin nghiệm thu thanh toán trước khi xác nhận quyết toán!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/contract.py:286
+#, python-format
+msgid "You have to add an asset increase before asset increase confirm!"
+msgstr "Bạn phải thêm thông tin nghiệm thu bàn giao trước khi xác nhận nghiệm thu bàn giao!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/models/liquidation.py:111
+#, python-format
+msgid "You have to fill all the liquidation finalized information before liquidation finalized confirm!"
+msgstr "Bạn phải thêm thông tin thanh lý quyết toán trước khi xác nhận thanh lý quyết toán!"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:49
+#, python-format
+msgid "day"
+msgstr "Ngày"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail_xlsx.py:32
+#: code:addons/vnitpro_contract/reports/report_contract_list_xlsx.py:32
+#, python-format
+msgid "dd-mm-yyyy"
+msgstr "dd-mm-yyyy"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:53
+#, python-format
+msgid "month"
+msgstr "tháng"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_report_vnitpro_contract_report_gen_contract_list
+msgid "report.vnitpro_contract.report_gen_contract_list"
+msgstr "report.vnitpro_contract.report_gen_contract_list"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_report_vnitpro_contract_report_gen_contract_list_detail
+msgid "report.vnitpro_contract.report_gen_contract_list_detail"
+msgstr "report.vnitpro_contract.report_gen_contract_list_detail"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_report_vnitpro_contract_report_gen_contract_list_detail_xlsx
+msgid "report.vnitpro_contract.report_gen_contract_list_detail_xlsx"
+msgstr "report.vnitpro_contract.report_gen_contract_list_detail_xlsx"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_report_vnitpro_contract_report_gen_contract_list_xlsx
+msgid "report.vnitpro_contract.report_gen_contract_list_xlsx"
+msgstr "report.vnitpro_contract.report_gen_contract_list_xlsx"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_acceptance_payment
+msgid "vnitpro.acceptance.payment"
+msgstr "vnitpro.acceptance.payment"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_asset_increase
+msgid "vnitpro.asset.increase"
+msgstr "vnitpro.asset.increase"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_base_attachment
+msgid "vnitpro.base.attachment"
+msgstr "vnitpro.base.attachment"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_contract_access
+msgid "vnitpro.contract.access"
+msgstr "vnitpro.contract.access"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_contract_access_recent
+msgid "vnitpro.contract.access.recent"
+msgstr "vnitpro.contract.access.recent"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_contract_category
+msgid "vnitpro.contract.category"
+msgstr "vnitpro.contract.category"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_contract_dashboard
+msgid "vnitpro.contract.dashboard"
+msgstr "vnitpro.contract.dashboard"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_contract_permission
+msgid "vnitpro.contract.permission"
+msgstr "vnitpro.contract.permission"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_contract_sub
+msgid "vnitpro.contract.sub"
+msgstr "vnitpro.contract.sub"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_guarantee_contract
+msgid "vnitpro.guarantee.contract"
+msgstr "vnitpro.guarantee.contract"
+
+#. module: vnitpro_contract
+#: model:ir.model,name:vnitpro_contract.model_vnitpro_payment_term
+msgid "vnitpro.payment.term"
+msgstr "vnitpro.payment.term"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:51
+#, python-format
+msgid "week"
+msgstr "tuần"
+
+#. module: vnitpro_contract
+#: code:addons/vnitpro_contract/reports/report_contract_list_detail.py:55
+#, python-format
+msgid "year"
+msgstr "năm"

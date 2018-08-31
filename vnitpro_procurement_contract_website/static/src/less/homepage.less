@@ -1,0 +1,96 @@
+.img-homepage {
+	background-image: url(/vnitpro_procurement_contract_website/static/src/img/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100% !important;	
+} 
+.bgLayerTop{
+	background-image: url(/vnitpro_procurement_contract_website/static/src/img/bgLayerTop.png);
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+}
+.mt92{
+	margin-top: 70px !important;
+}
+.float{
+	float: right;
+}
+@media (max-width: @screen-xs-max) {
+	.img-homepage{				
+		position: relative;
+	}		
+	.divLogin {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 80%;
+	}
+	.bgLayerTop {
+		background-image: url(/vnitpro_procurement_contract_website/static/src/img/bgLayerTopRight.png);
+		background-size: contain;
+	}
+	.float {
+		float: none;
+	}	
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+	.img-homepage{				
+		position: relative;
+	}		
+	.divLogin {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 80%;
+		left: 10%;
+	}
+	.bgLayerTop {
+		background-image: url(/vnitpro_procurement_contract_website/static/src/img/bgLayerTopRight.png);
+		background-size: contain;
+		background-size: 60%;
+		width: 60%;
+		float: right;
+	}
+}
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	.img-homepage{				
+		position: relative;
+	}		
+	.divLogin {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 80%;
+		left: 13%;
+	}
+	.bgLayerTop {
+		background-image: url(/vnitpro_procurement_contract_website/static/src/img/bgLayerTopRight.png);
+		background-size: contain;
+		height: 100% !important;
+		background-size: 60%;
+		width: 55%;
+		float: right;
+	}
+}
+@media (min-width: @screen-lg-min) {
+	.img-homepage{				
+		position: relative;
+	}
+	.divLogin {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 80%;
+		left:15%;
+	}	
+	.bgLayerTop {
+		background-image: url(/vnitpro_procurement_contract_website/static/src/img/bgLayerTopRight.png);
+		background-size: contain;
+		height: 100% !important;
+		background-size: 62%;
+		width: 60%;
+		float: right;
+	}	
+}

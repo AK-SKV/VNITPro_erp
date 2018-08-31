@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_tracking_card_tree" model="ir.ui.view">
+            <field name="name">vnitpro.tracking.card.tree</field>
+            <field name="model">vnitpro.tracking.card</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Tracking Card">
+                    <field name="delivery_plan_id"/>
+                    <field name="contract_id"/>
+                    <field name="order_id"/>
+                    <field name="customer_name"/>
+                    <field name="product_group_id"/>
+                    <field name="delivery_formality_id"/>
+                    <field name="weight_needed"/>
+                    <field name="expected_price"/>
+                    <field name="status"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_tracking_card_form" model="ir.ui.view">
+            <field name="name">vnitpro.tracking.card.form</field>
+            <field name="model">vnitpro.tracking.card</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Tracking Card">
+                    <header>
+                        <button string="Checking" type="object" name="check_product"
+                                attrs="{'invisible': [('status','=','done')]}" class="oe_highlight"/>
+                        <button string="Confirm Order" type="object" name="confirm_order"
+                                confirm="Are you sure to confirm?"
+                                attrs="{'invisible': ['|','|',('status','!=','draft'),('total_weight_delivery','=',0),('total_weight_left','!=',0)]}"
+                                class="oe_highlight"/>
+                        <field name="status" widget="statusbar" readonly="1"/>
+                    </header>
+                    <div class="div_center"
+                         attrs="{'invisible': ['|','|',('status','!=','draft'),('total_weight_delivery','=',0),('total_weight_left','!=',0)]}">
+                        <h4>
+                            All products have been delivered!
+                            Press "Checking" to recheck the order or press "Confirm" to finish the order.
+                        </h4>
+                    </div>
+                    <div class="div_center"
+                         attrs="{'invisible': [('status','=','draft'),('total_weight_delivery','!=',0),('total_weight_left','=',0)]}">
+                        <h4>
+                            Press "Checking" to check the order!
+                        </h4>
+                    </div>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="delivery_plan_id" attrs="{'readonly': [('status','=','done')]}"/>
+                                <field name="contract_id" attrs="{'readonly': [('status','=','done')]}"/>
+                                <field name="order_id" attrs="{'readonly': [('status','=','done')]}"/>
+                            </group>
+                            <group string="Order Information">
+                                <field name="customer_name"/>
+                                <field name="product_group_id"/>
+                                <field name="delivery_formality_id"/>
+                                <label for="weight_needed"/>
+                                <div class="o_row">
+                                    <field name="weight_needed"/>
+                                    <field name="unit_id"/>
+                                </div>
+                                <label for="expected_price"/>
+                                <div class="o_row">
+                                    <field name="expected_price"/>
+                                    <field name="currency_id" force_save="1"/>
+                                </div>
+                            </group>
+                        </group>
+                        <group>
+                            <notebook>
+                                <page string="Tracking Information">
+                                    <field name="tracking_card_information_ids" nolabel="1">
+                                        <tree create="0" delete="0">
+                                            <field name="export_card_number" force_save="1"/>
+                                            <field name="export_date" force_save="1"/>
+                                            <field name="product_group_id" force_save="1"/>
+                                            <field name="unit_id" force_save="1"/>
+                                            <field name="weight_delivery" force_save="1"/>
+                                            <field name="weight_left" force_save="1"/>
+                                            <field name="cost" force_save="1"/>
+                                            <field name="currency_id" force_save="1"/>
+                                            <field name="reversed" force_save="1"/>
+                                        </tree>
+                                    </field>
+                                    <group>
+                                        <group>
+                                        </group>
+                                        <group>
+                                            <label for="total_weight_delivery"/>
+                                            <div class="o_row">
+                                                <field name="total_weight_delivery"/>
+                                                <field name="unit_id"/>
+                                            </div>
+                                            <label for="total_weight_left"/>
+                                            <div class="o_row">
+                                                <field name="total_weight_left"/>
+                                                <field name="unit_id"/>
+                                            </div>
+                                            <label for="total_cost"/>
+                                            <div class="o_row">
+                                                <field name="total_cost"/>
+                                                <field name="currency_id" force_save="1"/>
+                                            </div>
+                                        </group>
+                                    </group>
+                                </page>
+                            </notebook>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_tracking_card_search" model="ir.ui.view">
+            <field name="name">vnitpro.tracking.card.search</field>
+            <field name="model">vnitpro.tracking.card</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Tracking Card">
+                    <field name="delivery_plan_id"/>
+                    <field name="contract_id"/>
+                    <field name="order_id"/>
+                    <field name="customer_name"/>
+                    <field name="product_group_id"/>
+                    <field name="delivery_formality_id"/>
+                    <field name="weight_needed"/>
+                    <field name="expected_price"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_tracking_card_view">
+            <field name="name">Tracking Card</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.tracking.card</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_tracking_card_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+    </data>
+</odoo>

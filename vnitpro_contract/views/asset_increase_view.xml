@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_asset_increase_form" model="ir.ui.view">
+            <field name="name">vnitpro.asset.increase.form</field>
+            <field name="model">vnitpro.asset.increase</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Asset Increase" duplicate="0">
+                    <sheet>
+                        <group col="4">
+                            <field name="asset_type"/>
+                            <field name="price"/>
+                            <field name="bidder_a" context="{'default_contract_id':active_id}"/>
+                            <field name="bidder_b" context="{'default_contract_id':active_id}"/>
+                            <field name="receiver"/>
+                            <field name="sender"/>
+                            <field name="increase_date"/>
+                            <field name="note" colspan="4"/>
+                            <field name="contract_id" invisible="1"/>
+                        </group>
+                        <group colspan="4" name="des">
+                            <div colspan="4" class="div_attachfile">Attachment Files</div>
+                            <field name="file_attachment_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="file" filename="file_name"/>
+                                    <field name="file_name" force_save="1"/>
+                                    <field name="user_id" force_save="1"/>
+                                    <field name="description"/>
+                                    <field name="date"/>
+                                    <button name="download_file" type="object"
+                                            class="button_blank fa fa-download"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_asset_increase_view">
+            <field name="name">Asset Increase</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.asset.increase</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_asset_increase_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_asset_increase_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_asset_increase_form"/>
+        </record>
+    </data>
+</odoo>

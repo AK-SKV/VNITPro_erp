@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <report
+                id="act_gen_villa_list_report"
+                model="vnitpro.gen.villa.list.report"
+                string="Villa List Report"
+                report_type="xlsx"
+                name="vnitpro_land.report_villa_list_xlsx"
+                file="Báo cáo danh sách biệt thự"
+                menu="False"
+        />
+        <report
+                id="act_gen_villa_list_report_pdf"
+                model="vnitpro.land.use.rights"
+                string="Villa List Report PDF"
+                report_type="qweb-html"
+                name="vnitpro_land.report_gen_villa_list"
+                file="vnitpro_land.report_gen_villa_list"
+                menu="False"
+        />
+    </data>
+</odoo>

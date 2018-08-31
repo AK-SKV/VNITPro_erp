@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="guarantee_1" model="vnitpro.guarantee">
+            <field name="code">BLBH</field>
+            <field name="name">Bảo lãnh bảo hành</field>
+        </record>
+        <record id="guarantee_2" model="vnitpro.guarantee">
+            <field name="code">BLDT</field>
+            <field name="name">Bảo lãnh dự thầu</field>
+        </record>
+        <record id="guarantee_3" model="vnitpro.guarantee">
+            <field name="code">BLHD</field>
+            <field name="name">Bảo lãnh hợp đồng</field>
+        </record>
+        <record id="guarantee_4" model="vnitpro.guarantee">
+            <field name="code">BLTHHD</field>
+            <field name="name">Bảo lãnh thực hiện hợp đồng</field>
+        </record>
+    </data>
+</odoo>

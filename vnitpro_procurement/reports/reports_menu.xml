@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <report id="action_report_generate_procurement_list" model="vnitpro.procurement"
+                string="Report Procurement List" report_type="qweb-html"
+                name="vnitpro_procurement.report_gen_procurement_list"
+                file="vnitpro_procurement.report_gen_procurement_list" menu="False"/>
+        <report id="action_report_generate_procurement_list_xlsx" model="vnitpro.gen.procurement.list.report"
+                string="Report Procurement List Excel" report_type="xlsx"
+                name="vnitpro_procurement.report_gen_procurement_list_xlsx" file="Báo cáo danh sách gói thầu"
+                menu="False"/>
+        <report id="action_report_generate_procurement_details" model="vnitpro.procurement"
+                string="Report Procurement Details" report_type="qweb-html"
+                name="vnitpro_procurement.report_gen_procurement_details"
+                file="vnitpro_procurement.report_gen_procurement_details" menu="False"/>
+        <report id="action_report_generate_procurement_details_xlsx" model="vnitpro.gen.procurement.details.report"
+                string="Report Procurement Details Excel" report_type="xlsx"
+                name="vnitpro_procurement.report_gen_procurement_details_xlsx" file="Báo cáo chi tiết gói thầu"
+                menu="False"/>
+    </data>
+</odoo>

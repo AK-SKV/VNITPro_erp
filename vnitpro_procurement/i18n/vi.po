@@ -1,0 +1,2095 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vnitpro_procurement
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-30 07:25+0000\n"
+"PO-Revision-Date: 2018-08-30 14:31+0700\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: vi\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:80
+#, python-format
+msgid " - From: "
+msgstr " - Từ: "
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:69
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:88
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:106
+#, python-format
+msgid " From: "
+msgstr " Từ: "
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:91
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:165
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:69
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:80
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:88
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:106
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:107
+#, python-format
+msgid " To: "
+msgstr " Đến: "
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:127
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_vat_confirm
+#, python-format
+msgid "% VAT"
+msgstr "% thuế VAT"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:23
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:34
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:27
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:48
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:49
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:50
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:52
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:66
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:68
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:77
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:78
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:83
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:86
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:87
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:91
+#, python-format
+msgid "%m-%d-%Y"
+msgstr "%d-%m-%Y"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:65
+#, python-format
+msgid "- %d day(s) left"
+msgstr "- Còn %d ngày"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:51
+#, python-format
+msgid "- Completed Procurement Profile \n"
+msgstr "- Gói thầu đã hoàn thành \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:67
+#, python-format
+msgid "- Expire Today"
+msgstr "- Hết hạn trong hôm nay"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:45
+#, python-format
+msgid "- No Bidding Results \n"
+msgstr "- Chưa có kết quả đấu thầu \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:49
+#, python-format
+msgid "- No Expertise Bidder Selection \n"
+msgstr "- Chưa thẩm định lựa chọn nhà thầu \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:47
+#, python-format
+msgid "- No Negotiation Results \n"
+msgstr "- Chưa có kết quả thương thảo \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:39
+#, python-format
+msgid "- Not Confirm Prequalification List \n"
+msgstr "- Chưa duyệt sơ tuyển \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:41
+#, python-format
+msgid "- Not Create Bidding Document \n"
+msgstr "- Chưa lập hồ sơ mời thầu \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:35
+#, python-format
+msgid "- Not Create Invitation PQ Document \n"
+msgstr "- Chưa lập hồ sơ mời thầu sơ tuyển \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:33
+#, python-format
+msgid "- Not Create Procurement Advisory \n"
+msgstr "- Chưa lập hợp đồng tư vấn \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:63
+#, python-format
+msgid "- Out of date: %d day(s)"
+msgstr "- Quá hạn %d ngày "
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:37
+#, python-format
+msgid "- Unapproved PQ Document \n"
+msgstr "- Chưa ghi nhận hồ sơ sơ tuyển \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:31
+#, python-format
+msgid "- Unapproved Procurement Plan\n"
+msgstr "- Chưa duyệt kế hoạch đấu thầu \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_status_tree.py:43
+#, python-format
+msgid "- Unset Bidding Profile \n"
+msgstr "- Chưa nhận hồ sơ dự thầu \n"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:116
+#: selection:vnitpro.procurement,vat_confirm:0
+#, python-format
+msgid "10 %"
+msgstr "10 %"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_access_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_recent_access_date
+msgid "Access date"
+msgstr "Ngày truy cập"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_advisory.py:45
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:72
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_advisory_procurement_id
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Advisory Procurement"
+msgstr "Hợp đồng tư vấn đấu thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:129
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:342
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_after_tax
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_after_tax
+#, python-format
+msgid "After Tax"
+msgstr "Giá trị duyệt sau thuế"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:122
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_approval_date
+#, python-format
+msgid "Approval Date"
+msgstr "Ngày phê duyệt"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_approve_pq_document_view
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_approve_pq_document_id
+msgid "Approve PQ Document"
+msgstr "Ghi nhận hồ sơ sơ tuyển"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:91
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Approve PQ Documents"
+msgstr "Ghi nhận hồ sơ sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_department_permission_approve
+msgid "Approve Permission"
+msgstr "Quyền phê duyệt"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:152
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:188
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:259
+#, python-format
+msgid "Approved"
+msgstr "Đã duyệt"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:198
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_approved
+#, python-format
+msgid "Approved By The Director"
+msgstr "Đã được giám đốc phê duyệt"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:125
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_approver
+#, python-format
+msgid "Approver"
+msgstr "Người phê duyệt"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "Are you sure to delete?"
+msgstr "Bạn có chắc muốn xóa không?"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:94
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_arena
+#, python-format
+msgid "Arena"
+msgstr "Phạm vi"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_advisory_procurement_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_bidding_document_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_confirm_procurement_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_invitation_pq_document_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_procurement_information_attachment_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_attachment_ids
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_approve_pq_document_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_bid_profile_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_confirm_prequalification_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_expertise_result_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_negotiation_result_view_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "Attach Files"
+msgstr "Tệp tin đính kèm"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_ranking_list_form
+msgid "Attach file"
+msgstr "Tệp tin đính kèm"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:126
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_before_tax
+#, python-format
+msgid "Before Tax"
+msgstr "Giá trị duyệt trước thuế"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_confirm.py:82
+#, python-format
+msgid "Before Tax must be bigger than 0"
+msgstr "Giá trị duyệt trước thuế phải lớn hơn 0"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:269
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_bid_closing_date
+#, python-format
+msgid "Bid Closing Date"
+msgstr "Ngày đóng thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_bidding_document.py:72
+#, python-format
+msgid "Bid Closing Date cannot be set before Release Time !"
+msgstr "Ngày đóng thầu không thể đặt trước thời gian phát hành !"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:303
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:342
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_bid_profile_view
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_negotiation_result_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_ranking_list_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_bid_profile_id
+#, python-format
+msgid "Bid Profile"
+msgstr "Số hồ sơ dự thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_bid_profile_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_bid_profile_tree
+msgid "Bid Profile Code"
+msgstr "Mã hồ sơ dự thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_bid_profile_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_bid_profile_tree
+msgid "Bid Profile Name"
+msgstr "Tên hồ sơ dự thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:368
+#, python-format
+msgid "Bid Profile Won"
+msgstr "Hồ sơ trúng thầu"
+
+#. module: vnitpro_procurement
+#: sql_constraint:vnitpro.expertise.result:0
+msgid "Bid Profile must be unique per Expertise Results"
+msgstr "Hồ sơ nhà thầu không được trùng nhau trong thẩm định lựa chọn nhà thầu"
+
+#. module: vnitpro_procurement
+#: sql_constraint:vnitpro.ranking.list:0
+msgid "Bid Profile must be unique per ranking list !"
+msgstr "Hồ sơ nhà thầu không được trùng nhau trong danh sách xếp hạng !"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:142
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Bid Profile/ Offer Profile"
+msgstr "Hồ sơ dự thầu/ Hồ sơ đề xuất"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:196
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_bid_submission_deadline
+#, python-format
+msgid "Bid Submission Deadline"
+msgstr "Hạn nộp cho nhà thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_invitation_pq_document.py:71
+#, python-format
+msgid "Bid Submission Deadline cannot be set before Release Time !"
+msgstr "Hạn nộp cho nhà thầu không được chọn trước Thời gian phát hành !"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_bid_profile_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_bid_profile_ids
+msgid "Bid profile/Offer Profile"
+msgstr "Hồ sơ dự thầu/Hồ sơ đề xuất"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:205
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:283
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_bidder_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_bidder_id
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_bidder
+#, python-format
+msgid "Bidder"
+msgstr "Nhà thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:169
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_bidder_a
+#, python-format
+msgid "Bidder A"
+msgstr "Nhà thầu bên A"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:170
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_bidder_b
+#, python-format
+msgid "Bidder B"
+msgstr "Nhà thầu bên B"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:37
+#, python-format
+msgid "Bidder Won"
+msgstr "Nhà thầu trúng"
+
+#. module: vnitpro_procurement
+#: sql_constraint:vnitpro.approve.pq.document:0
+#: sql_constraint:vnitpro.bid.profile:0
+msgid "Bidder must be unique per PQ document list"
+msgstr "Nhà thầu không được trùng nhau trong danh sách hồ sơ sơ tuyển"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_bidding_document.py:34
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:132
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_bidding_document_id
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Bidding Document"
+msgstr "Hồ sơ mời thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:262
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_bidding_document_code
+#, python-format
+msgid "Bidding Document Code"
+msgstr "Mã hồ sơ mời thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:264
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_bidding_document_name
+#, python-format
+msgid "Bidding Document Name"
+msgstr "Tên hồ sơ mời thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:62
+#: selection:vnitpro.procurement,procurement_type:0
+#, python-format
+msgid "Build"
+msgstr "Xây lắp"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:76
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:145
+#: selection:vnitpro.procurement,type_of_contract:0
+#: selection:vnitpro.procurement,type_of_contract_advisory:0
+#, python-format
+msgid "By Adjusted Value"
+msgstr "Theo giá trị điều chỉnh"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:74
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:143
+#: selection:vnitpro.procurement,type_of_contract:0
+#: selection:vnitpro.procurement,type_of_contract_advisory:0
+#, python-format
+msgid "By Fixed Price"
+msgstr "Theo đơn giá điều chỉnh"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:80
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:149
+#: selection:vnitpro.procurement,type_of_contract:0
+#: selection:vnitpro.procurement,type_of_contract_advisory:0
+#, python-format
+msgid "By Package"
+msgstr "Theo gói"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:78
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:147
+#: selection:vnitpro.procurement,type_of_contract:0
+#: selection:vnitpro.procurement,type_of_contract_advisory:0
+#, python-format
+msgid "By Time"
+msgstr "Theo thời gian"
+
+#. module: vnitpro_procurement
+#: selection:vnitpro.procurement,contract_duration:0
+msgid "By date"
+msgstr "Theo ngày"
+
+#. module: vnitpro_procurement
+#: selection:vnitpro.procurement,contract_duration:0
+msgid "By month"
+msgstr "Theo tháng"
+
+#. module: vnitpro_procurement
+#: selection:vnitpro.procurement,contract_duration:0
+msgid "By quarter"
+msgstr "Theo quý"
+
+#. module: vnitpro_procurement
+#: selection:vnitpro.procurement,contract_duration:0
+msgid "By start date, end date"
+msgstr "Theo ngày bắt đầu , ngày kết thúc"
+
+#. module: vnitpro_procurement
+#: selection:vnitpro.procurement,contract_duration:0
+msgid "By week"
+msgstr "Theo tuần"
+
+#. module: vnitpro_procurement
+#: selection:vnitpro.procurement,contract_duration:0
+msgid "By year"
+msgstr "Theo năm"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_advisory_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_bidding_document_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_confirm_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_invitation_form
+msgid "Close"
+msgstr "Đóng"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_recent_code
+msgid "Code"
+msgstr "Mã"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:167
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_code_advisory
+#, python-format
+msgid "Code Advisory"
+msgstr "Mã số hợp đồng"
+
+#. module: vnitpro_procurement
+#: sql_constraint:vnitpro.approve.pq.document:0
+#: sql_constraint:vnitpro.bid.profile:0
+msgid "Code Profile already exits!"
+msgstr "Mã hồ sơ bị trùng nhau, hãy kiểm tra lại!"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_color
+msgid "Color"
+msgstr "Màu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_confirm_pre_ids
+msgid "Comfirm Prequalification List"
+msgstr "Danh sách duyệt sơ tuyển"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:47
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:63
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:73
+#, python-format
+msgid "Comfirmed"
+msgstr "Đã duyệt"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_completed_expertise_bidder_selection
+msgid "Completed Expertise Bidder Selection"
+msgstr "Đã hoàn thành thẩm định lựa chọn nhà thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_completed_import_bidding_results
+msgid "Completed Import Bidding Results"
+msgstr "Đã hoàn thành nhập kết quả đấu thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_completed_import_negotiation_list
+msgid "Completed Import Negotiation Results List"
+msgstr "Đã hoàn thành nhập kết quả thương thảo"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_1
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "Completed Procurement"
+msgstr "Gói thầu đã hoàn thành"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:56
+#: selection:vnitpro.procurement,procurement_type:0
+#, python-format
+msgid "Composite"
+msgstr "Hỗn hợp"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_procurement_configure
+msgid "Configure"
+msgstr "Danh mục"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:111
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_confirm_prequalification_view
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#, python-format
+msgid "Confirm Prequalification"
+msgstr "Duyệt hồ sơ sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_confirm_pre_id
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "Confirm Prequalification List"
+msgstr "Danh sách duyệt sơ tuyển"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_confirm.py:64
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:53
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_confirm_procurement_id
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Confirm Procurement"
+msgstr "Duyệt kế hoạch đấu thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_confirm_status
+msgid "Confirm Status"
+msgstr "Trạng thái duyệt"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_confirmed
+#: selection:vnitpro.procurement,confirm_status:0
+msgid "Confirmed"
+msgstr "Đã được duyệt"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:278
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_confirmed_bidding_document
+#, python-format
+msgid "Confirmed Bidding Document"
+msgstr "Đã duyệt hồ sơ mời thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_confirmed_procurement
+msgid "Confirmed Procurement"
+msgstr "Đã duyệt kế hoạch đấu thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:206
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:284
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_contact_information
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_contact_information
+#, python-format
+msgid "Contact Information"
+msgstr "Thông tin liên lạc"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:172
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_contract_after_vat
+#, python-format
+msgid "Contract After VAT"
+msgstr "Giá trị hợp đồng sau thuế VAT"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_advisory.py:91
+#, python-format
+msgid "Contract After VAT must be bigger than 0"
+msgstr "Giá trị hợp đồng sau thuế VAT phải lớn hơn 0"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_contract_duration
+msgid "Contract Duration"
+msgstr "Thời gian thực hiện hợp đồng"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "Contractors Duration"
+msgstr "Thời gian thực hiện hợp đồng"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:98
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Contractors Selection"
+msgstr "Thời gian lựa chọn nhà thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_count_expire_today
+msgid "Count Expire Today"
+msgstr "Tính số bản ghi hết hạn trong ngày"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_count_out_of_date
+msgid "Count Out Of Date"
+msgstr "Tính số bản ghi quá hạn"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_count_record
+msgid "Count Record"
+msgstr "Tính số bản ghi"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_count_unexpired
+msgid "Count Unexpired"
+msgstr "Tính số bản ghi chưa hết hạn"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_create_user
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_create_user
+msgid "Create User"
+msgstr "Người tạo"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_negotiation_result_view
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_negotiation_result_view_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_negotiation_result_view_search
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_negotiation_result_view_tree
+msgid "Create negotiation result"
+msgstr "Thêm mới kết quả thương thảo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:177
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_created_advision
+#, python-format
+msgid "Created Advisory Procurement"
+msgstr "Đã lập hợp đồng tư vấn"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_created_bidding_document
+msgid "Created Bidding Document"
+msgstr "Đã lập hồ sơ mời thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_created_invitation_pq_doc
+msgid "Created Invitation PQ Documents"
+msgstr "Đã lập hồ sơ mời sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_create_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_create_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:199
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_creator
+#, python-format
+msgid "Creator"
+msgstr "Người tạo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:131
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:174
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:38
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_currency_advisory_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_currency_confirm_id
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_currency
+#, python-format
+msgid "Currency"
+msgstr "Loại tiền tệ"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_procurement_dashboard
+msgid "Dashboard"
+msgstr "Màn hình điều khiển"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:343
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_date_negotiation
+#, python-format
+msgid "Date Negotiation"
+msgstr "Ngày thương thảo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:303
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_date_of_bid
+#, python-format
+msgid "Date Of Bid"
+msgstr "Ngày chấm thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:270
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_date_open_file
+#, python-format
+msgid "Date Open File"
+msgstr "Ngày mở hồ sơ"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:36
+#, python-format
+msgid "Date Open Profile"
+msgstr "Ngày mở hồ sơ"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_days
+msgid "Days"
+msgstr "Số ngày"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement.py:118
+#, python-format
+msgid "Days must be bigger than 0"
+msgstr "Số ngày phải lớn hơn 0"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:370
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_decided_date
+#, python-format
+msgid "Decided Date"
+msgstr "Ngày quyết định"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "Delete"
+msgstr "Xóa"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_access_recent_tree
+msgid "Detail"
+msgstr "Chi tiết"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:304
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_discount
+#, python-format
+msgid "Discount"
+msgstr "Giảm giá"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_ranking_list.py:63
+#, python-format
+msgid "Discount must be bigger than 0 !"
+msgstr "Giảm giá phải lớn hơn 0 !"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_details_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_details_xlsx_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_list_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_list_xlsx_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_recent_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_display_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:206
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:284
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_document_submission_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_document_submission_date
+#, python-format
+msgid "Document Submission Date"
+msgstr "Thời gian nộp hồ sơ"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:45
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:65
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:75
+#: selection:vnitpro.procurement,confirm_status:0
+#, python-format
+msgid "Draft"
+msgstr "Chưa duyệt"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:175
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_advisory_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Duration Of Contract"
+msgstr "Thời gian thực hiện hợp đồng"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "Edit"
+msgstr "Sửa"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_employee_id
+msgid "Employee"
+msgstr "Người lao động"
+
+#. module: vnitpro_procurement
+#: sql_constraint:vnitpro.procurement.permission:0
+msgid "Employee must be unique in permission of procurement table"
+msgstr "Nhân viên đã được phân quyền trong gói thầu!"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement.py:114
+#, python-format
+msgid "End Date cannot be set before Start Date !"
+msgstr "Ngày kết thúc thực hiện hợp đồng không thể đặt trước ngày bắt đầu thực hiện hợp đồng!"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_end_date
+msgid "End date"
+msgstr "Ngày kết thúc"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:227
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_bid_submission_deadline
+#, python-format
+msgid "Evaluation Date"
+msgstr "Ngày đánh giá"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:227
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:305
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_expert_team_leader
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_expert_team_leader
+#, python-format
+msgid "Expert Team Leader"
+msgstr "Tổ trưởng tổ chuyên gia"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:227
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:305
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_expert_team_member
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_expert_team_member
+#, python-format
+msgid "Expert Team Member"
+msgstr "Thành viên tổ chuyên gia"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "Expertise Bidder Selection"
+msgstr "Thẩm định lựa chọn nhà thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:368
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_expertise_end_date
+#, python-format
+msgid "Expertise End Date"
+msgstr "Ngày kết thúc thẩm định"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_expertise_result_view
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_expertise_result_id
+msgid "Expertise Result"
+msgstr "Kết quả thẩm định"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:369
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_expertise_results
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_expertise_result_ids
+#, python-format
+msgid "Expertise Results"
+msgstr "Kết quả thẩm định"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:368
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_expertise_start_date
+#, python-format
+msgid "Expertise Start Date"
+msgstr "Ngày bắt đầu thẩm định"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_expertise_result.py:51
+#, python-format
+msgid "Expertise Start Date cannot be set before Expertise End Date !"
+msgstr "Ngày bắt đầu thẩm định không được chọn trước Ngày kết thúc thẩm định!"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:226
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:304
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:370
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_expertise_team_leader
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_expertise_team_leader
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_expertise_team_leader
+#, python-format
+msgid "Expertise Team Leader"
+msgstr "Tổ trưởng tổ thẩm định"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:226
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:305
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:370
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_expertise_team_member
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_expertise_team_member
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_expertise_team_member
+#, python-format
+msgid "Expertise Team Member"
+msgstr "Thành viên tổ thẩm định"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_expire_date
+msgid "Expire Date"
+msgstr "Ngày hết hạn"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_dashboard_kanban
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+msgid "Expire Today"
+msgstr "Hết hạn hôm nay"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:369
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_exposure_price_with_vat
+#, python-format
+msgid "Exposure Price With VAT"
+msgstr "Giá trúng thầu có VAT"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_expertise_result.py:57
+#, python-format
+msgid "Exposure Price With VAT must be bigger than 0 !"
+msgstr "Giá trúng thầu có VAT phải lớn hơn 0 !"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_finished_to_approve_pq_document
+msgid "Finished To Approve PQ Document"
+msgstr "Đã kết thúc duyệt sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_finished_to_comfirm_prequalification
+msgid "Finished To Comfirm Prequalification"
+msgstr "Đã kết thúc ghi nhận hồ sơ sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_finished_to_take_bid_profile
+msgid "Finished To Take Bid Profile"
+msgstr "Đã kết thúc nhận hồ sơ dự thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:70
+#: selection:vnitpro.procurement,procurement_method:0
+#, python-format
+msgid "Following The Shortened Procedure"
+msgstr "Theo qui trình rút gọn"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_from_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_from_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_from_date_ad
+msgid "From Date"
+msgstr "Từ ngày"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_from_date
+msgid "From date"
+msgstr "Từ ngày"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:90
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:164
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:107
+#, python-format
+msgid "From: "
+msgstr "Từ: "
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:100
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:176
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:35
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_funds
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_funds_advisory
+#, python-format
+msgid "Funds"
+msgstr "Nguồn vốn"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_procurement_configure_general
+msgid "General"
+msgstr "Danh mục chung"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_gen_procurement_details_report_view
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_gen_procurement_details_report
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_gen_proecurement_details_report
+msgid "Generate Procurement Details Report"
+msgstr "Báo cáo danh sách chi tiết gói thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_gen_procurement_list_report_view
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_gen_procurement_list_report
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_gen_proecurement_list_report
+msgid "Generate Procurement List Report"
+msgstr "Báo cáo danh sách gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/wizard/gen_procurement_details_report.py:36
+#: code:addons/vnitpro_procurement/wizard/gen_procurement_list_report.py:33
+#, python-format
+msgid "Generate Report"
+msgstr "Tạo báo cáo"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_details_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_details_xlsx_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_list_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_list_xlsx_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_recent_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_2
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "Incomplete Procurement"
+msgstr "Gói thầu chưa hoàn thành"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:48
+#: selection:vnitpro.procurement,arena:0
+#, python-format
+msgid "Inland"
+msgstr "Trong nước"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:50
+#: selection:vnitpro.procurement,arena:0
+#, python-format
+msgid "International"
+msgstr "Quốc tế"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_bidding_document.py:66
+#, python-format
+msgid "Invalid Bidding Document Code, please try again ( Bidding Document Code only contains letters, numbers and character: / , \\ , _ ) ."
+msgstr "Mã hồ sơ mời thầu không hợp lệ, Vui lòng nhập lại ( Mã hồ sơ mời thầu chỉ chứa chữ cái, số và kí tự: / ,  , _ ) ."
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_advisory.py:83
+#, python-format
+msgid "Invalid Code Advisory, please try again ( Code Advisory only contains letters, numbers and character: / , \\ , _ ) ."
+msgstr "Mã số hợp đồng không hợp lệ, Vui lòng nhập lại ( Mã số hợp đồng chỉ chứa chữ cái, số và kí tự: / ,  , _ ) ."
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_confirm.py:90
+#, python-format
+msgid "Invalid Number Of Approval Decision, please try again ( Number Of Approval Decision only contains letters, numbers and character: / , \\ , _ ) ."
+msgstr "Số QĐ phê duyệt không hợp lệ, Vui lòng nhập lại ( Số QĐ phê duyệt chỉ chứa chữ cái, số và kí tự: / ,  , _ ) ."
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_approve_pq_document.py:45
+#: code:addons/vnitpro_procurement/models/vnitpro_invitation_pq_document.py:63
+#, python-format
+msgid "Invalid Profile Code, please try again ( Profile Code only contains letters, numbers and character: / , \\ , _ ) ."
+msgstr "Mã hồ sơ không hợp lệ, Vui lòng nhập lại ( Mã hồ sơ chỉ chứa chữ cái, số và kí tự: / ,  , _ ) ."
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_invitation_pq_document_procurement_id
+msgid "Invitation PQ Document Procurement"
+msgstr "Hồ sơ mời thầu tuyển đấu thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_invitation_pq_document.py:35
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:73
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Invitation PQ Documents"
+msgstr "Hồ sơ mời thầu sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_details___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_details_xlsx___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_list___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_report_vnitpro_procurement_report_gen_procurement_list_xlsx___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_recent___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission___last_update
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_write_uid
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_write_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_approve_pq_document_ids
+msgid "List PQ Document"
+msgstr "Danh sách hồ sơ - sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "List PQ Documents"
+msgstr "Danh sách hồ sơ - sơ tuyển"
+
+#. module: vnitpro_procurement
+#: selection:vnitpro.expertise.result,expertise_results:0
+msgid "Lose"
+msgstr "Không trúng"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:58
+#: selection:vnitpro.procurement,procurement_type:0
+#, python-format
+msgid "Merchandise Shoping"
+msgstr "Mua sắm hàng hóa"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:128
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_money_tax
+#, python-format
+msgid "Money Tax"
+msgstr "Số tiền thuế"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_months
+msgid "Months"
+msgstr "Số tháng"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement.py:122
+#, python-format
+msgid "Months must be bigger than 0"
+msgstr "Số tháng phải lớn hơn 0"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_recent_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_name
+msgid "Name"
+msgstr "Tên"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:168
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_name_advisory
+#, python-format
+msgid "Name Advisory"
+msgstr "Tên hợp đồng"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:342
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_negotation_result_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_negotiation_result
+#, python-format
+msgid "Negotiation Result"
+msgstr "Kết quả thương thảo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:186
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:208
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Negotiation Results"
+msgstr "Kết quả thương thảo"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_negotiation_list_ids
+msgid "Negotiation Results List"
+msgstr "Danh sách kết quả thương thảo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:37
+#, python-format
+msgid "Negotiation Schedule"
+msgstr "Lịch thương thảo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:344
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_negotiation_team_leader
+#, python-format
+msgid "Negotiation Team Leader"
+msgstr "Tổ trưởng tổ thương thảo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:344
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_negotiation_team_member
+#, python-format
+msgid "Negotiation Team Member"
+msgstr "Thành viên tổ thương thảo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:276
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_new_history
+#, python-format
+msgid "New History"
+msgstr "Lịch thương thảo"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_10
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "No Bidding Results"
+msgstr "Chưa có kết quả đấu thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_12
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "No Expertise Bidder Selection"
+msgstr "Chưa thẩm định lựa chọn nhà thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_11
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "No Negotiation Results"
+msgstr "Chưa có kết quả thương thảo"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_7
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "Not Confirm Prequalification List"
+msgstr "Chưa duyệt sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_8
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "Not Create Bidding Document"
+msgstr "Chưa lập hồ sơ mời thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_5
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "Not Create Invitation PQ Document"
+msgstr "Chưa lập hồ sơ mời thầu sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+msgid "Not Create PQ Document"
+msgstr "Chưa ghi nhận hồ sơ sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_4
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "Not Create Procurement Advisory"
+msgstr "Chưa lập hợp đồng tư vấn"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:238
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:317
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:381
+#: selection:vnitpro.confirm.prequalification,result:0
+#: selection:vnitpro.ranking.list,result:0
+#, python-format
+msgid "Not Passed"
+msgstr "Không đạt"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_note
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_note
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:120
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_code_confirm
+#, python-format
+msgid "Number Of Approval Decision"
+msgstr "Số quyết định phê duyệt"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:369
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_number_of_the_selected_bid
+#, python-format
+msgid "Number Of The Selected Bid"
+msgstr "Số quyết định lựa chọn nhà thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:68
+#: selection:vnitpro.procurement,procurement_method:0
+#, python-format
+msgid "One Packpage"
+msgstr "Một túi hồ sơ"
+
+#. module: vnitpro_procurement
+#: sql_constraint:vnitpro.expertise.result:0
+msgid "Only have one bid profile won per procurement, please double check again"
+msgstr "Chỉ có một hồ sơ trúng thầu trong một gói thầu, xin kiểm tra lại"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_dashboard_kanban
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+msgid "Out Of Date"
+msgstr "Quá hạn"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:226
+#, python-format
+msgid "PQ Document"
+msgstr "Hồ sơ sơ tuyển"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:236
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:315
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:379
+#: selection:vnitpro.confirm.prequalification,result:0
+#: selection:vnitpro.ranking.list,result:0
+#, python-format
+msgid "Passed"
+msgstr "Đạt"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_payment_capital
+msgid "Payment Capital"
+msgstr "Loại vốn thanh toán"
+
+#. module: vnitpro_procurement
+#: sql_constraint:vnitpro.confirm.prequalification:0
+msgid "Performance qualification document must be unique per Approve PQ Document List"
+msgstr "Hồ sơ sơ tuyển không được trùng nhau trong danh sách duyệt sơ tuyển."
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:303
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_point
+#, python-format
+msgid "Point"
+msgstr "Số điểm"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_ranking_list.py:50
+#, python-format
+msgid "Point must be bigger than 0 !"
+msgstr "Số điểm phải lớn hơn 0 !"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:343
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_price_difference
+#, python-format
+msgid "Price Difference"
+msgstr "Giá chênh so với gói thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_details_report_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_list_report_form
+msgid "Print Excel"
+msgstr "In Excel"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_procurement_view
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_procurement_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_procurement_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_procurement_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_expertise_result_procurement_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_procurement_ids
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_procurement_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_procurement_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_procurement_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_procurement_id
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_procurement
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_procurement_configure_procurement
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_procurement_root
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_details_report_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_tree
+#: model:res.groups,name:vnitpro_procurement.group_procurement
+msgid "Procurement"
+msgstr "Gói thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_procurement_access_recent_view
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_procurement_access_recent
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_access_recent_search
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_access_recent_tree
+msgid "Procurement Access Recent"
+msgstr "Gói thầu truy cập gần đây"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:92
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:34
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_procurement_code
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_procurement_code
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_details_report_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_tree
+#, python-format
+msgid "Procurement Code"
+msgstr "Số hiệu gói thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_procurement_dashboard_view
+msgid "Procurement Dashboard"
+msgstr "Bảng thông tin gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:24
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_detail_ids
+#, python-format
+msgid "Procurement Detail"
+msgstr "Chi tiết gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:36
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_details_report_form
+#, python-format
+msgid "Procurement Details Report"
+msgstr "Báo cáo chi tiết gói thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_procurement_formality
+msgid "Procurement Formality"
+msgstr "Hình thức chọn thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:52
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_procurement_information_id
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Procurement Information"
+msgstr "Thông tin gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list_xlsx.py:24
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_details_report_form
+#, python-format
+msgid "Procurement List"
+msgstr "Danh sách gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:29
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_list_report_form
+#, python-format
+msgid "Procurement List Report"
+msgstr "Báo cáo danh sách gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:97
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_procurement_method
+#, python-format
+msgid "Procurement Method"
+msgstr "Phương thức đấu thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:93
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:34
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_procurement_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_procurement_name
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_tree
+#, python-format
+msgid "Procurement Name"
+msgstr "Tên gói thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_res_users_procurement_permission_ids
+msgid "Procurement Permission"
+msgstr "Phân quyền gói thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "Procurement Permissions"
+msgstr "Phân quyền trong gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:96
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_procurement_formality_id
+#, python-format
+msgid "Procurement Selection Form"
+msgstr "Hình thức lựa chọn nhà thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+msgid "Procurement State"
+msgstr "Tình trạng gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:95
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_procurement_type
+#, python-format
+msgid "Procurement type"
+msgstr "Loại hình đấu thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_dashboard_kanban
+msgid "Procurement(s)"
+msgstr "Gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:192
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:205
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:283
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_code
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_code
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_code_profile
+#, python-format
+msgid "Profile Code"
+msgstr "Mã hồ sơ"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:193
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:205
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:283
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_name_profile
+#, python-format
+msgid "Profile Name"
+msgstr "Tên hồ sơ"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:54
+#: selection:vnitpro.procurement,procurement_type:0
+#, python-format
+msgid "Provide Non-Consulting Services"
+msgstr "Cung cấp dịch vụ phi tư vấn"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_quarters
+msgid "Quarters"
+msgstr "Số quý"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement.py:124
+#, python-format
+msgid "Quaters must be bigger than 0"
+msgstr "Số quý phải lớn hơn 0"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:162
+#: model:ir.actions.act_window,name:vnitpro_procurement.act_open_vnitpro_ranking_list_view
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_base_attachment_ranking_list_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_ranking_list_ids
+#: model:ir.ui.view,arch_db:vnitpro_procurement.report_gen_procurement_details
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_form
+#, python-format
+msgid "Ranking List"
+msgstr "Danh sách xếp hạng"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:194
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:267
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_release_time
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_release_time_bidding
+#, python-format
+msgid "Release Time"
+msgstr "Thời gian phát hành"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:35
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:28
+#, python-format
+msgid "Report Date: "
+msgstr "Ngày lập báo cáo: "
+
+#. module: vnitpro_procurement
+#: model:ir.actions.report,name:vnitpro_procurement.action_report_generate_procurement_details
+msgid "Report Procurement Details"
+msgstr "Báo cáo chi tiết gói thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.report,name:vnitpro_procurement.action_report_generate_procurement_details_xlsx
+msgid "Report Procurement Details Excel"
+msgstr "Báo cáo chi tiết gói thầu Excel"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.report,name:vnitpro_procurement.action_report_generate_procurement_list
+msgid "Report Procurement List"
+msgstr "Báo cáo danh sách gói thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.actions.report,name:vnitpro_procurement.action_report_generate_procurement_list_xlsx
+msgid "Report Procurement List Excel"
+msgstr "Báo cáo danh sách gói thầu Excel"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.menu,name:vnitpro_procurement.menu_vnitpro_procurement_report
+msgid "Reports"
+msgstr "Báo cáo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:227
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:306
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_result
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_result
+#, python-format
+msgid "Result"
+msgstr "Kết quả"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_review_and_note
+msgid "Review And Note"
+msgstr "Đánh giá - ghi chú"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:274
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_review_end
+#, python-format
+msgid "Review End Date"
+msgstr "Ngày kết thúc đánh giá hồ sơ"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:272
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_review_start
+#, python-format
+msgid "Review Start Date"
+msgstr "Ngày bắt đầu đánh giá hồ sơ"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_review_and_note
+msgid "Review and note"
+msgstr "Đánh giá - ghi chú"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_advisory_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_bidding_document_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_confirm_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_invitation_form
+msgid "Save"
+msgstr "Lưu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_confirm_prequalification_approve_pq_document_id
+msgid "Select The Pre-Selection"
+msgstr "Chọn hồ sơ sơ tuyển"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:60
+#: selection:vnitpro.procurement,procurement_type:0
+#, python-format
+msgid "Selective﻿ Advisory"
+msgstr "Tuyển chọn tư vấn"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement.py:116
+#, python-format
+msgid "Start Date cannot be set before To Date !"
+msgstr "Thời gian bắt đầu thực hiện hợp đồng không thể đặt trước ngày bắt đầu lựa chọn nhà thầu!"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_start_date
+msgid "Start date"
+msgstr "Ngày bắt đầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_dashboard_status
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_status_tree
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:206
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:284
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_approve_pq_document_submission_name
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_bid_profile_submission_name
+#, python-format
+msgid "Submission Name"
+msgstr "Tên người nộp"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:343
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_negotiation_result_the_negotiated_price_includes_vat
+#, python-format
+msgid "The Negotiated Price Includes VAT"
+msgstr "Giá thương thảo đã có VAT"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_negotiation_result.py:44
+#, python-format
+msgid "The Negotiated Price Includes VAT must be bigger than 0 !"
+msgstr "Giá thương thảo đã có VAT phải lớn hơn 0 !"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:304
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_ranking_list_the_price_includes_vat
+#, python-format
+msgid "The Price Includes VAT"
+msgstr "Giá chào đã có VAT"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_ranking_list.py:57
+#, python-format
+msgid "The Price Includes VAT must be bigger than 0 !"
+msgstr "Giá chào đã có VAT phải lớn hơn 0 !"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:34
+#, python-format
+msgid "Time Bidder Selection"
+msgstr "Thời gian lựa chọn nhà thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:36
+#, python-format
+msgid "Time Bidding"
+msgstr "Thời gian nộp thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:35
+#, python-format
+msgid "Time Contractors Duration"
+msgstr "Thời gian thực hiện hợp đồng"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:35
+#, python-format
+msgid "Time Invitation"
+msgstr "Thời gian nộp sơ tuyển"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:36
+#, python-format
+msgid "Time Review"
+msgstr "Thời gian đánh giá"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_details_report_to_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_gen_procurement_list_report_to_date
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_to_date_ad
+msgid "To Date"
+msgstr "Đến ngày"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/wizard/gen_procurement_details_report.py:33
+#: code:addons/vnitpro_procurement/wizard/gen_procurement_list_report.py:30
+#, python-format
+msgid "To Date cannot be set before From Date"
+msgstr "Ngày kết thúc(Đến ngày) không thể đặt trước ngày bắt đầu(Từ ngày) "
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement.py:107
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement_advisory.py:98
+#, python-format
+msgid "To Date cannot be set before From Date !"
+msgstr "Ngày kết thúc lựa chọn nhà thầu không thể đặt trước ngày bắt đầu lựa chọn nhà thầu !"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_to_date
+msgid "To date"
+msgstr "Đến ngày"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:66
+#: selection:vnitpro.procurement,procurement_method:0
+#, python-format
+msgid "Two Packpage"
+msgstr "Hai túi hồ sơ"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:99
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:171
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_type_of_contract
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_type_of_contract_advisory
+#, python-format
+msgid "Type Of Contract"
+msgstr "Loại hợp đồng - đơn giá"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:154
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:190
+#: code:addons/vnitpro_procurement/reports/report_procurement_details.py:261
+#, python-format
+msgid "Unapproved"
+msgstr "Chưa duyệt"
+
+#. module: vnitpro_procurement
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_6
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "Unapproved PQ Document"
+msgstr "Chưa ghi nhận hồ sơ sơ tuyển"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_3
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "Unapproved Procurement Plan"
+msgstr "Chưa duyệt kế hoạch đấu thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_dashboard_kanban
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+msgid "Unexpired"
+msgstr "Chưa hết hạn"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_procurement_search
+#: model:vnitpro.procurement.dashboard,name:vnitpro_procurement.procurement_dashboard_9
+#: selection:vnitpro.procurement.dashboard,status:0
+msgid "Unset Bidding Profile"
+msgstr "Chưa nhận hồ sơ dự thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_recent_user_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_access_user_id
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_permission_user_id
+msgid "User"
+msgstr "Người dùng"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_res_users
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_vat_information
+msgid "VAT Information"
+msgstr "Giá trị gói đầu đã có VAT"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:38
+#, python-format
+msgid "Value Procurement"
+msgstr "Giá trị gói thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_list.py:38
+#, python-format
+msgid "Value Won"
+msgstr "Giá trị trúng thầu"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement.py:100
+#, python-format
+msgid "Vat Information must be bigger than 0 !"
+msgstr "Giá trị gói đầu đã có VAT phải lớn hơn 0 !"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_details_report_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_list_report_form
+msgid "View PDF"
+msgstr "Xem dưới dạng PDF"
+
+#. module: vnitpro_procurement
+#: model:ir.ui.view,arch_db:vnitpro_procurement.view_vnitpro_gen_procurement_details_report_form
+msgid "View Report"
+msgstr "Xem báo cáo"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement.py:120
+#, python-format
+msgid "Weaks must be bigger than 0"
+msgstr "Số tuần phải lớn hơn 0"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_weeks
+msgid "Weeks"
+msgstr "Số tuần"
+
+#. module: vnitpro_procurement
+#: selection:vnitpro.expertise.result,expertise_results:0
+msgid "Won"
+msgstr "Trúng thầu"
+
+#. module: vnitpro_procurement
+#: model:ir.model.fields,field_description:vnitpro_procurement.field_vnitpro_procurement_years
+msgid "Years"
+msgstr "Số năm"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/models/vnitpro_procurement.py:126
+#, python-format
+msgid "Years must be bigger than 0"
+msgstr "Số năm phải lớn hơn 0"
+
+#. module: vnitpro_procurement
+#: code:addons/vnitpro_procurement/reports/report_procurement_details_xlsx.py:35
+#: code:addons/vnitpro_procurement/reports/report_procurement_list_xlsx.py:32
+#, python-format
+msgid "mm-dd-yyyy"
+msgstr "dd-mm-yyyy"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_report_vnitpro_procurement_report_gen_procurement_details
+msgid "report.vnitpro_procurement.report_gen_procurement_details"
+msgstr "report.vnitpro_procurement.report_gen_procurement_details"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_report_vnitpro_procurement_report_gen_procurement_details_xlsx
+msgid "report.vnitpro_procurement.report_gen_procurement_details_xlsx"
+msgstr "report.vnitpro_procurement.report_gen_procurement_details_xlsx"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_report_vnitpro_procurement_report_gen_procurement_list
+msgid "report.vnitpro_procurement.report_gen_procurement_list"
+msgstr "report.vnitpro_procurement.report_gen_procurement_list"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_report_vnitpro_procurement_report_gen_procurement_list_xlsx
+msgid "report.vnitpro_procurement.report_gen_procurement_list_xlsx"
+msgstr "report.vnitpro_procurement.report_gen_procurement_list_xlsx"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_approve_pq_document
+msgid "vnitpro.approve.pq.document"
+msgstr "vnitpro.approve.pq.document"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_base_attachment
+msgid "vnitpro.base.attachment"
+msgstr "vnitpro.base.attachment"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_bid_profile
+msgid "vnitpro.bid.profile"
+msgstr "vnitpro.bid.profile"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_confirm_prequalification
+msgid "vnitpro.confirm.prequalification"
+msgstr "vnitpro.confirm.prequalification"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_department
+msgid "vnitpro.department"
+msgstr "vnitpro.department"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_expertise_result
+msgid "vnitpro.expertise.result"
+msgstr "vnitpro.expertise.result"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_negotiation_result
+msgid "vnitpro.negotiation.result"
+msgstr "vnitpro.negotiation.result"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_procurement_access
+msgid "vnitpro.procurement.access"
+msgstr "vnitpro.procurement.access"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_procurement_access_recent
+msgid "vnitpro.procurement.access.recent"
+msgstr "vnitpro.procurement.access.recent"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_procurement_dashboard
+msgid "vnitpro.procurement.dashboard"
+msgstr "vnitpro.procurement.dashboard"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_procurement_permission
+msgid "vnitpro.procurement.permission"
+msgstr "vnitpro.procurement.permission"
+
+#. module: vnitpro_procurement
+#: model:ir.model,name:vnitpro_procurement.model_vnitpro_ranking_list
+msgid "vnitpro.ranking.list"
+msgstr "vnitpro.ranking.list"

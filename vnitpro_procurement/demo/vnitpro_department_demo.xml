@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="vnitpro_employee.department_1" model="vnitpro.department">
+            <field name="permission_approve">true</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_contract_root" name="Contract" sequence="15"
+                  web_icon="vnitpro_contract,static/description/icon.png"/>
+        <menuitem id="menu_vnitpro_contract_dashboard" name="Dashboard" parent="menu_vnitpro_contract_root"
+                  sequence="0"
+                  action="act_open_vnitpro_contract_dashboard_view"/>
+        <menuitem id="menu_vnitpro_contract_access_recent" name="Contract Access Recent"
+                  parent="vnitpro_base.menu_vnitpro_access_recent"
+                  sequence="24"
+                  action="act_open_vnitpro_contract_access_recent_view"/>
+        <menuitem id="menu_vnitpro_contract_sub" name="Contract" parent="menu_vnitpro_contract_root" sequence="1"/>
+        <menuitem id="menu_vnitpro_contract_input" name="Input Contract" parent="menu_vnitpro_contract_sub" sequence="1"
+                  action="act_open_vnitpro_input_contract_view"/>
+        <menuitem id="menu_vnitpro_contract_output" name="Output Contract" parent="menu_vnitpro_contract_sub"
+                  sequence="2" action="act_open_vnitpro_output_contract_view"/>
+        <menuitem id="menu_vnitpro_all_contract" name="All Contract" parent="menu_vnitpro_contract_sub"
+                  sequence="3" action="act_open_vnitpro_contract_view"/>
+    </data>
+</odoo>

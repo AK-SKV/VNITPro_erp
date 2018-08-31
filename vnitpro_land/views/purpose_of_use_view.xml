@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="view_purpose_of_use_form_inherit_land" model="ir.ui.view">
+            <field name="name">vnitpro.purpose.of.use.form_inheirt_land</field>
+            <field name="model">vnitpro.purpose.of.use</field>
+            <field name="priority" eval="9"/>
+            <field name="inherit_id" ref="vnitpro_purpose_of_use.view_purpose_of_use_form"/>
+            <field name="arch" type="xml">
+                <sheet position="after">
+                	<div class="oe_chatter">
+                	    <field name="message_follower_ids" widget="mail_followers"/>
+                	    <field name="message_ids" widget="mail_thread"/>
+                	</div>
+                </sheet>
+            </field>
+        </record>
+	</data>
+</odoo>

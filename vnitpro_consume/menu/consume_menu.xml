@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_delivery_plan" name="Delivery Plan" sequence="1" parent="menu_vnitpro_consume_root"
+                  action="act_open_vnitpro_delivery_plan_view"/>
+        <menuitem id="menu_vnitpro_order" name="Order" sequence="2" parent="menu_vnitpro_consume_root"
+                  action="act_open_vnitpro_order_view"/>
+        <menuitem id="menu_vnitpro_tracking_card" name="Tracking Card" sequence="3" parent="menu_vnitpro_consume_root"
+                  action="act_open_vnitpro_tracking_card_view"/>
+         <menuitem id="menu_vnitpro_direct_import" name="Direct Import Product" sequence="4" parent="menu_vnitpro_consume_root"
+                  action="act_open_vnitpro_direct_import_product_view"/>
+    </data>
+</odoo>

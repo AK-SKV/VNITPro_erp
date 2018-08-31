@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	 <data>
+	    <record id="view_vnitpro_contract_procurement_relation_inherit_form" model="ir.ui.view">
+            <field name="name">vnitpro.contract.procurement.relation.inherit.form</field>
+            <field name="model">vnitpro.contract</field>
+            <field name="priority" eval="7"/>
+            <field name="inherit_id" ref="vnitpro_contract.view_vnitpro_contract_form"/>
+            <field name="arch" type="xml">
+                <field name="bidder_a" position="before">
+                    <field name="procurement_id" colspan="16" 
+                        domain="[('completed_expertise_bidder_selection','=', 'true')]"/>
+                    <field name="procurement_formality" colspan="8"/>
+                    <field name="price_plan" colspan="8"/>
+                    <field name="cost_estimate" colspan="8"/>
+                    <field name="price_won_procurement" colspan="8"/>
+                </field>
+       		</field>
+        </record>
+	</data>
+</odoo>

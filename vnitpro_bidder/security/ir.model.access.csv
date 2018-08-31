@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vnitpro_bidder,vnitpro_bidder,model_vnitpro_bidder,vnitpro_base.group_configure,1,1,1,1
+access_vnitpro_bank_of_bidder,vnitpro_bank_of_bidder,model_vnitpro_bank_of_bidder,vnitpro_base.group_configure,1,1,1,1
+access_vnitpro_bidder_group_user,vnitpro_bidder_group_user,model_vnitpro_bidder,base.group_user,1,0,0,0
+access_vnitpro_bank_of_bidder_group_user,vnitpro_bank_of_bidder_group_user,model_vnitpro_bank_of_bidder,base.group_user,1,0,0,0

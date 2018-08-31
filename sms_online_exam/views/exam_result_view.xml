@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_sms_online_exam_result_tree" model="ir.ui.view">
+            <field name="name">sms.online.exam.result.tree</field>
+            <field name="model">sms.online.exam.result</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="candidate_name" />
+                    <field name="candidate_birthday" />
+                    <field name="indentity_card" />
+                    <field name="exam_id" />
+                    <field name="start_exam_time" />
+                    <field name="end_exam_time" />
+                    <field name="point" />
+                    <field name="result" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_sms_online_exam_result_form" model="ir.ui.view">
+            <field name="name">sms.online.exam.result.form</field>
+            <field name="model">sms.online.exam.result</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="div_center">Candidate Information</div>
+                        <group col="4">
+                            <field name="candidate_name" />
+                            <field name="candidate_birthday" />
+                            <field name="indentity_card" />
+                            <field name="unit_id" />
+                            <field name="object_id" />
+                        </group>
+                        <div class="div_center">Exam Information</div>
+                        <group col="4">
+                            <field name="exam_id" />
+                            <field name="start_exam_time" />
+                            <field name="end_exam_time" />
+                            <field name="point" />
+                            <field name="result" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_sms_online_exam_result_search" model="ir.ui.view">
+            <field name="name">sms.online.exam.result.search</field>
+            <field name="model">sms.online.exam.result</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <search>
+                    <field name="candidate_name" />
+                    <field name="candidate_birthday" />
+                    <field name="indentity_card" />
+                    <field name="exam_id" />
+                    <field name="unit_id" />
+                    <field name="object_id" />
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_sms_online_exam_result_view">
+            <field name="name">Exam Result</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sms.online.exam.result</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_sms_online_exam_result_search" />
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_sms_online_exam_result_view_form">
+            <field name="act_window_id" ref="act_open_sms_online_exam_result_view" />
+            <field name="sequence" eval="20" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_sms_online_exam_result_form" />
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_sms_online_exam_result_view_tree">
+            <field name="act_window_id" ref="act_open_sms_online_exam_result_view" />
+            <field name="sequence" eval="10" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_sms_online_exam_result_tree" />
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    	<record id="procurement_dashboard_1" model="vnitpro.procurement.dashboard">
+            <field name="status">completed_procurement</field>
+        </record>
+        <record id="procurement_dashboard_2" model="vnitpro.procurement.dashboard">
+            <field name="status">incomplete_procurement</field>
+        </record>
+        <record id="procurement_dashboard_3" model="vnitpro.procurement.dashboard">
+            <field name="status">unapproved_procurement_plan</field>
+        </record>
+        <record id="procurement_dashboard_4" model="vnitpro.procurement.dashboard">
+            <field name="status">not_create_procurement_advisory</field>
+        </record>
+        <record id="procurement_dashboard_5" model="vnitpro.procurement.dashboard">
+            <field name="status">not_create_invitation_pq_doc</field>
+        </record>
+        <record id="procurement_dashboard_6" model="vnitpro.procurement.dashboard">
+            <field name="status">unapproved_pq_document</field>
+        </record>
+        <record id="procurement_dashboard_7" model="vnitpro.procurement.dashboard">
+            <field name="status">not_confirm_prequalification_list</field>
+        </record>
+        <record id="procurement_dashboard_8" model="vnitpro.procurement.dashboard">
+            <field name="status">not_create_bidding_document</field>
+        </record>
+        <record id="procurement_dashboard_9" model="vnitpro.procurement.dashboard">
+            <field name="status">unset_bidding_profile</field>
+        </record>
+        <record id="procurement_dashboard_10" model="vnitpro.procurement.dashboard">
+            <field name="status">no_bidding_results</field>
+        </record>
+        <record id="procurement_dashboard_11" model="vnitpro.procurement.dashboard">
+            <field name="status">no_negotiation_results</field>
+        </record>
+        <record id="procurement_dashboard_12" model="vnitpro.procurement.dashboard">
+            <field name="status">no_expertise_bidder_selection</field>
+        </record>
+    </data>
+</odoo>

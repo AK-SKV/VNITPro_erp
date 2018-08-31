@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_sub
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-29 03:35+0000\n"
+"PO-Revision-Date: 2018-05-29 03:35+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_sub
+#: model:ir.model.fields,field_description:vnitpro_sub.field_vnitpro_sub_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_sub
+#: model:ir.model.fields,field_description:vnitpro_sub.field_vnitpro_sub_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_sub
+#: model:ir.model.fields,field_description:vnitpro_sub.field_vnitpro_sub_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_sub
+#: model:ir.model.fields,field_description:vnitpro_sub.field_vnitpro_sub_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_sub
+#: model:ir.model.fields,field_description:vnitpro_sub.field_vnitpro_sub___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_sub
+#: model:ir.model.fields,field_description:vnitpro_sub.field_vnitpro_sub_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_sub
+#: model:ir.model.fields,field_description:vnitpro_sub.field_vnitpro_sub_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_sub
+#: model:ir.actions.act_window,name:vnitpro_sub.act_open_vnitpro_sub_view
+#: model:ir.ui.menu,name:vnitpro_sub.menu_vnitpro_sub
+#: model:ir.ui.view,arch_db:vnitpro_sub.view_vnitpro_sub_form
+#: model:ir.ui.view,arch_db:vnitpro_sub.view_vnitpro_sub_search
+#: model:ir.ui.view,arch_db:vnitpro_sub.view_vnitpro_sub_tree
+msgid "Sub"
+msgstr "Phụ lục"
+
+#. module: vnitpro_sub
+#: model:ir.model,name:vnitpro_sub.model_vnitpro_sub
+msgid "vnitpro.sub"
+msgstr "vnitpro.sub"
+

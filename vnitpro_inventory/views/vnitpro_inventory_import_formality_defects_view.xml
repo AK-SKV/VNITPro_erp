@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="view_vnitpro_inventory_import_formality_product_defects_form" model="ir.ui.view">
+            <field name="name">vnitpro.inventory.import.formality.product.defects.form</field>
+            <field name="model">vnitpro.inventory.import.formality.product.defects</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <group col="4">
+                        <field name="code"/>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_inventory_import_formality_packaging_form" model="ir.ui.view">
+            <field name="name">vnitpro.inventory.import.formality.packaging.form</field>
+            <field name="model">vnitpro.inventory.import.formality.packaging</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <group col="4">
+                        <field name="code"/>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

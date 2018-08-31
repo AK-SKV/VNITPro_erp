@@ -1,0 +1,70 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_payment_capital
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-29 01:26+0000\n"
+"PO-Revision-Date: 2018-05-29 01:26+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_payment_capital
+#: model:ir.model.fields,field_description:vnitpro_payment_capital.field_vnitpro_payment_capital_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_payment_capital
+#: model:ir.model.fields,field_description:vnitpro_payment_capital.field_vnitpro_payment_capital_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_payment_capital
+#: model:ir.model.fields,field_description:vnitpro_payment_capital.field_vnitpro_payment_capital_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_payment_capital
+#: model:ir.model.fields,field_description:vnitpro_payment_capital.field_vnitpro_payment_capital_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_payment_capital
+#: model:ir.model.fields,field_description:vnitpro_payment_capital.field_vnitpro_payment_capital___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_payment_capital
+#: model:ir.model.fields,field_description:vnitpro_payment_capital.field_vnitpro_payment_capital_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_payment_capital
+#: model:ir.model.fields,field_description:vnitpro_payment_capital.field_vnitpro_payment_capital_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_payment_capital
+#: model:ir.actions.act_window,name:vnitpro_payment_capital.act_open_vnitpro_payment_capital_view
+#: model:ir.ui.view,arch_db:vnitpro_payment_capital.view_vnitpro_payment_capital_form
+#: model:ir.ui.view,arch_db:vnitpro_payment_capital.view_vnitpro_payment_capital_search
+#: model:ir.ui.view,arch_db:vnitpro_payment_capital.view_vnitpro_payment_capital_tree
+msgid "Payment Capital"
+msgstr "Vốn thanh toán"
+
+#. module: vnitpro_payment_capital
+#: model:ir.ui.menu,name:vnitpro_payment_capital.menu_vnitpro_payment_capital
+msgid "Payment capital"
+msgstr "Vốn thanh toán"
+
+#. module: vnitpro_payment_capital
+#: model:ir.model,name:vnitpro_payment_capital.model_vnitpro_payment_capital
+msgid "vnitpro.payment.capital"
+msgstr "vnitpro.payment.capital"
+

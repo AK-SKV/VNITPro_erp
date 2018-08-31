@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    	<menuitem id="menu_vnitpro_land_core" name="Land Management" sequence="60" 
+                web_icon="vnitpro_land,static/description/icon.png"/>
+        <menuitem id="menu_vnitpro_land_use_rights" name="Land Use Rights" sequence="10" 
+        		parent="menu_vnitpro_land_core" action="act_open_vnitpro_land_use_rights_view"/>
+        <!-- <menuitem id="menu_vnitpro_assess_status" name="Assess Status" sequence="20" 
+                parent="menu_vnitpro_land_core" action="act_open_vnitpro_assess_status_view"/> -->
+
+        <menuitem id="menu_vnitpro_land_owner_information" name="Manage Owner Information" 
+            sequence="30" parent="menu_vnitpro_land_core"/>
+        <menuitem id="menu_vnitpro_land_owner" name="Owner" action="act_open_vnitpro_land_owner_information_view"
+            sequence="10" parent="menu_vnitpro_land_owner_information"/>
+        <menuitem id="menu_vnitpro_land_extra_owner" name="Extra Owner" action="act_open_vnitpro_land_extra_owner_view"
+            sequence="20" parent="menu_vnitpro_land_owner_information"/>
+
+        <!-- Configure - Danh mục -->
+        <menuitem id="menu_vnitpro_land_configure" name="Configure" sequence="60" 
+            parent="menu_vnitpro_land_core"/>
+        <menuitem id="menu_vnitpro_land_group" name="Land Group" sequence="10" 
+            parent="menu_vnitpro_land_configure" action="act_open_vnitpro_land_group_view"/>
+        <menuitem id="menu_vnitpro_process_unit" name="Process Unit" sequence="20" 
+            parent="menu_vnitpro_land_configure" action="act_open_vnitpro_process_unit_view"/>
+        <!-- <menuitem id="menu_vnitpro_assess_category" name="Assess Category" sequence="30" 
+                parent="menu_vnitpro_land_configure" action="act_open_vnitpro_assess_category_view"/> -->
+        <menuitem id="menu_vnitpro_land_usage_duration_menu" name="Usage Duration" sequence="40"
+            parent="menu_vnitpro_land_configure" action="act_open_vnitpro_land_usage_duration_view"/>
+        <menuitem id="menu_vnitpro_land_usage_origin_menu" name="Usage Origin" sequence="50"
+            parent="menu_vnitpro_land_configure" action="act_open_vnitpro_land_usage_origin_view"/>
+    </data>
+</odoo>

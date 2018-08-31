@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+	    <template id="assets_backend_cas_vnitpro" name="contract_assets" inherit_id="web.assets_backend">
+	        <xpath expr="." position="inside">
+	            <link rel="stylesheet" type="text/css" href="/vnitpro_contract/static/src/css/kanban.less"/>
+	        </xpath>
+	    </template>
+	</data>
+</odoo>

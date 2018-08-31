@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vietnam_city_an_giang" model="vnitpro.res.city">
+            <field name="code">angiang</field>
+            <field name="name">An Giang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_ba_ria" model="vnitpro.res.city">
+            <field name="code">bariavungtau</field>
+            <field name="name">Ba Ria - Vung Tau</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_bac_lieu" model="vnitpro.res.city">
+            <field name="code">baclieu</field>
+            <field name="name">Bac Lieu</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_bac_kan" model="vnitpro.res.city">
+            <field name="code">backan</field>
+            <field name="name">Bac Kan</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_bac_giang" model="vnitpro.res.city">
+            <field name="code">bacgiang</field>
+            <field name="name">Bac Giang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_bac_ninh" model="vnitpro.res.city">
+            <field name="code">bacninh</field>
+            <field name="name">Bac Ninh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_ben_tre" model="vnitpro.res.city">
+            <field name="code">bentre</field>
+            <field name="name">Ben Tre</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_binh_duong" model="vnitpro.res.city">
+            <field name="code">binhduong</field>
+            <field name="name">Binh Duong</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_binh_dinh" model="vnitpro.res.city">
+            <field name="code">binhdinh</field>
+            <field name="name">Binh Dinh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_binh_phuoc" model="vnitpro.res.city">
+            <field name="code">binhphuoc</field>
+            <field name="name">Binh Phuoc</field>
+             <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_binh_thuan" model="vnitpro.res.city">
+            <field name="code">binhthuan</field>
+            <field name="name">Binh Thuan</field>
+             <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_ca_mau" model="vnitpro.res.city">
+            <field name="code">camau</field>
+            <field name="name">Ca Mau</field>
+             <field name="country_id" ref="base.vn"/>
+        </record>        
+        <record id="vietnam_city_cao_bang" model="vnitpro.res.city">
+            <field name="code">caobang</field>
+            <field name="name">Cao Bang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_can_tho" model="vnitpro.res.city">
+            <field name="code">cantho</field>
+            <field name="name">Can Tho</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>        
+        <record id="vietnam_city_da_nang" model="vnitpro.res.city">
+            <field name="code">danang</field>
+            <field name="name">Da Nang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_dak_lak" model="vnitpro.res.city">
+            <field name="code">daklak</field>
+            <field name="name">Dak Lak</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_dak_nong" model="vnitpro.res.city">
+            <field name="code">daknong</field>
+            <field name="name">Dak Nong</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_dong_nai" model="vnitpro.res.city">
+            <field name="code">dongnai</field>
+            <field name="name">Dong Nai</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_dong_thap" model="vnitpro.res.city">
+            <field name="code">dongthap</field>
+            <field name="name">Dong Thap</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_dien_bien" model="vnitpro.res.city">
+            <field name="code">dienbien</field>
+            <field name="name">Dien Bien</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_gia_lai" model="vnitpro.res.city">
+            <field name="code">gialai</field>
+            <field name="name">Gia Lai</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_ha_giang" model="vnitpro.res.city">
+            <field name="code">hagiang</field>
+            <field name="name">Ha Giang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_ha_nam" model="vnitpro.res.city">
+            <field name="code">hanam</field>
+            <field name="name">Ha Nam</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_ha_noi" model="vnitpro.res.city">
+            <field name="code">hanoi</field>
+            <field name="name">Ha Noi</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_ha_tinh" model="vnitpro.res.city">
+            <field name="code">hatinh</field>
+            <field name="name">Ha Tinh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_hai_duong" model="vnitpro.res.city">
+            <field name="code">haiduong</field>
+            <field name="name">Hai Duong</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_hai_phong" model="vnitpro.res.city">
+            <field name="code">haiphong</field>
+            <field name="name">Hai Phong</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_hoa_binh" model="vnitpro.res.city">
+            <field name="code">hoabinh</field>
+            <field name="name">Hoa Binh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_hau_giang" model="vnitpro.res.city">
+            <field name="code">haugiang</field>
+            <field name="name">Hau Giang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_hung_yen" model="vnitpro.res.city">
+            <field name="code">hungyen</field>
+            <field name="name">Hung Yen</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+         <record id="vietnam_city_ho_chi_minh" model="vnitpro.res.city">
+            <field name="code">hochiminh</field>
+            <field name="name">Ho Chi Minh City</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_khanh_hoa" model="vnitpro.res.city">
+            <field name="code">khanhhoa</field>
+            <field name="name">Khanh Hoa</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_kien_giang" model="vnitpro.res.city">
+            <field name="code">kiengiang</field>
+            <field name="name">Kien Giang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_kom_tum" model="vnitpro.res.city">
+            <field name="code">komtum</field>
+            <field name="name">Kon Tum</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_lai_chau" model="vnitpro.res.city">
+            <field name="code">laichau</field>
+            <field name="name">Lai Chau</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_lao_cai" model="vnitpro.res.city">
+            <field name="code">laocai</field>
+            <field name="name">Lao Cai</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_lang_son" model="vnitpro.res.city">
+            <field name="code">langson</field>
+            <field name="name">Lang Son</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>        
+        <record id="vietnam_city_lam_dong" model="vnitpro.res.city">
+            <field name="code">lamdong</field>
+            <field name="name">Lam Dong</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_long_an" model="vnitpro.res.city">
+            <field name="code">longan</field>
+            <field name="name">Long An</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_nam_dinh" model="vnitpro.res.city">
+            <field name="code">namdinh</field>
+            <field name="name">Nam Dinh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_nghe_an" model="vnitpro.res.city">
+            <field name="code">nghean</field>
+            <field name="name">Nghe An</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_ninh_binh" model="vnitpro.res.city">
+            <field name="code">ninhbinh</field>
+            <field name="name">Ninh Binh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_ninh_thuan" model="vnitpro.res.city">
+            <field name="code">ninhthuan</field>
+            <field name="name">Ninh Thuan</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_phu_tho" model="vnitpro.res.city">
+            <field name="code">phutho</field>
+            <field name="name">Phu Tho</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_phu_yen" model="vnitpro.res.city">
+            <field name="code">phuyen</field>
+            <field name="name">Phu Yen</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>        
+        <record id="vietnam_city_quang_binh" model="vnitpro.res.city">
+            <field name="code">quangbinh</field>
+            <field name="name">Quang Binh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_quang_nam" model="vnitpro.res.city">
+            <field name="code">quangnam</field>
+            <field name="name">Quang Nam</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_quang_ngai" model="vnitpro.res.city">
+            <field name="code">quangngai</field>
+            <field name="name">Quang Ngai</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_quang_ninh" model="vnitpro.res.city">
+            <field name="code">quangninh</field>
+            <field name="name">Quang Ninh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_quang_tri" model="vnitpro.res.city">
+            <field name="code">quangtri</field>
+            <field name="name">Quang Tri</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_soc_trang" model="vnitpro.res.city">
+            <field name="code">soctrang</field>
+            <field name="name">Soc Trang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_son_la" model="vnitpro.res.city">
+            <field name="code">sonla</field>
+            <field name="name">Son La</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_tay_ninh" model="vnitpro.res.city">
+            <field name="code">tayninh</field>
+            <field name="name">Tay Ninh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_thai_binh" model="vnitpro.res.city">
+            <field name="code">thaibinh</field>
+            <field name="name">Thai Binh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_thai_nguyen" model="vnitpro.res.city">
+            <field name="code">thainguyen</field>
+            <field name="name">Thai Nguyen</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_thanh_hoa" model="vnitpro.res.city">
+            <field name="code">thanhhoa</field>
+            <field name="name">Thanh Hoa</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_thua_thien_hue" model="vnitpro.res.city">
+            <field name="code">thuathienhue</field>
+            <field name="name">Thua Thien - Hue</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_tien_giang" model="vnitpro.res.city">
+            <field name="code">tiengiang</field>
+            <field name="name">Tien Giang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_tra_vinh" model="vnitpro.res.city">
+            <field name="code">travinh</field>
+            <field name="name">Tra Vinh</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_tuyen_quang" model="vnitpro.res.city">
+            <field name="code">tuyenquang</field>
+            <field name="name">Tuyen Quang</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_vinh_long" model="vnitpro.res.city">
+            <field name="code">vinhlong</field>
+            <field name="name">Vinh Long</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_vinh_phuc" model="vnitpro.res.city">
+            <field name="code">vinhphuc</field>
+            <field name="name">Vinh Phuc</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+        <record id="vietnam_city_yen_bai" model="vnitpro.res.city">
+            <field name="code">yenbai</field>
+            <field name="name">Yen Bai</field>
+            <field name="country_id" ref="base.vn"/>
+        </record>
+    </data>
+</odoo>

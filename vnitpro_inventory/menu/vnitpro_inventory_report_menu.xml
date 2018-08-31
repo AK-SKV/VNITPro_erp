@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_inventory_report" name="Reports"
+                  parent="menu_vnitpro_inventory_root" sequence="60"/>
+        <menuitem id="menu_gen_import_product_report" name="Generate Import Product Report"
+                  parent="menu_vnitpro_inventory_report" sequence="10"
+                  action="act_open_vnitpro_gen_import_product_report_view"/>
+    </data>
+</odoo>

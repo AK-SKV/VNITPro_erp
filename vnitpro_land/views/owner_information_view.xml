@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_land_owner_information_tree" model="ir.ui.view">
+            <field name="name">vnitpro.land.owner.information.tree</field>
+            <field name="model">vnitpro.land.owner.information</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="land_id"/>
+                    <field name="owner_name"/>
+                    <field name="owner_phone"/>
+                    <field name="have_certification"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_land_owner_information_form" model="ir.ui.view">
+            <field name="name">vnitpro.land.owner.information.form</field>
+            <field name="model">vnitpro.land.owner.information</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form duplicate="0">
+                    <sheet>
+                        <group col="4">
+                            <field name="land_id"/>
+                            <field name="owner_name"/>
+                            <field name="owner_phone"/>
+                            <field name="extra_owner_id" colspan="4">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="note"/>
+                                </tree>
+                                <form>
+                                    <sheet>
+                                        <group col="4">
+                                            <field name="name"/>
+                                            <field name="note"/>
+                                        </group>
+                                    </sheet>
+                                    <div class="oe_chatter">
+                                        <field name="message_follower_ids" widget="mail_followers"/>
+                                        <field name="message_ids" widget="mail_thread"/>
+                                    </div>
+                                </form>
+                            </field>
+                            <field name="have_certification"/>
+                            <field name="certification_date"
+                                   attrs="{'required':[('have_certification','=',True)],'invisible':[('have_certification','=',False)]}"/>
+                            <field name="using_area"
+                                   attrs="{'required':[('have_certification','=',False)],'invisible':[('have_certification','=',True)]}"/>
+                        </group>
+                        <div class="div_center" attrs="{'invisible':[('have_certification','=',False)]}">Area
+                            Information
+                        </div>
+                        <group col="8">
+                            <label for="total_area_in_certification" colspan="2"/>
+                            <div colspan="2">
+                                <field name="total_area_in_certification"
+                                       attrs="{'required':[('have_certification','=',True)],'invisible':[('have_certification','=',False)]}"/>
+                            </div>
+                            <label for="area" colspan="2"/>
+                            <div colspan="2">
+                                <field name="area" attrs="{'invisible':[('have_certification','=',False)]}"/>
+                            </div>
+                            <label for="house_type" colspan="2"/>
+                            <div colspan="2">
+                                <field name="house_type" attrs="{'invisible':[('have_certification','=',False)]}"/>
+                            </div>
+                            <label for="rank" colspan="2"/>
+                            <div colspan="2">
+                                <field name="rank" attrs="{'invisible':[('have_certification','=',False)]}"/>
+                            </div>
+                            <label for="construction_area" attrs="{'invisible':[('have_certification','=',False)]}"
+                                   colspan="2"/>
+                            <div class="o_row" name="construction_area" colspan="2"
+                                 attrs="{'invisible':[('have_certification','=',False)]}">
+                                <field name="construction_area"/>
+                                <span>m²</span>
+                            </div>
+                            <label for="floor_area" attrs="{'invisible':[('have_certification','=',False)]}"
+                                   colspan="2"/>
+                            <div class="o_row" name="floor_area" colspan="2"
+                                 attrs="{'invisible':[('have_certification','=',False)]}">
+                                <field name="floor_area"/>
+                                <span>m²</span>
+                            </div>
+                            <label for="private_own" attrs="{'invisible':[('have_certification','=',False)]}"
+                                   colspan="2"/>
+                            <div class="o_row" name="private_own" colspan="2"
+                                 attrs="{'invisible':[('have_certification','=',False)]}">
+                                <field name="private_own" attrs="{'invisible':[('have_certification','=',False)]}"/>
+                                <span>m²</span>
+                            </div>
+                            <label for="public_own" attrs="{'invisible':[('have_certification','=',False)]}"
+                                   colspan="2"/>
+                            <div class="o_row" name="public_own" colspan="2"
+                                 attrs="{'invisible':[('have_certification','=',False)]}">
+                                <field name="public_own" attrs="{'invisible':[('have_certification','=',False)]}"/>
+                                <span>m²</span>
+                            </div>
+                            <label for="own_time" colspan="2"/>
+                            <div colspan="2">
+                                <field name="own_time" attrs="{'invisible':[('have_certification','=',False)]}"/>
+                            </div>
+                            <div colspan="4"/>
+                            <field name="detail_information" colspan="8"
+                                   attrs="{'invisible':[('have_certification','=',False)]}"/>
+                            <div colspan="8" class="div_attachfile">Attachment Files</div>
+                            <field name="attachment_ids" colspan="8" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="file" filename="file_name"/>
+                                    <field name="file_name" force_save="1"/>
+                                    <field name="user_id" force_save="1"/>
+                                    <field name="description"/>
+                                    <field name="date"/>
+                                    <button name="download_file" type="object" class="button_blank fa fa-download"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_land_owner_information_search" model="ir.ui.view">
+            <field name="name">vnitpro.land.owner.information.search</field>
+            <field name="model">vnitpro.land.owner.information</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="owner_name"/>
+                    <field name="land_id"/>
+                    <field name="owner_phone"/>
+                    <field name="have_certification"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_land_owner_information_view">
+            <field name="name">Owner</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.land.owner.information</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_land_owner_information_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_land_owner_information_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_land_owner_information_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_land_owner_information_form"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_land_owner_information_view_tree">
+            <field name="act_window_id" ref="act_open_vnitpro_land_owner_information_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_vnitpro_land_owner_information_tree"/>
+        </record>
+    </data>
+</odoo>

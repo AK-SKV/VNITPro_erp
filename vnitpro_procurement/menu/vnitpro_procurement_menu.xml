@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+      <data>
+        <menuitem id="menu_vnitpro_procurement_root" name="Procurement" sequence="10"
+            web_icon="vnitpro_procurement,static/description/icon.png"/>
+        <menuitem id="menu_vnitpro_procurement" name="Procurement" sequence="20"
+            parent="menu_vnitpro_procurement_root" action="act_open_vnitpro_procurement_view"/>
+        <menuitem id="menu_vnitpro_procurement_access_recent" name="Procurement Access Recent"
+            parent="vnitpro_base.menu_vnitpro_access_recent" sequence="25"
+            action="act_open_vnitpro_procurement_access_recent_view"/>
+        <menuitem id="menu_vnitpro_procurement_dashboard" name="Dashboard" sequence="15"
+            parent="menu_vnitpro_procurement_root" action="act_open_vnitpro_procurement_dashboard_view"
+        /> 
+    </data>
+</odoo>

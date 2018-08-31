@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<!-- Banner -->
+		<template inherit_id="website.homepage" id="homepage_inherit">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <section class="img-homepage">
+                    <div class="bgLayerTop"></div>
+                    <div class="container divLogin">
+                        <div class="row">
+                            <div class="col-md-10 col-lg-8 col-xs-8 mt92 mb64">
+                                <h3 class="o_default_snippet_text banner-h3" style="color:white">
+                                    Villa Management System
+                                </h3>
+                                <h4 class="o_default_snippet_text mt32 banner-h4" style="color:white">
+                                    Hai Ba Trung District - Ha Noi City
+                                </h4>
+                                <a href="/web" style="text-decoration: none;margin-top:10px" class="btn btn-danger">
+                                    <h4 style="color:white" class="banner-h4">Click To Login</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </xpath>
+        </template>
+       <!--  <template inherit_id="web.login" id="login_inherit">
+            <xpath expr="//button[hasclass('btn-primary')]" position="after">
+                    <a href="/vnitpro_land_website/static/hdsd.pdf" class="btn btn-danger float" target="_blank">Guide</a>
+            </xpath>
+        </template> -->
+        <template inherit_id="website.login_layout" id="login_layout_inherit">
+            <xpath expr="t" position="replace">
+                <t t-call="website.layout">
+                    <section class="img-homepage">
+                        <div class="bgLayerTop"></div>
+                        <div class="container divLogin">
+                            <div class="row">
+                                <div class="col-md-10 col-lg-8 col-xs-9 mt92 mb64">
+                                    <div class="oe_website_login_container" t-raw="0" />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>

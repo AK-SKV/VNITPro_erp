@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_consume_root" name="Consume" sequence="20"
+                  web_icon="vnitpro_consume,static/description/icon.png"/>
+    </data>
+</odoo>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="vnitpro_land_purpose_of_use_1" model="vnitpro.purpose.of.use">
+            <field name="code">NO</field>
+            <field name="name">Nhà ở</field>
+        </record>
+        <record id="vnitpro_land_purpose_of_use_2" model="vnitpro.purpose.of.use">
+            <field name="code">KND</field>
+            <field name="name">Khu nghỉ dưỡng</field>
+        </record>
+        <record id="vnitpro_land_purpose_of_use_3" model="vnitpro.purpose.of.use">
+            <field name="code">CTY</field>
+            <field name="name">Công ty</field>
+        </record>
+    </data>
+</odoo>

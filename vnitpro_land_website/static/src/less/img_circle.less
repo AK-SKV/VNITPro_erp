@@ -1,0 +1,212 @@
+.img-wrap {
+    padding: 20px;
+}
+.bg-variant-1 {
+  background: #dee7eb;
+}
+.bg-variant-2 {
+  background: #bdcfd7;
+}
+.bg-variant-3 {
+  background-color: #7c9fb0;
+}
+.bg-success {
+  background: #9abf88;
+}
+.bg-info {
+  background: #5698c4;
+}
+.bg-warning {
+  background: @color-warning;
+}
+.bg-danger {
+  background: #c94a53;
+}
+.img-contain{
+    h4, .h4 {
+        font-size: 36px;
+        line-height: 1.11111111;
+        font-weight: 300;
+        margin: 0;
+    }
+    h3, .h3 {
+        font-size: 42px;
+        line-height: 1.19047619;
+        text-transform: capitalize;
+        font-weight: 300;
+        margin: 0;
+    }
+    a{
+        color: #2b373d;
+        &:hover {
+            text-decoration: none;
+            color: @color-danger;
+        }
+    }
+    .inset-1 > h4{
+        margin-top: 16px;
+    }
+}
+.media-left, .media > .pull-left {
+    padding-right: 10px;
+}
+.img-circle {
+    overflow: hidden;
+    display: inline-block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+@media (max-width: 480px){
+    .media-left, .media-right, .media-body {
+        display: block;
+        width: 100%;
+    }
+}
+@media(max-width: @screen-sm){
+
+    .img-contain{
+        .inset-1{
+             text-align: center;
+        }
+    }
+}
+@media(max-width: @screen-xs){
+    .img-contain{
+        .inset-1{
+             text-align: center;
+        }
+    }
+    .thumbnail-1:hover img {
+        opacity: 1 !important;
+        transform: translateX(50%);
+    }
+    .media-left, .media > .pull-left {
+       // padding-right: 16%;
+    }
+}
+
+/*============================================ Banner ===============*/
+
+.banner-h2{
+    font-size:44px;
+    text-transform: uppercase;    
+}
+.banner-h3{
+   font-size: 32px;
+   margin-top:15px;
+}
+.banner-h4{
+   font-size: 20px;
+   margin:4px !important;
+}
+.open-banner{
+    height: 530px;
+}
+.banner-title{
+   font-size: 23px;
+   margin:4px !important;
+}
+@media(max-width: @screen-sm){
+
+
+    .banner-h2{
+        font-size:19px;
+    }
+    .banner-h3{
+        font-size: 14px;
+        margin-top:10px;
+    }
+    .banner-h4{
+        font-size: 11px;
+        margin:0px !important;
+    }
+    .open-banner{
+        height: 220px !important;
+        .col-md-10{
+            margin:0px!important;
+            padding:0px !important;
+        }
+    }
+    .logo{
+        width: 76%;
+        padding-top:20px !important;
+    }
+    .banner-title{
+        font-size: 15px;
+        margin:0px !important;
+    }   
+
+}
+@media(max-width: @screen-xs){
+
+    .banner-h2{
+        font-size:15px;
+        text-transform: uppercase;
+    }
+    .banner-h3{
+        font-size: 11px;
+        margin-top:8px;
+    }
+    .banner-h4{
+        font-size: 8px;
+        margin:0px !important;
+
+    }
+    .open-banner{
+        height: 144px!important;
+    }
+    .open-banner{
+        .col-md-10{
+        margin:0px!important;
+        padding:0px !important;
+        }
+    }
+    .logo{
+        width: 76%;
+        padding-top:20px !important;
+    }
+    .banner-title{
+        font-size: 13px;
+        margin:0px !important;
+    }
+}
+
+//
+
+/*============================================ Login ===============*/
+.control-label{
+    color:white;
+}
+@media(max-width: @screen-xs){
+    .form-group{
+        margin-bottom: 5px;       
+    }
+    .form-control{
+        height:22px;
+        width:75%;
+    }
+    .control-label{
+        font-size: 10px;
+        margin:3px;                
+    }
+    .btn{
+        font-size: 10px;
+    }    
+}
+@media(max-width: @screen-sm){    
+    .oe_website_login_container{
+        margin-top:6px;
+    }
+    .form-control{
+        height:25px;
+        width:75%;
+    }
+    .control-label{
+        font-size: 10px;
+        margin:3px;                
+    }
+    .btn{
+        font-size: 10px;
+    }
+}

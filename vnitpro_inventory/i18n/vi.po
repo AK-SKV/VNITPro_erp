@@ -1,0 +1,637 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_inventory
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-16 03:47+0000\n"
+"PO-Revision-Date: 2018-08-16 03:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_inventory
+#: code:addons/vnitpro_inventory/reports/report_procurement_details.py:23
+#: code:addons/vnitpro_inventory/reports/report_procurement_details.py:34
+#, python-format
+msgid "%m-%d-%Y"
+msgstr "%m-%d-%Y"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_car_number_id
+msgid "Car Number"
+msgstr "Số xe"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_packaging_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_product_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_packaging_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_product_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_create_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_packaging_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_product_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_packaging_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_product_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_create_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_packaging_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_product_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_packaging_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_product_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_display_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_employee_partners_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_employee_partners_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_employee_partners_id
+msgid "Employee Partners"
+msgstr "Nhân sự nhận"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_employee_sender_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_employee_sender_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_employee_sender_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_employee_sender_id
+msgid "Employee Sender"
+msgstr "Nhân sự giao"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_export_card_number
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_export_card_number
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_export_card_number
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_export_card_number
+msgid "Export Card Number"
+msgstr "Số phiếu"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_export_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_export_date
+msgid "Export Date"
+msgstr "Ngày xuất"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_export_formality
+msgid "Export Formality"
+msgstr "Loại phiếu xuất"
+
+#. module: vnitpro_inventory
+#: model:ir.ui.menu,name:vnitpro_inventory.menu_vnitpro_inventory_export_pagkaging_list
+msgid "Export Pagkaging List"
+msgstr "Xuất vỏ bao"
+
+#. module: vnitpro_inventory
+#: model:ir.actions.act_window,name:vnitpro_inventory.act_open_vnitpro_inventory_export_product_view
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_export_detail_ids
+msgid "Export Product"
+msgstr "Xuất hàng hóa"
+
+#. module: vnitpro_inventory
+#: model:ir.ui.menu,name:vnitpro_inventory.menu_vnitpro_inventory_export_product_list
+msgid "Export Product List"
+msgstr "Xuất hàng hóa"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_warehouse_export_id
+msgid "Export Warehouse"
+msgstr "Kho xuất"
+
+#. module: vnitpro_inventory
+#: code:addons/vnitpro_inventory/wizard/gen_import_export_product_report.py:33
+#, python-format
+msgid "Generate Report"
+msgstr "Generate Report"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_packaging_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_product_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_packaging_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_product_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_import_type
+msgid "Import"
+msgstr "Nhập"
+
+#. module: vnitpro_inventory
+#: model:ir.ui.menu,name:vnitpro_inventory.menu_vnitpro_inventory_import_export_product
+msgid "Import - Export Product"
+msgstr "Nhập - Xuất sản phẩm"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_import_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_import_date
+msgid "Import Date"
+msgstr "Ngày nhập"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_export_formality
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_import_formality
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_import_formality
+msgid "Import Formality"
+msgstr "Loại phiếu nhập"
+
+#. module: vnitpro_inventory
+#: model:ir.ui.menu,name:vnitpro_inventory.menu_vnitpro_inventory_import_pagkaging_list
+msgid "Import Pagkaging List"
+msgstr "Nhập vỏ bao"
+
+#. module: vnitpro_inventory
+#: model:ir.actions.act_window,name:vnitpro_inventory.act_open_vnitpro_inventory_import_product_view
+msgid "Import Product"
+msgstr "Nhập hàng hóa"
+
+#. module: vnitpro_inventory
+#: model:ir.ui.menu,name:vnitpro_inventory.menu_vnitpro_inventory_import_product_list
+msgid "Import Product List"
+msgstr "Nhập hàng hóa"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_warehouse_import_id
+msgid "Import Warehouse"
+msgstr "Kho đến"
+
+#. module: vnitpro_inventory
+#: model:ir.actions.act_window,name:vnitpro_inventory.act_open_vnitpro_inventory_import_packaging_view
+msgid "Import packaging"
+msgstr "Nhập vỏ bao"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_input_order
+msgid "Input Order"
+msgstr "Theo lệnh nhập"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_input_order_date
+msgid "Input Order Date"
+msgstr "Input Order Date"
+
+#. module: vnitpro_inventory
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_import_packaging_form
+msgid "Input order"
+msgstr "Theo lệnh nhập"
+
+#. module: vnitpro_inventory
+#: model:ir.ui.menu,name:vnitpro_inventory.menu_vnitpro_inventory
+msgid "Inventory"
+msgstr "Quản lý kho hàng"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_inventory_export_packaging_id
+msgid "Inventory Export Packaging"
+msgstr "Inventory Export Packaging"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_inventory_import_packaging_id
+msgid "Inventory Import Packaging"
+msgstr "Inventory Import Packaging"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_inventory_export_product_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_inventory_import_product_id
+msgid "Inventory Import Product"
+msgstr "Inventory Import Product"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_packaging___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_product___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_packaging___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_product___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product___last_update
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_packaging_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_product_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_packaging_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_product_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_write_uid
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_packaging_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_formality_product_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_packaging_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_formality_product_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_write_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_lot_number
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_lot_number
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_lot_number
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_lot_number
+msgid "Lot Number"
+msgstr "Số lô"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_move_order
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_export_product_form
+msgid "Move Order"
+msgstr "Lệnh điều động"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_move_order_date
+msgid "Move Order Date"
+msgstr "Ngày điều động"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_note
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_note
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_note
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_note
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_number_of_packaging
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_number_of_packaging
+msgid "Number Of Packaging"
+msgstr "Số lượng bao"
+
+#. module: vnitpro_inventory
+#: code:addons/vnitpro_inventory/models/vnitpro_inventory_export_product.py:73
+#: code:addons/vnitpro_inventory/models/vnitpro_inventory_import_product.py:75
+#, python-format
+msgid "Number of packaging must be bigger than 0 !"
+msgstr "Số bao phải lớn hơn 0!"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_output_order
+msgid "Output Order"
+msgstr "Theo lệnh xuất"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_output_order_date
+msgid "Output Order Date"
+msgstr "Output Order Date"
+
+#. module: vnitpro_inventory
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_export_packaging_form
+msgid "Output order"
+msgstr "Theo lệnh xuất"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_packaging_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_packaging_id
+msgid "Packaging"
+msgstr "Nhóm vỏ bao"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_export_detail_ids
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_import_detail_ids
+msgid "Packaging Detail List"
+msgstr "Packaging Detail List"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_partners_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_partners_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_partners_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_partners_id
+msgid "Partners"
+msgstr "Bên nhận"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_partners_position
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_sender_position
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_sender_position
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_partners_position
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_sender_position
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_partners_position
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_sender_position
+msgid "Position"
+msgstr "Chức vụ"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_present_quantity
+msgid "Present Quantity"
+msgstr "Khối lượng thực tế"
+
+#. module: vnitpro_inventory
+#: code:addons/vnitpro_inventory/reports/report_procurement_details.py:36
+#, python-format
+msgid "Procurement Details Report"
+msgstr "Procurement Details Report"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_product_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_product_id
+msgid "Product"
+msgstr "Hàng hóa"
+
+#. module: vnitpro_inventory
+#: selection:vnitpro.inventory.import.product,import_type:0
+msgid "Product Defects"
+msgstr "Sản phẩm lỗi chờ xử lý"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_import_detail_ids
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_export_product_form
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_import_product_form
+msgid "Product Detail List"
+msgstr "Danh sách sản phẩm chi tiết"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_product_group_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_product_group_id
+msgid "Product Group"
+msgstr "Nhóm hàng hóa"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_production_order
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_import_product_form
+msgid "Production Order"
+msgstr "Theo lệnh sản xuất"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_production_order_date
+msgid "Production Order Date"
+msgstr "Production Order Date"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_quantity
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_quantity
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_quantity
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: vnitpro_inventory
+#: code:addons/vnitpro_inventory/models/vnitpro_inventory_export_packaging.py:64
+#: code:addons/vnitpro_inventory/models/vnitpro_inventory_export_product.py:71
+#: code:addons/vnitpro_inventory/models/vnitpro_inventory_import_packaging.py:61
+#: code:addons/vnitpro_inventory/models/vnitpro_inventory_import_product.py:73
+#, python-format
+msgid "Quantity must be bigger than 0 !"
+msgstr "Số lượng phải lớn hơn 0!"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_receipt_of_delivery
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_receipt_of_delivery
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_import_packaging_form
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_import_product_form
+msgid "Receipt Of Delivery"
+msgstr "Biên bản giao nhận"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_receipt_of_delivery_date
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_receipt_of_delivery_date
+msgid "Receipt Of Delivery Date"
+msgstr "Receipt Of Delivery Date"
+
+#. module: vnitpro_inventory
+#: code:addons/vnitpro_inventory/reports/report_procurement_details.py:35
+#, python-format
+msgid "Report Date: "
+msgstr "Report Date: "
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_romooc_number_id
+msgid "Romooc Number"
+msgstr "Số rơ móc"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_sender_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_sender_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_sender_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_sender_id
+msgid "Sender"
+msgstr "Bên giao"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_seri_number
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_seri_number
+msgid "Seri Number"
+msgstr "Số seri"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_shift
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_shift
+msgid "Shift"
+msgstr "Ca"
+
+#. module: vnitpro_inventory
+#: selection:vnitpro.inventory.export.product,shift:0
+#: selection:vnitpro.inventory.import.product,shift:0
+msgid "Shift 1"
+msgstr "Ca 1"
+
+#. module: vnitpro_inventory
+#: selection:vnitpro.inventory.export.product,shift:0
+#: selection:vnitpro.inventory.import.product,shift:0
+msgid "Shift 2"
+msgstr "Ca 2"
+
+#. module: vnitpro_inventory
+#: selection:vnitpro.inventory.export.product,shift:0
+#: selection:vnitpro.inventory.import.product,shift:0
+msgid "Shift 3"
+msgstr "Ca 3"
+
+#. module: vnitpro_inventory
+#: selection:vnitpro.inventory.import.product,import_type:0
+msgid "Standard Products"
+msgstr "Sản phẩm đạt tiêu chuẩn"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_stocker
+msgid "Stocker"
+msgstr "Tên thủ kho"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_stocker_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_stocker_name
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_stocker_name
+msgid "Stocker Name"
+msgstr "Tên thủ kho"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_style
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_style
+msgid "Style"
+msgstr "Quy cách"
+
+#. module: vnitpro_inventory
+#: code:addons/vnitpro_inventory/wizard/gen_import_export_product_report.py:30
+#, python-format
+msgid "To Date cannot be set before From Date"
+msgstr "To Date cannot be set before From Date"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_tranposter_id
+msgid "Tranposter"
+msgstr "Người vận chuyển(Tên cty vận chuyển)"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_packaging_detail_unit
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_detail_unit
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_detail_unit
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_detail_unit
+msgid "Unit"
+msgstr "Đơn vị"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_packaging_warehouse_id
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_import_product_warehouse_id
+msgid "Warehouse"
+msgstr "Kho nhập"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_warehouse_come_id
+msgid "Warehouse Come"
+msgstr "Kho đến"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_warehouse_export_id
+msgid "Warehouse Export"
+msgstr "Kho xuất"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_weighted_votes
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_export_product_form
+msgid "Weighted Votes"
+msgstr "Số phiếu cân"
+
+#. module: vnitpro_inventory
+#: model:ir.model.fields,field_description:vnitpro_inventory.field_vnitpro_inventory_export_product_weighted_votes_date
+msgid "Weighted Votes Date"
+msgstr "Weighted Votes Date"
+
+#. module: vnitpro_inventory
+#: model:ir.actions.act_window,name:vnitpro_inventory.act_open_vnitpro_inventory_export_packaging_view
+msgid "export packaging"
+msgstr "Xuất vỏ bao"
+
+#. module: vnitpro_inventory
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_export_packaging_form
+#: model:ir.ui.view,arch_db:vnitpro_inventory.view_vnitpro_inventory_import_packaging_form
+msgid "packaging Detail List"
+msgstr "Danh sách thông tin vỏ bao"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_export_formality_packaging
+msgid "vnitpro.inventory.export.formality.packaging"
+msgstr "vnitpro.inventory.export.formality.packaging"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_export_formality_product
+msgid "vnitpro.inventory.export.formality.product"
+msgstr "vnitpro.inventory.export.formality.product"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_export_packaging
+msgid "vnitpro.inventory.export.packaging"
+msgstr "vnitpro.inventory.export.packaging"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_export_packaging_detail
+msgid "vnitpro.inventory.export.packaging.detail"
+msgstr "vnitpro.inventory.export.packaging.detail"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_export_product
+msgid "vnitpro.inventory.export.product"
+msgstr "vnitpro.inventory.export.product"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_export_product_detail
+msgid "vnitpro.inventory.export.product.detail"
+msgstr "vnitpro.inventory.export.product.detail"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_import_formality_packaging
+msgid "vnitpro.inventory.import.formality.packaging"
+msgstr "vnitpro.inventory.import.formality.packaging"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_import_formality_product
+msgid "vnitpro.inventory.import.formality.product"
+msgstr "vnitpro.inventory.import.formality.product"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_import_packaging
+msgid "vnitpro.inventory.import.packaging"
+msgstr "vnitpro.inventory.import.packaging"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_import_packaging_detail
+msgid "vnitpro.inventory.import.packaging.detail"
+msgstr "vnitpro.inventory.import.packaging.detail"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_import_product
+msgid "vnitpro.inventory.import.product"
+msgstr "vnitpro.inventory.import.product"
+
+#. module: vnitpro_inventory
+#: model:ir.model,name:vnitpro_inventory.model_vnitpro_inventory_import_product_detail
+msgid "vnitpro.inventory.import.product.detail"
+msgstr "vnitpro.inventory.import.product.detail"
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Banner -->
+        <template inherit_id="website.contactus" id="contactus_inherit">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <section class="s_text_block_image_fw oe_img_bg oe_custom_bg open-banner" style="background-image: url(/vnitpro_procurement_contract_website/static/src/img/banner_homepage.jpg);">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 col-lg-8 col-xs-8 mt92 mb64">
+                                <h3 class="o_default_snippet_text banner-h3" style="font-weight:bold;color:#74AC37">
+                                    Contact with us:
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </xpath>
+        </template>
+    </data>
+</odoo>

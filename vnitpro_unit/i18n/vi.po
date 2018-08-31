@@ -1,0 +1,78 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_unit
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-29 04:15+0000\n"
+"PO-Revision-Date: 2018-05-29 04:15+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_unit
+#: model:ir.model.fields,field_description:vnitpro_unit.field_vnitpro_base_unit_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_unit
+#: model:ir.model.fields,field_description:vnitpro_unit.field_vnitpro_base_unit_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_unit
+#: model:ir.model.fields,field_description:vnitpro_unit.field_vnitpro_base_unit_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_unit
+#: model:ir.model.fields,field_description:vnitpro_unit.field_vnitpro_base_unit_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_unit
+#: model:ir.model.fields,field_description:vnitpro_unit.field_vnitpro_base_unit___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_unit
+#: model:ir.model.fields,field_description:vnitpro_unit.field_vnitpro_base_unit_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_unit
+#: model:ir.model.fields,field_description:vnitpro_unit.field_vnitpro_base_unit_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_unit
+#: selection:vnitpro.unit,status:0
+msgid "Not used"
+msgstr "Not used"
+
+#. module: vnitpro_unit
+#: model:ir.model.fields,field_description:vnitpro_unit.field_vnitpro_base_unit_status
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: vnitpro_unit
+#: model:ir.actions.act_window,name:vnitpro_unit.act_open_vnitpro_base_unit_view
+#: model:ir.ui.menu,name:vnitpro_unit.menu_vnitpro_base_unit
+msgid "Unit"
+msgstr "Đơn vị tính"
+
+#. module: vnitpro_unit
+#: selection:vnitpro.unit,status:0
+msgid "Usage"
+msgstr "Usage"
+
+#. module: vnitpro_unit
+#: model:ir.model,name:vnitpro_unit.model_vnitpro_base_unit
+msgid "vnitpro.unit"
+msgstr "vnitpro.unit"
+

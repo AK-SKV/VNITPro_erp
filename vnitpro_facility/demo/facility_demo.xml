@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="facility_1" model="vnitpro.facility">
+            <field name="code">MBA</field>
+            <field name="name">Máy biến áp</field>
+        </record>
+        <record id="facility_2" model="vnitpro.facility">
+            <field name="code">TBDCTB</field>
+            <field name="name">Thiết bị đóng cắt + Tủ bảng</field>
+        </record>
+        <record id="facility_3" model="vnitpro.facility">
+            <field name="code">CS</field>
+            <field name="name">Chống sét</field>
+        </record>
+        <record id="facility_4" model="vnitpro.facility">
+            <field name="code">SCD</field>
+            <field name="name">Sứ cách điện</field>
+        </record>
+        <record id="facility_5" model="vnitpro.facility">
+            <field name="code">TDHA</field>
+            <field name="name">Tủ điện hạ áp</field>
+        </record>
+        <record id="facility_6" model="vnitpro.facility">
+            <field name="code">PKCVX</field>
+            <field name="name">Phụ kiện cáp vặn xoắn</field>
+        </record>
+        <record id="facility_7" model="vnitpro.facility">
+            <field name="code">TBCD</field>
+            <field name="name">Thiết bị chuyên dụng</field>
+        </record>
+    </data>
+</odoo>

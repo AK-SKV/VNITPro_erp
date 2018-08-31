@@ -1,0 +1,70 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_taxes
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-16 09:09+0000\n"
+"PO-Revision-Date: 2018-07-16 09:09+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_taxes
+#: model:ir.model.fields,field_description:vnitpro_taxes.field_vnitpro_taxes_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_taxes
+#: model:ir.model.fields,field_description:vnitpro_taxes.field_vnitpro_taxes_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_taxes
+#: model:ir.model.fields,field_description:vnitpro_taxes.field_vnitpro_taxes_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_taxes
+#: model:ir.model.fields,field_description:vnitpro_taxes.field_vnitpro_taxes_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_taxes
+#: model:ir.model.fields,field_description:vnitpro_taxes.field_vnitpro_taxes___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_taxes
+#: model:ir.model.fields,field_description:vnitpro_taxes.field_vnitpro_taxes_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_taxes
+#: model:ir.model.fields,field_description:vnitpro_taxes.field_vnitpro_taxes_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_taxes
+#: model:ir.actions.act_window,name:vnitpro_taxes.act_open_vnitpro_taxes_view
+#: model:ir.ui.view,arch_db:vnitpro_taxes.view_vnitpro_taxes_form
+#: model:ir.ui.view,arch_db:vnitpro_taxes.view_vnitpro_taxes_search
+#: model:ir.ui.view,arch_db:vnitpro_taxes.view_vnitpro_taxes_tree
+msgid "Taxes"
+msgstr "Thuế"
+
+#. module: vnitpro_taxes
+#: model:ir.model.fields,field_description:vnitpro_taxes.field_vnitpro_taxes_value
+msgid "Value"
+msgstr "Giá trị thuế"
+
+#. module: vnitpro_taxes
+#: model:ir.model,name:vnitpro_taxes.model_vnitpro_taxes
+msgid "vnitpro.taxes"
+msgstr "vnitpro.taxes"
+

@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_procurement_formality
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-29 01:40+0000\n"
+"PO-Revision-Date: 2018-05-29 01:40+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_procurement_formality
+#: model:ir.model.fields,field_description:vnitpro_procurement_formality.field_vnitpro_procurement_formality_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_procurement_formality
+#: model:ir.model.fields,field_description:vnitpro_procurement_formality.field_vnitpro_procurement_formality_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_procurement_formality
+#: model:ir.model.fields,field_description:vnitpro_procurement_formality.field_vnitpro_procurement_formality_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_procurement_formality
+#: model:ir.model.fields,field_description:vnitpro_procurement_formality.field_vnitpro_procurement_formality_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_procurement_formality
+#: model:ir.model.fields,field_description:vnitpro_procurement_formality.field_vnitpro_procurement_formality___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_procurement_formality
+#: model:ir.model.fields,field_description:vnitpro_procurement_formality.field_vnitpro_procurement_formality_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_procurement_formality
+#: model:ir.model.fields,field_description:vnitpro_procurement_formality.field_vnitpro_procurement_formality_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_procurement_formality
+#: model:ir.actions.act_window,name:vnitpro_procurement_formality.act_open_vnitpro_procurement_formality_view
+#: model:ir.ui.menu,name:vnitpro_procurement_formality.menu_vnitpro_procurement_formality
+#: model:ir.ui.view,arch_db:vnitpro_procurement_formality.view_vnitpro_procurement_formality_form
+#: model:ir.ui.view,arch_db:vnitpro_procurement_formality.view_vnitpro_procurement_formality_search
+#: model:ir.ui.view,arch_db:vnitpro_procurement_formality.view_vnitpro_procurement_formality_tree
+msgid "Procurement Formality"
+msgstr "Hình thức chọn thầu"
+
+#. module: vnitpro_procurement_formality
+#: model:ir.model,name:vnitpro_procurement_formality.model_vnitpro_procurement_formality
+msgid "vnitpro.procurement.formality"
+msgstr "vnitpro.procurement.formality"
+

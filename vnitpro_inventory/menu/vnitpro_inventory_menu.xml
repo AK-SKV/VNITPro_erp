@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_inventory_root" name="Inventory" sequence="25"
+                  web_icon="vnitpro_inventory,static/description/icon.png"/>
+        <menuitem id="menu_vnitpro_inventory_import_export_product" name="Import - Export Product" sequence="60"
+                  parent="menu_vnitpro_inventory_root"/>
+        <menuitem id="menu_vnitpro_inventory_import_product_list" name="Import Product List" sequence="10"
+                  parent="menu_vnitpro_inventory_root"
+                  action="act_open_vnitpro_inventory_import_product_view"/>
+        <menuitem id="menu_vnitpro_inventory_export_product_list" name="Export Product List" sequence="20"
+                  parent="menu_vnitpro_inventory_root"
+                  action="act_open_vnitpro_inventory_export_product_view"/>
+        <menuitem id="menu_vnitpro_inventory_import_pagkaging_list" name="Import Pagkaging List" sequence="30"
+                  parent="menu_vnitpro_inventory_root"
+                  action="act_open_vnitpro_inventory_import_packaging_view"/>
+          <menuitem id="menu_vnitpro_inventory_export_pagkaging_list" name="Export Pagkaging List" sequence="40"
+                  parent="menu_vnitpro_inventory_root"
+                  action="act_open_vnitpro_inventory_export_packaging_view"/>
+    </data>
+</odoo>

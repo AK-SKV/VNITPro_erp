@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="online_exam_register_page">
+            <t t-call="website.layout">
+                <style>
+                .p_error {
+                    font-style: italic;
+                    color: red;
+                    font-size: 12px;
+                    padding-top: 5px;
+                    margin-bottom: 5px;
+                }
+
+                .wrap {
+                    margin: 15px 0px;
+                }
+                </style>
+                <div class="wrap">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-3 col-xs-1"></div>
+                        <div class="panel panel-primary col-md-4 col-sm-6 col-xs-10" style="padding:0px">
+                            <div class="panel-heading">
+                                <h2 class="panel-title"><strong style="color:white">Enter Information Of Candidate</strong></h2>
+                            </div>
+                            <div class="panel-body">
+                                <form action="/online-exam/check-exam" method="post" class="form-horizontal mt8" enctype="multipart/form-data" onsubmit="return check_validate()">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+                                    <div class="row" style="margin-top:10px">
+                                        <div class="col-md-4 col-sm-4">
+                                            <label class="control-label" for="lastName">
+                                                Last Name<span style="color:red"> *</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="lastName" name="last_name" />
+                                            <p id="errorLastName" class="p_error"></p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <label class="control-label" for="middleName">
+                                                Middle Name
+                                            </label>
+                                            <input type="text" class="form-control" id="middleName" name="middle_name" />
+                                            <p id="errorMiddleName" class="p_error"></p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-4">
+                                            <label class="control-label" for="firstName">
+                                                Frist Name<span style="color:red"> *</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="firstName" name="first_name" />
+                                            <p id="errorFirstName" class="p_error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5 col-sm-6">
+                                            <label class="control-label" for="birthday">
+                                                Birthday<span style="color:red"> *</span>
+                                            </label>
+                                            <input type="date" class="form-control" id="birthday" name="birthday" />
+                                            <p id="errorBirthday" class="p_error"></p>
+                                        </div>
+                                        <div class="col-md-7 col-sm-6">
+                                            <label class="control-label" for="identity_card">
+                                                Identity Card<span style="color:red"> *</span>
+                                            </label>
+                                            <input type="text" class="form-control" id="identityCard" name="identity_card" />
+                                            <p id="errorIdentityCard" class="p_error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <label class="control-label" for="examList">
+                                                Exam<span style="color:red"> *</span>
+                                            </label>
+                                            <select id="examList" class="form-control" name="exam_list">
+                                                <option t-attf-value="0" t-att-disabled="'disabled'" t-att-selected="'selected'" t-att-hidden="'hidden'">
+                                                    Choose a exam...
+                                                </option>
+                                                <t t-foreach="exam_list" t-as="m">
+                                                    <option t-attf-value="#{m.id}"><span t-esc="m.name" /></option>
+                                                </t>
+                                            </select>
+                                            <p id="errorExamList" class="p_error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <label class="control-label" for="unit">
+                                                Unit<span style="color:red"> *</span>
+                                            </label>
+                                            <select id="unitList" class="form-control" name="unit">
+                                                <option t-attf-value="0" t-att-disabled="'disabled'" t-att-selected="'selected'" t-att-hidden="'hidden'">
+                                                    Choose a unit...
+                                                </option>
+                                                <t t-foreach="contestant_list" t-as="i">
+                                                    <option t-attf-value="#{i.id}"><span t-esc="i.name" /></option>
+                                                </t>
+                                            </select>
+                                            <p id="errorUnitList" class="p_error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <label class="control-label" for="positionList">
+                                                Position<span style="color:red"> *</span>
+                                            </label>
+                                            <select id="positionList" class="form-control" name="position_list">
+                                                <option t-attf-value="0" t-att-disabled="'disabled'" t-att-selected="'selected'" t-att-hidden="'hidden'">
+                                                    Choose a position...
+                                                </option>
+                                                <t t-foreach="position_list" t-as="n">
+                                                    <option t-attf-value="#{n.id}"><span t-esc="n.name" /></option>
+                                                </t>
+                                            </select>
+                                            <p id="errorPositionList" class="p_error"></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt8">
+                                        <div class="col-md-12 text-center">
+                                            <input type="hidden" name="token" t-attf-value="#{token}" />
+                                            <button type="submit" class="btn btn-primary" style="font-size:15px" id="register">
+                                                <strong>Register</strong>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-3 col-xs-1"></div>
+                    </div>
+                </div>
+            </t>
+            <script type="text/javascript" src="/sms_online_exam/static/src/js/online_exam_register_page.js"></script>
+        </template>
+    </data>
+</odoo>

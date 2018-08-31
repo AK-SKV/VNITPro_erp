@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vietnam_district_ba_dinh_hn" model="vnitpro.res.district">
+            <field name="code">HANOID001</field>
+            <field name="name">Quận Ba Đình</field>
+            <field name="city_id" ref="vietnam_city_ha_noi"/>
+        </record>
+        <record id="vietnam_district_hoan_kiem_hn" model="vnitpro.res.district">
+            <field name="code">HANOID002</field>
+            <field name="name">Quận Hoàn Kiếm</field>
+            <field name="city_id" ref="vietnam_city_ha_noi"/>
+        </record>
+        <record id="vietnam_district_hai_ba_trung_hn" model="vnitpro.res.district">
+            <field name="code">HANOID003</field>
+            <field name="name">Quận Hai Bà Trưng</field>
+            <field name="city_id" ref="vietnam_city_ha_noi"/>
+        </record>
+        <record id="vietnam_district_tay_ho_hn" model="vnitpro.res.district">
+            <field name="code">HANOID004</field>
+            <field name="name">Quận Tây Hồ</field>
+            <field name="city_id" ref="vietnam_city_ha_noi"/>
+        </record>
+        <record id="vietnam_district_cau_giay_hn" model="vnitpro.res.district">
+            <field name="code">HANOID005</field>
+            <field name="name">Quận Cầu Giấy</field>
+            <field name="city_id" ref="vietnam_city_ha_noi"/>
+        </record>
+        <record id="vietnam_district_hoang_maihn" model="vnitpro.res.district">
+            <field name="code">HANOID006</field>
+            <field name="name">Quận Hoàng Mai</field>
+            <field name="city_id" ref="vietnam_city_ha_noi"/>
+        </record>
+        <record id="vietnam_district_long_bien_hn" model="vnitpro.res.district">
+            <field name="code">HANOID007</field>
+            <field name="name">Quận Long Biên</field>
+            <field name="city_id" ref="vietnam_city_ha_noi"/>
+        </record>
+        <record id="vietnam_district_tu_liem_hn" model="vnitpro.res.district">
+            <field name="code">HANOID008</field>
+            <field name="name">Quận Từ Liêm</field>
+            <field name="city_id" ref="vietnam_city_ha_noi"/>
+        </record>
+    </data>
+</odoo>

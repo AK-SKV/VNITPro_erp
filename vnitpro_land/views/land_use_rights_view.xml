@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_land_use_rights_tree" model="ir.ui.view">
+            <field name="name">vnitpro.land.use.rights.tree</field>
+            <field name="model">vnitpro.land.use.rights</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code" />
+                    <field name="name" />
+                    <field name="land_type" />
+                    <field name="land_group_id" />
+                    <field name="write_date" />
+                    <field name="write_uid" />
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_land_use_rights_form" model="ir.ui.view">
+            <field name="name">vnitpro.land.use.rights.form</field>
+            <field name="model">vnitpro.land.use.rights</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <form duplicate="0">
+                    <header>
+                        <field name="activate" widget="statusbar" clickable="True" options="{'fold_field': 'fold'}" />
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <h5>
+                                <label for="survey_date" string="Survey Date"/>
+                                <field name="survey_date" style="width:30%%;padding-right:10px;"/>
+                            </h5>
+                        </div>
+                        <field name="avatar" widget="image" class="oe_left oe_avatar" />
+                        <div class="oe_title">
+                            <h3>
+                                <field name="code" placeholder="Code" style="width:50%%"/>
+                            </h3>
+                            <h2>
+                                <field name="name" placeholder="Name"/>
+                            </h2>
+                        </div>
+                        <div class="div_center">Address Detail</div>
+                        <group name="address_detail">
+                            <field name="address_number" style="width:70%%" />
+                            <field name="street" style="width:70%%" />
+                            <label for="city" string="" />
+                            <div name="div_address">
+                                <div class="address_format">
+                                    <field name="city_id" placeholder="Choose a city.." style="padding-right:10px;width:27%%" options='{"no_open": True,"no_create":True}' readonly="1" />
+                                    <field name="district_id" placeholder="Choose a district.." domain="[('city_id','=', city_id)]" readonly="1" options='{"no_open": True,"no_create":True}' style="padding-right:10px;width:36%%" />
+                                    <field name="ward_id" placeholder="Choose a ward.." domain="[('district_id','=', district_id)]" options='{"no_open": True,"no_create":True}' style="padding-right:10px;width:36%%" />
+                                </div>
+                            </div>
+                        </group>
+                        <group col="4">
+                            <div colspan="4" class="div_center">General Information</div>
+                            <group colspan="2">
+                                <field name="create_record_date" />
+                                <field name="land_type" readonly="1" string="Type" />
+                                <field name="land_group_id" string="Group" />
+                                <field name="increase_reason" />
+                                <field name="land_plots_number" />
+                                <field name="map_number" />
+                                <field name="certificate_book_number" />
+                                <field name="date_of_certification" />
+                                <field name="construction_year" />
+                            </group>
+                            <group colspan="2">
+                                <label for="land_area" />
+                                <div class="o_row" name="land_area">
+                                    <field name="land_area" />
+                                    <span>m²</span>
+                                </div>
+                                <field name="land_limit" />
+                                <label for="construction_area" />
+                                <div class="o_row" name="construction_area">
+                                    <field name="construction_area" />
+                                    <span>m²</span>
+                                </div>
+                                <field name="floor_number" />
+                                <label for="garden_area" />
+                                <div class="o_row" name="garden_area">
+                                    <field name="garden_area" />
+                                    <span>m²</span>
+                                </div>
+                                <label for="total_floor_area_to_use" />
+                                <div class="o_row" name="total_floor_area_to_use">
+                                    <field name="total_floor_area_to_use" />
+                                    <span>m²</span>
+                                </div>
+                                <field name="purpose_of_use_id" />
+                                <field name="usage_duration_id" />
+                                <field name="usage_origin_id" />
+                            </group>
+                        </group>
+                        <notebook colspan="4">
+                            <!-- <page name="assess_status" string="Assess Status">
+                                <field name="assess_status_ids" nolabel="1">
+                                    <tree>
+                                        <field name="profile_name"/>
+                                        <field name="process_unit"/>
+                                        <field name="create_profile_date"/>
+                                    </tree>
+                                </field>
+                            </page> -->
+                            <page name="information_of_owner" string="Information Of Owner">
+                                <field name="owner_information_ids">
+                                    <tree>
+                                        <field name="owner_name" />
+                                        <field name="owner_phone" />
+                                        <field name="extra_owner_id" widget="many2many_tags" />
+                                        <field name="have_certification" />
+                                    </tree>
+                                    <form>
+                                        <sheet>
+                                            <div class="div_center">Owner</div>
+                                            <group col="4">
+                                                <field name="owner_name" />
+                                                <field name="owner_phone" />
+                                                <field name="extra_owner_id" colspan="4">
+                                                    <tree editable="bottom">
+                                                        <field name="name" />
+                                                        <field name="note" />
+                                                    </tree>
+                                                    <form>
+                                                        <sheet>
+                                                            <group col="4">
+                                                                <field name="name" />
+                                                                <field name="note" />
+                                                            </group>
+                                                        </sheet>
+                                                    </form>
+                                                </field>
+                                                <field name="have_certification" />
+                                                <field name="certification_date" attrs="{'required':[('have_certification','=',True)],'invisible':[('have_certification','=',False)]}" />
+                                                <field name="using_area" attrs="{'required':[('have_certification','=',False)],'invisible':[('have_certification','=',True)]}" />
+                                            </group>
+                                            <div class="div_center" attrs="{'invisible':[('have_certification','=',False)]}">Area Information
+                                            </div>
+                                            <group col="4">
+                                                <field name="total_area_in_certification" attrs="{'required':[('have_certification','=',True)],'invisible':[('have_certification','=',False)]}" />
+                                                <field name="area" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                <field name="house_type" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                <field name="rank" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                <label for="construction_area" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                <div class="o_row" name="construction_area" attrs="{'invisible':[('have_certification','=',False)]}">
+                                                    <field name="construction_area" />
+                                                    <span>m²</span>
+                                                </div>
+                                                <label for="floor_area" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                <div class="o_row" name="floor_area" attrs="{'invisible':[('have_certification','=',False)]}">
+                                                    <field name="floor_area" />
+                                                    <span>m²</span>
+                                                </div>
+                                                <label for="private_own" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                <div class="o_row" name="private_own" attrs="{'invisible':[('have_certification','=',False)]}">
+                                                    <field name="private_own" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                    <span>m²</span>
+                                                </div>
+                                                <label for="public_own" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                <div class="o_row" name="public_own" attrs="{'invisible':[('have_certification','=',False)]}">
+                                                    <field name="public_own" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                    <span>m²</span>
+                                                </div>
+                                                <field name="own_time" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                <field name="detail_information" colspan="4" attrs="{'invisible':[('have_certification','=',False)]}" />
+                                                <div colspan="4" class="div_attachfile">Attachment Files</div>
+                                                <field name="attachment_ids" colspan="4" nolabel="1">
+                                                    <tree editable="bottom">
+                                                        <field name="file" filename="file_name" />
+                                                        <field name="file_name" force_save="1" />
+                                                        <field name="user_id" force_save="1" />
+                                                        <field name="description" />
+                                                        <field name="date" />
+                                                        <button name="download_file" type="object" class="button_blank fa fa-download" />
+                                                    </tree>
+                                                </field>
+                                            </group>
+                                        </sheet>
+                                    </form>
+                                </field>
+                            </page>
+                            <page name="attachment_fields" string="Attachment Files">
+                                <field name="attachment_ids" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="file" filename="file_name" />
+                                        <field name="file_name" force_save="1" />
+                                        <field name="user_id" force_save="1" />
+                                        <field name="description" />
+                                        <field name="date" />
+                                        <button name="download_file" type="object" class="button_blank fa fa-download" />
+                                    </tree>
+                                </field>
+                                <field name="description_image" />
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_land_use_rights_search" model="ir.ui.view">
+            <field name="name">vnitpro.land.use.rights.search</field>
+            <field name="model">vnitpro.land.use.rights</field>
+            <field name="priority" eval="8" />
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <field name="code" />
+                    <field name="ward_id" />
+                    <field name="land_group_id" />
+                    <field name="activate" />
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_land_use_rights_view">
+            <field name="name">Land Use Rights</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.land.use.rights</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_land_use_rights_search" />
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_land_use_rights_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_land_use_rights_view" />
+            <field name="sequence" eval="20" />
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_land_use_rights_form" />
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_land_use_rights_view_tree">
+            <field name="act_window_id" ref="act_open_vnitpro_land_use_rights_view" />
+            <field name="sequence" eval="10" />
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_vnitpro_land_use_rights_tree" />
+        </record>
+    </data>
+</odoo>

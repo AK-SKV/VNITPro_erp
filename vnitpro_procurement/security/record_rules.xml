@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vnitpro_procurement_rule_read" model="ir.rule">
+            <field name="name">Rule read</field>
+            <field name="model_id" ref="model_vnitpro_procurement" />
+            <field name="domain_force">
+                [('id', 'in', [permission.procurement_id.id for permission in user.procurement_permission_ids if permission.perm_read == True])]
+            </field>
+            <field name="perm_read" eval="1" />
+            <field name="perm_write" eval="0" />
+            <field name="perm_create" eval="0" />
+            <field name="perm_unlink" eval="0" />
+            <field name="groups" eval="[(4,ref('group_procurement'))]" />
+        </record>
+        <record id="vnitpro_procurement_rule_write" model="ir.rule">
+            <field name="name">Rule write</field>
+            <field name="model_id" ref="model_vnitpro_procurement" />
+            <field name="domain_force">
+                [('id', 'in', [permission.procurement_id.id for permission in user.procurement_permission_ids if permission.perm_write == True])]
+            </field>
+            <field name="perm_read" eval="1" />
+            <field name="perm_write" eval="1" />
+            <field name="perm_create" eval="0" />
+            <field name="perm_unlink" eval="0" />
+            <field name="groups" eval="[(4,ref('group_procurement'))]" />
+        </record>
+        <record id="vnitpro_procurement_rule_unlink" model="ir.rule">
+            <field name="name">Rule unlink</field>
+            <field name="model_id" ref="model_vnitpro_procurement" />
+            <field name="domain_force">
+                [('id', 'in', [permission.procurement_id.id for permission in user.procurement_permission_ids if permission.perm_unlink == True])]
+            </field>
+            <field name="perm_read" eval="1" />
+            <field name="perm_write" eval="0" />
+            <field name="perm_create" eval="0" />
+            <field name="perm_unlink" eval="1" />
+            <field name="groups" eval="[(4,ref('group_procurement'))]" />
+        </record>
+        <record id="vnitpro_procurement_rule_creater" model="ir.rule">
+            <field name="name">Rule Creater</field>
+            <field name="model_id" ref="model_vnitpro_procurement" />
+            <field name="domain_force">
+                [('create_uid','=',user.id)]
+            </field>
+            <field name="perm_read" eval="1" />
+            <field name="perm_write" eval="1" />
+            <field name="perm_create" eval="1" />
+            <field name="perm_unlink" eval="1" />
+            <field name="groups" eval="[(4,ref('group_procurement'))]" />
+        </record>
+    </data>
+</odoo>

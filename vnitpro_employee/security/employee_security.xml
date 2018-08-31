@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="module_category_employee" model="ir.module.category">
+            <field name="name">Manage Employee Module</field>
+            <field name="sequence">10</field>
+        </record>
+        <record id="group_manage_employee" model="res.groups">
+            <field name="name">Manage Employee</field>
+            <field name="users" eval="[(4, ref('base.user_root'))]" />
+            <field name="category_id" ref="module_category_employee" />
+        </record>
+        <record id="group_manage_employee_department" model="res.groups">
+            <field name="name">Manage Department &amp; Employee</field>
+            <field name="category_id" ref="module_category_employee" />
+            <field name="users" eval="[(4, ref('base.user_root'))]" />
+            <field name="implied_ids" eval="[(4, ref('vnitpro_employee.group_manage_employee'))]" />
+        </record>
+    </data>
+</odoo>

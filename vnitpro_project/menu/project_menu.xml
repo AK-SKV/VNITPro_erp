@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_project_root" name="Project" sequence="5"
+                  web_icon="vnitpro_project,static/description/icon.png"/>
+        <menuitem id="menu_vnitpro_project_access_recent" name="Project access recent"
+                  parent="vnitpro_base.menu_vnitpro_access_recent"
+                  sequence="15"
+                  action="act_open_vnitpro_project_access_recent_view"/>
+        <menuitem id="menu_vnitpro_project_dashboard" name="Project Dashboard" parent="menu_vnitpro_project_root"
+				sequence="1" action="act_open_vnitpro_project_dashboard_view" />
+        <menuitem id="menu_vnitpro_project_sub" name="Project" parent="menu_vnitpro_project_root" sequence="2"
+                  action="act_open_vnitpro_project_view"/>
+    </data>
+</odoo>

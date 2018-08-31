@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<template id="report_gen_procurement_list">
+			<style>
+	            .font{
+    	            font-size:18px;
+    	            font-family:"Helvetica"
+	            }
+	            @page{
+	                size: A4;
+	            }
+                td, th{
+                    vertical-align:inherit !important;
+                }
+	        </style>
+	        <t t-call="web.html_container">
+	            <t t-foreach="docs" t-as="o">	            	
+	                <t t-call="web.external_layout" t-lang="lang">
+	                    <div class="font">
+	                        <div class="page">
+	                            <div class="row text-center">
+	                                <h2>
+	                                    <strong t-esc="get_title_report()['title_report']" />
+	                                </h2>
+	                                <h4>
+	                                	<span t-esc="get_title_report()['time_report']" />
+	                                </h4>
+	                            </div>
+	                            <br/>
+                                <div>
+                                    <table class="table table-bordered" style="font-size:11px">
+                                        <thead>
+                                            <tr>
+                                            	<span t-foreach="get_title_table()" t-as="m">
+                                            		<th  t-raw="m" class="text-center" />
+                                            	</span>
+                                            </tr>
+                                       	</thead>
+                                        <tbody>
+                                            <span t-foreach="get_data(data)" t-as="m">
+                                            	<tr>
+                                            		<td t-raw="m['code']"/>
+                                            		<td t-raw="m['name']"/>
+                                            		<td t-raw="m['time_bidder_select']"/>
+                                            		<td t-raw="m['time_contract_duration']"/>
+                                            		<td t-raw="m['funds']"/>
+                                            		<td t-raw="m['time_invitation']"/>
+                                            		<td t-raw="m['time_bidding']"/>
+                                            		<td t-raw="m['date_open_file']"/>
+                                            		<td t-raw="m['time_review']"/>
+                                            		<td t-raw="m['new_history']"/>
+                                            		<td t-raw="m['bidder_won']"/>
+                                            		<td t-raw="m['value_procurement']"/>
+                                            		<td t-raw="m['value_won']"/>
+                                                    <td t-raw="m['currency']"/>
+                                            	</tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                </div>
+	                        </div>
+	                    </div>
+	                </t>
+	            </t>
+	        </t>
+	    </template>
+	</data>
+</odoo>

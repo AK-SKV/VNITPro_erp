@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_header" inherit_id="web.external_layout_standard">
+            <xpath expr="//div[@class='header']" position="replace">
+                <h4>UBND thành phố Hà Nội</h4>
+                <h4>Quận Hai Bà Trưng</h4>
+            </xpath>
+            <xpath expr="//div[@class='footer']" position="replace">
+            </xpath>
+        </template>
+        <template id="report_gen_villa_list">
+            <style>
+                .font {
+                font-size: 18px;
+                font-family: "Helvetica"
+                }
+
+                @page {
+                size: A4;
+                }
+
+                td, th{
+                vertical-align:inherit !important;
+                }
+            </style>
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout" t-lang="lang">
+                        <div class="page">
+                            <div class="row">
+                                <div class="text-center">
+                                    <h2>Current Condition Of Villa Using Report</h2>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="pull-left text-center" style="margin:5px 100px">
+                                    <h5>
+                                        <i>Villa Quantity:</i>
+                                        <span t-esc="get_count(data)"/>
+                                    </h5>
+                                </div>
+                                <div class="pull-right text-center" style="margin:5px 100px">
+                                    <h5>
+                                        <i>Numbered:</i>
+                                    </h5>
+                                </div>
+                            </div>
+                            <div>
+                                <table class="table table-bordered" style="font-size:11px">
+                                    <thead>
+                                        <col width="30"/>
+                                        <col/>
+                                        <col/>
+                                        <col/>
+                                        <col/>
+                                        <col width="60"/>
+                                        <col/>
+                                        <col/>
+                                        <col width="60"/>
+                                        <tr>
+                                            <th rowspan="2" style="text-align:center">#</th>
+                                            <th rowspan="2" style="text-align:center">Villa Code</th>
+                                            <th rowspan="2" style="text-align:center">Address</th>
+                                            <th rowspan="2" style="text-align:center">Villa Group</th>
+                                            <th rowspan="2" style="text-align:center">Land Area</th>
+                                            <th rowspan="2" style="text-align:center">Construction Area</th>
+                                            <th rowspan="2" style="text-align:center">Owner Information</th>
+                                            <th rowspan="2" style="text-align:center">Owner Phone</th>
+                                            <th rowspan="2" style="text-align:center">Own Area/ Area in Certificate</th>
+                                            <th rowspan="2" style="text-align:center">Certification Date</th>
+                                            <th colspan="3" style="text-align:center">Using Status</th>
+                                        </tr>
+                                        <tr>
+                                            <th style="text-align:center">Private Own</th>
+                                            <th style="text-align:center">Public Own</th>
+                                            <th style="text-align:center">Own Time</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <span t-foreach="get_data(data)" t-as="m">
+                                            <tr>
+                                                <td t-att-rowspan="m['len_owner_detail'] if m['len_owner_detail'] > 0 else 1"
+                                                    t-raw="m['count']"/>
+                                                <td t-att-rowspan="m['len_owner_detail'] if m['len_owner_detail'] > 0 else 1"
+                                                    t-raw="m['code']"/>
+                                                <td t-att-rowspan="m['len_owner_detail'] if m['len_owner_detail'] > 0 else 1"
+                                                    t-raw="m['address']"/>
+                                                <td t-att-rowspan="m['len_owner_detail'] if m['len_owner_detail'] > 0 else 1"
+                                                    t-raw="m['villa_group']"/>
+                                                <td t-att-rowspan="m['len_owner_detail'] if m['len_owner_detail'] > 0 else 1"
+                                                    t-raw="m['land_area']"/>
+                                                <td t-att-rowspan="m['len_owner_detail'] if m['len_owner_detail'] > 0 else 1"
+                                                    t-raw="m['construction_area']"/>
+                                                <t t-if="m['len_owner_detail'] == 0">
+                                                    <td rowspan="1" colspan="7" class="text-center">
+                                                        Have No Owner
+                                                    </td>
+                                                </t>
+                                                <t t-elseif="m['len_owner_detail'] > 0">
+                                                    <t t-foreach="m['owner_detail']" t-as="n">
+                                                        <t t-if="n_index == 0">
+                                                            <td t-raw="n['owner_information']"/>
+                                                            <td t-raw="n['owner_phone']"/>
+                                                            <td t-raw="n['total_area_in_certification']"/>
+                                                            <t t-if="n['have_certification'] == 1">
+                                                                <td t-raw="n['certification_date']"/>
+                                                                <td t-raw="n['private_own']"/>
+                                                                <td t-raw="n['public_own']"/>
+                                                                <td t-raw="n['own_time']"/>
+                                                            </t>
+                                                            <t t-if="n['have_certification'] == 0">
+                                                                <td colspan="4" class="text-center">
+                                                                    Have No Certification
+                                                                </td>
+                                                            </t>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                                <t t-elseif="m['len_owner_detail'] > 1">
+                                                    <t t-foreach="m['owner_detail']" t-as="i">
+                                                        <t t-if="i_index != 0">
+                                                            <tr>
+                                                                <td t-raw="i['owner_information']"/>
+                                                                <td t-raw="i['owner_phone']"/>
+                                                                <td t-raw="i['total_area_in_certification']"/>
+                                                                <t t-if="i['have_certification'] == 1">
+                                                                    <td t-raw="i['certification_date']"/>
+                                                                    <td t-raw="i['private_own']"/>
+                                                                    <td t-raw="i['public_own']"/>
+                                                                    <td t-raw="i['own_time']"/>
+                                                                </t>
+                                                                <t t-if="i['have_certification'] == 0">
+                                                                    <td colspan="4" class="text-center">
+                                                                        Have No Certification
+                                                                    </td>
+                                                                </t>
+                                                            </tr>
+                                                        </t>
+                                                    </t>
+                                                </t>
+                                            </tr>
+                                        </span>
+                                    </tbody>
+                                </table>
+                                <div class="row">
+                                    <div class="pull-left text-center" style="margin:5px 100px">
+                                        <h5>
+                                            <i>Create User
+                                                <br/>(Sign And Write Fullname)
+                                            </i>
+                                        </h5>
+                                    </div>
+                                    <div class="pull-right text-center" style="margin:5px 100px">
+                                        <h5>
+                                            <i>Unit Manager
+                                                <br/>(Sign And Write Fullname)
+                                            </i>
+                                        </h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

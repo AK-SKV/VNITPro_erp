@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <templates id='template' xmlspace='preserve'>
+  	<!--Extends UserMenu -->
+   	<!-- <t t-extend="UserMenu.Actions">
+     	<t t-jquery="li.divider" t-operation="before">
+       		<li><a href="/vnitpro_land_website/static/hdsd.pdf" target="_blank">Guide</a></li>
+     	</t>
+   	</t> -->
+</templates>

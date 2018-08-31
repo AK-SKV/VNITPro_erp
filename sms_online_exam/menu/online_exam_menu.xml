@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<menuitem id="sms_online_exam_management_menu" name="Online Exam" sequence="15" 
+			web_icon="sms_online_exam,static/description/icon.png"/>
+
+		<menuitem id="sms_online_exam_management_menu_sub" name="Exam" sequence="10" 
+			parent="sms_online_exam_management_menu" />
+		<menuitem id="sms_online_exam_question_menu" name="Question" sequence="20"
+			parent="sms_online_exam_management_menu_sub" action="act_open_sms_online_exam_question_view"/>
+		<menuitem id="sms_online_exam_information_menu" name="Exam" sequence="30"
+			parent="sms_online_exam_management_menu_sub" action="act_open_sms_online_exam_view"/>
+		<menuitem id="sms_online_exam_result_menu" name="Exam Results" sequence="40"
+			parent="sms_online_exam_management_menu_sub" action="act_open_sms_online_exam_result_view"/>
+
+
+		<menuitem id="sms_online_exam_configures_menu" name="Configures" sequence="60"
+			parent="sms_online_exam_management_menu"/>
+		<menuitem id="sms_online_exam_object_menu" name="Object" sequence="10"
+			parent="sms_online_exam_configures_menu" action="act_open_sms_online_exam_object_view"/>
+		<menuitem id="sms_online_exam_contestant_menu" name="Contestant" sequence="20"
+			parent="sms_online_exam_configures_menu" action="act_open_sms_online_exam_contestant_view"/>
+		<menuitem id="sms_online_exam_process_menu" name="Process" sequence="30"
+			parent="sms_online_exam_configures_menu" action="act_open_sms_online_exam_process_view"/>
+	</data>
+</odoo>

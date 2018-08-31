@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_access_recent" name="Access Recents" sequence="1" web_icon="vnitpro_base,static/description/icon_dashboard.png" />
+    </data>
+</odoo>

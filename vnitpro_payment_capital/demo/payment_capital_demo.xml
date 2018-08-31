@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="payment_capital_1" model="vnitpro.payment.capital">
+            <field name="code">V_KH001</field>
+            <field name="name">Khấu hao</field>
+        </record>
+        <record id="payment_capital_2" model="vnitpro.payment.capital">
+            <field name="code">V_LD002</field>
+            <field name="name">Vốn lưu động</field>
+        </record>
+        <record id="payment_capital_3" model="vnitpro.payment.capital">
+            <field name="code">V_PT</field>
+            <field name="name">Vốn phát triển</field>
+        </record>
+        <record id="payment_capital_4" model="vnitpro.payment.capital">
+            <field name="code">V_TN004</field>
+            <field name="name">Vốn trong nước</field>
+        </record>
+        <record id="payment_capital_5" model="vnitpro.payment.capital">
+            <field name="code">V_VNT005</field>
+            <field name="name">Vốn vay nước ngoài</field>
+        </record>
+        <record id="payment_capital_6" model="vnitpro.payment.capital">
+            <field name="code">V_DTXD006</field>
+            <field name="name">Vốn đầu tư xây dựng</field>
+        </record>
+        <record id="payment_capital_7" model="vnitpro.payment.capital">
+            <field name="code">V_SXKDTT007</field>
+            <field name="name">Vốn sản xuất kinh doanh thông thườngp</field>
+        </record>
+        <record id="payment_capital_8" model="vnitpro.payment.capital">
+            <field name="code">V_SXKDSCL007</field>
+            <field name="name">Vốn sản xuất kinh doanh sửa chữa lớn</field>
+        </record>
+        <record id="payment_capital_9" model="vnitpro.payment.capital">
+            <field name="code">V_VVTODA010</field>
+            <field name="name">Vốn vay viện trợ ODA</field>
+        </record>
+	</data>
+</odoo>

@@ -1,0 +1,85 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_contract_configure
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-10 01:50+0000\n"
+"PO-Revision-Date: 2018-08-10 01:50+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_contract_configure
+#: model:ir.actions.act_window,name:vnitpro_contract_configure.act_open_vnitpro_contract_configure_view
+#: model:ir.ui.view,arch_db:vnitpro_contract_configure.view_vnitpro_contract_configure_form
+#: model:ir.ui.view,arch_db:vnitpro_contract_configure.view_vnitpro_contract_configure_search
+#: model:ir.ui.view,arch_db:vnitpro_contract_configure.view_vnitpro_contract_configure_tree
+msgid "Contract Configure"
+msgstr "Danh mục hợp đồng"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_name
+msgid "Contract Name"
+msgstr "Tên hợp đồng"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_customer
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_description
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model.fields,field_description:vnitpro_contract_configure.field_vnitpro_contract_configure_sign_day
+msgid "Sign Day"
+msgstr "Ngày ký hợp đồng"
+
+#. module: vnitpro_contract_configure
+#: model:ir.model,name:vnitpro_contract_configure.model_vnitpro_contract_configure
+msgid "vnitpro.contract.configure"
+msgstr "vnitpro.contract.configure"
+

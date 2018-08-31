@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_gen_contract_list_detail">
+            <style>
+            .font {
+                font-size: 18px;
+                font-family: "Helvetica"
+            }
+
+            @page {
+                size: A4;
+            }
+
+            .div_title_report {
+                text-align: center;
+                margin: 15px 0px;
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            td,
+            th {
+                vertical-align: inherit !important;
+            }
+            </style>
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout" t-lang="lang">
+                        <div class="font">
+                            <div class="page">
+                                <div class="row text-center">
+                                    <h2>
+                                        <strong t-esc="get_title_report()['title_report']"/>
+                                    </h2>
+                                    <h4>
+                                        <span t-esc="get_title_report()['time_report']"/>
+                                    </h4>
+                                </div>
+                                <br/>
+                                <div>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <tbody>
+                                            <span t-foreach="get_data_contract(data)" t-as="m">
+                                                <tr>
+                                                    <th class="text-left"><strong t-raw="m[0]"/></th>
+                                                    <td t-raw="m[1]"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <!--bao lanh-->
+                                    <div class="div_title_report">
+                                        <span t-esc="get_title_guarantee()['title_guarantee']" />
+                                    </div>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <thead>
+                                            <span t-foreach="get_title_table_guarantee()" t-as="m">
+                                                <th class="text-center" t-raw="m"/>
+                                            </span>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_guarantee(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['guarantee_type']"/>
+                                                    <td t-raw="m['guarantee_unit']"/>
+                                                    <td t-raw="m['status']"/>
+                                                    <td t-raw="m['create_date']"/>
+                                                    <td t-raw="m['start_date']"/>
+                                                    <td t-raw="m['end_date']"/>
+                                                    <td t-raw="m['price']"/>
+                                                    <td t-raw="m['note']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <!--bao hang muc-->
+                                    <div class="div_title_report">
+                                        <span t-esc="get_title_category()['title_category']" />
+                                    </div>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <thead>
+                                            <span t-foreach="get_title_table_category()" t-as="m">
+                                                <th class="text-center" t-raw="m"/>
+                                            </span>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_category(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['code_number']"/>
+                                                    <td t-raw="m['category']"/>
+                                                    <td t-raw="m['quantity']"/>
+                                                    <td t-raw="m['unit_price']"/>
+                                                    <td t-raw="m['vat']"/>
+                                                    <td t-raw="m['cost_after_vat']"/>
+                                                    <td t-raw="m['warranty_period']"/>
+                                                    <td t-raw="m['employee']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <!--bao dieu khoan thanh toan-->
+                                    <div class="div_title_report">
+                                        <span t-esc="get_title_payment_term()['title_payment_term']" />
+                                    </div>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <thead>
+                                            <span t-foreach="get_title_table_payment_term()" t-as="m">
+                                                <th class="text-center" t-raw="m"/>
+                                            </span>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_payment_term(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['payment_name']"/>
+                                                    <td t-raw="m['start_date']"/>
+                                                    <td t-raw="m['end_date']"/>
+                                                    <td t-raw="m['payment_price']"/>
+                                                    <td t-raw="m['description']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <!--phu luc-->
+                                    <div class="div_title_report">
+                                        <span t-esc="get_title_sub()['title_sub']" />
+                                    </div>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <thead>
+                                            <span t-foreach="get_title_table_sub()" t-as="m">
+                                                <th class="text-center" t-raw="m"/>
+                                            </span>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_sub(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['sub_code']"/>
+                                                    <td t-raw="m['sub_type']"/>
+                                                    <td t-raw="m['created_date']"/>
+                                                    <td t-raw="m['price_before_vat']"/>
+                                                    <td t-raw="m['vat']"/>
+                                                    <td t-raw="m['price_after_vat']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <!--tang tai san-->
+                                    <div class="div_title_report">
+                                        <span t-esc="get_title_asset_increase()['title_asset_increase']" />
+                                    </div>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <thead>
+                                            <span t-foreach="get_title_table_asset_increase()" t-as="m">
+                                                <th class="text-center" t-raw="m"/>
+                                            </span>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_asset_increase(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['asset_type']"/>
+                                                    <td t-raw="m['increase_type']"/>
+                                                    <td t-raw="m['price']"/>
+                                                    <td t-raw="m['increase_date']"/>
+                                                    <td t-raw="m['description']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <!--nghiem thu thanh toan-->
+                                    <div class="div_title_report">
+                                        <span t-esc="get_title_acceptance_payment()['title_acceptance_payment']" />
+                                    </div>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <thead>
+                                            <span t-foreach="get_title_table_acceptance_payment()" t-as="m">
+                                                <th class="text-center" t-raw="m"/>
+                                            </span>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_acceptance_payment(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['acceptance_document_number']"/>
+                                                    <td t-raw="m['acceptance_document_name']"/>
+                                                    <td t-raw="m['acceptance_information']"/>
+                                                    <td t-raw="m['payment_number']"/>
+                                                    <td t-raw="m['payment_employee']"/>
+                                                    <td t-raw="m['payment_information']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

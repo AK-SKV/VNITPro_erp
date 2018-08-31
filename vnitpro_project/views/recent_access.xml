@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_project_access_recent_tree" model="ir.ui.view">
+            <field name="name">vnitpro.project.access.recent.tree</field>
+            <field name="model">vnitpro.project.access.recent</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Project Access Recent" create="false" edit="false">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="access_date"/>
+                    <button name="detail_project" type="object" string="Detail" class="oe_highlight" />
+                    <field name="user_id" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_project_access_recent_search" model="ir.ui.view">
+            <field name="name">vnitpro.project.access.recent.search</field>
+            <field name="model">vnitpro.project.access.recent</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Project Access Recent">
+                    <field name="code"/>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_project_access_recent_view">
+            <field name="name">Project Access Recent</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.project.access.recent</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+            <field name="search_view_id" ref="view_vnitpro_project_access_recent_search"/>
+            <field name="domain">[('user_id', '=', uid)]</field>
+            <field name="context">{}</field>
+        </record>
+    </data>
+</odoo>

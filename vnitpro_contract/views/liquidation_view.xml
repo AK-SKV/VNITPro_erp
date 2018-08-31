@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_liquidation_form" model="ir.ui.view">
+            <field name="name">vnitpro.liquidation.form</field>
+            <field name="model">vnitpro.contract</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4">
+                            <field name="information" colspan="4" required="1"/>
+                            <field name="liquidation_number" colspan="2" required="1"/>
+                            <field name="liquidation_date" colspan="2" required="1"/>
+                            <field name="total_contract_price"/>
+                            <field name="currency_liquidation" style="width:50%%"/>
+                            <field name="total_paid_contract_price" colspan="4" style="width:50%%"/>
+                            <field name="remain_contract_price" colspan="4" style="width:50%%"/>
+                        </group>
+                        <footer>
+                            <button type="object" name="save_refresh" string="Save" class="oe_highlight"/>
+                            <button special="cancel" string="Close" type="object"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

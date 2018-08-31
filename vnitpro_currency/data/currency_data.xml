@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="currency_1" model="vnitpro.currency">
+            <field name="code">USD</field>
+            <field name="name">US Dollar</field>
+        </record>
+        <record id="currency_2" model="vnitpro.currency">
+            <field name="code">VND</field>
+            <field name="name">Vietnamese đồng</field>
+        </record>
+        <record id="currency_3" model="vnitpro.currency">
+            <field name="code">EUR</field>
+            <field name="name">Euro</field>
+        </record>
+        <record id="currency_4" model="vnitpro.currency">
+            <field name="code">GBP</field>
+            <field name="name">British Pound</field>
+        </record>
+        <record id="currency_5" model="vnitpro.currency">
+            <field name="code">CNY</field>
+            <field name="name">Chinese Yuan</field>
+        </record>
+        <record id="currency_6" model="vnitpro.currency">
+            <field name="code">JPY</field>
+            <field name="name">Japanese Yen</field>
+        </record>
+        <record id="currency_7" model="vnitpro.currency">
+            <field name="code">AUD</field>
+            <field name="name">Australian Dollar</field>
+        </record>
+        <record id="currency_8" model="vnitpro.currency">
+            <field name="code">CAD</field>
+            <field name="name">Canadian Dollar</field>
+        </record>
+        <record id="currency_9" model="vnitpro.currency">
+            <field name="code">SGD</field>
+            <field name="name">Singapore Dollar</field>
+        </record>
+        <record id="currency_10" model="vnitpro.currency">
+            <field name="code">HKD</field>
+            <field name="name">Hongkong Dollar</field>
+        </record>
+        <record id="currency_11" model="vnitpro.currency">
+            <field name="code">CHF</field>
+            <field name="name">Swiss Franc</field>
+            <field name="activate">not_used</field>
+        </record>
+        <record id="currency_12" model="vnitpro.currency">
+            <field name="code">THB</field>
+            <field name="name">Baht</field>
+            <field name="activate">not_used</field>
+        </record>
+	</data>
+</odoo>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_procurement_advisory_form" model="ir.ui.view">
+            <field name="name">vnitpro.procurement.advisory.form</field>
+            <field name="model">vnitpro.procurement</field>
+            <field name="priority" eval="10" />
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4">
+                            <field name="code_advisory" required="1" />
+                            <field name="name_advisory" required="1" />
+                            <field name="bidder_a" required="1" />
+                            <field name="bidder_b" required="1" />
+                            <field name="type_of_contract_advisory" required="1" />
+                            <field name="contract_after_vat" required="1" />
+                            <field name="currency_advisory_id" required="1" />
+                            <div colspan="4" class="div_content">Duration Of Contract</div>
+                            <field name="from_date_ad" required="1" />
+                            <field name="to_date_ad" required="1" />
+                            <field name="funds_advisory" required="1" widget="many2many_tags" />
+                            <field name="confirmed" required="1" />
+                        </group>
+                        <footer>
+                            <button type="object" name="save_refresh" string="Save" class="oe_highlight" />
+                            <button special="cancel" string="Close" type="object" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_procurement_confirm_form" model="ir.ui.view">
+            <field name="name">vnitpro.procurement.confirm.form</field>
+            <field name="model">vnitpro.procurement</field>
+            <field name="priority" eval="10" />
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4">
+                            <field name="code_confirm" required="1" />
+                            <field name="approver" required="1" />
+                            <field name="approval_date" required="1" />
+                            <field name="before_tax" required="1" />
+                            <field name="vat_confirm" required="1" />
+                            <field name="after_tax" />
+                            <field name="money_tax" />
+                            <field name="currency_confirm_id" required="1" />
+                            <field name="confirm_status" widget="radio" options="{'horizontal': true}" />
+                        </group>
+                        <footer>
+                            <button type="object" name="save_refresh" string="Save" class="oe_highlight" />
+                            <button special="cancel" string="Close" type="object" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_procurement_invitation_form" model="ir.ui.view">
+            <field name="name">vnitpro.procurement.invitation.form</field>
+            <field name="model">vnitpro.procurement</field>
+            <field name="priority" eval="10" />
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4">
+                            <field name="code_profile" required="1" />
+                            <field name="name_profile" required="1" />
+                            <field name="release_time" required="1" />
+                            <field name="bid_submission_deadline" required="1" />
+                            <field name="creator" required="1" force_save="1" />
+                            <field name="approved" required="1" />
+                        </group>
+                        <footer>
+                            <button type="object" name="save_refresh" string="Save" class="oe_highlight" />
+                            <button special="cancel" string="Close" type="object" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_procurement_bidding_document_form" model="ir.ui.view">
+            <field name="name">vnitpro.procurement.bidding.document.form</field>
+            <field name="model">vnitpro.procurement</field>
+            <field name="priority" eval="10" />
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4">
+                            <field name="bidding_document_code" required="1" />
+                            <field name="bidding_document_name" required="1" />
+                            <field name="release_time_bidding" required="1" />
+                            <field name="bid_closing_date" required="1" />
+                            <field name="date_open_file" required="1" />
+                            <field name="review_start" required="1" />
+                            <field name="review_end" required="1" />
+                            <field name="new_history" required="1" />
+                            <field name="confirmed_bidding_document" required="1" />
+                        </group>
+                        <footer>
+                            <button type="object" name="save_refresh" string="Save" class="oe_highlight" />
+                            <button special="cancel" string="Close" type="object" />
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

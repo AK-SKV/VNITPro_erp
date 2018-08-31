@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_vnitpro_inventory_export_product_form">
+            <field name="name">vnitpro.inventory.export.product.form.inherit</field>
+            <field name="model">vnitpro.inventory.export.product</field>
+            <field name="inherit_id" ref="vnitpro_inventory.view_vnitpro_inventory_export_product_form"/>
+            <field name="arch" type="xml">
+                <group col="4" name="main" position="inside">
+                    <field name="delivery_plan_id"/>
+                    <field name="contract_id"/>
+                    <field name="order_id"/>
+                </group>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="unit_1" model="vnitpro.unit">
+            <field name="code">kg</field>
+            <field name="name">kg</field>
+            <field name="description">Kilogram</field>
+        </record>
+        <record id="unit_2" model="vnitpro.unit">
+            <field name="code">km</field>
+            <field name="name">km</field>
+            <field name="description">Kilometer</field>
+        </record>        
+	</data>
+</odoo>

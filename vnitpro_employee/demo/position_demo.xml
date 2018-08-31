@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="position_1" model="vnitpro.position">
+            <field name="code">PO01</field>
+            <field name="name">Giám đốc</field>
+        </record>
+        <record id="position_2" model="vnitpro.position">
+            <field name="code">PO02</field>
+            <field name="name">Phó giám đốc</field>
+        </record>
+        <record id="position_3" model="vnitpro.position">
+            <field name="code">PO03</field>
+            <field name="name">Trưởng phòng</field>
+        </record>
+        <record id="position_4" model="vnitpro.position">
+            <field name="code">PO04</field>
+            <field name="name">Phó phòng</field>
+        </record>
+        <record id="position_5" model="vnitpro.position">
+            <field name="code">PO05</field>
+            <field name="name">Nhân viên</field>
+        </record>
+    </data>
+</odoo>

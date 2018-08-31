@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_payment_term_form" model="ir.ui.view">
+            <field name="name">vnitpro.payment.term.form</field>
+            <field name="model">vnitpro.payment.term</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Payment Term" duplicate="0">
+                    <sheet>
+                        <group col="4">
+                            <field name="payment_name" colspan="4"/>
+                            <field name="payment_price" colspan="4" style="width:25%%"/>
+                            <field name="start_date" colspan="4" style="width:40%%"/>
+                            <field name="end_date" colspan="4" style="width:40%%"/>
+                        </group>
+                        <group colspan="4" name="des">
+                            <div colspan="4" class="div_attachfile">Attachment Files</div>
+                            <field name="file_attachment_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="file" filename="file_name"/>
+                                    <field name="file_name" force_save="1"/>
+                                    <field name="user_id" force_save="1"/>
+                                    <field name="description"/>
+                                    <field name="date"/>
+                                    <button name="download_file" type="object"
+                                            class="button_blank fa fa-download"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>                    
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_payment_term_view">
+            <field name="name">Payment Term</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.payment.term</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_payment_term_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_payment_term_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_payment_term_form"/>
+        </record>
+    </data>
+</odoo>

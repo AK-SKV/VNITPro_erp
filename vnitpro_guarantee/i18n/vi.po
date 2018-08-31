@@ -1,0 +1,66 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_guarantee
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-29 03:34+0000\n"
+"PO-Revision-Date: 2018-05-29 03:34+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_guarantee
+#: model:ir.model.fields,field_description:vnitpro_guarantee.field_vnitpro_guarantee_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_guarantee
+#: model:ir.model.fields,field_description:vnitpro_guarantee.field_vnitpro_guarantee_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_guarantee
+#: model:ir.model.fields,field_description:vnitpro_guarantee.field_vnitpro_guarantee_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_guarantee
+#: model:ir.actions.act_window,name:vnitpro_guarantee.act_open_vnitpro_guarantee_view
+#: model:ir.ui.menu,name:vnitpro_guarantee.menu_vnitpro_guarantee
+#: model:ir.ui.view,arch_db:vnitpro_guarantee.view_vnitpro_guarantee_form
+#: model:ir.ui.view,arch_db:vnitpro_guarantee.view_vnitpro_guarantee_search
+#: model:ir.ui.view,arch_db:vnitpro_guarantee.view_vnitpro_guarantee_tree
+msgid "Guarantee"
+msgstr "Bảo lãnh"
+
+#. module: vnitpro_guarantee
+#: model:ir.model.fields,field_description:vnitpro_guarantee.field_vnitpro_guarantee_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_guarantee
+#: model:ir.model.fields,field_description:vnitpro_guarantee.field_vnitpro_guarantee___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_guarantee
+#: model:ir.model.fields,field_description:vnitpro_guarantee.field_vnitpro_guarantee_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_guarantee
+#: model:ir.model.fields,field_description:vnitpro_guarantee.field_vnitpro_guarantee_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_guarantee
+#: model:ir.model,name:vnitpro_guarantee.model_vnitpro_guarantee
+msgid "vnitpro.guarantee"
+msgstr "vnitpro.guarantee"
+

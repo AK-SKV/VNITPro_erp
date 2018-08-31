@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Create by tam.pt-->
+<odoo>
+    <data>
+        <record id="view_bidder_tree" model="ir.ui.view">
+            <field name="name">vnitpro.bidder.tree</field>
+            <field name="model">vnitpro.bidder</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Bidder">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="phone_number"/>
+                    <field name="address"/>
+                    <field name="representative"/>
+                    <field name="activate"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_bidder_form" model="ir.ui.view">
+            <field name="name">vnitpro.bidder.form</field>
+            <field name="model">vnitpro.bidder</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Bidder">
+                    <header>
+                        <field name="activate" widget="statusbar" clickable="True"
+                               options="{'fold_field': 'fold'}"/>
+                    </header>
+                    <sheet>
+                        <group col="4" name="main">
+                            <field name="code"/>
+                            <field colspan="4" name="name"/>
+                            <field colspan="4" name="address"/>
+                            <field name="phone_number"/>
+                            <field name="tax_code"/>
+                            <field name="fax"/>
+                            <field name="representative"/>
+                            <field name="phone_number_representative"/>
+                            <field name="representative_position"/>
+                            <field name="representative_email"/>                            
+                        </group>
+                        <group colspan="4" name="des">
+                            <field name="description"/>
+                        </group>
+                        <group colspan="4" name="bank_of_bidder" string="Bank info">
+                            <field name="bank_of_bidder_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="account_number"/>
+                                    <field name="bank_id" required="1"/>
+                                    <field name="branch"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_bidder_search" model="ir.ui.view">
+            <field name="name">vnitpro.bidder.search</field>
+            <field name="model">vnitpro.bidder</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Bidder">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="phone_number"/>
+                    <field name="address"/>
+                    <field name="representative"/>
+                    <field name="phone_number_representative"/>
+                    <field name="representative_email"/>
+                    <field name="activate"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_bidder_view">
+            <field name="name">Bidder</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.bidder</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_bidder_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_bidder_form_view">
+            <field name="act_window_id" ref="act_open_bidder_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_bidder_form"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_bidder_tree_view">
+            <field name="act_window_id" ref="act_open_bidder_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_bidder_tree"/>
+        </record>
+    </data>
+</odoo>

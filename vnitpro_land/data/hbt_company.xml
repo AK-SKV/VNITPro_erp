@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="base.main_partner" model="res.partner">
+            <field name="name">UBND Quận Hai Bà Trưng</field>
+            <field name="currency_id" ref="base.VND" />
+            <field name="street">Số 33 Đại Cồ Việt</field>
+            <field name="city">Hà Nội</field>
+            <field name="state_id"></field>
+            <field name="zip"></field>
+            <field name="country_id" ref="base.vn" />
+            <field name="email"></field>
+            <field name="phone">(043)9780364</field>
+            <field name="fax">9780364</field>
+            <field name="website">http://haibatrung.hanoi.gov.vn/</field>
+            <field name="logo" type="base64" file="vnitpro_land/static/src/img/hbt.jpg" />
+        </record>
+    </data>
+</odoo>

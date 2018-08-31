@@ -1,0 +1,220 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vnitpro_employee
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-30 06:46+0000\n"
+"PO-Revision-Date: 2018-08-30 13:47+0700\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: vi\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.view_vnitpro_department_kanban
+msgid "<b>Code: </b>"
+msgstr "<b>Mã: </b>"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.kanban_view_vnitpro_employee
+msgid "<strong>Code:</strong>"
+msgstr "<strong>Mã: </strong>"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.kanban_view_vnitpro_employee
+msgid "<strong>Tel:</strong>"
+msgstr "<strong>SĐT: </strong>"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.view_vnitpro_employee_search
+msgid "Active Employee"
+msgstr "Nhân sự được kích hoạt"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_birthday
+msgid "Birthday"
+msgstr "Ngày sinh"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.view_vnitpro_employee_form
+msgid "Code"
+msgstr "Mã"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department_color
+msgid "Color"
+msgstr "Màu"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department_count_employee
+msgid "Count Employee"
+msgstr "Số nhân sự"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department_create_uid
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_create_uid
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_position_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department_create_date
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_create_date
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_position_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_employee
+#: model:ir.actions.act_window,name:vnitpro_employee.act_open_vnitpro_department_view
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_department_id
+#: model:ir.ui.menu,name:vnitpro_employee.menu_vnitpro_department_sub
+msgid "Department"
+msgstr "Phòng ban"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department_display_name
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_display_name
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_position_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_employee
+#: model:ir.actions.act_window,name:vnitpro_employee.act_open_vnitpro_employee_in_department_view
+#: model:ir.actions.act_window,name:vnitpro_employee.act_open_vnitpro_employee_view
+#: model:ir.ui.menu,name:vnitpro_employee.menu_vnitpro_employee_sub
+msgid "Employee"
+msgstr "Nhân sự"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.view_vnitpro_department_kanban
+msgid "Employee(s)"
+msgstr "Nhân sự"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department_employee_ids
+#: model:ir.ui.menu,name:vnitpro_employee.menu_vnitpro_employee
+msgid "Employees"
+msgstr "Nhân viên"
+
+#. module: vnitpro_employee
+#: selection:vnitpro.employee,gender:0
+msgid "Female"
+msgstr "Nữ"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.view_vnitpro_employee_form
+msgid "Fullname"
+msgstr "Họ & tên"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_gender
+msgid "Gender"
+msgstr "Giới tính"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department_id
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_id
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_position_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_id_number
+msgid "ID Number"
+msgstr "Thẻ căn cước / Số CMND"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.view_vnitpro_employee_search
+msgid "Inactive Employee"
+msgstr "Nhân sự không được kích hoạt"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department___last_update
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee___last_update
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_position___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department_write_uid
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_write_uid
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_position_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_department_write_date
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_write_date
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_position_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_employee
+#: selection:vnitpro.employee,gender:0
+msgid "Male"
+msgstr "Nam"
+
+#. module: vnitpro_employee
+#: model:res.groups,name:vnitpro_employee.group_manage_employee_department
+msgid "Manage Department & Employee"
+msgstr "Quản lý phòng ban & nhân sự"
+
+#. module: vnitpro_employee
+#: model:res.groups,name:vnitpro_employee.group_manage_employee
+msgid "Manage Employee"
+msgstr "Quản lý nhân sự"
+
+#. module: vnitpro_employee
+#: model:ir.module.category,name:vnitpro_employee.module_category_employee
+msgid "Manage Employee Module"
+msgstr "Phân hệ quản lý nhân sự"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.view_vnitpro_employee_form
+msgid "Personal Information"
+msgstr "Thông tin cá nhân"
+
+#. module: vnitpro_employee
+#: model:ir.actions.act_window,name:vnitpro_employee.act_open_vnitpro_position_view
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_position_id
+#: model:ir.ui.menu,name:vnitpro_employee.menu_vnitpro_position_sub
+msgid "Position"
+msgstr "Chức vụ"
+
+#. module: vnitpro_employee
+#: model:ir.ui.view,arch_db:vnitpro_employee.view_vnitpro_department_kanban
+msgid "Settings"
+msgstr "Thiết lập"
+
+#. module: vnitpro_employee
+#: model:ir.model.fields,field_description:vnitpro_employee.field_vnitpro_employee_res_user_id
+#: model:ir.ui.view,arch_db:vnitpro_employee.view_vnitpro_employee_form
+msgid "User Account"
+msgstr "Tài khoản người dùng"
+
+#. module: vnitpro_employee
+#: sql_constraint:vnitpro.employee:0
+msgid "User Account must be unique"
+msgstr "Một tài khoản người dùng chỉ có thể sử dụng cho một nhân sự."
+
+#. module: vnitpro_employee
+#: model:ir.model,name:vnitpro_employee.model_vnitpro_department
+msgid "vnitpro.department"
+msgstr "vnitpro.department"
+
+#. module: vnitpro_employee
+#: model:ir.model,name:vnitpro_employee.model_vnitpro_employee
+msgid "vnitpro.employee"
+msgstr "vnitpro.employee"
+
+#. module: vnitpro_employee
+#: model:ir.model,name:vnitpro_employee.model_vnitpro_position
+msgid "vnitpro.position"
+msgstr "vnitpro.position"

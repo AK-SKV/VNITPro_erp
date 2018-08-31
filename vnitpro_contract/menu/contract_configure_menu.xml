@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_contract_configure" name="Configure" sequence="100"
+                  parent="menu_vnitpro_contract_root"/>
+
+        <menuitem id="menu_vnitpro_contract_configure_contract" name="Contract" sequence="5"
+                  parent="menu_vnitpro_contract_configure"/>
+        <menuitem id="menu_vnitpro_bidder" name="Bidder" sequence="5"
+                  parent="menu_vnitpro_contract_configure_contract"
+                  action="vnitpro_bidder.act_open_bidder_view"/>
+        <menuitem id="menu_vnitpro_contract_type" name="Contract Type" sequence="10"
+                  parent="menu_vnitpro_contract_configure_contract"
+                  action="vnitpro_contract_type.act_open_vnitpro_contract_type_view"/>
+        <menuitem id="menu_vnitpro_contract_formality" name="Contract Formality" sequence="15"
+                  parent="menu_vnitpro_contract_configure_contract"
+                  action="vnitpro_contract_formality.act_open_vnitpro_contract_formality_view"/>
+        <menuitem id="menu_vnitpro_payment_capital" name="Payment Capital" sequence="20"
+                  parent="menu_vnitpro_contract_configure_contract"
+                  action="vnitpro_payment_capital.act_open_vnitpro_payment_capital_view"/>
+        <menuitem id="menu_vnitpro_purpose_of_use" name="Purpose of Use" sequence="25"
+                  parent="menu_vnitpro_contract_configure_contract"
+                  action="vnitpro_purpose_of_use.act_open_purpose_of_use_view"/>
+        <menuitem id="menu_vnitpro_facility" name="Facility" sequence="30"
+                  parent="menu_vnitpro_contract_configure_contract"
+                  action="vnitpro_facility.act_open_vnitpro_facility_view"/>
+        <menuitem id="menu_vnitpro_sub" name="Sub" sequence="35"
+                  parent="menu_vnitpro_contract_configure_contract"
+                  action="vnitpro_sub.act_open_vnitpro_sub_view"/>
+        <menuitem id="menu_vnitpro_guarantee" name="Guarantee" sequence="40"
+                  parent="menu_vnitpro_contract_configure_contract"
+                  action="vnitpro_guarantee.act_open_vnitpro_guarantee_view"/>
+        <menuitem id="menu_vnitpro_guarantee" name="Guarantee" sequence="45"
+                  parent="menu_vnitpro_contract_configure_contract"
+                  action="vnitpro_guarantee.act_open_vnitpro_guarantee_view"/>
+
+        <menuitem id="menu_vnitpro_contract_configure_general" name="General" sequence="10"
+                  parent="menu_vnitpro_contract_configure"/>
+        <menuitem id="menu_vnitpro_currency" name="Currency" sequence="5"
+                  parent="menu_vnitpro_contract_configure_general"
+                  action="vnitpro_currency.act_open_vnitpro_base_currency_view"/>
+    </data>
+</odoo>

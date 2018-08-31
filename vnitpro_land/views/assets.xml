@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="vnitpro_land_title_js" name="change_title" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript"
+                    src="/vnitpro_land/static/src/js/title.js"></script>
+        </xpath>
+    </template>
+</odoo>

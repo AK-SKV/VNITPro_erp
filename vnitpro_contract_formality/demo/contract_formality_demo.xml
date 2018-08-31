@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="contract_formality_1" model="vnitpro.contract.formality">
+            <field name="code">HDTG</field>
+            <field name="name">Hợp đồng trọn gói</field>
+        </record>
+        <record id="contract_formality_2" model="vnitpro.contract.formality">
+            <field name="code">TDGCD</field>
+            <field name="name">Theo đơn giá cố định</field>
+        </record>
+        <record id="contract_formality_3" model="vnitpro.contract.formality">
+            <field name="code">GDC</field>
+            <field name="name">Giá điều chỉnh</field>
+        </record>
+        <record id="contract_formality_4" model="vnitpro.contract.formality">
+            <field name="code">HDTTG</field>
+            <field name="name">Hợp đồng theo thời gian</field>
+        </record>
+    </data>
+</odoo>

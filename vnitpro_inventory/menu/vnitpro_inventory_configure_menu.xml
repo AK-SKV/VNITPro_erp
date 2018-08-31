@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_inventory_configure" name="Configure" parent="menu_vnitpro_inventory_root"
+                  sequence="100"/>
+
+        <menuitem id="menu_vnitpro_inventory" name="Inventory" parent="menu_vnitpro_inventory_configure" sequence="5"/>
+        <menuitem id="menu_vnitpro_product_group" name="Product Group" parent="menu_vnitpro_inventory" sequence="5"
+                  action="vnitpro_product_group.act_open_vnitpro_product_group_view"/>
+        <menuitem id="menu_vnitpro_product" name="Product" parent="menu_vnitpro_inventory" sequence="10"
+                  action="vnitpro_product.act_open_vnitpro_product_view"/>
+        <menuitem id="menu_vnitpro_warehouse" name="Warehouse" parent="menu_vnitpro_inventory" sequence="15"
+                  action="vnitpro_warehouse.act_open_vnitpro_warehouse_view"/>
+        <menuitem id="menu_vnitpro_company" name="Company" parent="menu_vnitpro_inventory" sequence="20"
+                  action="vnitpro_company.act_open_vnitpro_company_view"/>
+        <menuitem id="menu_vnitpro_packaging" name="Packaging" parent="menu_vnitpro_inventory" sequence="25"
+                  action="vnitpro_packaging.act_open_vnitpro_packaging_view"/>
+
+        <menuitem id="menu_vnitpro_general" name="General" parent="menu_vnitpro_inventory_configure" sequence="10"/>
+        <menuitem id="menu_vnitpro_unit" name="Unit" parent="menu_vnitpro_general" sequence="5"
+                  action="vnitpro_unit.act_open_vnitpro_base_unit_view"/>
+    </data>
+</odoo>

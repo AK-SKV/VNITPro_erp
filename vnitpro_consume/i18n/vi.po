@@ -1,0 +1,990 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vnitpro_consume
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-30 06:48+0000\n"
+"PO-Revision-Date: 2018-08-30 13:49+0700\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: vi\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/reports/report_consume_product.py:150
+#, python-format
+msgid "%m-%d-%Y"
+msgstr "%d-%m-%Y"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "<i>From date:</i>"
+msgstr "<i>Từ ngày:</i>"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "<i>to date:</i>"
+msgstr "<i>đến ngày:</i>"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_form
+msgid ""
+"All products have been delivered!\n"
+"                            Press \"Checking\" to recheck the order or press \"Confirm\" to finish the order."
+msgstr ""
+"Tất cả sản phẩm trong đơn hàng đã được giao\n"
+"                            Bấm \"Kiểm tra\" để kiểm tra lại đơn hàng hoặc bấm \"Xác nhận\" để hoàn thành đơn hàng."
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:52
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "April"
+msgstr "Tháng 4"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_form
+msgid "Are you sure to confirm?"
+msgstr "Bạn có chắc chắn xác nhận?"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_attachment_ids
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_order_form
+msgid "Attachment Files"
+msgstr "Tệp tin đính kèm"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:60
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "August"
+msgstr "Tháng 8"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_boat_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_boat_name
+msgid "Boat Name"
+msgstr "Tên tàu"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_bonus_penalize_lvl
+msgid "Bonus/Penalize Level"
+msgstr "Mức thưởng phạt"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_contract_id
+msgid "By Contract"
+msgstr "Theo hợp đồng"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "By Contract or Export Order"
+msgstr "Theo hợp đồng hoặc lệnh xuất hàng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_by_lc
+msgid "By L/C"
+msgstr "Theo L/C"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/reports/report_consume_product.py:24
+#, python-format
+msgid "CONSUME PRODUCT REPORT"
+msgstr "BÁO CÁO TIÊU THỤ SẢN PHẨM"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_car_number_id
+msgid "Car Number"
+msgstr "Số xe"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_form
+msgid "Checking"
+msgstr "Kiểm tra"
+
+#. module: vnitpro_consume
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_company
+msgid "Company"
+msgstr "Công ty"
+
+#. module: vnitpro_consume
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_consume_configure
+msgid "Configure"
+msgstr "Danh mục"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_form
+msgid "Confirm Order"
+msgstr "Xác nhận"
+
+#. module: vnitpro_consume
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_consume
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_consume_root
+msgid "Consume"
+msgstr "Tiêu thụ"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/wizard/gen_consume_product_report.py:49
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_gen_consume_product_report_form
+#, python-format
+msgid "Consume Product Report"
+msgstr "Báo cáo tiêu thụ sản phẩm"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_contract_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_inventory_export_product_contract_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_contract_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_contract_id
+msgid "Contract"
+msgstr "Hợp đồng"
+
+#. module: vnitpro_consume
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_contract_configure
+msgid "Contract Configure"
+msgstr "Danh mục hợp đồng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_sign_day
+msgid "Contract Sign Date"
+msgstr "Ngày ký hợp đồng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_cost
+msgid "Cost"
+msgstr "Tiền cần thu"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_create_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_create_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_create_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report_create_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_create_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_create_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_create_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_create_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_create_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_create_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_create_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report_create_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_create_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_create_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_create_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_create_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_currency_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_currency_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_currency_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_currency_id
+msgid "Currency"
+msgstr "Loại tiền"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_customer
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_customer
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_customer_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_customer_name
+msgid "Customer Name"
+msgstr "Tên khách hàng"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_header
+msgid "CÔNG TY NHÔM ĐẮK NÔNG - TKV"
+msgstr "CÔNG TY NHÔM ĐẮK NÔNG - TKV"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_date_arrived
+msgid "Date Arrived"
+msgstr "Thời gian đến cảng"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/order.py:53
+#, python-format
+msgid "Date arrived can't start before sign date!!"
+msgstr "Ngày đến cảng không thể bắt đầu trước ngày ký!"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:68
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "December"
+msgstr "Tháng 12"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_delivery_condition
+msgid "Delivery Condition"
+msgstr "Điều kiện giao hàng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_delivery_day
+msgid "Delivery Day"
+msgstr "Thời gian giao hàng trong tháng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_delivery_formality_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_delivery_formality_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_delivery_formality
+msgid "Delivery Formality"
+msgstr "Hình thức giao hàng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_delivery_place_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_delivery_place
+msgid "Delivery Place"
+msgstr "Địa điểm giao hàng"
+
+#. module: vnitpro_consume
+#: model:ir.actions.act_window,name:vnitpro_consume.act_open_vnitpro_delivery_plan_view
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_delivery_plan_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_inventory_export_product_delivery_plan_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_delivery_plan_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_delivery_plan_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_delivery_plan
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_delivery_plan_form
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_delivery_plan_search
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_delivery_plan_tree
+msgid "Delivery Plan"
+msgstr "Kế hoạch giao hàng"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_order_form
+msgid "Delivery Product Information"
+msgstr "Thông tin hàng cần giao"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_delivery_unit_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_delivery_unit
+msgid "Delivery Unit"
+msgstr "Đơn vị giao hàng"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "Detail"
+msgstr "Chi tiết"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_direct_import_product_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_direct_import_detail_ids
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_direct_import
+msgid "Direct Import Product"
+msgstr "Phiếu nhập-xuất thẳng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_report_vnitpro_consume_report_gen_consume_product_display_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_display_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_display_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_display_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report_display_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_display_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_display_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_display_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_display_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_consume
+#: selection:vnitpro.order,status:0 selection:vnitpro.tracking.card,status:0
+msgid "Done"
+msgstr "Hoàn thành"
+
+#. module: vnitpro_consume
+#: selection:vnitpro.order,status:0 selection:vnitpro.tracking.card,status:0
+msgid "Draft"
+msgstr "Chưa hoàn thành"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_employee_partners_id
+msgid "Employee Partners"
+msgstr "Nhân sự nhận"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_employee_sender_id
+msgid "Employee Sender"
+msgstr "Nhân sự giao"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:77
+#, python-format
+msgid "Empty product, please add product to plan!"
+msgstr "Chưa có hàng hóa, hãy thêm hàng hóa vào kế hoạch!"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report_end_date
+msgid "End Date"
+msgstr "Ngày kết thúc"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_expected_price
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_expected_price
+msgid "Expected Price"
+msgstr "Giá trị dự kiến"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:116
+#, python-format
+msgid "Expected price can not be lower than 0!"
+msgstr "Giá trị dự kiến không thể nhỏ hơn 0!"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "Export"
+msgstr "Xuất"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_export_card_number
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_export_card_number
+msgid "Export Card Number"
+msgstr "Số phiếu"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_export_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_export_date
+msgid "Export Date"
+msgstr "Ngày xuất"
+
+#. module: vnitpro_consume
+#: model:ir.actions.act_window,name:vnitpro_consume.act_open_vnitpro_direct_import_product_view
+msgid "Export Product"
+msgstr "Xuất hàng hóa"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:48
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "February"
+msgstr "Tháng 2"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_from_date
+msgid "From Date"
+msgstr "Từ ngày"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:112
+#, python-format
+msgid "From date can't start after to date!"
+msgstr "Từ ngày không được bắt đầu sau đến ngày!"
+
+#. module: vnitpro_consume
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_general
+msgid "General"
+msgstr "Danh mục chung"
+
+#. module: vnitpro_consume
+#: model:ir.actions.act_window,name:vnitpro_consume.act_open_vnitpro_gen_consume_product_report_view
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_gen_consume_product_report
+#: model:ir.ui.menu,name:vnitpro_consume.menu_gen_consume_product_report
+msgid "Generate Consume Product Report"
+msgstr "Tạo báo cáo tiêu thụ sản phẩm"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_gen_contract_report
+msgid "Generate Contract Report"
+msgstr "Generate Contract Report"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_report_vnitpro_consume_report_gen_consume_product_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_inspection_unit_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_inspection_unit
+msgid "Inspection Unit"
+msgstr "Đơn vị giám định"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:84
+#, python-format
+msgid "Invalid Code, please try again ( Code only contains letters, numbers and character: / , \\ , - _ ) ."
+msgstr "Mã không hợp lệ, xin vui lòng thử lại (Mã chỉ chứa chữ cái, số và các ký tự đặc biệt: / - _ ."
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:75
+#, python-format
+msgid "Invalid year, please try again."
+msgstr "Năm không hợp lệ, hãy thử lại."
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:46
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "January"
+msgstr "Tháng 1"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:58
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "July"
+msgstr "Tháng 7"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:56
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "June"
+msgstr "Tháng 6"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_report_vnitpro_consume_report_gen_consume_product___last_update
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan___last_update
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product___last_update
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail___last_update
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report___last_update
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order___last_update
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail___last_update
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information___last_update
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card___last_update
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_write_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_write_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_write_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report_write_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_write_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_write_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_write_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_write_uid
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_write_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_write_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_write_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report_write_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_write_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_write_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_write_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_write_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_lot_number
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "Lot Number"
+msgstr "Số lô"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:50
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "March"
+msgstr "Tháng 3"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:54
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "May"
+msgstr "Tháng 5"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_month
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_delivery_plan_form
+msgid "Month"
+msgstr "Tháng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_move_order
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_direct_import_product_form
+msgid "Move Order"
+msgstr "Lệnh điều động"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_move_order_date
+msgid "Move Order Date"
+msgstr "Ngày điều động"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_name
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_name
+msgid "Name"
+msgstr "Tên"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_note
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "Note"
+msgstr "Ghi chú"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_code
+msgid "Notification Number"
+msgstr "Số thông báo"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:66
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "November"
+msgstr "Tháng 11"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_number_of_packaging
+msgid "Number Of Packaging"
+msgstr "Số lượng bao"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "Number of Package"
+msgstr "Số bao"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/direct_import_product.py:83
+#, python-format
+msgid "Number of packaging must be bigger than 0 !"
+msgstr "Số bao phải lớn hơn 0 !"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:64
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "October"
+msgstr "Tháng 10"
+
+#. module: vnitpro_consume
+#: model:ir.actions.act_window,name:vnitpro_consume.act_open_vnitpro_order_view
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_base_attachment_order_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_order_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_inventory_export_product_order_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_order_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_order_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_order
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_order_form
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_order_search
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_order_tree
+msgid "Order"
+msgstr "Đơn hàng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_order_detail_ids
+msgid "Order Detail"
+msgstr "Chi tiết đơn hàng"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_form
+msgid "Order Information"
+msgstr "Thông tin đơn hàng"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_header
+msgid "PHÒNG KẾ HOẠCH"
+msgstr "PHÒNG KẾ HOẠCH"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_partners_id
+msgid "Partners"
+msgstr "Đối tác"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_partners_consume_id
+msgid "Partners Consume"
+msgstr "Bên nhận tiêu thụ"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_name
+msgid "Plan Name"
+msgstr "Tên kế hoạch"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_code
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_delivery_plan_id
+msgid "Plan Number"
+msgstr "Số kế hoạch"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_partners_position
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_sender_position
+msgid "Position"
+msgstr "Chức vụ"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_present_quantity
+msgid "Present Quantity"
+msgstr "Khối lượng thực tế"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/direct_import_product.py:81
+#, python-format
+msgid "Present quantity must be bigger than 0 !"
+msgstr "Present quantity must be bigger than 0 !"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_form
+msgid "Press \"Checking\" to check the order!"
+msgstr "Bấm \"Kiểm tra\" để kiểm tra đơn hàng!"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_price
+msgid "Price"
+msgstr "Giá"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/order.py:93
+#, python-format
+msgid "Price can not be lower than 0!"
+msgstr "Đơn giá không được nhỏ hơn 0!"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_gen_consume_product_report_form
+msgid "Print Excel"
+msgstr "In Excel"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_product_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_product_group_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_product_group_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_product_group_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_product
+msgid "Product"
+msgstr "Hàng hóa"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_direct_import_product_form
+msgid "Product Detail List"
+msgstr "Danh sách sản phẩm chi tiết"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_product_group_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_product_group_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_product_group
+msgid "Product Group"
+msgstr "Nhóm hàng hóa"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_product_information_ids
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_delivery_plan_form
+msgid "Product Information"
+msgstr "Thông tin hàng hóa"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "Product Name"
+msgstr "Tên hàng hóa"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "Purchase Unit"
+msgstr "Đơn vị mua hàng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_quantity
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_queue_speed
+msgid "Queue Speed"
+msgstr "Tốc độ xếp hàng"
+
+#. module: vnitpro_consume
+#: model:ir.actions.report,name:vnitpro_consume.action_report_generate_consume_product
+msgid "Report Consume Product"
+msgstr "Báo cáo tiêu thụ sản phẩm"
+
+#. module: vnitpro_consume
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_consume_report
+msgid "Reports"
+msgstr "Báo cáo"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_reversed
+msgid "Reversed"
+msgstr "Số lượng trong kho"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_romooc_number_id
+msgid "Romooc Number"
+msgstr "Số rơ móc"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_sender_id
+msgid "Sender"
+msgstr "Người giao"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:62
+#: selection:vnitpro.delivery.plan,month:0
+#, python-format
+msgid "September"
+msgstr "Tháng 9"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_sign_date
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_sign_date
+msgid "Sign Date"
+msgstr "Ngày ký"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_gen_consume_product_report_start_date
+msgid "Start Date"
+msgstr "Ngày bắt đầu"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_status
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_status
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_stocker
+msgid "Stocker"
+msgstr "Tên thủ kho"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_style
+msgid "Style"
+msgstr "Quy cách"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "TT"
+msgstr "TT"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_tax_ids
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_taxes_type
+msgid "Taxes"
+msgstr "Thuế"
+
+#. module: vnitpro_consume
+#: sql_constraint:vnitpro.order:0
+msgid "The order already exists!"
+msgstr "Đơn hàng đã tồn tại!"
+
+#. module: vnitpro_consume
+#: sql_constraint:vnitpro.tracking.card:0
+msgid "The tracking card already exists!"
+msgstr "Phiếu theo dõi đã tồn tại!"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_to_date
+msgid "To Date"
+msgstr "Đến ngày"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_total_cost
+msgid "Total Cost"
+msgstr "Tổng tiền cần thu"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_total_price
+msgid "Total Price"
+msgstr "Tổng giá"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_total_weight_delivery
+msgid "Total Weight Delivery"
+msgstr "Tổng hàng đã giao"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_total_weight_left
+msgid "Total Weight Left"
+msgstr "Tổng hàng còn phải giao"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/tracking_card.py:97
+#: model:ir.actions.act_window,name:vnitpro_consume.act_open_vnitpro_tracking_card_view
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_tracking_card_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_tracking_card
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_form
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_search
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_tree
+#, python-format
+msgid "Tracking Card"
+msgstr "Phiếu theo dõi"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_tracking_card_information_ids
+msgid "Tracking Card Information"
+msgstr "Bảng theo dõi"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_tracking_card_form
+msgid "Tracking Information"
+msgstr "Bảng theo dõi"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_tranposter_id
+msgid "Tranposter"
+msgstr "Người vận chuyển(Tên cty vận chuyển)"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_detail_unit
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_unit_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_unit_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_unit_id
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_unit_id
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_unit
+msgid "Unit"
+msgstr "Đơn vị"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_order_detail_unit_price
+msgid "Unit Price"
+msgstr "Đơn giá"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_gen_consume_product_report_form
+msgid "View PDF"
+msgstr "Xem dưới dạng PDF"
+
+#. module: vnitpro_consume
+#: model:ir.ui.menu,name:vnitpro_consume.menu_vnitpro_warehouse
+msgid "Warehouse"
+msgstr "Kho"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_warehouse_come_id
+msgid "Warehouse Come"
+msgstr "Kho đến"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_warehouse_export_id
+msgid "Warehouse Export"
+msgstr "Kho xuất"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_product_information_weight
+msgid "Weight"
+msgstr "Khối lượng"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_weight_delivery
+msgid "Weight Delivery"
+msgstr "Khối lượng đã giao"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_information_weight_left
+msgid "Weight Left"
+msgstr "Khối lượng còn phải giao"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_tracking_card_weight_needed
+msgid "Weight Needed"
+msgstr "Khối lượng cần"
+
+#. module: vnitpro_consume
+#: code:addons/vnitpro_consume/models/delivery_plan.py:114
+#, python-format
+msgid "Weight can not be lower than 0!"
+msgstr "Khối lượng không được nhỏ hơn 0!"
+
+#. module: vnitpro_consume
+#: model:ir.ui.view,arch_db:vnitpro_consume.report_gen_consume_product
+msgid "Weight(Tons)"
+msgstr "Khối lượng(tấn)"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_weighted_votes
+#: model:ir.ui.view,arch_db:vnitpro_consume.view_vnitpro_direct_import_product_form
+msgid "Weighted Votes"
+msgstr "Số phiếu cân"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_direct_import_product_weighted_votes_date
+msgid "Weighted Votes Date"
+msgstr "Weighted Votes Date"
+
+#. module: vnitpro_consume
+#: model:ir.model.fields,field_description:vnitpro_consume.field_vnitpro_delivery_plan_year
+msgid "Year"
+msgstr "Năm"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_report_vnitpro_consume_report_gen_consume_product
+msgid "report.vnitpro_consume.report_gen_consume_product"
+msgstr "report.vnitpro_consume.report_gen_consume_product"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_report_vnitpro_consume_report_gen_contract
+msgid "report.vnitpro_consume.report_gen_contract"
+msgstr "report.vnitpro_consume.report_gen_contract"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_base_attachment
+msgid "vnitpro.base.attachment"
+msgstr "vnitpro.base.attachment"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_delivery_plan
+msgid "vnitpro.delivery.plan"
+msgstr "vnitpro.delivery.plan"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_direct_import_product
+msgid "vnitpro.direct.import.product"
+msgstr "vnitpro.direct.import.product"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_direct_import_product_detail
+msgid "vnitpro.direct.import.product.detail"
+msgstr "vnitpro.direct.import.product.detail"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_inventory_export_product
+msgid "vnitpro.inventory.export.product"
+msgstr "vnitpro.inventory.export.product"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_order
+msgid "vnitpro.order"
+msgstr "vnitpro.order"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_order_detail
+msgid "vnitpro.order.detail"
+msgstr "vnitpro.order.detail"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_product_information
+msgid "vnitpro.product.information"
+msgstr "vnitpro.product.information"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_tracking_card
+msgid "vnitpro.tracking.card"
+msgstr "vnitpro.tracking.card"
+
+#. module: vnitpro_consume
+#: model:ir.model,name:vnitpro_consume.model_vnitpro_tracking_card_information
+msgid "vnitpro.tracking.card.information"
+msgstr "vnitpro.tracking.card.information"

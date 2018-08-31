@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_approve_pq_document_tree" model="ir.ui.view">
+            <field name="name">vnitpro.approve.pq.document.tree</field>
+            <field name="model">vnitpro.approve.pq.document</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_approve_pq_document_form" model="ir.ui.view">
+            <field name="name">vnitpro.approve.pq.document.form</field>
+            <field name="model">vnitpro.approve.pq.document</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4">
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="bidder_id"/>
+                            <field name="document_submission_date"/>
+                            <field name="submission_name"/>
+                        </group>
+                        <group>
+                            <field name="contact_information"/>
+                        </group>
+                        <group colspan="4">
+                            <div colspan="4" class="div_attachfile">Attach Files</div>
+                            <field name="attachment_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="file" filename="file_name"/>
+                                    <field name="file_name" force_save="1"/>
+                                    <field name="user_id" force_save="1"/>
+                                    <field name="description"/>
+                                    <field name="date"/>
+                                    <button name="download_file" type="object"
+                                            class="button_blank fa fa-download"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_approve_pq_document_search" model="ir.ui.view">
+            <field name="name">vnitpro.approve.pq.document.search</field>
+            <field name="model">vnitpro.approve.pq.document</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="code"/>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_approve_pq_document_view">
+            <field name="name">Approve PQ Document</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.approve.pq.document</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_approve_pq_document_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_approve_pq_document_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_approve_pq_document_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_approve_pq_document_form"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_approve_pq_document_view_tree">
+            <field name="act_window_id" ref="act_open_vnitpro_approve_pq_document_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_vnitpro_approve_pq_document_tree"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Create by tam.pt-->
+<odoo>
+    <data>
+        <record id="view_purpose_of_use_tree" model="ir.ui.view">
+            <field name="name">vnitpro.purpose.of.use.tree</field>
+            <field name="model">vnitpro.purpose.of.use</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Purpose of use">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="activate"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_purpose_of_use_form" model="ir.ui.view">
+            <field name="name">vnitpro.purpose.of.use.form</field>
+            <field name="model">vnitpro.purpose.of.use</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Purpose of use">
+                    <header>
+                        <field name="activate" widget="statusbar" clickable="True"
+                               options="{'fold_field': 'fold'}"/>
+                    </header>
+                    <sheet>
+                        <group col="4" name="main">
+                            <field name="code"/>
+                            <field name="name"/>
+                        </group>
+                        <group colspan="4" name="des">
+                            <field name="description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_purpose_of_use_search" model="ir.ui.view">
+            <field name="name">vnitpro.purpose.of.use.search</field>
+            <field name="model">vnitpro.purpose.of.use</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Purpose of use">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="activate"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_purpose_of_use_view">
+            <field name="name">Purpose of use</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.purpose.of.use</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_purpose_of_use_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_purpose_of_use_form_view">
+            <field name="act_window_id" ref="act_open_purpose_of_use_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_purpose_of_use_form"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_purpose_of_use_tree_view">
+            <field name="act_window_id" ref="act_open_purpose_of_use_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_purpose_of_use_tree"/>
+        </record>
+    </data>
+</odoo>

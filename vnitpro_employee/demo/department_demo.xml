@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="department_1" model="vnitpro.department">
+            <field name="code">BGD</field>
+            <field name="name">Ban giám đốc</field>
+        </record>
+        <record id="department_2" model="vnitpro.department">
+            <field name="code">PKHVT</field>
+            <field name="name">Phòng kế hoạch - vật tư</field>
+        </record>
+        <record id="department_3" model="vnitpro.department">
+            <field name="code">PCNTT</field>
+            <field name="name">Phòng công nghệ thông tin</field>
+        </record>
+        <record id="department_4" model="vnitpro.department">
+            <field name="code">PQTDT</field>
+            <field name="name">Phòng quản lý đấu thầu</field>
+        </record>
+        <record id="department_5" model="vnitpro.department">
+            <field name="code">PHC</field>
+            <field name="name">Phòng hành chính</field>
+        </record>
+    </data>
+</odoo>

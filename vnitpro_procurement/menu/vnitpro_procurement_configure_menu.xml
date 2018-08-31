@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_procurement_configure" name="Configure" sequence="100"
+                  parent="menu_vnitpro_procurement_root"/>
+
+        <menuitem id="menu_vnitpro_procurement_configure_procurement" name="Procurement" sequence="5"
+                  parent="menu_vnitpro_procurement_configure"/>
+        <menuitem id="menu_vnitpro_procurement_formality" name="Procurement Formality" sequence="5"
+                  parent="menu_vnitpro_procurement_configure_procurement"
+                  action="vnitpro_procurement_formality.act_open_vnitpro_procurement_formality_view"/>
+        <menuitem id="menu_vnitpro_payment_capital" name="Payment Capital" sequence="10"
+                  parent="menu_vnitpro_procurement_configure_procurement"
+                  action="vnitpro_payment_capital.act_open_vnitpro_payment_capital_view"/>
+        <menuitem id="menu_vnitpro_bidder" name="Bidder" sequence="15"
+                  parent="menu_vnitpro_procurement_configure_procurement"
+                  action="vnitpro_bidder.act_open_bidder_view"/>
+
+        <menuitem id="menu_vnitpro_procurement_configure_general" name="General" sequence="10"
+                  parent="menu_vnitpro_procurement_configure"/>
+        <menuitem id="menu_vnitpro_currency" name="Currency" sequence="5"
+                  parent="menu_vnitpro_procurement_configure_general"
+                  action="vnitpro_currency.act_open_vnitpro_base_currency_view"/>
+    </data>
+</odoo>

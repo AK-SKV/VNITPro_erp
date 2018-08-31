@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Create by tam.pt-->
+<odoo>
+	<data>
+		<record id="view_test_tree" model="ir.ui.view">
+			<field name="name">vnitpro.test.tree</field>
+			<field name="model">vnitpro.test</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<tree string="Test">
+					<field name="name"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_test_form" model="ir.ui.view">
+			<field name="name">vnitpro.test.form</field>
+			<field name="model">vnitpro.test</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<form string="Test" attrs="{'invisible':[('1','=',0)]}">
+					<sheet>
+						<group>
+							<field name="name"/>
+						</group>
+						<group colspan="4" name="des" string="Attachment files">
+							<field name="attachment_ids" nolabel="1">
+								<tree editable="bottom">
+									<field name="file" filename="file_name"/>
+									<field name="file_name" force_save="1" />
+									<field name="description" />
+									<field name="date" />
+									<button name="download_file" type="object" class="button_blank fa fa-download" />
+								</tree>
+							</field>
+							<!--end demo view attachment-->
+						</group>
+						<group>
+							<!--start demo view permission-->
+							<field name="permission_ids" nolabel="1">
+								<tree editable="bottom">
+									<field name="user_id" />
+									<field name="perm_read"/>
+									<field name="perm_create"/>
+									<field name="perm_write"/>
+									<field name="perm_delete"/>
+								</tree>
+							</field>
+							<!--end demo view attachment-->
+						</group>
+						<!--end demo view attachment-->
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="view_test_search" model="ir.ui.view">
+			<field name="name">vnitpro.test.search</field>
+			<field name="model">vnitpro.test</field>
+			<field name="priority" eval="8"/>
+			<field name="arch" type="xml">
+				<search string="Test">
+					<field name="attachment_ids"/>
+				</search>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="act_open_test_view">
+			<field name="name">Test</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">vnitpro.test</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="search_view_id" ref="view_test_search"/>
+			<field name="domain">[]</field>
+			<field name="context">{}</field>
+		</record>
+		<record model="ir.actions.act_window.view" id="act_open_test_form_view">
+			<field name="act_window_id" ref="act_open_test_view"/>
+			<field name="sequence" eval="20"/>
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="view_test_form" />
+		</record>
+		<record model="ir.actions.act_window.view" id="act_open_test_tree_view">
+			<field name="act_window_id" ref="act_open_test_view"/>
+			<field name="sequence" eval="10"/>
+			<field name="view_mode">tree</field>
+			<field name="view_id" ref="view_test_tree"/>
+		</record>
+	</data>
+</odoo>

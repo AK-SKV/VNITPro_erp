@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <template id="fav_ico" name="fms Icon" inherit_id="web.layout">
+        <xpath expr="//html/head/link[1]" position="replace">
+            <link rel="shortcut icon"
+                  href="/vnitpro_procurement_contract_website/static/src/img/fms.ico"
+                  type="image/x-icon"/>
+        </xpath>
+    </template>
+</odoo>

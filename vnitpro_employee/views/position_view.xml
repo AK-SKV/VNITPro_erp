@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_position_tree" model="ir.ui.view">
+            <field name="name">vnitpro.position.tree</field>
+            <field name="model">vnitpro.position</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_position_form" model="ir.ui.view">
+            <field name="name">vnitpro.position.form</field>
+            <field name="model">vnitpro.position</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="activate" widget="statusbar" clickable="True"
+                               options="{'fold_field': 'fold'}"/>
+                    </header>
+                    <sheet>
+                        <group col="4" name="main">
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="description" colspan="4"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_position_search" model="ir.ui.view">
+            <field name="name">vnitpro.position.search</field>
+            <field name="model">vnitpro.position</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="code"/>
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_position_view">
+            <field name="name">Position</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.position</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_position_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_acceptance_payment_form" model="ir.ui.view">
+            <field name="name">vnitpro.acceptance.payment.form</field>
+            <field name="model">vnitpro.acceptance.payment</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4">
+                            <div colspan="4" class="div_center">Acceptance Information</div>
+                            <field name="acceptance_document_number" colspan="2"/>
+                            <field name="acceptance_document_name" colspan="4"/>
+                            <field name="acceptance_price_before_vat"/>
+                            <field name="vat"/>
+                            <field name="acceptance_vat"/>
+                            <field name="acceptance_price_after_vat"/>
+                            <field name="acceptance_date"/>
+                        </group>
+                        <group col="4">
+                            <field name="acceptance_prefect_a"/>
+                            <field name="acceptance_member_a"/>
+                            <field name="acceptance_prefect_b"/>
+                            <field name="acceptance_member_b"/>
+                            <field name="acceptance_information" colspan="4"/>
+                        </group>
+                        <group col="4">
+                            <div colspan="4" class="div_center">Payment Information</div>
+                            <field name="payment_number"/>
+                            <field name="payment_date"/>
+                            <field name="payment_price_before_vat"/>
+                            <field name="vat_2"/>
+                            <field name="payment_vat"/>
+                            <field name="payment_price_after_vat"/>
+                            <field name="payment_capital"/>
+                            <field name="payment_employee"/>
+                            <field name="payment_information" colspan="4"/>
+                        </group>
+                        <group col="4">
+                            <div colspan="4" class="div_center">Bill Information</div>
+                            <field name="bill_price_before_vat"/>
+                            <field name="vat_3"/>
+                            <field name="bill_vat"/>
+                            <field name="bill_price_after_vat"/>
+                        </group>
+                        <group col="4">
+                            <div colspan="4" class="div_center">Warranty Guarantee Information</div>
+                            <field name="guarantee_unit"/>
+                            <field name="guarantee_price"/>
+                            <field name="guarantee_start_date"/>
+                            <field name="guarantee_end_date"/>
+                        </group>
+                        <group colspan="4" name="des">
+                            <div colspan="4" class="div_attachfile">Attachment Files</div>
+                            <field name="file_attachment_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="file" filename="file_name"/>
+                                    <field name="file_name" force_save="1"/>
+                                    <field name="user_id" force_save="1"/>
+                                    <field name="description"/>
+                                    <field name="date"/>
+                                    <button name="download_file" type="object"
+                                            class="button_blank fa fa-download"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_acceptance_payment_view">
+            <field name="name">Acceptance - Payment</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.acceptance.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_acceptance_payment_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_acceptance_payment_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_acceptance_payment_form"/>
+        </record>
+    </data>
+</odoo>

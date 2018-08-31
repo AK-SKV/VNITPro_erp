@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_contract_report" name="Reports"
+            parent="menu_vnitpro_contract_root" sequence="60" groups="group_contract"/>
+        <menuitem id="menu_gen_contract_list_report" name="Generate Contract List Report"
+            parent="menu_vnitpro_contract_report" sequence="10"
+            action="act_open_vnitpro_gen_contract_list_report_view"/>
+        <menuitem id="menu_gen_contract_list_detail_report" name="Generate Contract List Detail Report"
+            parent="menu_vnitpro_contract_report" sequence="20"
+            action="act_open_vnitpro_gen_contract_list_detail_report_view"/>
+    </data>
+</odoo>

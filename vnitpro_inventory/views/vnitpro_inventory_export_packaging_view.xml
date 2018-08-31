@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_inventory_export_packaging_tree" model="ir.ui.view">
+            <field name="name">vnitpro.inventory.export.packaging.tree</field>
+            <field name="model">vnitpro.inventory.export.packaging</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="export_card_number"/>
+                    <field name="sender_id"/>
+                    <field name="employee_sender_id"/>
+                    <field name="partners_id"/>
+                    <field name="employee_partners_id"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_inventory_export_packaging_form" model="ir.ui.view">
+            <field name="name">vnitpro.inventory.export.packaging.form</field>
+            <field name="model">vnitpro.inventory.export.packaging</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group col="4">
+                            <field name="export_formality"/>
+                            <field name="export_card_number"/>
+                            <field name="export_date"/>
+                            <field name="sender_id" colspan="4"/>
+                            <field name="employee_sender_id" colspan="2"/>
+                            <field name="sender_position" colspan="2"/>
+                            <field name="partners_id" colspan="4"/>
+                            <field name="employee_partners_id" colspan="2"/>
+                            <field name="partners_position" colspan="2"/>
+                            <label string="Output order"/>
+                            <div class="o_row">
+                                <field name="output_order"/>
+                                <field name="output_order_date"/>
+                            </div>
+                            <field name="warehouse_export_id"/>
+                            <field name="stocker_name"/>
+                            <field name="warehouse_import_id"/>
+                        </group>
+                        <group col="4">
+                            <div class="div_content">packaging Detail List</div>
+                            <field name="export_detail_ids" colspan="4" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="packaging_id"/>
+                                    <field name="unit"/>
+                                    <field name="quantity"/>
+                                    <field name="lot_number"/>
+                                    <field name="seri_number"/>
+                                    <field name="note"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_inventory_export_packaging_search" model="ir.ui.view">
+            <field name="name">vnitpro.inventory.export.packaging.search</field>
+            <field name="model">vnitpro.inventory.export.packaging</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="export_card_number"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_inventory_export_packaging_view">
+            <field name="name">export packaging</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.inventory.export.packaging</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_inventory_export_packaging_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_gen_procurement_details">
+            <link href="/vnitpro_base/static/src/css/base_report.css" type="text/css" rel="stylesheet" />
+            <style>
+                .font{
+                    font-size:18px;
+                    font-family:"Helvetica"
+                }
+                    @page{
+                    size: A4;
+                }
+                .div_title_report{
+                    text-align: center;
+                    margin: 15px 0px;
+                    font-weight: bold;
+                    font-size: 22px;
+                }
+                td, th{
+                    vertical-align:inherit !important;
+                }
+            </style>
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout" t-lang="lang">
+                        <div class="font">
+                            <div class="page">
+                                <div class="row text-center">
+                                    <h2>
+                                        <strong t-esc="get_title_report()['title_report']"/>
+                                    </h2>
+                                    <h4>
+                                        <span t-esc="get_title_report()['time_report']"/>
+                                    </h4>
+                                </div>
+                                <br/>
+                                <div>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <tbody>
+                                            <div class="div_title_report">Procurement Information</div>
+                                            <span t-foreach="get_data_information(data)" t-as="m">
+                                                <tr>
+                                                    <th t-raw="m[0]"/>
+                                                    <td t-raw="m[1]"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <tbody>
+                                            <div class="div_title_report">Confirm Procurement</div>
+                                            <span t-foreach="get_data_confirm(data)" t-as="m">
+                                                <tr>
+                                                    <th t-raw="m[0]"/>
+                                                    <td t-raw="m[1]"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <tbody>
+                                            <div class="div_title_report">Advisory Procurement</div>
+                                            <span t-foreach="get_data_advisory(data)" t-as="m">
+                                                <tr>
+                                                    <th t-raw="m[0]"/>
+                                                    <td t-raw="m[1]"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <tbody>
+                                            <div class="div_title_report">Invitation PQ Documents</div>
+                                            <span t-foreach="get_data_invitation(data)" t-as="m">
+                                                <tr>
+                                                    <th t-raw="m[0]"/>
+                                                    <td t-raw="m[1]"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <div class="div_title_report">Approve PQ Documents</div>
+                                        <thead>
+                                            <tr>
+                                                <span t-foreach="get_title_approve()" t-as="m">
+                                                    <th t-raw="m" class="text-center"/>
+                                                </span>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_approve(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['code']"/>
+                                                    <td t-raw="m['name']"/>
+                                                    <td t-raw="m['bidder']"/>
+                                                    <td t-raw="m['document_submission_date']"/>
+                                                    <td t-raw="m['submission_name']"/>
+                                                    <td t-raw="m['contact_information']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <div class="div_title_report">Confirm Prequalification</div>
+                                        <thead>
+                                            <tr>
+                                                <span t-foreach="get_title_confirm_prequalification()" t-as="m">
+                                                    <th t-raw="m" class="text-center"/>
+                                                </span>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_confirm_prequalification(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['approve_pq_document_id']"/>
+                                                    <td t-raw="m['expertise_team_leader']"/>
+                                                    <td t-raw="m['expertise_team_member']"/>
+                                                    <td t-raw="m['expert_team_leader']"/>
+                                                    <td t-raw="m['expert_team_member']"/>
+                                                    <td t-raw="m['bid_submission_deadline']"/>
+                                                    <td t-raw="m['result']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <tbody>
+                                            <div class="div_title_report">Bidding Document</div>
+                                            <span t-foreach="get_data_bidding_document(data)" t-as="m">
+                                                <tr>
+                                                    <th t-raw="m[0]"/>
+                                                    <td t-raw="m[1]"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                     <table class="table table-bordered" style="font-size:13px">
+                                        <div class="div_title_report">Bid Profile/ Offer Profile</div>
+                                        <thead>
+                                            <tr>
+                                                <span t-foreach="get_title_bid_profile()" t-as="m">
+                                                    <th t-raw="m" class="text-center"/>
+                                                </span>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_bid_profile(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['code']"/>
+                                                    <td t-raw="m['name']"/>
+                                                    <td t-raw="m['bidder']"/>
+                                                    <td t-raw="m['document_submission_date']"/>
+                                                    <td t-raw="m['submission_name']"/>
+                                                    <td t-raw="m['contact_information']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                       <table class="table table-bordered" style="font-size:13px">
+                                        <div class="div_title_report">Ranking List</div>
+                                        <thead>
+                                            <tr>
+                                                <span t-foreach="get_title_ranking_list()" t-as="m">
+                                                    <th t-raw="m" class="text-center"/>
+                                                </span>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_ranking_list(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['bid_profile_id']"/>
+                                                    <td t-raw="m['point']"/>
+                                                    <td t-raw="m['date_of_bid']"/>
+                                                    <td t-raw="m['the_price_includes_vat']"/>
+                                                    <td t-raw="m['discount']"/>
+                                                    <td t-raw="m['expertise_team_leader']"/>
+                                                    <td t-raw="m['expertise_team_member']"/>
+                                                    <td t-raw="m['expert_team_leader']"/>
+                                                    <td t-raw="m['expert_team_member']"/>
+                                                    <td t-raw="m['result']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered" style="font-size:13px">
+                                        <div class="div_title_report">Negotiation Results</div>
+                                        <thead>
+                                            <tr>
+                                                <span t-foreach="get_title_negotiation_results()" t-as="m">
+                                                    <th t-raw="m" class="text-center"/>
+                                                </span>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_negotiation_results(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['ranking_list_id']"/>
+                                                    <td t-raw="m['negotiation_result']"/>
+                                                    <td t-raw="m['after_tax']"/>
+                                                    <td t-raw="m['the_negotiated_price_includes_vat']"/>
+                                                    <td t-raw="m['price_difference']"/>
+                                                    <td t-raw="m['date_negotiation']"/>
+                                                    <td t-raw="m['negotiation_team_leader']"/>
+                                                    <td t-raw="m['negotiation_team_member']"/>
+
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                     <table class="table table-bordered" style="font-size:13px">
+                                        <div class="div_title_report">Expertise Bidder Selection</div>
+                                        <thead>
+                                            <tr>
+                                                <span t-foreach="get_title_expertise()" t-as="m">
+                                                    <th t-raw="m" class="text-center"/>
+                                                </span>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data_expertise(data)" t-as="m">
+                                                <tr>
+                                                    <td t-raw="m['negotiation_result_id']"/>
+                                                    <td t-raw="m['expertise_start_date']"/>
+                                                    <td t-raw="m['expertise_end_date']"/>
+                                                    <td t-raw="m['expertise_results']"/>
+                                                    <td t-raw="m['exposure_price_with_vat']"/>
+                                                    <td t-raw="m['number_of_the_selected_bid']"/>
+                                                    <td t-raw="m['decided_date']"/>
+                                                    <td t-raw="m['expertise_team_leader']"/>
+                                                    <td t-raw="m['expertise_team_member']"/>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

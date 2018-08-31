@@ -1,0 +1,128 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_customer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-16 08:47+0000\n"
+"PO-Revision-Date: 2018-07-16 08:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_child_ids
+msgid "Child"
+msgstr "Child"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_company_id
+#: model:ir.ui.view,arch_db:vnitpro_customer.view_vnitpro_customer_form
+#: selection:vnitpro.customer,customer_type:0
+msgid "Company"
+msgstr "Công ty"
+
+#. module: vnitpro_customer
+#: model:ir.ui.view,arch_db:vnitpro_customer.view_vnitpro_customer_form
+msgid "Contact"
+msgstr "Liên hệ"
+
+#. module: vnitpro_customer
+#: model:ir.ui.view,arch_db:vnitpro_customer.view_vnitpro_customer_form
+msgid "Contacts"
+msgstr "Liên hệ"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_customer
+#: model:ir.actions.act_window,name:vnitpro_customer.act_open_vnitpro_customer_view
+#: model:ir.ui.view,arch_db:vnitpro_customer.view_vnitpro_customer_form
+#: model:ir.ui.view,arch_db:vnitpro_customer.view_vnitpro_customer_search
+#: model:ir.ui.view,arch_db:vnitpro_customer.view_vnitpro_customer_tree
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_customer_type
+msgid "Customer Type"
+msgstr "Loại khách hàng"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_customer
+#: selection:vnitpro.customer,customer_type:0
+msgid "Individual"
+msgstr "Cá nhân"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_job_position
+msgid "Job Position"
+msgstr "Chức vụ"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_language
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_customer
+#: model:ir.ui.view,arch_db:vnitpro_customer.view_vnitpro_customer_form
+msgid "Name"
+msgstr "Tên"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_parent_id
+msgid "Parent"
+msgstr "Dự án cha"
+
+#. module: vnitpro_customer
+#: model:ir.model.fields,field_description:vnitpro_customer.field_vnitpro_customer_website
+msgid "Website"
+msgstr "Trang web"
+
+#. module: vnitpro_customer
+#: model:ir.ui.view,arch_db:vnitpro_customer.view_vnitpro_customer_form
+#: model:ir.ui.view,arch_db:vnitpro_customer.view_vnitpro_customer_kanban
+msgid "at"
+msgstr "at"
+
+#. module: vnitpro_customer
+#: model:ir.model,name:vnitpro_customer.model_vnitpro_customer
+msgid "vnitpro.customer"
+msgstr "vnitpro.customer"
+

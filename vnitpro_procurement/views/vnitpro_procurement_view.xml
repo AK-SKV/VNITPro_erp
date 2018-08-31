@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_procurement_tree" model="ir.ui.view">
+            <field name="name">vnitpro.procurement.tree</field>
+            <field name="model">vnitpro.procurement</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Procurement">
+                    <field name="code" string="Procurement Code"/>
+                    <field name="name" string="Procurement Name"/>
+                    <field name="create_uid"/>
+                    <field name="create_date"/>
+                    <field name="status_tree" class="red_color"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_procurement_form" model="ir.ui.view">
+            <field name="name">vnitpro.procurement.form</field>
+            <field name="model">vnitpro.procurement</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Procurement" duplicate="0">
+                    <header>
+                        <field name="confirm_status" widget="statusbar" readonly="1"
+                               attrs="{'invisible':[('id','&lt;', 1)]}"/>
+                    </header>
+                    <sheet>
+                        <notebook>
+                            <page colspan="4" string="Procurement Information">
+                                <group colspan="4" col="16">
+                                    <div colspan="16" class="div_center">Procurement Information</div>
+                                    <field name="code" colspan="16" string="Procurement Code"/>
+                                    <field name="name" colspan="16" string="Procurement Name"/>
+                                    <field name="arena" widget="radio" options="{'horizontal': true}" colspan="16"/>
+                                    <field name="vat_information" colspan="8"/>
+                                    <field name="procurement_type" colspan="8"/>
+                                    <field name="procurement_formality_id" colspan="8"/>
+                                    <field name="procurement_method" colspan="8"/>
+                                    <div colspan="16" class="div_content">Contractors Selection</div>
+                                    <field name="from_date" colspan="8"/>
+                                    <field name="to_date" colspan="8"/>
+                                    <field name="type_of_contract" colspan="8"/>
+                                    <field name="funds" colspan="8" widget="many2many_tags" required="1"/>
+                                    <div colspan="16" class="div_content">Contractors Duration</div>
+                                    <field name="contract_duration" colspan="8"/>
+                                    <field name="start_date" colspan="8"/>
+                                    <field name="end_date"
+                                           attrs="{'invisible':[('contract_duration','!=','1')],'required':[('contract_duration','=','1')]}"
+                                           colspan="8"/>
+                                    <field name="days"
+                                           attrs="{'invisible':[('contract_duration','!=','2')],'required':[('contract_duration','=','2')]}"
+                                           colspan="8"/>
+                                    <div colspan="8"/>
+                                    <field name="weeks"
+                                           attrs="{'invisible':[('contract_duration','!=','3')],'required':[('contract_duration','=','3')]}"
+                                           colspan="8"/>
+                                    <div colspan="8"/>
+                                    <field name="months"
+                                           attrs="{'invisible':[('contract_duration','!=','4')],'required':[('contract_duration','=','4')]}"
+                                           colspan="8"/>
+                                    <div colspan="8"/>
+                                    <field name="quarters"
+                                           attrs="{'invisible':[('contract_duration','!=','5')],'required':[('contract_duration','=','5')]}"
+                                           colspan="8"/>
+                                    <div colspan="8"/>
+                                    <field name="years"
+                                           attrs="{'invisible':[('contract_duration','!=','6')],'required':[('contract_duration','=','6')]}"
+                                           colspan="8"/>
+                                </group>
+                                <group>
+                                    <div colspan="4" class="div_attachfile">Attach Files</div>
+                                    <field name="procurement_information_attachment_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="user_id" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                                <group col="6">
+                                    <div colspan="6" class="div_center">Procurement State</div>
+                                    <field name="confirmed_procurement"/>
+                                    <field name="created_advision"/>
+                                    <field name="created_invitation_pq_doc"/>
+                                    <field name="finished_to_approve_pq_document"/>
+                                    <field name="finished_to_comfirm_prequalification"/>
+                                    <field name="created_bidding_document"/>
+                                    <field name="finished_to_take_bid_profile"/>
+                                    <field name="completed_import_bidding_results"/>
+                                    <field name="completed_import_negotiation_list"/>
+                                    <field name="completed_expertise_bidder_selection"/>
+                                </group>
+                            </page>
+                            <!-- <page colspan="4" string="Processing Situation" attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group colspan="4">
+                                    <div colspan="4" class="div_center">Processing Situation</div>
+                                    <field name="processing_situation_ids" nolabel="1">
+                                        <tree>
+                                            <field name="deliver_proponent" />
+                                            <field name="kind_of_work" />
+                                            <field name="content_delivered" />
+                                            <field name="delivery_date" />
+                                            <field name="representative" />
+                                            <field name="content_situation" />
+                                            <field name="delivery_date_situation" />
+                                            <field name="receiver" />
+                                            <field name="content_implementation" />
+                                            <field name="date_of_implementation" />
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page> -->
+                            <page colspan="4" string="Confirm Procurement" attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group col="4">
+                                    <div colspan="4" class="div_center">Confirm Procurement</div>
+                                    <field name="code_confirm" readonly="1"/>
+                                    <field name="approver" readonly="1"/>
+                                    <field name="approval_date" readonly="1"/>
+                                    <field name="before_tax" readonly="1"/>
+                                    <field name="vat_confirm" readonly="1"/>
+                                    <field name="after_tax"/>
+                                    <field name="money_tax"/>
+                                    <field name="currency_confirm_id" readonly="1"/>
+                                    <div colspan="4" class="center">
+                                        <button string="Edit" type="object" name="edit_confirm"
+                                                class="oe_highlight button"/>
+                                    </div>
+                                </group>
+                                <group colspan="4">
+                                    <div colspan="4" class="div_attachfile">Attach Files</div>
+                                    <field name="confirm_procurement_attachment_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="user_id" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Advisory Procurement" attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group col="4">
+                                    <div colspan="4" class="div_center">Advisory Procurement</div>
+                                    <field name="code_advisory" readonly="1"/>
+                                    <field name="name_advisory" readonly="1"/>
+                                    <field name="bidder_a" readonly="1"/>
+                                    <field name="bidder_b" readonly="1"/>
+                                    <field name="type_of_contract_advisory" readonly="1"/>
+                                    <field name="contract_after_vat" readonly="1"/>
+                                    <field name="currency_advisory_id" readonly="1"/>
+                                    <div colspan="4" class="div_content">Duration Of Contract</div>
+                                    <field name="from_date_ad" readonly="1"/>
+                                    <field name="to_date_ad" readonly="1"/>
+                                    <field name="funds_advisory" readonly="1" widget="many2many_tags"/>
+                                    <field name="confirmed" readonly="1"/>
+                                </group>
+                                <div colspan="4" class="center">
+                                    <button string="Edit" type="object" name="edit_advisory"
+                                            class="oe_highlight button"/>
+                                    <button string="Delete" type="object" name="delete_advisory"
+                                            class="oe_highlight button" confirm="Are you sure to delete?"/>
+                                </div>
+                                <group colspan="4">
+                                    <div colspan="4" class="div_attachfile">Attach Files</div>
+                                    <field name="advisory_procurement_attachment_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="user_id" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Invitation PQ Documents" attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group col="4">
+                                    <div colspan="4" class="div_center">Invitation PQ Documents</div>
+                                    <field name="code_profile" readonly="1"/>
+                                    <field name="name_profile" readonly="1"/>
+                                    <field name="release_time" readonly="1"/>
+                                    <field name="bid_submission_deadline" readonly="1"/>
+                                    <field name="creator" readonly="1"/>
+                                    <field name="approved" readonly="1"/>
+                                </group>
+                                <div colspan="4" class="center">
+                                    <button string="Edit" type="object" name="edit_invitation"
+                                            class="oe_highlight button"/>
+                                    <button string="Delete" type="object" name="delete_invitation"
+                                            class="oe_highlight button" confirm="Are you sure to delete?"/>
+                                </div>
+                                <group colspan="4">
+                                    <div colspan="4" class="div_attachfile">Attach Files</div>
+                                    <field name="invitation_pq_document_attachment_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="user_id" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Approve PQ Documents" attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">List PQ Documents</div>
+                                    <field name="approve_pq_document_ids" nolabel="1">
+                                        <tree>
+                                            <field name="code"/>
+                                            <field name="name"/>
+                                            <field name="bidder_id"/>
+                                            <field name="document_submission_date"/>
+                                            <field name="submission_name"/>
+                                            <field name="contact_information"/>
+                                            <field name="attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Confirm Prequalification List"
+                                  attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Confirm Prequalification List</div>
+                                    <field name="confirm_pre_ids" nolabel="1">
+                                        <tree>
+                                            <field name="approve_pq_document_id"/>
+                                            <field name="expertise_team_leader"/>
+                                            <field name="expertise_team_member"/>
+                                            <field name="expert_team_leader"/>
+                                            <field name="expert_team_member"/>
+                                            <field name="bid_submission_deadline"/>
+                                            <field name="result" widget="radio" options="{'horizontal': true}"/>
+                                            <field name="attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Bidding Document" attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group col="4">
+                                    <div colspan="4" class="div_center">Bidding Document</div>
+                                    <field name="bidding_document_code" readonly="1"/>
+                                    <field name="bidding_document_name" readonly="1"/>
+                                    <field name="release_time_bidding" readonly="1"/>
+                                    <field name="bid_closing_date" readonly="1"/>
+                                    <field name="date_open_file" readonly="1"/>
+                                    <field name="review_start" readonly="1"/>
+                                    <field name="review_end" readonly="1"/>
+                                    <field name="new_history" readonly="1"/>
+                                    <field name="confirmed_bidding_document" readonly="1"/>
+                                </group>
+                                <div colspan="4" class="center">
+                                    <button string="Edit" type="object" name="edit_bidding"
+                                            class="oe_highlight button"/>
+                                    <button string="Delete" type="object" name="delete_bidding"
+                                            class="oe_highlight button" confirm="Are you sure to delete?"/>
+                                </div>
+                                <group colspan="4">
+                                    <div colspan="4" class="div_attachfile">Attach Files</div>
+                                    <field name="bidding_document_attachment_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="user_id" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Bid Profile/ Offer Profile"
+                                  attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Bid Profile/ Offer Profile</div>
+                                    <field name="bid_profile_ids" nolabel="1">
+                                        <tree>
+                                            <field name="code"/>
+                                            <field name="name"/>
+                                            <field name="bidder_id"/>
+                                            <field name="document_submission_date"/>
+                                            <field name="submission_name"/>
+                                            <field name="contact_information"/>
+                                            <field name="attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Ranking List" attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Ranking List</div>
+                                    <field name="ranking_list_ids" nolabel="1">
+                                        <tree>
+                                            <field name="bid_profile_id"/>
+                                            <field name="point"/>
+                                            <field name="date_of_bid"/>
+                                            <field name="the_price_includes_vat"/>
+                                            <field name="expertise_team_leader"/>
+                                            <field name="expert_team_leader"/>
+                                            <field name="result"/>
+                                            <field name="attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Negotiation Results" attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Negotiation Results</div>
+                                    <field name="negotiation_list_ids" nolabel="1">
+                                        <tree>
+                                            <field name="ranking_list_id"/>
+                                            <field name="negotiation_result"/>
+                                            <field name="after_tax"/>
+                                            <field name="the_negotiated_price_includes_vat"/>
+                                            <field name="price_difference"/>
+                                            <field name="date_negotiation"/>
+                                            <field name="negotiation_team_leader"/>
+                                            <field name="negotiation_team_member"/>
+                                            <field name="attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Expertise Bidder Selection"
+                                  attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group>
+                                    <div colspan="4" class="div_center">Expertise Bidder Selection</div>
+                                    <field name="expertise_result_ids" nolabel="1">
+                                        <tree>
+                                            <field name="negotiation_result_id"/>
+                                            <field name="expertise_start_date"/>
+                                            <field name="expertise_end_date"/>
+                                            <field name="expertise_results"/>
+                                            <field name="exposure_price_with_vat"/>
+                                            <field name="number_of_the_selected_bid"/>
+                                            <field name="decided_date"/>
+                                            <field name="expertise_team_leader"/>
+                                            <field name="expertise_team_member"/>
+                                            <field name="attachment_ids"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Procurement Permissions" attrs="{'invisible':[('id','&lt;', 1)]}">
+                                <group>
+                                    <field name="permission_detail_ids" nolabel="1">
+                                        <tree editable="top" limit="30">
+                                            <field name="employee_id" options="{'no_open':True}"/>
+                                            <field name="user_id" invisible="1"/>
+                                            <field name="perm_read"/>
+                                            <field name="perm_write"/>
+                                            <field name="perm_unlink"/>
+                                        </tree>
+                                        <form>
+                                            <sheet>
+                                                <group col="4">
+                                                    <field name="employee_id" widget="selection"/>
+                                                    <field name="perm_read"/>
+                                                    <field name="perm_write"/>
+                                                    <field name="perm_unlink"/>
+                                                    <field name="user_id" invisible="1"/>
+                                                </group>
+                                            </sheet>
+                                        </form>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <!-- <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers" />
+                        <field name="message_ids" widget="mail_thread" />
+                    </div> -->
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_procurement_search" model="ir.ui.view">
+            <field name="name">vnitpro.procurement.search</field>
+            <field name="model">vnitpro.procurement</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Procurement">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <filter string="Completed Procurement" name="completed_procurement" domain="[('confirmed_procurement','=',True),('finished_to_approve_pq_document','=',True),
+                                ('finished_to_comfirm_prequalification','=',True),('created_invitation_pq_doc','=',True),
+                                ('completed_import_bidding_results','=',True),('finished_to_take_bid_profile','=',True),
+                                ('created_bidding_document','=',True),('completed_import_negotiation_list','=',True),
+                                ('completed_expertise_bidder_selection','=',True),('created_advision','=',True)]"/>
+                    <filter string="Incomplete Procurement" name="incomplete_procurement" domain="['|','|','|','|','|','|','|','|','|',
+                                 ('confirmed_procurement','=',False),('finished_to_approve_pq_document','=',False),
+                                 ('finished_to_comfirm_prequalification','=',False),('created_invitation_pq_doc','=',False),
+                                 ('completed_import_bidding_results','=',False),('finished_to_take_bid_profile','=',False),
+                                 ('created_bidding_document','=',False),('completed_import_negotiation_list','=',False),
+                                 ('completed_expertise_bidder_selection','=',False),('created_advision','=',False)]"/>
+                    <filter string="Unapproved Procurement Plan" name="unapproved_procurement_plan"
+                            domain="[('confirmed_procurement','=',False)]"/>
+                    <filter string="Not Create Procurement Advisory" name="not_create_procurement_advisory"
+                            domain="[('created_advision','=',False)]"/>
+                    <filter string="Not Create Invitation PQ Document" name="not_create_invitation_pq_doc"
+                            domain="[('created_invitation_pq_doc','=',False)]"/>
+                    <filter string="Not Create PQ Document" name="not_create_pq_document"
+                            domain="[('finished_to_approve_pq_document','=',False)]"/>
+                    <filter string="Not Confirm Prequalification List" name="not_confirm_prequalification_list"
+                            domain="[('finished_to_comfirm_prequalification','=',False)]"/>
+                    <filter string="Not Create Bidding Document" name="not_create_bidding_document"
+                            domain="[('created_bidding_document','=',False)]"/>
+                    <filter string="Unset Bidding Profile" name="unset_bidding_profile"
+                            domain="[('finished_to_take_bid_profile','=',False)]"/>
+                    <filter string="No Bidding Results" name="no_bidding_results"
+                            domain="[('completed_import_bidding_results','=',False)]"/>
+                    <filter string="No Negotiation Results" name="no_negotiation_results"
+                            domain="[('completed_import_negotiation_list','=',False)]"/>
+                    <filter string="No Expertise Bidder Selection" name="no_expertise_bidder_selection"
+                            domain="[('completed_expertise_bidder_selection','=',False)]"/>
+                    <separator/>
+                    <filter string="Expire Today" name="expire_today"
+                            domain="[('expire_date','=', context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter string="Unexpired" name="unexpired"
+                            domain="[('expire_date','&gt;', context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter string="Out Of Date" name="out_of_date"
+                            domain="[('expire_date','&lt;', context_today().strftime('%Y-%m-%d'))]"/>
+                    <separator/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_procurement_view">
+            <field name="name">Procurement</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.procurement</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_procurement_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_procurement_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_procurement_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_procurement_form"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_procurement_view_tree">
+            <field name="act_window_id" ref="act_open_vnitpro_procurement_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_vnitpro_procurement_tree"/>
+        </record>
+    </data>
+</odoo>

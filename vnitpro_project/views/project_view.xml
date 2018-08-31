@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+        <record id="view_vnitpro_project_tree" model="ir.ui.view">
+            <field name="name">vnitpro.project.tree</field>
+            <field name="model">vnitpro.project</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Project">
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="employer"/>
+                    <field name="status_tree" class="red_color"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_project_form" model="ir.ui.view">
+            <field name="name">vnitpro.project.form</field>
+            <field name="model">vnitpro.project</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Project" duplicate="0">
+                    <header>
+                        <field name="confirm_status" widget="statusbar" readonly="1"/>
+                        <field name="status" widget="statusbar" clickable="True"
+                               options="{'fold_field': 'fold'}"
+                               attrs="{'invisible': [('confirm_status', '=', 1)]}"/>
+                    </header>
+                    <sheet>
+                        <notebook>
+                            <page colspan="4" string="Project Information">
+                                <group colspan="4" col="4" name="main">
+                                    <field name="code" colspan="4"/>
+                                    <field name="name" colspan="4"/>
+                                    <field name="description" colspan="4"/>
+                                    <field name="employer" colspan="4"/>
+                                    <field name="start_date"/>
+                                    <field name="end_date"/>
+                                    <field name="cost_before_vat" colspan="4"/>
+                                    <field name="vat"/>
+                                    <field name="vat_cost"/>
+                                    <field name="cost_after_vat"/>
+                                    <field name="currency"/>
+                                </group>
+                                <group colspan="4" name="des" string="Attachment Files">
+                                    <field name="file_attachment_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Confirm Project">
+                                <group col="4">
+                                    <field name="decision"/>
+                                    <field name="approver"/>
+                                    <field name="approval_date"/>
+                                    <field name="approval_cost_before_vat"/>
+                                    <field name="vat_2"/>
+                                    <field name="vat_cost_2"/>
+                                    <field name="approval_cost_after_vat"/>
+                                    <field name="funds"/>
+                                    <field name="currency_2"/>
+                                </group>
+                                <group>
+                                    <button string="Confirm Project" type="object" name="confirm_project"
+                                            attrs="{'invisible': [('confirm_status','=', 2)]}"
+                                            class="oe_highlight oe_right"/>
+                                </group>
+                                <group>
+                                    <button string="Cancel Confirm" type="object" name="cancel_confirm"
+                                            attrs="{'invisible': [('confirm_status','=', 1)]}"
+                                            class="oe_highlight oe_right"/>
+                                </group>
+                                <group colspan="4" name="des" string="Attachment Files">
+                                    <field name="confirm_contract_file_attachment_ids" nolabel="1">
+                                        <tree editable="bottom">
+                                            <field name="file" filename="file_name"/>
+                                            <field name="file_name" force_save="1"/>
+                                            <field name="description"/>
+                                            <field name="date"/>
+                                            <button name="download_file" type="object"
+                                                    class="button_blank fa fa-download"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page colspan="4" string="Project Permissions">
+                                <group>
+                                    <field name="permission_detail_ids" nolabel="1">
+                                        <tree editable="top" limit="30">
+                                            <field name="user_id"/>
+                                            <field name="perm_read"/>
+                                            <field name="perm_write"/>
+                                            <field name="perm_unlink"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_project_search" model="ir.ui.view">
+            <field name="name">vnitpro.project.search</field>
+            <field name="model">vnitpro.project</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="project">
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="employer"/>
+                    <filter string="Project Draft" name="project_draft" domain="[('confirm_status', '=', 1)]"/>
+                    <filter string="Project Confirmed" name="project_confirmed" domain="[('confirm_status', '=', 2)]"/>
+                    <filter string="In Process Project" name="project_in_process" domain="[('status', '=', 3)]"/>
+                    <filter string="Finish Project" name="project_finish" domain="[('status', '=', 4)]"/>
+                    <filter string="On Hold Project" name="project_on_hold" domain="[('status', '=', 5)]"/>
+                    <filter string="Cancel Project" name="project_cancel" domain="[('status', '=', 6)]"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_project_view">
+            <field name="name">Project</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.project</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_project_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_project_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_project_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_project_form"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_project_view_tree">
+            <field name="act_window_id" ref="act_open_vnitpro_project_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_vnitpro_project_tree"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_consume_report" name="Reports"
+                  parent="menu_vnitpro_consume_root" sequence="60"/>
+        <menuitem id="menu_gen_consume_product_report" name="Generate Consume Product Report"
+                  parent="menu_vnitpro_consume_report" sequence="10"
+                  action="act_open_vnitpro_gen_consume_product_report_view"/>
+    </data>
+</odoo>

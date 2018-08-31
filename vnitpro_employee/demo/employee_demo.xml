@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="employee_1" model="vnitpro.employee">
+            <field name="code">NS001</field>
+            <field name="name">Nguyễn Việt Dũng</field>
+            <field name="department_id" ref="department_1"/>
+            <field name="gender">male</field>
+            <field name="position_id" ref="position_1"/>
+            <field name="phone">09683657841</field>
+            <field name="res_user_id" ref="res_user_employee_1"/>
+        </record>
+        <record id="employee_2" model="vnitpro.employee">
+            <field name="code">NS002</field>
+            <field name="name">Nguyễn Ngọc Vinh</field>
+            <field name="gender">male</field>
+            <field name="department_id" ref="department_1"/>
+            <field name="position_id" ref="position_2"/>
+            <field name="phone">096836556825</field>
+            <field name="res_user_id" ref="res_user_employee_2"/>
+        </record>
+        <record id="employee_3" model="vnitpro.employee">
+            <field name="code">NS003</field>
+            <field name="name">Đỗ Duy Long</field>
+            <field name="gender">male</field>
+            <field name="department_id" ref="department_2"/>
+            <field name="phone">095686556825</field>
+            <field name="position" ref="position_3"/>
+            <field name="res_user_id" ref="res_user_employee_3"/>
+        </record>
+        <record id="employee_4" model="vnitpro.employee">
+            <field name="code">NS004</field>
+            <field name="name">Phạm Thanh Tâm</field>
+            <field name="gender">male</field>
+            <field name="department_id" ref="department_3"/>
+            <field name="phone">09568698855</field>
+            <field name="position" ref="position_4"/>
+            <field name="res_user_id" ref="res_user_employee_4"/>
+        </record>
+        <record id="employee_5" model="vnitpro.employee">
+            <field name="code">NS005</field>
+            <field name="name">Lê Bảo Ngọc</field>
+            <field name="gender">male</field>
+            <field name="department_id" ref="department_4"/>
+            <field name="phone">0956842855</field>
+            <field name="position" ref="position_5"/>
+            <field name="email">baongoc@gmail.com</field>
+            <field name="res_user_id" ref="res_user_employee_5"/>
+        </record>
+        <record id="employee_6" model="vnitpro.employee">
+            <field name="code">NS006</field>
+            <field name="name">Phạm Ngọc Xuyến</field>
+            <field name="gender">female</field>
+            <field name="department_id" ref="department_4"/>
+            <field name="phone">0943842845</field>
+            <field name="position" ref="position_5"/>
+            <field name="res_user_id" ref="res_user_employee_6"/>
+        </record>
+        <record id="employee_7" model="vnitpro.employee">
+            <field name="code">NS008</field>
+            <field name="name">Bùi Thị Lan Anh</field>
+            <field name="gender">female</field>
+            <field name="department_id" ref="department_5"/>
+            <field name="phone">0943588435</field>
+            <field name="position" ref="position_5"/>
+            <field name="res_user_id" ref="res_user_employee_7"/>
+        </record>
+        <record id="employee_8" model="vnitpro.employee">
+            <field name="code">NS009</field>
+            <field name="name">Võ Tuấn Tú</field>
+            <field name="gender">male</field>
+            <field name="phone">0943448845</field>
+            <field name="department_id" ref="department_5"/>
+            <field name="position" ref="position_5"/>
+            <field name="res_user_id" ref="res_user_employee_8"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="online_exam_done_page">
+            <t t-call="website.layout">
+                <div class="row">
+                    <div class="col-md-3 col-sm-2"></div>
+                    <div class="col-md-6 col-sm-8">
+                        <div class="row">
+                            <div class="col-md-12 text-center" style="margin-bottom:30px">
+                                <h1>
+                                    <strong>You have completed this exam. Do you want to print results ?</strong>
+                                </h1>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                                <a class="btn btn-primary btn-lg" href="#">Print Exam Results</a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-6 text-center">
+                                <a class="btn btn-primary btn-lg" href="/online-exam">Back To Register Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-3"></div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

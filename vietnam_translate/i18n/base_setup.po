@@ -1,0 +1,323 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* base_setup
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-19 07:56+0000\n"
+"PO-Revision-Date: 2018-01-19 07:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "<strong>Save</strong> this page and come back here to set up the feature."
+msgstr "<strong>Lưu</strong> trang này và quay lại đây để thiết lập đặc tính."
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Access Rights"
+msgstr "Quyền truy cập"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_google_calendar
+msgid "Allow the users to synchronize their calendar  with Google Calendar"
+msgstr "Cho phép người dùng đồng bộ lịch của họ  với lịch Google"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_base_import
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Allow users to import data from CSV/XLS/XLSX/ODS files"
+msgstr "Cho phép người dùng nhập dữ liệu từ các tệp CSV / XLS / XLSX / ODS"
+
+#. module: base_setup
+#: model:ir.model.fields,help:base_setup.field_res_config_settings_group_multi_currency
+msgid "Allows to work in a multi currency environment"
+msgstr "Cho phép làm việc trong một môi trường đa tiền tệ"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_voip
+msgid "Asterisk (VoIP)"
+msgstr "Dấu hoa thị (VoIP)"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_google_drive
+msgid "Attach Google documents to any record"
+msgstr "Đính kèm các tài liệu Google với bất kì bản ghi nào"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Automate inter-company transactions"
+msgstr "Tự động hóa các giao dịch giữa các công ty"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Business Documents"
+msgstr "Tài liệu doanh nghiệp"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "By default, new users get highest access rights for all installed apps."
+msgstr "Mặc đinh, người dùng mới có quyền truy cập cao nhất cho tất cả ứng dụng đã được cài đặt."
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Change Document Template"
+msgstr "Thay đổi mẫu tài liệu"
+
+#. module: base_setup
+#: code:addons/base_setup/models/res_config_settings.py:100
+#, python-format
+msgid "Choose Your Document Layout"
+msgstr "Chọn giao diện tài liệu của bạn"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Choose your document's header and footer layout"
+msgstr "Chọn giao diện phần mở đầu và kết thúc tài liệu của bạn"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_pad
+msgid "Collaborative Pads"
+msgstr "Giấy hợp tác"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Common Contact Book"
+msgstr "Sổ liên hệ thông thường"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Companies"
+msgstr "Công ty"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Configure company rules to automatically create SO/PO when one of your company sells/buys to another of your company."
+msgstr "Cấu hình các quy tắc công ty để tự động tạo SO/PO khi một trong các công ty của bạn bán/mua cho một công ty khác của bạn."
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Create and attach Google Drive documents to any record"
+msgstr "Tạo và đính tài liệu Google Driver với bất kì bản ghi nào"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_default_custom_report_footer
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_report_footer
+msgid "Custom Report Footer"
+msgstr "Phiếu báo cáo tuỳ chỉnh"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_default_user_rights
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Default Access Rights"
+msgstr "Quyền truy cập mặc định"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_external_report_layout
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Document Template"
+msgstr "Biểu mẫu tài liệu"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Edit Header"
+msgstr "Sửa phần đầu"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_default_external_email_server
+msgid "External Email Servers"
+msgstr "Máy chủ Email bên ngoài"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Extract and analyze Odoo data from Google Spreadsheet"
+msgstr "Giải nén và phân tích dữ liệu Odoo từ Bảng tính của Google"
+
+#. module: base_setup
+#: model:ir.model.fields,help:base_setup.field_res_config_settings_report_footer
+msgid "Footer text displayed at the bottom of all reports."
+msgstr "Văn bản cuối trang được hiển thị ở cuối tất cả các báo cáo."
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Format"
+msgstr "Định dạng"
+
+#. module: base_setup
+#: model:ir.ui.menu,name:base_setup.menu_config
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "General Settings"
+msgstr "Thiết lập chung"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Gengo Translations"
+msgstr "Dịch Gengo"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Google Calendar"
+msgstr "Lịch Google"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Google Drive"
+msgstr "Google Drive"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_google_spreadsheet
+msgid "Google Spreadsheet"
+msgstr "Google Spreadsheet"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Import & Export"
+msgstr "Nhập và Xuất dữ liệu"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Integrations"
+msgstr "Tích hợp"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Inter-Company Transactions"
+msgstr "Giao dịch giữa các công ty"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_auth_ldap
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "LDAP Authentication"
+msgstr "Xác thực LDAP"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_inter_company_rules
+msgid "Manage Inter Company"
+msgstr "Quản lý công ty Inter"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_group_multi_company
+msgid "Manage multiple companies"
+msgstr "Quản lý đa công ty"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Manage multiple legal entities with separate accounting"
+msgstr "Quản lý nhiều phép nhân với kế toán riêng"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_group_multi_currency
+msgid "Multi-Currencies"
+msgstr "Đa Tiền tệ"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Multi-company"
+msgstr "Đa công ty"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "OAuth Authentication"
+msgstr "Xác thực OAuth"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_paperformat_id
+msgid "Paper format"
+msgstr "Định dạng giấy"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Preview Document"
+msgstr "Xem trước tài liệu"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Set custom access rights for new users"
+msgstr "Thiết lập tùy chỉnh quyền truy cập cho người dùng mới"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Set the paper format of printed documents"
+msgstr "Thiết lập định dạng giấy của tài liệu được in"
+
+#. module: base_setup
+#: model:ir.actions.act_window,name:base_setup.action_general_configuration
+msgid "Settings"
+msgstr "Thiết lập"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_company_share_partner
+msgid "Share partners to all companies"
+msgstr "Chia sẻ các đối tác cho tất cả công ty"
+
+#. module: base_setup
+#: model:ir.model.fields,help:base_setup.field_res_config_settings_company_share_partner
+msgid "Share your partners to all companies defined in your instance.\n"
+" * Checked : Partners are visible for every companies, even if a company is defined on the partner.\n"
+" * Unchecked : Each company can see only its partner (partners where company is defined). Partners not related to a company are visible for all companies."
+msgstr "Chia sẻ đối tác của bạn với tất cả các công ty được xác định trong ví dụ của bạne.\n"
+" * Đã tích : Đối tác có thể nhìn thấy đối với mọi công ty, ngay cả nếu có một công ty được xác định trên đối tác.\n"
+" * Chưa tích : Mỗi công ty chỉ có thể nhìn thấy đối tác (đối tác mà công ty được xác định). Các đối tác không liên quan đến công ty đều có thể nhìn thấy được đối với tất cả các công ty."
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Synchronize your calendar with Google Calendar"
+msgstr "Đồng bộ lịch của bạn với lịch google"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Template"
+msgstr "Mẫu"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_base_gengo
+msgid "Translate Your Website with Gengo"
+msgstr "Dịch trang web của bạn với Gengo"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Translate your website with Gengo"
+msgstr "Dịch trang web của bạn với Gengo"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Use LDAP credentials to log in"
+msgstr "Sử dụng thông tin xác thực LDAP để đăng nhập"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Use external accounts to log in (Google, Facebook, etc.)"
+msgstr "Sử dụng tài khoản ngoài để đăng nhập (Google, Facebook, etc.)"
+
+#. module: base_setup
+#: model:ir.model.fields,field_description:base_setup.field_res_config_settings_module_auth_oauth
+msgid "Use external authentication providers (OAuth)"
+msgstr "Sử dụng các nhà cung cấp xác thực bên ngoài (OAuth)"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Use external pads in Odoo Notes"
+msgstr "Sử dụng miếng đệm bên ngoài trong các ghi chú Odoo"
+
+#. module: base_setup
+#: model:ir.ui.view,arch_db:base_setup.res_config_settings_view_form
+msgid "Users"
+msgstr "Người dùng"
+
+#. module: base_setup
+#: model:ir.model,name:base_setup.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+

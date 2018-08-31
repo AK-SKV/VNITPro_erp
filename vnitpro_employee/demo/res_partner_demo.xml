@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="res_partner_employee_1" model="res.partner">
+            <field name="name">Nguyễn Việt Dũng</field>
+            <field name="lang">vi_VN</field>
+            <field name="tz">Asia/Ho_Chi_Minh</field>
+            <field name="email">vietdung_vnitpro@gmail.com</field>
+        </record>
+        <record id="res_partner_employee_2" model="res.partner">
+            <field name="name">Nguyễn Ngọc Vinh</field>
+            <field name="lang">vi_VN</field>
+            <field name="tz">Asia/Ho_Chi_Minh</field>
+            <field name="email">ngocvinh_vnitpro@gmail.com</field>
+        </record>
+        <record id="res_partner_employee_3" model="res.partner">
+            <field name="name">Đỗ Duy Long</field>
+            <field name="lang">vi_VN</field>
+            <field name="tz">Asia/Ho_Chi_Minh</field>
+            <field name="email">duylong_vnitpro@gmail.com</field>
+        </record>
+        <record id="res_partner_employee_4" model="res.partner">
+            <field name="name">Phạm Thanh Tâm</field>
+            <field name="lang">vi_VN</field>
+            <field name="tz">Asia/Ho_Chi_Minh</field>
+            <field name="email">thanhtam_vnitpro@gmail.com</field>
+        </record>
+        <record id="res_partner_employee_5" model="res.partner">
+            <field name="name">Lê Bảo Ngọc</field>
+            <field name="lang">vi_VN</field>
+            <field name="tz">Asia/Ho_Chi_Minh</field>
+            <field name="email">baongoc_vnitpro@gmail.com</field>
+        </record>
+        <record id="res_partner_employee_6" model="res.partner">
+            <field name="name">Phạm Ngọc Xuyến</field>
+            <field name="lang">vi_VN</field>
+            <field name="tz">Asia/Ho_Chi_Minh</field>
+            <field name="email">ngocxuyen_vnitpro@gmail.com</field>
+        </record>
+        <record id="res_partner_employee_7" model="res.partner">
+            <field name="name">Bùi Thị Lan Anh</field>
+            <field name="lang">vi_VN</field>
+            <field name="tz">Asia/Ho_Chi_Minh</field>
+            <field name="email">lananh_vnitpro@gmail.com</field>
+        </record>
+        <record id="res_partner_employee_8" model="res.partner">
+            <field name="name">Võ Tuấn Tú</field>
+            <field name="lang">vi_VN</field>
+            <field name="tz">Asia/Ho_Chi_Minh</field>
+            <field name="email">tuantu_vnitpro@gmail.com</field>
+        </record>
+    </data>
+</odoo>

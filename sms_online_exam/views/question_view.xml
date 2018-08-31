@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_sms_online_exam_question_tree" model="ir.ui.view">
+            <field name="name">sms.online.exam.question.tree</field>
+            <field name="model">sms.online.exam.question</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="question_content"/>
+                    <field name="process_id"/>
+                    <field name="object_id"/>
+                    <field name="activate"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_sms_online_exam_question_form" model="ir.ui.view">
+            <field name="name">sms.online.exam.question.form</field>
+            <field name="model">sms.online.exam.question</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="activate" widget="statusbar" clickable="True"
+                            options="{'fold_field': 'fold'}"/>
+                    </header>
+                    <sheet>
+                        <group col="4">
+                            <field name="process_id"/>
+                            <field name="object_id"/>                           
+                        </group>
+                        <group name="question">
+                             <field name="question_content" colspan="4"/>
+                        </group>
+                        <group name="answer_list" string="Answer List">
+                            <field name="anwser_ids" nolabel="1">
+                                <tree editable="top">
+                                    <field name="answer_content"/>
+                                    <field name="true_false"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_sms_online_exam_question_search" model="ir.ui.view">
+            <field name="name">sms.online.exam.question.search</field>
+            <field name="model">sms.online.exam.question</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="process_id"/>
+                    <field name="object_id"/>
+                    <field name="question_content"/>
+                    <field name="activate"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_sms_online_exam_question_view">
+            <field name="name">Question</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">sms.online.exam.question</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_sms_online_exam_question_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_sms_online_exam_question_view_form">
+            <field name="act_window_id" ref="act_open_sms_online_exam_question_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_sms_online_exam_question_form"/>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_sms_online_exam_question_view_tree">
+            <field name="act_window_id" ref="act_open_sms_online_exam_question_view"/>
+            <field name="sequence" eval="10"/>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_sms_online_exam_question_tree"/>
+        </record>
+    </data>
+</odoo>

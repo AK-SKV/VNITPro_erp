@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_vnitpro_consume_configure" name="Configure" parent="menu_vnitpro_consume_root"
+                  sequence="100"/>
+
+        <menuitem id="menu_vnitpro_consume" name="Consume" parent="menu_vnitpro_consume_configure" sequence="5"/>
+        <menuitem id="menu_vnitpro_contract_configure" name="Contract Configure" parent="menu_vnitpro_consume"
+                  sequence="5" action="vnitpro_contract_configure.act_open_vnitpro_contract_configure_view"/>
+        <menuitem id="menu_vnitpro_customer" name="Customer" parent="menu_vnitpro_consume" sequence="10"
+                  action="vnitpro_customer.act_open_vnitpro_customer_view"/>
+        <menuitem id="menu_vnitpro_product_group" name="Product Group" parent="menu_vnitpro_consume" sequence="15"
+                  action="vnitpro_product_group.act_open_vnitpro_product_group_view"/>
+        <menuitem id="menu_vnitpro_product" name="Product" parent="menu_vnitpro_consume" sequence="20"
+                  action="vnitpro_product.act_open_vnitpro_product_view"/>
+        <menuitem id="menu_vnitpro_warehouse" name="Warehouse" parent="menu_vnitpro_consume" sequence="25"
+                  action="vnitpro_warehouse.act_open_vnitpro_warehouse_view"/>
+        <menuitem id="menu_vnitpro_company" name="Company" parent="menu_vnitpro_consume" sequence="30"
+                  action="vnitpro_company.act_open_vnitpro_company_view"/>
+        <menuitem id="menu_vnitpro_delivery_formality" name="Delivery Formality" parent="menu_vnitpro_consume"
+                  sequence="35" action="vnitpro_delivery_formality.act_open_vnitpro_delivery_formality_view"/>
+        <menuitem id="menu_vnitpro_delivery_unit" name="Delivery Unit" parent="menu_vnitpro_consume" sequence="40"
+                  action="vnitpro_delivery_unit.act_open_vnitpro_delivery_unit_view"/>
+        <menuitem id="menu_vnitpro_inspection_unit" name="Inspection Unit" parent="menu_vnitpro_consume" sequence="45"
+                  action="vnitpro_inspection_unit.act_open_vnitpro_inspection_unit_view"/>
+        <menuitem id="menu_vnitpro_delivery_place" name="Delivery Place" parent="menu_vnitpro_consume" sequence="50"
+                  action="vnitpro_delivery_place.act_open_vnitpro_delivery_place_view"/>
+
+        <menuitem id="menu_vnitpro_general" name="General" parent="menu_vnitpro_consume_configure" sequence="10"/>
+        <menuitem id="menu_vnitpro_taxes_type" name="Taxes" parent="menu_vnitpro_general" sequence="5"
+                  action="vnitpro_taxes.act_open_vnitpro_taxes_view"/>
+        <menuitem id="menu_vnitpro_unit" name="Unit" parent="menu_vnitpro_general" sequence="10"
+                  action="vnitpro_unit.act_open_vnitpro_base_unit_view"/>
+        <menuitem id="vnitpro_currency.menu_vnitpro_base_currency" name="Currency" parent="menu_vnitpro_general"
+                  action="vnitpro_currency.act_open_vnitpro_base_currency_view" sequence="15"/>
+    </data>
+</odoo>

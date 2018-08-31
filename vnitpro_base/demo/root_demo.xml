@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record model="res.partner" id="base.partner_root">			
+			<field name="name">Administrator</field>
+		 	<field name="lang">vi_VN</field>
+		 	<field name="tz">Asia/Ho_Chi_Minh</field>
+		 	<field name="company_id" ref="base.main_company"/>
+            <field name="customer" eval="False"/>
+            <field name="email">admin@gmail.com</field>
+		</record>		
+	</data>
+</odoo>

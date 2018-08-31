@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--Create by tam.pt-->
+<odoo>
+    <data>
+        <menuitem id="test_main_menu" name="Test" sequence="12" />
+        <menuitem id="test_attachment_menu" name="Test" sequence="1"  action="act_open_test_view" parent="test_main_menu"/>
+        <menuitem id="test_nested_menu" name="Test nested" sequence="1"  action="act_open_test_nested_view" parent="test_main_menu"/>
+    </data>
+</odoo>

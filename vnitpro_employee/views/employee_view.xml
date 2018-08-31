@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="kanban_view_vnitpro_employee" model="ir.ui.view">
+            <field name="name">vnitpro.employee.kanban</field>
+            <field name="model">vnitpro.employee</field>
+            <field name="arch" type="xml">
+                <kanban class="o_res_partner_kanban">
+                    <field name="id"/>
+                    <field name="image"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click o_res_partner_kanban">
+                                <div class="o_kanban_image">
+                                    <t t-if="record.image.value">
+                                        <img t-att-src="kanban_image('vnitpro.employee', 'image', record.id.value)"/>
+                                    </t>
+                                    <t t-if="!record.image.value">
+                                        <img t-att-src='_s + "/base/static/src/img/avatar.png"'/>
+                                    </t>
+                                </div>
+                                <div class="oe_kanban_details">
+                                    <h4>
+                                        <field name="name"/>
+                                    </h4>
+                                    <ul>
+                                        <li t-if="record.code.raw_value">
+                                            <strong>Code:</strong>
+                                            <field name="code"/>
+                                        </li>
+                                        <li t-if="record.phone.raw_value">
+                                            <strong>Tel:</strong>
+                                            <field name="phone"/>
+                                        </li>
+                                        <li t-if="record.email.raw_value">
+                                            <a t-attf-href="mailto:#{record.email.value}">
+                                                <field name="email"/>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+        <record id="view_vnitpro_employee_tree" model="ir.ui.view">
+            <field name="name">vnitpro.employee.tree</field>
+            <field name="model">vnitpro.employee</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="phone"/>
+                    <field name="email"/>
+                    <field name="department_id"/>
+                    <field name="position_id"/>
+                    <field name="activate"/>
+                </tree>
+            </field>
+        </record>
+        <record id="view_vnitpro_employee_form" model="ir.ui.view">
+            <field name="name">vnitpro.employee.form</field>
+            <field name="model">vnitpro.employee</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <field name="activate" widget="statusbar" clickable="True"
+                               options="{'fold_field': 'fold'}"/>
+                    </header>
+                    <sheet>
+                        <field name="image" widget="image" class="oe_left oe_avatar"/>
+                        <div class="oe_title">
+                            <h3>
+                                <field name="code" placeholder="Code" style="width:50%%"/>
+                            </h3>
+                            <h1>
+                                <field name="name" placeholder="Fullname"/>
+                            </h1>
+                        </div>
+                        <notebook colspan="4">
+                            <page name="personal_information" string="Personal Information">
+                                <group col="4" name="personal_detail">
+                                    <field name="gender"/>
+                                    <field name="birthday"/>
+                                    <field name="id_number"/>
+                                    <field name="email"/>
+                                    <field name="phone"/>
+                                    <field name="department_id"/>
+                                    <field name="position_id"/>
+                                    <field name="address" colspan="4"/>
+                                </group>
+                            </page>
+                            <page name="user_account" string="User Account">
+                                <group col="4">
+                                    <field name="res_user_id" colspan="2"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_vnitpro_employee_search" model="ir.ui.view">
+            <field name="name">vnitpro.employee.search</field>
+            <field name="model">vnitpro.employee</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="id_number"/>
+                    <field name="email"/>
+                    <field name="phone"/>
+                    <field name="department_id"/>
+                    <filter string="Active Employee" name="active_user"
+                            domain="[('activate','=','usage')]"/>
+                    <filter string="Inactive Employee" name="inactive_user"
+                            domain="[('activate','=','usage')]"/>
+                </search>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_employee_view">
+            <field name="name">Employee</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.employee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="search_view_id" ref="view_vnitpro_employee_search"/>
+            <field name="domain">[]</field>
+            <field name="context">{"search_default_active_user":1}</field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_employee_in_department_view">
+            <field name="name">Employee</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.employee</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form,kanban</field>
+            <field name="search_view_id" ref="view_vnitpro_employee_search"/>
+            <field name="domain"></field>
+            <field name="context">{
+                "search_default_active_user":1,
+                'search_default_department_id': [active_id],
+                'default_department_id': active_id
+                }
+            </field>
+        </record>
+    </data>
+</odoo>

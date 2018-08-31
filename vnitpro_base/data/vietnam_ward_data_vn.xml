@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vietnam_ward_hanoid003001" model="vnitpro.res.ward">
+            <field name="code">HANOID003W001</field>
+            <field name="name">Phường Bạch Đằng</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003002" model="vnitpro.res.ward">
+            <field name="code">HANOID003W002</field>
+            <field name="name">Phường Bách Khoa</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003003" model="vnitpro.res.ward">
+            <field name="code">HANOID003W003</field>
+            <field name="name">Phường Bạch Mai</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003004" model="vnitpro.res.ward">
+            <field name="code">HANOID003W004</field>
+            <field name="name">Phường Bùi Thị Xuân</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003005" model="vnitpro.res.ward">
+            <field name="code">HANOID003W005</field>
+            <field name="name">Phường Cầu Dền</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003006" model="vnitpro.res.ward">
+            <field name="code">HANOID003W006</field>
+            <field name="name">Phường Đống Mác</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003007" model="vnitpro.res.ward">
+            <field name="code">HANOID003W007</field>
+            <field name="name">Phường Đồng Nhân</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003008" model="vnitpro.res.ward">
+            <field name="code">HANOID003W008</field>
+            <field name="name">Phường Đồng Tâm</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003009" model="vnitpro.res.ward">
+            <field name="code">HANOID003W009</field>
+            <field name="name">Phường Lê Đại Hành</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003010" model="vnitpro.res.ward">
+            <field name="code">HANOID003W010</field>
+            <field name="name">Phường Minh Khai</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003011" model="vnitpro.res.ward">
+            <field name="code">HANOID003W011</field>
+            <field name="name">Phường Ngô Thì Nhậm</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003012" model="vnitpro.res.ward">
+            <field name="code">HANOID003W012</field>
+            <field name="name">Phường Nguyễn Du</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003013" model="vnitpro.res.ward">
+            <field name="code">HANOID003W013</field>
+            <field name="name">Phường Phạm Đình Hổ</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003014" model="vnitpro.res.ward">
+            <field name="code">HANOID003W014</field>
+            <field name="name">Phường Phố Huế</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003015" model="vnitpro.res.ward">
+            <field name="code">HANOID003W015</field>
+            <field name="name">Phường Quỳnh Lôi</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003016" model="vnitpro.res.ward">
+            <field name="code">HANOID003W016</field>
+            <field name="name">Phường Quỳnh Mai</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003017" model="vnitpro.res.ward">
+            <field name="code">HANOID003W017</field>
+            <field name="name">Phường Thanh Lương</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003018" model="vnitpro.res.ward">
+            <field name="code">HANOID003W018</field>
+            <field name="name">Phường Thanh Nhàn</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003019" model="vnitpro.res.ward">
+            <field name="code">HANOID003W019</field>
+            <field name="name">Phường Trương Định</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003020" model="vnitpro.res.ward">
+            <field name="code">HANOID003W020</field>
+            <field name="name">Phường Vĩnh tuy</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+    </data>
+</odoo>

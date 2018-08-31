@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="contract_1" model="vnitpro.contract">
+            <field name="code">HDKT032512</field>
+            <field name="name">Hợp Đồng Lắp Đặt Hệ Thống Điện Trường Đại học Thủ Dầu Một</field>
+            <field name="bidder_a" ref="vnitpro_bidder.bidder_1" />
+            <field name="bidder_b" ref="vnitpro_bidder.bidder_2" />
+            <field name="contract_type_id" ref="vnitpro_contract_type.contract_type_3" />
+            <field name="contract_date">2014-09-06</field>
+            <field name="contract_formality_id" ref="vnitpro_contract_formality.contract_formality_2" />
+            <field name="guarantee" ref="vnitpro_guarantee.guarantee_2" />
+            <field name="start_date">2014-09-06</field>
+            <field name="duration">2</field>
+            <field name="unit">year</field>
+            <field name="contract_creator" ref="vnitpro_employee.employee_7" />
+            <field name="package_price">0</field>
+            <field name="adjusted_price">4500000000</field>
+            <field name="permanent_price">0</field>
+            <field name="vat">0</field>
+            <field name="real_cost_before_vat">4500000000</field>
+            <field name="real_cost_after_vat">5000000000</field>
+            <field name="currency" ref="vnitpro_currency.currency_2" />
+            <field name="funds" ref="vnitpro_payment_capital.payment_capital_5" />
+            <field name="purpose_of_use" eval="[(6, 0, [ref('purpose_of_use_1')])]" />
+            <field name="status">in_process</field>
+        </record>
+    </data>
+</odoo>

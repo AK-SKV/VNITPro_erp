@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <report id="action_report_generate_contract_list" model="vnitpro.contract" string="Report Contract List"
+                report_type="qweb-html" name="vnitpro_contract.report_gen_contract_list"
+                file="vnitpro_contract.report_gen_contract_list" menu="False"/>
+        <report id="action_report_generate_contract_list_xlsx" model="vnitpro.gen.contract.list.report"
+                string="Report Contract List Excel" report_type="xlsx"
+                name="vnitpro_contract.report_gen_contract_list_xlsx" file="Báo cáo danh sách hợp đồng" menu="False"/>
+        <report id="action_report_generate_contract_list_detail" model="vnitpro.contract"
+                string="Report Contract List Detail" report_type="qweb-html"
+                name="vnitpro_contract.report_gen_contract_list_detail" menu="False"
+                file="vnitpro_contract.report_gen_contract_list_detail"/>
+        <report id="action_report_generate_contract_list_detail_xlsx" model="vnitpro.contract"
+                string="Report Contract List Detail Excel" report_type="xlsx"
+                name="vnitpro_contract.report_gen_contract_list_detail_xlsx" file="Báo cáo chi tiết hợp đồng"
+                menu="False"/>
+    </data>
+</odoo>

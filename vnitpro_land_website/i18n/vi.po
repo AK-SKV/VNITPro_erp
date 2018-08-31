@@ -1,0 +1,77 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_land_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-11 08:44+0000\n"
+"PO-Revision-Date: 2018-07-11 08:44+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.footer_custom1
+msgid "<i class=\"fa fa-address-book\"> </i> <span> 33 Dai Co Viet - Ha Noi City</span>"
+msgstr "<i class=\"fa fa-address-book\"> </i> <span> Số 33 Đại Cồ Việt - Thành phố Hà Nội</span>"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.footer_custom1
+msgid "<i class=\"fa fa-phone\"><span> (043)9780364</span></i>"
+msgstr "<i class=\"fa fa-phone\"><span> (043)9780364</span></i>"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.footer_custom1
+msgid "<i style=\"font-weight:bold\">Detail Contacts:</i>"
+msgstr "<i style=\"font-weight:bold\">Chi tiết liên hệ:</i>"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.homepage_inherit
+msgid "Click To Login"
+msgstr "Bấm để vào hệ thống"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.footer_custom1
+msgid "Contact Us"
+msgstr "Liên hệ với chúng tôi"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.footer_custom1
+msgid "Copyright © <span itemprop=\"name\">Vinacom Company </span>"
+msgstr "Bản quyền phần mềm © <span itemprop=\"name\">Công ty Vinacom </span>"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.homepage_inherit
+msgid "Hai Ba Trung District - Ha Noi City"
+msgstr "Quận Hai Bà Trưng - Thành Phố Hà Nội"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.footer_custom1
+msgid "Introduce"
+msgstr "Giới thiệu"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.navbar_mega
+msgid "Urban Management Office - Hai Ba Trung District - Ha Noi City"
+msgstr "Phòng Quản Lý Đô Thị - Quận Hai Bà Trưng - Thành Phố Hà Nội"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.homepage_inherit
+msgid "Villa Management System"
+msgstr "Hệ thống quản lý biệt thự"
+
+#. module: vnitpro_land_website
+#: model:ir.ui.view,arch_db:vnitpro_land_website.footer_custom1
+msgid "Villa information management software system.Helping users exploit and search for villa detail, villa profiles and villa owners. This is one of Vinacom products."
+msgstr "Hệ thống phần mềm quản lý thông tin biệt thự. Giúp người dùng có thể khai thác và tìm kiếm được thông tin chi tiết, hồ sơ của các căn biệt thự và các chủ sở hữu đang ở tại đó. Một sản phầm của công ty Vinacom."
+
+#. module: vnitpro_land_website
+#: model:res.groups,name:vnitpro_land_website.group_web_inherit
+msgid "Web Visible"
+msgstr "Web Visible"
+

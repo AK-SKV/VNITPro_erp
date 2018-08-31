@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>    	
+        <menuitem id="menu_vnitpro_land_report" name="Reports" sequence="90" parent="menu_vnitpro_land_core" />
+        <menuitem id="menu_vnitpro_villa_list_report" name="Villa List Report" parent="menu_vnitpro_land_report" 
+        	sequence="10" action="act_open_vnitpro_gen_villa_list_report_view"/>
+    </data>
+</odoo>

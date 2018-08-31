@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+    	<record id="view_vnitpro_department_inherit_procurement_tree" model="ir.ui.view">
+            <field name="name">vnitpro.department.inherit.procurement.tree</field>
+            <field name="model">vnitpro.department</field>
+            <field name="inherit_id" ref="vnitpro_employee.view_vnitpro_department_tree"/>
+            <field name="priority" eval="9"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">                    
+                    <field name="permission_approve"/>
+                </field>
+            </field>
+        </record>
+        <record id="view_vnitpro_department_inherit_procurement_form" model="ir.ui.view">
+            <field name="name">vnitpro.department.inherit.procurement.form</field>
+            <field name="model">vnitpro.department</field>
+            <field name="inherit_id" ref="vnitpro_employee.view_vnitpro_department_form"/>
+            <field name="priority" eval="9"/>
+            <field name="arch" type="xml">
+                <field name="name" position="after">
+                	<field name="permission_approve" />
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>

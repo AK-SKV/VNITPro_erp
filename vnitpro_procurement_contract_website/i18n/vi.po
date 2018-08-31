@@ -1,0 +1,99 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_procurement_contract_website
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-23 08:57+0000\n"
+"PO-Revision-Date: 2018-07-23 08:57+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.footer_custom1
+msgid "<i class=\"fa fa-fax\">\n"
+"                                                        <span>Fax:(0269)3716410</span>\n"
+"                                                    </i>"
+msgstr "<i class=\"fa fa-fax\">\n"
+"                                                        <span>Fax:(0269)3716410</span>\n"
+"                                                    </i>"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.footer_custom1
+msgid "<i class=\"fa fa-map-marker\"/>\n"
+"                                                    <span>Địa chỉ: số 96 Phạm Văn Đồng, thành phố Pleiku tỉnh Gia Lai\n"
+"                                                    </span>"
+msgstr "<i class=\"fa fa-map-marker\"/>\n"
+"                                                    <span>Địa chỉ: số 96 Phạm Văn Đồng, thành phố Pleiku tỉnh Gia Lai\n"
+"                                                    </span>"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.footer_custom1
+msgid "<i class=\"fa fa-phone\">\n"
+"                                                        <span>ĐT:(0269)6330350</span>\n"
+"                                                    </i>"
+msgstr "<i class=\"fa fa-phone\">\n"
+"                                                        <span>ĐT:(0269)6330350</span>\n"
+"                                                    </i>"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.footer_custom1
+msgid "<i style=\"font-weight:bold\">Chi tiết liên hệ</i>"
+msgstr "<i style=\"font-weight:bold\">Chi tiết liên hệ</i>"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.homepage_inherit
+msgid "Bấm để vào hệ thống"
+msgstr "Bấm để vào hệ thống"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.footer_custom1
+msgid "Công trình thủy điện Sê San 3A là công trình trọng điểm của Nhà nước, được Thủ tướng Chính phủ phê duyệt cho phép Tổng Công ty Sông Đà đầu tư xây dựng theo Quyết định số 898/QĐ-TTG ngày 07 tháng 10 năm 2002. Thủy điện Sê San 3A là thủy điện bậc thang của hệ thống thủy điện trên dòng sông Sê San thuộc xã MơRai, huyện Sa Thầy, tỉnh Kon Tum và xã IaKhai, huyện IaGrai, tỉnh Gia Lai. Nhà máy Thủy điện Sê San 3A có công suất lắp máy 108 MW (gồm 2 tổ máy), điện lượng trung bình năm là 479,3 triệu KWh với tổng mức đầu tư 1.864 tỷ đồng được chính thức khởi công xây dựng vào ngày 05 tháng 04 năm 2003."
+msgstr "Công trình thủy điện Sê San 3A là công trình trọng điểm của Nhà nước, được Thủ tướng Chính phủ phê duyệt cho phép Tổng Công ty Sông Đà đầu tư xây dựng theo Quyết định số 898/QĐ-TTG ngày 07 tháng 10 năm 2002. Thủy điện Sê San 3A là thủy điện bậc thang của hệ thống thủy điện trên dòng sông Sê San thuộc xã MơRai, huyện Sa Thầy, tỉnh Kon Tum và xã IaKhai, huyện IaGrai, tỉnh Gia Lai. Nhà máy Thủy điện Sê San 3A có công suất lắp máy 108 MW (gồm 2 tổ máy), điện lượng trung bình năm là 479,3 triệu KWh với tổng mức đầu tư 1.864 tỷ đồng được chính thức khởi công xây dựng vào ngày 05 tháng 04 năm 2003."
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.homepage_inherit
+msgid "Công ty cổ phần phát triển thủy điện Sê san\n"
+"                                    Tập đoàn điện lực Việt Nam"
+msgstr "Công ty cổ phần phát triển thủy điện Sê san\n"
+"                                    Tập đoàn điện lực Việt Nam"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.footer_custom1
+msgid "Develop By ©"
+msgstr "Phát triển bởi ©"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.footer_custom1
+msgid "Giới thiệu"
+msgstr "Giới thiệu"
+
+#. module: vnitpro_procurement_contract_website
+#. openerp-web
+#: code:addons/vnitpro_procurement_contract_website/static/src/xml/add_guide.xml:7
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.login_inherit
+#, python-format
+msgid "Hướng dẫn sử dụng"
+msgstr "Hướng dẫn sử dụng"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.homepage_inherit
+msgid "Hệ thống quản lý vị trí vật tư thiết bị"
+msgstr "Hệ thống quản lý vị trí vật tư thiết bị"
+
+#. module: vnitpro_procurement_contract_website
+#: model:ir.ui.view,arch_db:vnitpro_procurement_contract_website.footer_custom1
+msgid "Liên hệ"
+msgstr "Liên hệ"
+
+#. module: vnitpro_procurement_contract_website
+#: model:res.groups,name:vnitpro_procurement_contract_website.group_web_inherit
+msgid "Web Visible"
+msgstr "Hiện thị trang website"
+

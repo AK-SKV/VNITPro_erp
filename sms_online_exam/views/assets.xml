@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="assets_backend_sms_online_exam" name="SMS Online Exam Assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/sms_online_exam/static/src/js/online_exam_register_page.js"></script>
+            </xpath>
+        </template>
+    </data>
+</odoo>

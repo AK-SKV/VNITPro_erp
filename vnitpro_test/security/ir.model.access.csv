@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vnitpro_test_test,vnitpro_test_test,model_vnitpro_test,group_employee,1,1,1,1
+access_vnitpro_test_permission_test,vnitpro_test_permission_test,model_vnitpro_test_permission,group_employee,1,1,1,1
+access_vnitpro_test_attachment_test,vnitpro_test_attachment_test,model_vnitpro_test_attachment,group_employee,1,1,1,1
+access_vnitpro_test_nested_test,vnitpro_test_nested_test,model_vnitpro_test_nested,group_employee,1,1,1,1

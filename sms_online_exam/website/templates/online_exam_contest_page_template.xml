@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="online_exam_contest_page">
+            <t t-call="website.layout">
+                <div class="row text-center">
+                    <h1>
+                        <strong>Do you ready to do your exam??? Come in !!!</strong>
+                    </h1>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

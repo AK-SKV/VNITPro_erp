@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="sub_1" model="vnitpro.sub">
+            <field name="code">BS</field>
+            <field name="name">Bổ sung</field>
+        </record>
+        <record id="sub_2" model="vnitpro.sub">
+            <field name="code">DC</field>
+            <field name="name">Điều chỉnh</field>
+        </record>
+        <record id="sub_3" model="vnitpro.sub">
+            <field name="code">TU</field>
+            <field name="name">Tạm ứng</field>
+        </record>
+        <record id="sub_4" model="vnitpro.sub">
+            <field name="code">TT</field>
+            <field name="name">Thanh toán</field>
+        </record>
+    </data>
+</odoo>

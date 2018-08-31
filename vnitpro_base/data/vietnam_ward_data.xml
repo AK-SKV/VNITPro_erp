@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vietnam_ward_hanoid003001" model="vnitpro.res.ward">
+            <field name="code">HANOID003W001</field>
+            <field name="name">Bach Dang Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003002" model="vnitpro.res.ward">
+            <field name="code">HANOID003W002</field>
+            <field name="name">Bach Khoa Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003003" model="vnitpro.res.ward">
+            <field name="code">HANOID003W003</field>
+            <field name="name">Bach Mai Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003004" model="vnitpro.res.ward">
+            <field name="code">HANOID003W004</field>
+            <field name="name">Bui Thi Xuan Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003005" model="vnitpro.res.ward">
+            <field name="code">HANOID003W005</field>
+            <field name="name">Cau Den Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003006" model="vnitpro.res.ward">
+            <field name="code">HANOID003W006</field>
+            <field name="name">Dong Mac Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003007" model="vnitpro.res.ward">
+            <field name="code">HANOID003W007</field>
+            <field name="name">Dong Nhan Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003008" model="vnitpro.res.ward">
+            <field name="code">HANOID003W008</field>
+            <field name="name">Dong Tam Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003009" model="vnitpro.res.ward">
+            <field name="code">HANOID003W009</field>
+            <field name="name">Le Dai Hanh Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003010" model="vnitpro.res.ward">
+            <field name="code">HANOID003W010</field>
+            <field name="name">Minh Khai Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003011" model="vnitpro.res.ward">
+            <field name="code">HANOID003W011</field>
+            <field name="name">Ngo Thi Nham Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003012" model="vnitpro.res.ward">
+            <field name="code">HANOID003W012</field>
+            <field name="name">Nguyen Du Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003013" model="vnitpro.res.ward">
+            <field name="code">HANOID003W013</field>
+            <field name="name">Pham Dinh Ho Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003014" model="vnitpro.res.ward">
+            <field name="code">HANOID003W014</field>
+            <field name="name">Pho Hue Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003015" model="vnitpro.res.ward">
+            <field name="code">HANOID003W015</field>
+            <field name="name">Quynh Loi Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003016" model="vnitpro.res.ward">
+            <field name="code">HANOID003W016</field>
+            <field name="name">Quynh Mai Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003017" model="vnitpro.res.ward">
+            <field name="code">HANOID003W017</field>
+            <field name="name">Thanh Luong Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003018" model="vnitpro.res.ward">
+            <field name="code">HANOID003W018</field>
+            <field name="name">Thanh Nhan Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003019" model="vnitpro.res.ward">
+            <field name="code">HANOID003W019</field>
+            <field name="name">Truong Dinh Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+        <record id="vietnam_ward_hanoid003020" model="vnitpro.res.ward">
+            <field name="code">HANOID003W020</field>
+            <field name="name">Vinh Tuy Ward</field>
+            <field name="district_id" ref="vietnam_district_hai_ba_trung_hn"/>
+        </record>
+    </data>
+</odoo>

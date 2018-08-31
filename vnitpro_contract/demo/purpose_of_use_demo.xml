@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="purpose_of_use_1" model="vnitpro.purpose.of.use">
+            <field name="code">XDCB</field>
+            <field name="name">Xây dựng cơ bản</field>
+        </record>
+        <record id="purpose_of_use_2" model="vnitpro.purpose.of.use">
+            <field name="code">SCL</field>
+            <field name="name">Sửa chữa lớn</field>
+        </record>
+        <record id="purpose_of_use_3" model="vnitpro.purpose.of.use">
+            <field name="code">SXKD</field>
+            <field name="name">Sản xuất kinh doanh</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <template id="vnitpro_procurement_contract_website_assets_frontend" name="Theme fms Frontend Assets"
+        inherit_id="website.assets_frontend">
+        <xpath expr="." position="inside">
+            <link href="/vnitpro_procurement_contract_website/static/src/less/img_circle.less"
+            type="text/less" rel="stylesheet" />
+            <link href="/vnitpro_procurement_contract_website/static/src/less/custom.less"
+            type="text/less" rel="stylesheet" />
+            <link href="/vnitpro_procurement_contract_website/static/src/less/footer.less"
+            type="text/less" rel="stylesheet" />
+            <link href="/vnitpro_procurement_contract_website/static/src/less/homepage.less"
+            type="text/less" rel="stylesheet" />
+            <script src="/vnitpro_procurement_contract_website/static/js/countUp.js"
+                type="text/javascript" />
+            <script src="/vnitpro_procurement_contract_website/static/js/custom.js"
+                type="text/javascript" />           
+        </xpath>
+    </template>
+    <template id="title_js" name="change_title" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/vnitpro_procurement_contract_website/static/js/title.js"></script>
+        </xpath>
+    </template>
+    <template id="assets_backend_ose" name="vnitpro_procurement_contract_website assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/vnitpro_procurement_contract_website/static/src/js/assets.js"></script>
+        </xpath>
+    </template>
+</odoo>

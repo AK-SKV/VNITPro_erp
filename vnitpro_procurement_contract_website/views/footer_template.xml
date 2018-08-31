@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <template id="footer_custom1" inherit_id="website.layout" name="Openeducat Footer">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div class="oe_structure" id="footer" style="padding:0px 0px 10px">
+                    <section>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-7 col-sm-8 col-xs-12">
+                                        <div>
+                                            <h3 class="title_footer">Giới thiệu</h3>
+                                        </div>
+                                        <div>
+                                            <p class="content-aboutus">
+                                                Công trình thủy điện Sê San 3A là công trình trọng điểm của Nhà nước, được Thủ tướng Chính phủ phê duyệt cho phép Tổng Công ty Sông Đà đầu tư xây dựng theo Quyết định số 898/QĐ-TTG ngày 07 tháng 10 năm 2002. Thủy điện Sê San 3A là thủy điện bậc thang của hệ thống thủy điện trên dòng sông Sê San thuộc xã MơRai, huyện Sa Thầy, tỉnh Kon Tum và xã IaKhai, huyện IaGrai, tỉnh Gia Lai. Nhà máy Thủy điện Sê San 3A có công suất lắp máy 108 MW (gồm 2 tổ máy), điện lượng trung bình năm là 479,3 triệu KWh với tổng mức đầu tư 1.864 tỷ đồng được chính thức khởi công xây dựng vào ngày 05 tháng 04 năm 2003.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-2">
+                                        <div>
+                                            <h3 class="title_footer">Liên hệ</h3>
+                                        </div>
+                                        <div>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <i style="font-weight:bold">Chi tiết liên hệ</i>
+                                                </li>
+                                            </ul>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <i class="fa fa-phone">
+                                                        <span>ĐT:(0269)6330350</span>
+                                                    </i>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-fax">
+                                                        <span>Fax:(0269)3716410</span>
+                                                    </i>
+                                                </li>
+                                                <li>
+                                                    <i class="fa fa-map-marker"></i>
+                                                    <span>Địa chỉ: số 96 Phạm Văn Đồng, thành phố Pleiku tỉnh Gia Lai
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </xpath>
+            <xpath expr="//div[hasclass('mb8')]" position="replace">
+                <div class="container">
+                    <div class="pull-left text-muted " itemscope="itemscope">
+                        <p>Develop By ©
+                            <img src="/vnitpro_procurement_contract_website/static/src/img/vnitpro_logo.png" style="height:17px;opacity:0.7;vertical-align:top" />
+                        </p>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

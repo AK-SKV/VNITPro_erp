@@ -1,0 +1,90 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* vnitpro_packaging
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-08-10 01:48+0000\n"
+"PO-Revision-Date: 2018-08-10 01:48+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging_create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging_create_date
+msgid "Created on"
+msgstr "Thời điểm tạo"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging_description
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging_display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging_id
+msgid "ID"
+msgstr "ID"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging___last_update
+msgid "Last Modified on"
+msgstr "Sửa lần cuối vào"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging_write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging_write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging_name
+msgid "Name"
+msgstr "Tên"
+
+#. module: vnitpro_packaging
+#: selection:vnitpro.packaging,activate:0
+msgid "Not used"
+msgstr "Không được sử dụng"
+
+#. module: vnitpro_packaging
+#: model:ir.actions.act_window,name:vnitpro_packaging.act_open_vnitpro_packaging_view
+#: model:ir.ui.view,arch_db:vnitpro_packaging.view_vnitpro_packaging_form
+#: model:ir.ui.view,arch_db:vnitpro_packaging.view_vnitpro_packaging_search
+#: model:ir.ui.view,arch_db:vnitpro_packaging.view_vnitpro_packaging_tree
+msgid "Packaging"
+msgstr "Vỏ bao"
+
+#. module: vnitpro_packaging
+#: model:ir.model.fields,field_description:vnitpro_packaging.field_vnitpro_packaging_activate
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: vnitpro_packaging
+#: selection:vnitpro.packaging,activate:0
+msgid "Usage"
+msgstr "Được sử dụng"
+
+#. module: vnitpro_packaging
+#: model:ir.model,name:vnitpro_packaging.model_vnitpro_packaging
+msgid "vnitpro.packaging"
+msgstr "vnitpro.packaging"
+

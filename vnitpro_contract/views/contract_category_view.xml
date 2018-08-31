@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_vnitpro_contract_category_form" model="ir.ui.view">
+            <field name="name">vnitpro.contract.category.form</field>
+            <field name="model">vnitpro.contract.category</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Contract Category" duplicate="0">
+                    <sheet>
+                        <group col="8">
+                            <field name="category" colspan="4"/>
+                            <field name="facility_id" colspan="4"/>
+                            <field name="origin" colspan="4"/>
+                            <field name="quantity" colspan="2"/>
+                            <field name="unit" colspan="2" placeholder="Unit" nolabel="1" 
+                                style="width:50%%;margin:2px 36px 2px 8px;"/>
+                            <field name="unit_price" colspan="2" style="width:150%%"/>
+                            <field name="currency_id" colspan="2" style="width:30%%;margin: 2px 36px 2px 8px;" nolabel="1"/>
+                            <field name="cost_before_vat" colspan="4"/>
+                            <field name="vat" colspan="4" />
+                            <field name="vat_cost" colspan="4"/>
+                            <field name="cost_after_vat" colspan="4"/>
+                            <field name="warranty_period" colspan="8" style="width:50%%"/>
+                            <field name="warranty_start_date" colspan="4"/>
+                            <field name="warranty_end_date" colspan="4"/>
+                            <field name="note" colspan="8"/>
+                        </group>
+                        <group colspan="4" name="des">
+                            <div colspan="4" class="div_attachfile">Attachment Files</div>
+                            <field name="file_attachment_ids" nolabel="1">
+                                <tree editable="bottom">
+                                    <field name="file" filename="file_name"/>
+                                    <field name="file_name" force_save="1"/>
+                                    <field name="user_id" force_save="1"/>
+                                    <field name="description"/>
+                                    <field name="date"/>
+                                    <button name="download_file" type="object"
+                                            class="button_blank fa fa-download"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </sheet>                    
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_contract_category_view">
+            <field name="name">Contract Category</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.contract.category</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+        </record>
+        <record model="ir.actions.act_window.view" id="act_open_vnitpro_contract_category_view_form">
+            <field name="act_window_id" ref="act_open_vnitpro_contract_category_view"/>
+            <field name="sequence" eval="20"/>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="view_vnitpro_contract_category_form"/>
+        </record>
+    </data>
+</odoo>

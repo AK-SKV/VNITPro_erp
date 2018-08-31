@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="act_contract" model="ir.actions.act_window">
+            <field name="name">Contract</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{
+                'search_default_contract_dashboard': [active_id]}
+            </field>
+        </record>
+        <record id="act_late_contract" model="ir.actions.act_window">
+            <field name="name">Expired</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{
+                'search_default_contract_dashboard': [active_id],
+                'search_default_late_contract': 1}
+            </field>
+        </record>
+        <record id="act_today_contract" model="ir.actions.act_window">
+            <field name="name">Expired Today</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{
+                'search_default_contract_dashboard': [active_id],
+                'search_default_today_contract': 1}
+            </field>
+        </record>
+        <record id="act_soon_expired_contract" model="ir.actions.act_window">
+            <field name="name">Soon Expired</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{
+                'search_default_contract_dashboard': [active_id],
+                'search_default_soon_expire_contract': 1}
+            </field>
+        </record>
+        <record id="act_during_contract" model="ir.actions.act_window">
+            <field name="name">During</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{
+                'search_default_contract_dashboard': [active_id],
+                'search_default_during_contract': 1}
+            </field>
+        </record>
+        <record id="act_guarantee_contract" model="ir.actions.act_window">
+            <field name="name">Guarantee</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{
+                'search_default_contract_dashboard': [active_id],
+                'search_default_guarantee_contract': 1}
+            </field>
+        </record>
+        <record id="act_warranty_contract" model="ir.actions.act_window">
+            <field name="name">Warranty</field>
+            <field name="res_model">vnitpro.contract</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{
+                'search_default_contract_dashboard': [active_id],
+                'search_default_warranty_contract': 1}
+            </field>
+        </record>
+        <record id="contract_dashboard_kanban" model="ir.ui.view">
+            <field name="name">contract.dashboard.kanban</field>
+            <field name="model">vnitpro.contract.dashboard</field>
+            <field name="arch" type="xml">
+                <kanban class="oe_background_grey o_kanban_dashboard o_emphasize_colors o_stock_kanban" create="0">
+                    <field name="color"/>
+                    <field name="status"/>
+                    <field name="count_pending_contract"/>
+                    <field name="count_in_process_contract"/>
+                    <field name="count_asset_increase_contract"/>
+                    <field name="count_acceptance_payment_contract"/>
+                    <field name="count_liquidated_finalized_contract"/>
+                    <field name="count_on_hold_contract"/>
+                    <field name="count_cancel_contract"/>
+                    <field name="count_late_contract"/>
+                    <field name="count_today_contract"/>
+                    <field name="count_soon_expired_contract"/>
+                    <field name="count_during_contract"/>
+                    <field name="count_guarantee_contract"/>
+                    <field name="count_warranty_contract"/>
+                    <field name="count_guarantee_warranty_contract"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="#{kanban_color(record.color.raw_value)} kanban_record3">
+                                <div t-attf-class="o_kanban_card_header">
+                                    <div class="o_kanban_card_header_title">
+                                        <div class="o_primary title_kanban">
+                                            <field name="name"/>
+                                        </div>
+                                    </div>
+                                    <div class="o_kanban_manage_button_section">
+                                        <a class="o_kanban_manage_toggle_button" href="#">
+                                            <i class="fa fa-ellipsis-v"/>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="container o_kanban_card_content">
+                                    <div class="row">
+                                        <div class="col-xs-6 o_kanban_primary_left">
+                                            <button class="btn btn-primary btn-contract"
+                                                    name="get_action_contract" type="object">
+                                                <span t-if="record.status.raw_value =='pending'">
+                                                    <t t-esc="record.count_pending_contract.value"/>
+                                                    Contract(s)
+                                                </span>
+                                                <span t-if="record.status.raw_value =='in_process'">
+                                                    <t t-esc="record.count_in_process_contract.value"/>
+                                                    Contract(s)
+                                                </span>
+                                                <span t-if="record.status.raw_value =='asset_increase'">
+                                                    <t t-esc="record.count_asset_increase_contract.value"/>
+                                                    Contract(s)
+                                                </span>
+                                                <span t-if="record.status.raw_value =='acceptance_payment'">
+                                                    <t t-esc="record.count_acceptance_payment_contract.value"/>
+                                                    Contract(s)
+                                                </span>
+                                                <span t-if="record.status.raw_value =='liquidated_finalized'">
+                                                    <t t-esc="record.count_liquidated_finalized_contract.value"/>
+                                                    Contract(s)
+                                                </span>
+                                                <span t-if="record.status.raw_value =='on_hold'">
+                                                    <t t-esc="record.count_on_hold_contract.value"/>
+                                                    Contract(s)
+                                                </span>
+                                                <span t-if="record.status.raw_value =='cancel'">
+                                                    <t t-esc="record.count_cancel_contract.value"/>
+                                                    Contract(s)
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <div class="col-xs-6 o_kanban_primary_right">
+                                            <div t-if="record.status.raw_value = 'in_process'" class="row">
+                                            </div>
+                                            <div t-if="record.count_late_contract.raw_value > 0"
+                                                 class="row">
+                                                <div class="col-xs-9">
+                                                    <a name="get_action_late_contract" type="object">
+                                                        Expired
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <field name="count_late_contract"/>
+                                                </div>
+                                            </div>
+                                            <div t-if="record.count_today_contract.raw_value > 0"
+                                                 class="row">
+                                                <div class="col-xs-9">
+                                                    <a name="get_action_today_contract" type="object">
+                                                        Expired Today
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <field name="count_today_contract"/>
+                                                </div>
+                                            </div>
+                                            <div t-if="record.count_soon_expired_contract.raw_value > 0"
+                                                 class="row">
+                                                <div class="col-xs-9">
+                                                    <a name="get_action_soon_expired_contract" type="object">
+                                                        Soon Expired
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <field name="count_soon_expired_contract"/>
+                                                </div>
+                                            </div>
+                                            <div t-if="record.count_during_contract.raw_value > 0"
+                                                 class="row">
+                                                <div class="col-xs-9">
+                                                    <a name="get_action_during_contract" type="object">
+                                                        During
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <field name="count_during_contract"/>
+                                                </div>
+                                            </div>
+                                            <div t-if="record.count_guarantee_contract.raw_value > 0"
+                                                 class="row">
+                                                <div class="col-xs-9">
+                                                    <a name="get_action_guarantee_contract" type="object">
+                                                        Guarantee
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <field name="count_guarantee_contract"/>
+                                                </div>
+                                            </div>
+                                            <div t-if="record.count_warranty_contract.raw_value > 0"
+                                                 class="row">
+                                                <div class="col-xs-9">
+                                                    <a name="get_action_warranty_contract" type="object">
+                                                        Warranty
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <field name="count_warranty_contract"/>
+                                                </div>
+                                            </div>
+                                            <div t-if="record.count_guarantee_warranty_contract.raw_value > 0"
+                                                 class="row">
+                                                <div class="col-xs-9">
+                                                    <a name="get_action_guarantee_warranty_contract" type="object">
+                                                        Warranty
+                                                    </a>
+                                                </div>
+                                                <div class="col-xs-3">
+                                                    <field name="count_guarantee_warranty_contract"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container o_kanban_card_manage_pane">
+                                        <div t-if="widget.editable" class="o_kanban_card_manage_settings row">
+                                            <div class="col-xs-8">
+                                                <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="act_open_vnitpro_contract_dashboard_view">
+            <field name="name">Contract Information Dashboard</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">vnitpro.contract.dashboard</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban</field>
+        </record>
+    </data>
+</odoo>

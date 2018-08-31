@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="contract_type_1" model="vnitpro.contract.type">
+            <field name="code">Xl0001</field>
+            <field name="name">Xây lắp</field>
+        </record>
+        <record id="contract_type_2" model="vnitpro.contract.type">
+            <field name="code">HDGS0002</field>
+            <field name="name">Hợp đồng giám sát</field>
+        </record>
+        <record id="contract_type_3" model="vnitpro.contract.type">
+            <field name="code">HDTD0003</field>
+            <field name="name">Hợp đồng thẩm định</field>
+        </record>
+        <record id="contract_type_4" model="vnitpro.contract.type">
+            <field name="code">HDTT0004</field>
+            <field name="name">Hợp đồng thỏa thuận</field>
+        </record>
+        <record id="contract_type_5" model="vnitpro.contract.type">
+            <field name="code">SCL0005</field>
+            <field name="name">Sửa chữa lớn</field>
+        </record>
+        <record id="contract_type_6" model="vnitpro.contract.type">
+            <field name="code">SCTX0006</field>
+            <field name="name">Sửa chữa thường xuyên</field>
+        </record>
+        <record id="contract_type_7" model="vnitpro.contract.type">
+            <field name="code">TD0007</field>
+            <field name="name">Tháo dỡ</field>
+        </record>
+        <record id="contract_type_8" model="vnitpro.contract.type">
+            <field name="code">MN0008</field>
+            <field name="name">Mua bán</field>
+        </record>
+        <record id="contract_type_9" model="vnitpro.contract.type">
+            <field name="code">TV0009</field>
+            <field name="name">Tư vấn</field>
+        </record>
+        <record id="contract_type_10" model="vnitpro.contract.type">
+            <field name="code">TK0010</field>
+            <field name="name">Thiết kế</field>
+        </record>
+        <record id="contract_type_11" model="vnitpro.contract.type">
+            <field name="code">Tb0011</field>
+            <field name="name">Thiết bị</field>
+        </record>
+        <record id="contract_type_12" model="vnitpro.contract.type">
+            <field name="code">HDTN012</field>
+            <field name="name">Hợp đồng thí nghiệm</field>
+        </record>
+        <record id="contract_type_13" model="vnitpro.contract.type">
+            <field name="code">HDNT0013</field>
+            <field name="name">Hợp đồng nghiệm thu</field>
+        </record>
+        <record id="contract_type_14" model="vnitpro.contract.type">
+            <field name="code">KHAC0014</field>
+            <field name="name">Khác</field>
+        </record>
+	</data>
+</odoo>

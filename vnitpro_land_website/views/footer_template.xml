@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <template id="footer_custom1" inherit_id="website.layout"
+            name="Land Footer">
+            <xpath expr="//div[@id='footer']" position="replace">
+                <div class="oe_structure" id="footer" style="padding:0px 0px 10px">
+                    <section>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="col-md-7 col-sm-8 col-xs-12">
+                                        <div>
+                                            <h3 class="title_footer">Introduce</h3>
+                                        </div>
+                                        <div>
+                                            <p class="content-aboutus">
+                                                Villa information management software system.Helping users exploit and search for villa detail, villa profiles and villa owners. This is one of Vinacom products.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-xs-12 col-md-offset-2">
+                                        <div>
+                                            <h3 class="title_footer">Contact Us</h3>
+                                        </div>
+                                        <div>
+                                            <ul class="list-unstyled">
+                                                <li><i style="font-weight:bold">Detail Contacts:</i></li>
+                                            </ul>
+                                            <ul class="list-unstyled">
+                                                <li><i class="fa fa-phone"><span> (043)9780364</span></i></li>
+                                                <li><i class="fa fa-address-book"> </i> <span> 33 Dai Co Viet - Ha Noi City</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </xpath>
+            <xpath expr="//div[hasclass('mb8')]" position="replace">
+                <div class="container mt16 mb8" >
+                    <div class="pull-left text-muted " itemscope="itemscope">
+                        <p class="mt16">Copyright © <span itemprop="name">Vinacom Company </span></p>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

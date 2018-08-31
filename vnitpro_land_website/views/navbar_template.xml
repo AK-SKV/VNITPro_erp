@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <template id="website.layout_logo_show" inherit_id="website.layout"
+        customize_show="True" name="Show Logo">
+        <xpath expr="//header//a[hasclass('navbar-brand')]" position="replace">
+
+        </xpath>
+        <xpath expr="//header//button[hasclass('navbar-toggle')]" position="replace">
+
+        </xpath>
+        <xpath expr="//header//ul[@id='top_menu']" position="replace">
+
+        </xpath>
+    </template>
+    <template id="navbar_mega" inherit_id="website.layout">
+        <xpath expr="//div[hasclass('navbar-header')]" position="inside">
+            <a href="/web" class="navbar-brand">
+                <h4 class="banner-title" style="font-weight:bold;color:#029140">
+                    Urban Management Office - Hai Ba Trung District - Ha Noi City
+                </h4>
+            </a>
+        </xpath>
+    </template>
+</odoo>

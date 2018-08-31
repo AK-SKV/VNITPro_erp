@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="group_procurement" model="res.groups">
+            <field name="name">Procurement</field>
+            <field name="category_id" ref="vnitpro_base.module_category_base" />
+            <field name="users" eval="[(4, ref('base.user_root'))]" />
+        </record>
+    </data>
+</odoo>

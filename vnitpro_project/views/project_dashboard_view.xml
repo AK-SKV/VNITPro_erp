@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_vnitpro_project_dashboard_kanban">
+            <field name="name">vnitpro.project.dashboard.kanban</field>
+            <field name="model">vnitpro.project.dashboard</field>
+            <field name="arch" type="xml">
+                <kanban class="oe_background_grey o_kanban_dashboard o_emphasize_colors o_stock_kanban" create="0">
+                    <field name="name"/>
+                    <field name="status"/>
+                    <field name="color"/>
+                    <field name="count_record"/>
+                    <field name="count_expire_today"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="#{kanban_color(record.color.raw_value)}" name="dashboard_project">
+                                <div>
+                                    <div t-attf-class="o_kanban_card_header">
+                                        <div class="o_kanban_card_header_title">
+                                            <div class="o_primary title_kanban">
+                                                <field name="name"/>
+                                            </div>
+                                        </div>
+                                        <div class="o_kanban_manage_button_section">
+                                            <a class="o_kanban_manage_toggle_button" href="#">
+                                                <i class="fa fa-ellipsis-v"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="container o_kanban_card_content">
+                                        <div class="row">
+                                            <div class="col-xs-6 o_kanban_primary_left">
+                                                <button class="btn btn-primary" name="get_action_project_with_status"
+                                                        type="object">
+                                                    <t t-esc="record.count_record.value"/>
+                                                    Procurement(s)
+                                                </button>
+                                            </div>
+                                            <div class="col-xs-6 o_kanban_primary_right"
+                                                 t-if="record.status.raw_value != 'completed_project'">
+                                                <div t-if="record.count_expire_today.raw_value > 0" class="row">
+                                                    <div class="col-xs-9">
+                                                        <a name="get_action_picking_tree_expire_today" type="object">
+                                                            Expire Today
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <field name="count_expire_today"/>
+                                                    </div>
+                                                </div>
+                                                <div t-if="record.count_out_of_date.raw_value > 0" class="row">
+                                                    <div class="col-xs-9">
+                                                        <a class="oe_kanban_stock_picking_type_list"
+                                                           name="get_action_picking_tree_out_of_date" type="object">
+                                                            Out Of Date
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <field name="count_out_of_date"/>
+                                                    </div>
+                                                </div>
+                                                <div t-if="record.count_unexpired.raw_value > 0" class="row">
+                                                    <div class="col-xs-9">
+                                                        <a class="oe_kanban_stock_picking_type_list"
+                                                           name="get_action_picking_tree_unexpired" type="object">
+                                                            Unexpired
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-xs-3">
+                                                        <field name="count_unexpired"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container o_kanban_card_manage_pane">
+                                        <div t-if="widget.editable" class="o_kanban_card_manage_settings row">
+                                            <div class="col-xs-8">
+                                                <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+        <record id="act_open_vnitpro_project_dashboard_view" model="ir.actions.act_window">
+            <field name="name">Project Dashboard</field>
+            <field name="res_model">vnitpro.project.dashboard</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban</field>
+            <field name="domain">[]</field>
+            <field name="context">{}</field>
+            <field name="view_id" ref="vnitpro_project.view_vnitpro_project_dashboard_kanban"/>
+        </record>
+        <!--<record model="ir.ui.view" id="board_project_form">-->
+            <!--<field name="name">Board</field>-->
+            <!--<field name="model">board.board</field>-->
+            <!--<field name="arch" type="xml">-->
+                <!--<xpath expr="//board" position="inside">-->
+                    <!--<column>-->
+                        <!--<action name="%(act_open_vnitpro_project_dashboard_view)d" string="Project Dashboard" view_mode="kanban"/>-->
+                    <!--</column>-->
+                <!--</xpath>-->
+            <!--</field>-->
+        <!--</record>-->
+    </data>
+</odoo>

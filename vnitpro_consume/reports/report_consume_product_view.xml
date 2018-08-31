@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="report_header" inherit_id="web.external_layout_standard">
+            <xpath expr="//div[@class='header']" position="replace">
+                <h4>CÔNG TY NHÔM ĐẮK NÔNG - TKV</h4>
+                <h4>PHÒNG KẾ HOẠCH</h4>
+            </xpath>
+            <xpath expr="//div[@class='footer']" position="replace">
+            </xpath>
+        </template>
+        <template id="report_gen_consume_product">
+            <style>
+                .font {
+                font-size: 18px;
+                font-family: "Helvetica"
+                }
+
+                @page {
+                size: A4;
+                }
+
+                td, th{
+                vertical-align:inherit !important;
+                }
+            </style>
+            <t t-call="web.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="web.external_layout" t-lang="lang">
+                        <div class="font">
+                            <div class="page">
+                                <div class="row text-center">
+                                    <h2>
+                                        <strong t-esc="get_title_report()['title_report']"/>
+                                    </h2>
+                                    <h4>
+                                        <i>From date:</i>
+                                        <span t-esc="get_date(data)['start_date']"/>
+                                        <i>to date:</i>
+                                        <span t-esc="get_date(data)['end_date']"/>
+                                    </h4>
+                                </div>
+                                <br/>
+                                <div>
+                                    <table class="table table-bordered" style="font-size:11px">
+                                        <thead>
+                                            <tr>
+                                                <col width="45"/>
+                                                <th rowspan="2" style="text-align:center">TT</th>
+                                                <th rowspan="2" style="text-align:center">Product Name</th>
+                                                <th rowspan="2" style="text-align:center">Purchase Unit</th>
+                                                <th rowspan="2" style="text-align:center">By Contract or Export Order
+                                                </th>
+                                                <th rowspan="2" style="text-align:center">Detail</th>
+                                                <th colspan="3" style="text-align:center">Export</th>
+                                                <th rowspan="2" style="text-align:center">Note</th>
+                                            </tr>
+                                            <tr>
+                                                <th style="text-align:center">Number of Package</th>
+                                                <th style="text-align:center">Lot Number</th>
+                                                <th style="text-align:center">Weight(Tons)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <span t-foreach="get_data(data)" t-as="m">
+                                                <tr>
+                                                    <t t-if="m['len_export_card'] == 0">
+                                                        <th t-raw="m['sequence']"/>
+                                                        <th t-raw="m['product_name']"/>
+                                                        <td t-raw="m['purchase_unit']"/>
+                                                        <td t-raw="m['order']"/>
+                                                        <td t-raw="m['detail']"/>
+                                                        <td t-raw="m['number_of_package']"/>
+                                                        <td t-raw="m['lot_number']"/>
+                                                        <td t-raw="m['weight']"/>
+                                                        <td t-raw="m['note']"/>
+                                                    </t>
+                                                    <t t-if="m['len_export_card'] > 0">
+                                                        <th t-att-rowspan="m['len_export_card']" t-raw="m['sequence']"/>
+                                                        <td t-att-rowspan="m['len_export_card']"
+                                                            t-raw="m['product_name']"/>
+                                                        <span t-foreach="m['export_card_list']" t-as="n">
+                                                            <t t-if="n_index==0">
+                                                                <td t-raw="n['purchase_unit']"/>
+                                                                <td t-raw="n['order']"/>
+                                                                <td t-raw="n['detail']"/>
+                                                                <td t-raw="n['number_of_package']"/>
+                                                                <td t-raw="n['lot_number']"/>
+                                                                <td t-raw="n['weight']"/>
+                                                                <td t-raw="n['note']"/>
+                                                            </t>
+                                                            <t t-if="n_index>0">
+                                                                <tr>
+                                                                    <td t-raw="n['purchase_unit']"/>
+                                                                    <td t-raw="n['order']"/>
+                                                                    <td t-raw="n['detail']"/>
+                                                                    <td t-raw="n['number_of_package']"/>
+                                                                    <td t-raw="n['lot_number']"/>
+                                                                    <td t-raw="n['weight']"/>
+                                                                    <td t-raw="n['note']"/>
+                                                                </tr>
+                                                            </t>
+                                                        </span>
+                                                    </t>
+                                                </tr>
+                                            </span>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>
